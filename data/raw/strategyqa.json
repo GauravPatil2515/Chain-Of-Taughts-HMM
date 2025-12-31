@@ -1,0 +1,2337 @@
+[
+  {
+    "id": "strategyqa_0000",
+    "question": "Are more people today related to Genghis Khan than Julius Caesar?",
+    "answer": "yes",
+    "facts": [
+      "Julius Caesar had three children.",
+      "Genghis Khan had sixteen children.",
+      "Modern geneticists have determined that  out of every 200 men today has DNA that can be traced to Genghis Khan."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0001",
+    "question": "Could the members of The Police perform lawful arrests?",
+    "answer": "no",
+    "facts": [
+      "The members of The Police were musicians, not law enforcement officers.",
+      "Only law enforcement officers can perform lawful arrests."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0002",
+    "question": "Would a Monoamine Oxidase candy bar cheer up a depressed friend?",
+    "answer": "no",
+    "facts": [
+      "Depression is caused by low levels of serotonin, dopamine and norepinephrine.",
+      "Monoamine Oxidase breaks down neurotransmitters and lowers levels of serotonin, dopamine and norepinephrine."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0003",
+    "question": "Would a dog respond to bell before Grey seal?",
+    "answer": "yes",
+    "facts": [
+      "Grey seals have no ear flaps and their ears canals are filled with wax.",
+      "Grey seals hear better underwater when their ears open like a valve.",
+      "Dogs have sensitive ears that can hear as far as a quarter of a mile away."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0004",
+    "question": "Is a pound sterling valuable?",
+    "answer": "no",
+    "facts": [
+      "A pound sterling is fiat money.",
+      "Fiat money is backed by government decree and has no intrinsic value.",
+      "One pound sterling is worth about 1.24 US dollars by May of 2020."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0005",
+    "question": "Is shrimp scampi definitely free of plastic?",
+    "answer": "no",
+    "facts": [
+      "Shrimp scampi is a dish made with shrimp.",
+      "Shrimp have been found to contain microplastics.",
+      "Microplastics are plastic material."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0006",
+    "question": "Do the anchors on Rede Globo speak Chinese?",
+    "answer": "no",
+    "facts": [
+      "Rede Globo is a Brazilian television network.",
+      "The official language of Brazil is Portuguese."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0007",
+    "question": "Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?",
+    "answer": "no",
+    "facts": [
+      "Albany, GA has around 75,000 people",
+      "Albany, NY has almost 100,000 people"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0008",
+    "question": "Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?",
+    "answer": "yes",
+    "facts": [
+      "The average cost of a US Boeing 737 plane is 1.6 million dollars.",
+      "Wonder Woman (2017 film) grossed over 800 million dollars at the box office."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0009",
+    "question": "Is the language used in Saint Vincent and the Grenadines rooted in English?",
+    "answer": "yes",
+    "facts": [
+      "The primary language spoken in Saint Vincent and the Grenadines is Vincentian Creole.",
+      "Vincentian Creole is English-based, with elements of French, Antillean Creole, and indigenous South American and African languages."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0010",
+    "question": "Can you buy Casio products at Petco?",
+    "answer": "no",
+    "facts": [
+      "Casio is a manufacturer of consumer electronics and watches",
+      "Petco is a chain store that sells pet supplies like food, bowls, litter, toys, cages and grooming equipment"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0011",
+    "question": "Did the Space Race use relay batons?",
+    "answer": "no",
+    "facts": [
+      "The Space Race was a competition between the USA and USSR regarding spaceflight and exploration",
+      "Relay batons are used in relay races",
+      "Relay races are athletic track and field events"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0012",
+    "question": "Are Christmas trees dissimilar to deciduous trees?",
+    "answer": "yes",
+    "facts": [
+      "Christmas trees are usually pine trees.",
+      "Pine trees keep their needles all year round."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0013",
+    "question": "Does Biochemistry study gluons?",
+    "answer": "no",
+    "facts": [
+      "Biochemistry studies role, function, and structure of biomolecules.",
+      "Gluon, the so-called messenger particle of the strong nuclear force, which binds sub-atomic particles known as quarks within the protons and neutrons of stable matter as well as within heavier, short-lived particles created at high energies.",
+      "biomolecules are comprised of atoms. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0014",
+    "question": "Did land owners elect their rulers in the Kingdom of Hungary?",
+    "answer": "no",
+    "facts": [
+      "The Kingdom of Hungary was a monarchy.",
+      "Monarchies do not allow citizens to elect their own rulers."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0015",
+    "question": "Would Nancy Pelosi publicly denounce abortion?",
+    "answer": "no",
+    "facts": [
+      "Abortion is a topic that divides the Republican Party and the Democratic Party.",
+      "Nancy Pelosi is a Democrat and appeals to that base.",
+      "The Democratic base is largely pro-choice with abortion. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0016",
+    "question": "Does Dragon Ball shows and movies fall short of Friday 13th number of projects?",
+    "answer": "yes",
+    "facts": [
+      "Dragon Ball has 6 TV series, 3 TV specials, and 2 direct to video spinoffs as of 2020.",
+      "Friday the 13th has 12 movies in the franchise and 1 TV series as of 2020."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0017",
+    "question": "Would a student of the class of 2017 have amnesia about 9/11?",
+    "answer": "yes",
+    "facts": [
+      "Childhood amnesia is common, with most adults not remembering their lives before 2 or 3 years of age",
+      "9/11 occurred in 2001",
+      "Students graduating high-school in 2017 would have been born in 1999"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0018",
+    "question": "Is greed the most prevalent of the Seven Deadly Sins?",
+    "answer": "no",
+    "facts": [
+      "Greed is a longing for wealth and power.",
+      "White collar crime involves businesses stealing money or assets from people. ",
+      "5-10% of arrests per 100,000 arrests were for  white collar crime according to Department of Justice statistics.",
+      "Gluttony is the overindulgence in food or similar things.",
+      "39.8% of US adults were classified as overweight according to the National Center for Health Statistics."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0019",
+    "question": "Would a psychic who admits to hot reading be trustworthy?",
+    "answer": "no",
+    "facts": [
+      "Hot reading is a technique used by people presenting themselves as psychics to acquire information about a subject prior to the psychic session.",
+      "Hot reading is considered deception in the psychic community."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0020",
+    "question": "Is average number of peas in a pod enough commas for a billion?",
+    "answer": "yes",
+    "facts": [
+      "The average number of peas in a pod is 6 or 7.",
+      "A billion is a number that has three commas in it."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0021",
+    "question": "Does actress Leila George lack the height to be a model?",
+    "answer": "no",
+    "facts": [
+      "Actress Leila George, the daughter of Vincent D'onofrio, is 5'9\" tall.",
+      "Model Cindy Crawford is 5'9\" tall.",
+      "Model Agyness Deyn is 5'8\" tall.",
+      "Model Sara Sampaio is 5'8\" tall."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0022",
+    "question": "Is Dustin Hoffman one of the B'nei Yisrael?",
+    "answer": "yes",
+    "facts": [
+      "Dustin Hoffman was raised in a Jewish family.",
+      "In modern Hebrew, b'nei yisrael (\"children of Israel\") can denote the Jewish people at any time in history."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0023",
+    "question": "If you were on a diet, would you have to skip lunch at McDonald's?",
+    "answer": "no",
+    "facts": [
+      "McDonald's offers low calorie brunch options like parfaits and egg white sandwiches. ",
+      "McDonald's offers low calorie lunch options including basic hamburgers and salads."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0024",
+    "question": "Could the Powerpuff Girls hypothetically attend the Camden Military Academy?",
+    "answer": "no",
+    "facts": [
+      "The Powerpuff Girls are kindergarten aged girls.",
+      "Camden Military Academy is a private, all-male, military boarding school located in Camden, South Carolina.",
+      "Camden Military Academy accepts male students in grades 7 through 12."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0025",
+    "question": "Would the top of Mount Fuji stick out of the Sea of Japan? ",
+    "answer": "yes",
+    "facts": [
+      "The average depth of the Sea of Japan is  5,748 feet (1,752 metres) and its maximum depth is 12,276 feet (3,742 metres)",
+      "Mount Fuji is 3,776.24 metres (12,389.2 ft) tall. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0026",
+    "question": "Would an uninsured person be more likely than an insured person to decline a CT scan?",
+    "answer": "yes",
+    "facts": [
+      "Without insurance, a CT scan can cost up to $5,000.",
+      "Most insurance companies will cover or reimburse the cost of a CT scan."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0027",
+    "question": "Was the Donatello crucifix identified in 2020 life size?",
+    "answer": "no",
+    "facts": [
+      "The crucifix discovered in the church of Sant’Angelo depicts an adult man.",
+      "The crucifix discovered in the church of Sant’Angelo is 89 cm high.",
+      "The crucifix discovered in the church of Sant'Angelo was identified as being a work of Donatello.",
+      "The average height of an adult man has been at least 150 cm in historical times."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0028",
+    "question": "Is Disneyland Paris the largest Disney resort?",
+    "answer": "no",
+    "facts": [
+      "Disneyland Paris contains two parks, several hotels, and a shopping district.",
+      "By comparison, Walt Disney World in Florida contains four parks, two waterparks, a shopping district, and many hotels.",
+      "Disney World is bigger than Disneyland Paris Resort and Disneyland California Resort combined."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0029",
+    "question": "Could someone with fine motor control issues benefit from an altered keyboard layout?",
+    "answer": "yes",
+    "facts": [
+      "Fine motor control involves making small, precise movements like painting or typing. ",
+      "The standard keyboard layout is designed to be used by someone without any motor control issues.",
+      "There are modified keyboards for multiple types of disability."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0030",
+    "question": "Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?",
+    "answer": "yes",
+    "facts": [
+      "Adam Sandler and Cole Sprouse starred together in \"Big Daddy\".",
+      "A prop used throughout \"Big Daddy\" was a scuba diving action figure that Cole's character called 'Scuba Steve'."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0031",
+    "question": "Is there a warthog on Broadway?",
+    "answer": "yes",
+    "facts": [
+      "Disney's The Lion King is a popular Broadway musical.",
+      "One of the characters is named Pumbaa.",
+      "Pumbaa is a warthog."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0032",
+    "question": "Does Disney have an ice princess?",
+    "answer": "yes",
+    "facts": [
+      "In 2013, Disney released Frozen.",
+      "Frozen features Elsa, a princess with magical ice powers."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0033",
+    "question": "Would a geographer use biochemistry in their work?",
+    "answer": "no",
+    "facts": [
+      "A geographer is a scientist whose area of study is geography, the study of Earth's natural environment and human society.",
+      "Biochemistry is the study of chemical processes within and relating to living organisms."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0034",
+    "question": "Could George Washington's own speeches have been recorded live to a compact disc?",
+    "answer": "no",
+    "facts": [
+      "George Washington died in 1799.",
+      "CDs weren't invented until 1982."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0035",
+    "question": "Was Lil Jon's top ranked Billboard song a collaboration with a member of The Lox?",
+    "answer": "no",
+    "facts": [
+      "Lil Jon's highest ranked billboard song was Yeah.",
+      "Yeah was a collaboration between Lil Jon, Usher, and Ludacris.",
+      "The Lox is a rap trio consisting of: Styles P, Sheek Louch, and Jadakiss."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0036",
+    "question": "Would food made with black salt smell of sulfur?",
+    "answer": "yes",
+    "facts": [
+      "Black Salt has is a kiln-fired rock salt that contains sulfur.",
+      "When black salt is cooked with, it smells similar to rotten eggs. ",
+      "Rotten eggs smell like sulfur."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0037",
+    "question": "Would a broadcast from Spirit make the news in 2020?",
+    "answer": "yes",
+    "facts": [
+      "In 2010, the Spirit rover sent what is recorded as its final transmission.",
+      "In 2019, another rover made the news with its viral \"final words\""
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0038",
+    "question": "Is Miami a city on the American West Coast?",
+    "answer": "no",
+    "facts": [
+      "Miami is a city in the state of Florida.",
+      "Florida is the southernmost state on the American East Coast."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0039",
+    "question": "Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?",
+    "answer": "yes",
+    "facts": [
+      "The monster in Mary Shelley's novel, Frankenstein, was said to be 8 feet tall.",
+      "Robert Wadlow was the world's tallest man.",
+      "Robert Wadlow was 8 feet 11.1 inches tall."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0040",
+    "question": "Is the tibia necessary to win the Stanley Cup?",
+    "answer": "yes",
+    "facts": [
+      "The Stanley Cup is the championship trophy of the National Hockey League",
+      "Ice hockey is a game played by individuals wearing ice skates to move around a frozen playing field",
+      "The tibia is a leg bone",
+      "Legs are required in order to use ice skates"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0041",
+    "question": "Would an ethics professor teach a class on Cezanne?",
+    "answer": "no",
+    "facts": [
+      "Cezanne was an Impressionist painter",
+      "Aesthetics is the branch of philosophy that deals with the arts"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0042",
+    "question": "If you add water to rice pudding is it horchata?",
+    "answer": "no",
+    "facts": [
+      "Horchata is a drink made from soaking dry rice in water for hours, then pulverizing and straining the mixture and adding spices and sweetener.",
+      "Rice pudding includes ingredients like eggs, and whole grains of cooked rice. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0043",
+    "question": "Can the Swiss Guard fill the Virginia General Assembly chairs?",
+    "answer": "no",
+    "facts": [
+      "The Virginia General Assembly has 140 seats.",
+      "The Swiss Guard is an honour guard of Vatican City that consists of 135 men."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0044",
+    "question": "If your skin was turning the color of a zombie, could it be because of nickel?",
+    "answer": "yes",
+    "facts": [
+      "Zombies are often depicted as green in pallor. ",
+      "Nickel in jewelry often turns skin a greenish color."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0045",
+    "question": "Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?",
+    "answer": "yes",
+    "facts": [
+      "Dolce & Gabbana is an Italian luxury fashion design company.",
+      "The Amish, who value plain clothes, frown upon buttons and have banned velcro and zippers",
+      "The Two Tone Dolce & Gabbana suit has several buttons.",
+      "The Amish cease interactions with sinners by avoiding, or shunning them."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0046",
+    "question": "Is the Illuminati card game still popular?",
+    "answer": "no",
+    "facts": [
+      "The original version of the game was released in 1982.",
+      "A collectible card game version was released in 1995 but only had one set.",
+      "The most recent edition of the base game was published in 2007."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0047",
+    "question": "Can a strawberry get worms similar to dogs?",
+    "answer": "yes",
+    "facts": [
+      "Strawberry can suffer from black root rot and nematodes.",
+      "Dogs can suffer from a variety of worms including roundworms that lay eggs on them.",
+      "Nematodes are parasites that are also called roundworms and ascarids.",
+      "Nematodes are parasites that feed off of strawberry plants."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0048",
+    "question": "Is Menthol associated with Thanksgiving?",
+    "answer": "no",
+    "facts": [
+      "Menthol is the main component of peppermint oil and is responsible for the noticeable cooling sensation. ",
+      "During Thanksgiving, turkey, potatoes, gravy, and pie are common dishes. None of which have menthol in it."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0049",
+    "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?",
+    "answer": "no",
+    "facts": [
+      "Mumbia is a city in India.",
+      "India is a country located in South Asia.",
+      "In South Asia the Solanum melongena plant is referred to as a brinjal."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0050",
+    "question": "Is it okay to lie after taking an oath in a court of law?",
+    "answer": "no",
+    "facts": [
+      "In a court of law, lying under oath is considered perjury. ",
+      "Perjury is considered a crime."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0051",
+    "question": "Is art prioritized in the US education system?",
+    "answer": "no",
+    "facts": [
+      "Art classes are often the first to be cut during times of low school funds. ",
+      "Between 1999 and 2009, schools offering visual arts curriculum decreased by 7%. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0052",
+    "question": "While on a liquid diet, are there some types of soup you cannot eat?",
+    "answer": "yes",
+    "facts": [
+      "Italian wedding soup has large chunks including meatballs and pasta which require chewing.",
+      "Chicken Noodle soup has chunks of chicken and large noodles in it that require chewing."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0053",
+    "question": "Would it be impossible to use an Iwato scale for a twelve-tone technique composition?",
+    "answer": "yes",
+    "facts": [
+      "The Iwato scale has 5 pitch cases.",
+      "The chromatic scale has 12 pitch cases."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0054",
+    "question": "Would the Titanic be well preserved at the bottom of the Gulf of Finland?",
+    "answer": "yes",
+    "facts": [
+      "The bottom of the gulf is one of the world's largest ship cemeteries. Because of the low salinity and cold waters, and no shipworms, the ships are relatively well preserved.",
+      "RMS Titanic was a British passenger ship."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0055",
+    "question": "Could a dandelion suffer from hepatitis?",
+    "answer": "no",
+    "facts": [
+      "Only creatures that contain a liver can suffer from hepatitis.",
+      "The liver is an organ only found in vertebrates.",
+      "Vertebrates exist in the kingdom Animalia.",
+      "Dandelions are plants in the kingdom Plantae."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0056",
+    "question": "Did any country in Portuguese Colonial War share Switzerlands role in WWII?",
+    "answer": "yes",
+    "facts": [
+      "The Portuguese Colonial War was between Portugal and several groups including People's Movement for Liberation of Angola.",
+      "Switzerland remained neutral in World War II and did not get involved.",
+      "Portugal stayed out of world affairs during World War II."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0057",
+    "question": "Would a week be enough time to watch every episode of Ugly Betty?",
+    "answer": "yes",
+    "facts": [
+      "There are 168 hours in a week.",
+      "The entire Ugly Betty series is 85 hours long."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0058",
+    "question": "Would a Pict be confused by Old English?",
+    "answer": "yes",
+    "facts": [
+      "Old English was spoken by the Anglo-Saxons, a Germanic tribe that inhabited England.",
+      "The Picts were a Celtic-speaking people that lived in what is now Scotland.",
+      "The Pictish language died out by 1100AD and was replaced by Gaelic.",
+      "Gaelic and Old English are completely different languages from different branches of the Indo-European language family.",
+      "Gaelic vocabulary is very different from Old English  and verbs are also conjugated differently."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0059",
+    "question": "Was the Louisiana Purchase made with bitcoin?",
+    "answer": "no",
+    "facts": [
+      "Bitcoin was launched as a currency in 2009.",
+      "The Louisiana Purchase was in 1803."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0060",
+    "question": "Did Japanese serfdom have higher status than English counterpart?",
+    "answer": "yes",
+    "facts": [
+      "Serfs in Medieval England were peasants that were indentured servants to their lords.",
+      "Serfs were often harshly treated and had little legal redress against the actions of their lords.",
+      "Japanese serfs were farmers and fishermen.",
+      "Japanese believed that serfs produced food, which was depended on by all classes, therefore, they worked harder."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0061",
+    "question": "Is the best tasting part of the papaya in the center?",
+    "answer": "no",
+    "facts": [
+      "The center of a papaya contains a cluster of seeds.",
+      "Papaya seeds, while edible, are often discarded for the soft flesh that surrounds them."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0062",
+    "question": "Could Lil Wayne's children ride in a Chevrolet Corvette ZR1 together?",
+    "answer": "no",
+    "facts": [
+      "Lil Wayne has four children.",
+      "A Chevrolet Corvette ZR1 has 2 seats."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0063",
+    "question": "Is double duty an incorrect phrase for host of Dancing With The Stars?",
+    "answer": "no",
+    "facts": [
+      "Double duty refers to having more than one job at the same time.",
+      "The host of Dancing WIth The Stars is Tom Bergeron.",
+      "Tom Bergeron is the host of America's Funniest Home Videos."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0064",
+    "question": "Could Lil Wayne legally operate a vehicle on his own at the beginning of his career?",
+    "answer": "no",
+    "facts": [
+      "Lil Wayne's career began in 1995, at the age of 12, when he was signed by Birdman and joined Cash Money Records as the youngest member of the label.",
+      "A driver's license is required to legally operate a vehicle by yourself in the USA.",
+      "The eligible age to first obtain a driver's license varies substantially from state to state, from 14 years, three months, in South Dakota to 17 in New Jersey."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0065",
+    "question": "Could an ocelot subsist on a single bee hummingbird per day?",
+    "answer": "no",
+    "facts": [
+      "An ocelot requires 600–800 grams (21–28 oz) of food every day to satisfy its energy requirements.",
+      "Bee hummingbirds are the smallest living birds, with an average weight of around 2-3 grams."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0066",
+    "question": "Does Ukrainian Greek Catholic Church recognize Alexander Nevsky as a saint?",
+    "answer": "no",
+    "facts": [
+      "Alexander Nevsky was a Prince of Novgorod that fought against German and Swiss Invaders.",
+      "The Russian Orthodox Church named Alexander Nevsky.a saint in 1547.",
+      "The Russian Orthodox Church is a member of the Eastern Orthodox Church and has their own list of saints.",
+      "The Catholic Church and the Eastern Orthodox Church have been in a state of official schism since the East–West Schism of 1054.",
+      "The Ukrainian Greek Catholic Church is a branch of the Catholic Church."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0067",
+    "question": "Was the original James Bond actor born near the Washington Monument?",
+    "answer": "no",
+    "facts": [
+      "The original James Bond actor was Sean Connery.",
+      "Sean Connery was born in Scotland.",
+      "The Washington Monument is located in Washington, D.C.",
+      "Washington, D.C. and Scotland are nearly 3,500 miles apart."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0068",
+    "question": "Did J. P. Morgan have healthy lungs?",
+    "answer": "no",
+    "facts": [
+      "J. P. Morgan smoked dozens of cigars per day.",
+      "Smoking tobacco damages the lungs and increases the risk of lung cancer significantly."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0069",
+    "question": "Would Firefighters be included in a September 11th memorial?",
+    "answer": "yes",
+    "facts": [
+      "September 11th is remembered as a day of mourning for the lives lost during a terrorist attack in NYC.",
+      "Firefighters were among the first responders to the crisis, and many died. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0070",
+    "question": "Does Andrew Johnson's presidential number exceed Elagabalus's Emperor number?",
+    "answer": "no",
+    "facts": [
+      "Andrew Johnson was the 17th president of the United States.",
+      "Elagabalus was the 25th Roman Emperor."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0071",
+    "question": "Are any animals in Chinese calendar Chordata?",
+    "answer": "yes",
+    "facts": [
+      "The chinese zodiac based on the Chinese calendar has a number of animals including dogs and pigs.",
+      "Chordata is a scientific classification of an animals phylum.",
+      "The phylum of pigs is Chordata."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0072",
+    "question": "Would a hypothetical Yeti be towered over by Andre the Giant?",
+    "answer": "yes",
+    "facts": [
+      "The mythical Yeti is said to be between 200 and 400 pounds.",
+      "The mythical Yeti is said to be around 6 feet tall.",
+      "Andre the Giant was an imposing 7'4\" and 529 pounds."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0073",
+    "question": "Are you likely to find a crucifix in Karachi?",
+    "answer": "no",
+    "facts": [
+      "The crucifix is a symbol of Christianity",
+      "The vast majority of Pakistan's population is Muslim"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0074",
+    "question": "Was The Little Prince's titular character allergic to flowers?",
+    "answer": "no",
+    "facts": [
+      "The Little Prince tends to and cares for a rose.",
+      "The Little Prince falls in love with a rose. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0075",
+    "question": "Was a person sold a Creative Commons License for Boticelli's The Birth of Venus ripped off?",
+    "answer": "yes",
+    "facts": [
+      "A Creative Commons license allows for the free distribution of an otherwise copyrighted piece of work.",
+      "Works that are deemed in the public domain do not require a copyright or permission to use.",
+      "Any work created before 1923 is in the public domain.",
+      "Sandro Boticelli's The Birth of Venus painting was from 1486."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0076",
+    "question": "Did Millard Fillmore help to establish the University of Pittsburgh?",
+    "answer": "no",
+    "facts": [
+      "The University of Pittsburgh was established in 1787.",
+      "Millard Fillmore was born in 1800."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0077",
+    "question": "Does Northern fur seal make good pet for six year old?",
+    "answer": "no",
+    "facts": [
+      "An average six year old weighs 45 pounds.",
+      "An adult Northern fur seal can weigh up to 120 pounds.",
+      "Northern fur seals have sharp canine teeth for tearing.",
+      "Northern fur seals live near rivers to feed off of fish populations."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0078",
+    "question": "Would a pear sink in water?",
+    "answer": "no",
+    "facts": [
+      "The density of a raw pear is about 0.59 g/cm^3.",
+      "The density of water is about 1 g/cm^3.",
+      "Objects only sink if they are denser than the surrounding fluid."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0079",
+    "question": "WIll Noah's Ark hypothetically sail through flooded Lincoln Tunnel?",
+    "answer": "no",
+    "facts": [
+      "Scholars have determined Noah's Ark to be 75 feet wide.",
+      "Each lane of the Lincoln Tunnel is 21 feet wide."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0080",
+    "question": "Can you write a whole Haiku in a single tweet?",
+    "answer": "yes",
+    "facts": [
+      "A Haiku is a Japanese poetry in three phrases.",
+      "The average Haiku is composed of 60 to 70 characters.",
+      "A tweet is a short message sent on Twitter.",
+      "The character limit of a single tweet on Twitter is 140."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0081",
+    "question": "Would you take a photo of a Saltwater crocodile in Memphis?",
+    "answer": "no",
+    "facts": [
+      "The saltwater crocodile is native to saltwater habitats and brackish wetlands from India's east coast across Southeast Asia and the Sundaic region to northern Australia and Micronesia.",
+      "Memphis is a city in the United States."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0082",
+    "question": "Could Scooby Doo fit in a kangaroo pouch?",
+    "answer": "no",
+    "facts": [
+      "Scooby Doo is a fictional cartoon Great Dane.",
+      "Great Danes can be 30-34 inches in height.",
+      "Kangaroo babies can fit in their mother's pouch until they're 10 weeks of age.",
+      "A 10 week old kangaroo is much smaller than a Great Dane."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0083",
+    "question": "Do manta rays live in water above the safe temperature for cold food storage?",
+    "answer": "yes",
+    "facts": [
+      "For cold foods, the food safe temperature is 40 degrees Fahrenheit and below.",
+      "Manta rays prefer water temperatures above 68 °F (20 °C)."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0084",
+    "question": "Is the kayak a traditional boat in New Zealand?",
+    "answer": "no",
+    "facts": [
+      "Kayaks were developed by native peoples to hunt in northern waters of the Arctic Ocean, North Atlantic, Bering Sea and North Pacific. ",
+      "New Zealand is in the Southern Hemisphere.",
+      "The native Maori people of New Zealand arrived there in canoes."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0085",
+    "question": "Has the Subway restaurant franchise had any connections with child abusers?",
+    "answer": "yes",
+    "facts": [
+      "Subway hired Jared Fogle as a spokesman for their sandwich shops.",
+      "Jared Fogle was convicted for having sex with minors and for possessing child pornography. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0086",
+    "question": "Would the high school class of 2010 have lived through the Presidency of Richard Nixon?",
+    "answer": "no",
+    "facts": [
+      "People in the high school class of 2010 were born between 1991 and 1993.",
+      "Richard Nixon was President of the United States until 1974."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0087",
+    "question": "Could ten gallons of seawater crush a six year old?",
+    "answer": "yes",
+    "facts": [
+      "The average weight of a six year old is 45 pounds.",
+      "One gallon of seawater weighs slightly over 8 pounds."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0088",
+    "question": "Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?",
+    "answer": "no",
+    "facts": [
+      "God Awful Movies is a podcast in which people review and mock religious films. ",
+      "The hosts of God Awful Movies take a disrespectful approach to their film critique."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0089",
+    "question": "Could a giant squid fit aboard the deck of the titanic?",
+    "answer": "yes",
+    "facts": [
+      "Decks on the Titanic were as long as 500ft.",
+      "Giant Squid grow to be around 59ft in length."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0090",
+    "question": "Do more anchovy live in colder temperature waters than warmer?",
+    "answer": "no",
+    "facts": [
+      "Anchovy are a type of small fish.",
+      "Anchovy are concentrated in the temperate waters of the Atlantic, Indian, and Pacific Oceans.",
+      "Anchovy are rarely found in colder waters."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0091",
+    "question": "Is Antarctica a good location for Groundhog Day?",
+    "answer": "no",
+    "facts": [
+      "Groundhog Day relies on a groundhog seeing their shadow.",
+      "Antarctica has an irregular sun pattern and some days have no sun rise or 24 hour sunlight.",
+      "Antarctica has temperatures can range from -10C to -60C.",
+      "Groundhogs live in forests or woodlands with plenty of sunlight."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0092",
+    "question": "Can the Powerpuff Girls form a complete tag team wrestling match?",
+    "answer": "no",
+    "facts": [
+      "A tag team wrestling match is contested between at least two teams of at least two wrestlers each",
+      "There are only three people in the Powerpuff Girls"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0093",
+    "question": "Will someone die without white blood cells?",
+    "answer": "yes",
+    "facts": [
+      "White blood cells protect people against disease.",
+      "Disease kills people."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0094",
+    "question": "Does rock star Keith Richards play a captain of a boat in a movie?",
+    "answer": "yes",
+    "facts": [
+      "Keith Richards has a cameo appearance in two of the Pirates of the Caribbean movies.",
+      "He plays Captain Teague, the elderly father of famous pirate Captain Jack Sparrow.",
+      "In At World's End, he is the member of the council of Pirate Lords who is responsible for keeping the Pirate Code, and there is a brief shot of him and his crew aboard their ship during the sequence where the pirates are raising their banners in preparation to fight."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0095",
+    "question": "Is 3D printing able to make adenovirus?",
+    "answer": "no",
+    "facts": [
+      "3D printers come with limitations in terms of precision. The standard nozzle output is about 0.4 mm. Therefore, if you are planning to print something that is below 0.4mm, you will not get a useful item.",
+      "Adenoviruses are medium-sized (90–100 nm), nonenveloped (without an outer lipid bilayer) viruses with an icosahedral nucleocapsid containing a double stranded DNA genome."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0096",
+    "question": "Would an eleventh-grader be eligible for Medicare?",
+    "answer": "no",
+    "facts": [
+      "Students in the 11th grade are typically between 16-17 years old.",
+      "The age requirement for most Medicare recipients is 65 or older."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0097",
+    "question": "Is there a full Neptunian orbit between the first two burials of women in the Panthéon?",
+    "answer": "no",
+    "facts": [
+      "In 1907, Sophie Berthelot is the first woman to be interred in the Panthéon ",
+      "In 1995, Marie Curie is the second woman to be interred there",
+      "Neptune takes 165 years to go around the sun"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0098",
+    "question": "Will Oasis cruise boat traverse the Lincoln Tunnel?",
+    "answer": "no",
+    "facts": [
+      "The Lincoln Tunnel has a maximum height clearance of 13 feet.",
+      "The height of the Oasis cruise boat is 236 feet."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0099",
+    "question": "Could Oscar Wilde have operated a motor vehicle?",
+    "answer": "yes",
+    "facts": [
+      "Motor vehicles were in use by the 1890s",
+      "Oscar Wilde lived until 1900"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0100",
+    "question": "Would George Fox support stoning?",
+    "answer": "no",
+    "facts": [
+      "George Fox was the founder of the Religious Society of Friends, commonly known as the Quakers or Friends.",
+      "The Quakers advocate for peace and nonviolence.",
+      "Stoning is a particularly violent and brutal method of capital punishment."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0101",
+    "question": "Will Tokyo Tower be repainted only once during President Trump's first term?",
+    "answer": "yes",
+    "facts": [
+      "Tokyo Tower is repainted every five years ",
+      "The last repainting began in 2018",
+      "Trump's first presidential term is from 2017 to 2021"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0102",
+    "question": "Has a neanderthal ever served on the Supreme Court of the United States?",
+    "answer": "no",
+    "facts": [
+      "The Supreme Court was established in 1789.",
+      "Neanderthals are primitive humans that lived 40,000 years ago."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0103",
+    "question": "Can Clouded leopards chase down many Pronghorn antelopes?",
+    "answer": "no",
+    "facts": [
+      "The top speed of a Clouded leopard is 40 MPH.",
+      "The top speed of a Pronghorn antelope is 61 MPH."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0104",
+    "question": "Does the anatomy of a camel lend itself to jokes on Wednesdays?",
+    "answer": "yes",
+    "facts": [
+      "Wednesday is often referred to as 'hump day' as a joke.",
+      "Camels are known for having a significant hump. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0105",
+    "question": "Can voice actors for Goofy and Bugs Bunny each get one stripe from American flag?",
+    "answer": "yes",
+    "facts": [
+      "The American flag has 13 stripes on it.",
+      "Since the role originated in 1932, six people have voiced the character of Goofy.",
+      "Since 1940, seven people have voiced the character of Bugs Bunny."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0106",
+    "question": "Did Clark Gable appear in any movies scored by John Williams?",
+    "answer": "no",
+    "facts": [
+      "Clark Gable died in 1960.",
+      "John Williams scored his first movie in 1961."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0107",
+    "question": "Is Linus Torvalds' wife unable to physically defend herself?",
+    "answer": "no",
+    "facts": [
+      "Linus Torvalds is married to Tove Torvalds.",
+      "Tove Torvalds is a six-time Finnish national karate champion.",
+      "Karate is now predominantly a striking art using punching, kicking, knee strikes, elbow strikes and open-hand techniques such as knife-hands, spear-hands and palm-heel strikes."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0108",
+    "question": "Did Eric Clapton have similar taste in women to one of the Beatles?",
+    "answer": "yes",
+    "facts": [
+      "The Beatles consisted of John Lennon, Paul McCartney, George Harrison, and Ringo Starr.",
+      "George Harrison was married to Pattie Boyd from 1966-1977.",
+      "Eric Clapton married Pattie Boyd in 1979."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0109",
+    "question": "Is watching  Star Wars necessary to know who Darth Vader is?",
+    "answer": "no",
+    "facts": [
+      "Star Wars is one of the most widely parodied film series to be produced.",
+      "Star Wars merchandise, from tees to Halloween costumes, is widely available and is plentiful. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0110",
+    "question": "Did Eddie Murphy's father see his first stand up show?",
+    "answer": "no",
+    "facts": [
+      "Eddie Murphy's father died when Eddie Murphy was 8 years old.",
+      "Eddie Murphy's stand up career began when he was 15 years old."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0111",
+    "question": "Could a silverfish reach the top of the Empire State Building?",
+    "answer": "no",
+    "facts": [
+      "Silverfish cannot fly.",
+      "Animals that cannot fly can only access objects at or near ground level without mechanical assistance.",
+      "The top of the Empire State Building is \t1,454 ft high."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0112",
+    "question": "Are there winged statuettes in the home of the creator of Law & Order?",
+    "answer": "yes",
+    "facts": [
+      "Law & Order was created by Dick Wolf",
+      "Dick Wolf won an Emmy in 2007 ",
+      "Dick Wolf won an Emmy in 1997",
+      "The Emmy statuette is of a winged woman holding an atom"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0113",
+    "question": "Was Donald Trump the target of Islamophobia?",
+    "answer": "no",
+    "facts": [
+      "Islamophobia targets Muslims",
+      "Donald Trump is a Presbyterian, a denomination of Christianity"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0114",
+    "question": "Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?",
+    "answer": "yes",
+    "facts": [
+      "The width of the Golden Gate Bridge is 90 feet. ",
+      "A baker's dozen includes 13 items.",
+      "The width of a Mac truck is around 8 feet."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0115",
+    "question": "Could someone mistake the smell of your brussels sprouts for a fart?",
+    "answer": "yes",
+    "facts": [
+      "Brussels Sprouts are cruciferous vegetables.",
+      "Cruciferous vegetables have a sulfur containing chemical called glucosinolate in them",
+      "When you cook brussels sprouts, their smell intensifies. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0116",
+    "question": "Do guitarist's have fingers that can handle pain better than average?",
+    "answer": "yes",
+    "facts": [
+      "Guitarists typically have calloused fingertips. ",
+      "Callouses are formed of layers of dead skin and usually lack sensation."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0117",
+    "question": "Were there under 150,000 American troops in Vietnam in 1965?",
+    "answer": "yes",
+    "facts": [
+      "In 1965 the president announced an intention to increase the amount of troops to 125,000",
+      "There were only 75,000 prior to 1965"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0118",
+    "question": "Did Native American tribes teach Spaniards how to cultivate maize?",
+    "answer": "yes",
+    "facts": [
+      "In 1492, Spanish settlers brought Maize back to Europe from America.",
+      "Native Americans cultivated and bred the first maize from wild grasses."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0119",
+    "question": "Has Oscar Wilde's most famous character ever been in an Eva Green project?",
+    "answer": "yes",
+    "facts": [
+      "Oscar Wilde is most famous for his book The Picture of Dorian Gray.",
+      "Dorian Gray is a beautiful socialite that is the main character of The Picture of Dorian Gray.",
+      "Acclaimed actress, Eva Green has starred in numerous films and TV shows including Penny Dreadful.",
+      "Dorian Gray flirts with Vanessa Ives in the Penny Dreadful episode, Seance.",
+      "Vanessa Ives is played by Eva Green."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0120",
+    "question": "Do frogs feel disgust?",
+    "answer": "yes",
+    "facts": [
+      "Disgust is a basic emotion.",
+      "Frogs make sounds that express their emotions."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0121",
+    "question": "Did either Kublai Khan or his grandfather practice monogamy?",
+    "answer": "no",
+    "facts": [
+      "Kublai Khan was married multiple times and was said by some to have thousands of concubines.",
+      "Kublai Khans grandfather was Genghis Khan.",
+      "Genghis Khan had six wives and was said to have over 500 concubines."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0122",
+    "question": "Does a person need to be a parent to become a grandparent?",
+    "answer": "yes",
+    "facts": [
+      "Parents care for their children.",
+      "When the children grow up and have kids of their own, the parents become grandparents to those kids.",
+      "A person who is not a parent has no kids, therefore nobody to produce grandchildren for them."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0123",
+    "question": "Did Van Gogh suffer from a mental disorder?",
+    "answer": "yes",
+    "facts": [
+      "Mental disorders can be characterized by psychotic episodes and delusions",
+      "Van Gogh suffered from psychotic episodes and delusions"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0124",
+    "question": "Is the span in C-SPAN named after Alan Greenspan?",
+    "answer": "no",
+    "facts": [
+      "Alan Greenspan was chairman of the Federal Reserve from 1987 to 2006.",
+      "CSPAN is a cable news network that was created in 1979.",
+      "Alan Greenspan was relatively unknown to the world at large in 1979."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0125",
+    "question": "Would Eminem perform well at the International Mathematical Olympiad?",
+    "answer": "no",
+    "facts": [
+      "Eminem dropped out of Lincoln High School at age 17 and disliked math and social studies.",
+      "Mathematics competitions or mathematical olympiads are competitive events where participants sit a mathematics test.",
+      "The content on the International Mathematical Olympiad ranges from extremely difficult algebra and pre-calculus problems to problems on branches of mathematics not conventionally covered at school and often not at university level either."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0126",
+    "question": "Can a computer be programmed entirely in Boolean algebra?",
+    "answer": "yes",
+    "facts": [
+      "Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively. ",
+      "Mathematics in 1 and 0 is also called binary or machine language.",
+      "Computers are programmed in machine language."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0127",
+    "question": "Is Guitar Hero Beatles inappropriate for a US third grader?",
+    "answer": "no",
+    "facts": [
+      "The average age of a US third grader is 8.",
+      "Guitar Hero is recommended for ages 7 and up.",
+      "The Beatles were a British rock band with a plethora of radio friendly hits."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0128",
+    "question": "In American society, will a bachelor's degree often include a leap year?",
+    "answer": "yes",
+    "facts": [
+      "Leap years occur every four years.",
+      "In American society, a bachelor's degree takes about four years."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0129",
+    "question": "At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",
+    "answer": "yes",
+    "facts": [
+      "Ariana Grande was performing in Manchester in 2017 when explosives were set off in an act of terrorism.",
+      "Ariana Grande has spoken openly about her trauma experience and her PTSD regarding the Manchester Bombing."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0130",
+    "question": "Were plants crucial for The King of Rock'n Roll's snack with bananas?",
+    "answer": "yes",
+    "facts": [
+      "Elvis Presley is known as The King of Rock'n Roll.",
+      "Elvis Presley loved to eat peanut butter and bananas.",
+      "Bananas come from banana plants.",
+      "Peanut butter comes from peanuts, which come from peanut plants."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0131",
+    "question": "Could you read The Atlantic magazine during the Games of the XXII Olympiad?",
+    "answer": "yes",
+    "facts": [
+      "The Atlantic magazine, founded in 1857, still publishes as of May 2020.",
+      "The XXII Olympiad was the official name for the 1980 Summer Olympics."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0132",
+    "question": "Can you find Bob Marley's face in most smoke shops?",
+    "answer": "yes",
+    "facts": [
+      "Bob Marley's face is on the packaging of a popular brand of rolling papers.",
+      "Bob Marley is a popular graphic to print on t-shirts for sale to smokers."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0133",
+    "question": "Could Elizabeth I of England have seen the play Dido, Queen of Carthage ?",
+    "answer": "yes",
+    "facts": [
+      "Elizabeth I of England lived from 1533 - 1603.",
+      "Dido, Queen of Carthage is a short play written by the English playwright Christopher Marlowe.",
+      " It was probably written between 1587 and 1593."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0134",
+    "question": "Is Britney Spears' breakdown attributed to bipolar disorder?",
+    "answer": "yes",
+    "facts": [
+      "In 2008 Britney Spears was detained in a psychiatric hospital for bipolar disorder.",
+      "In 2007 Britney Spears shaved her head during a breakdown. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0135",
+    "question": "Is week old chlorine water safe to drink?",
+    "answer": "yes",
+    "facts": [
+      "Chlorine is a chemical that is the second lightest halogen element.",
+      "Chlorine is toxic and can attack the respiratory system of humans.",
+      "Chlorine is highly soluble in water and will dissolve in around 4 and a half days.",
+      "The Water Quality and Health Council states that chlorination of drinking water protects consumers from diseases caused by waterborne microorganisms."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0136",
+    "question": "Is the foot part of the metric system?",
+    "answer": "no",
+    "facts": [
+      "The metric system measures distance based on the meter unit.",
+      "The foot is part of the American standard system of measurement."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0137",
+    "question": "Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?",
+    "answer": "no",
+    "facts": [
+      "Konnichiwa is a greeting in the Japanese language.",
+      "The national language of Brazil is Portuguese."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0138",
+    "question": "Does Hades appear in a Disney Channel musical movie?",
+    "answer": "yes",
+    "facts": [
+      "The Descendants Trilogy is a series of musical movies that aired on Disney Channel between 2015 and 2019.",
+      "Hades appears as a supporting character in the third Descendants movie."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0139",
+    "question": "Were weather phenomena avoided when naming minor league baseball teams?",
+    "answer": "no",
+    "facts": [
+      "Weather phenomena refers to types of weather caused conditions such as cyclones, storms, and tsunamis.",
+      "Minor league baseball teams include the Brooklyn Cyclones and Lake Elsinore Storm."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0140",
+    "question": "Could a Hwasong-15 missile hypothetically reach Voyager 2?",
+    "answer": "no",
+    "facts": [
+      "Voyager 2 was a probe that traveled to the interstellar medium of space.",
+      "The interstellar medium is over 12,161,300,000 miles away from earth.",
+      "The Hwasong-15 missile is a North Korean missile with a range of 8,000 miles."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0141",
+    "question": "Could someone theoretically use an armadillo as a shield?",
+    "answer": "yes",
+    "facts": [
+      "Armadillos have hard armor made of dermal bone.",
+      "Humans have ended up in the hospital due to bullets ricocheting against an armadillo's shell."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0142",
+    "question": "Does Linus Torvalds make money off of DirectX?",
+    "answer": "no",
+    "facts": [
+      "DirectX is a proprietary technology owned by Microsoft",
+      "Linus Torvalds is the creator and lead developer for the open-source Linux kernel",
+      "The Linux kernel is used in operating systems that are competitors of Microsoft Windows"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0143",
+    "question": "Did a Mediterranean Sea creature kill Steve Irwin?",
+    "answer": "yes",
+    "facts": [
+      "Steve Irwin was killed by a Stingray animal.",
+      "Batoids are sea ray animals that live in the Mediterranean Sea.",
+      "Batoids and stingrays are related by sharing a scientific class of Chondrichthyes."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0144",
+    "question": "Do you need to worry about Zika virus in Antarctica? ",
+    "answer": "no",
+    "facts": [
+      "Mosquitoes cannot survive in the climate of Antarctica.",
+      "Zika virus is primarily spread through mosquito bites. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0145",
+    "question": "Did the writer of Christmas carol fast during Ramadan? ",
+    "answer": "no",
+    "facts": [
+      "The writer of Christmas carol is Charles Dickens, who is a Christian. ",
+      "Christians do not fast during Ramadan. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0146",
+    "question": "Are most books written as a Haiku?",
+    "answer": "no",
+    "facts": [
+      "Haiku is a very short poem",
+      "Haiku is written with 3 short phrases."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0147",
+    "question": "Does the country that received the most gold medals during the 1976 Olympics still exist?",
+    "answer": "no",
+    "facts": [
+      "The Soviet Union received the most gold medals during the 1976 Summer Olympics",
+      "The Soviet Union existed from 1922 to 1991"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0148",
+    "question": "Will Chuck Norris be a nonagenarian by time next leap year after 2020 happens?",
+    "answer": "no",
+    "facts": [
+      "A nonagenarian is a person between 90 and 99 years of age.",
+      "Chuck Norris is 80 years old in 2020.",
+      "The next leap year after 2020 is 2024.",
+      "Chuck Norris will be 84 in 2024."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0149",
+    "question": "Does Bombyx mori have a monopoly over silk production?",
+    "answer": "no",
+    "facts": [
+      "A monopoly refers to the exclusive supply of a good.",
+      "The Bombyx mori is a moth famous for its silk production.",
+      "Spiders, beetles, caterpillars, and fleas produce silk.",
+      "Wild silk produced by caterpillars has been used in China, Europe, and South Asia since antiquity."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0150",
+    "question": "Has cannabis been a big influence in rap music genre?",
+    "answer": "yes",
+    "facts": [
+      "Rapper Dr. Dre named his 1992 album, The Chronic, a reference to marijuana.",
+      "Cannabis is a flowering plant also known as marijuana.",
+      "Rapper Canibus took his name from cannabis.",
+      "Rapper Snoop Dogg's song OG has a line, \"Rolling up my Mary Jane,\" a reference to marijuana.",
+      "Rap group Bone Thugs N Harmony's Weed Song is a reference to marijuana."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0151",
+    "question": "Do Jews believe in any New Testament angels?",
+    "answer": "yes",
+    "facts": [
+      "The New Testament is a book central to Christianity.",
+      "The New Testament features a number of angels including Michael, and Gabriel.",
+      "The Talmud is the central text of Rabbinic Judaism.",
+      "The Talmud names four angels who would later be known as archangels, surrounding God's throne: Michael, Gabriel, Uriel, and Raphael."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0152",
+    "question": "Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice?",
+    "answer": "no",
+    "facts": [
+      "Christina Aguilera is a judge on the voice.",
+      "Kelly Clarkson is a judge on the voice.",
+      "Judges only turn their chairs around for competitors. ",
+      "Kelly Clarkson has not competed on the voice."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0153",
+    "question": "Do Christians anticipate an existence in Sheol after death?",
+    "answer": "no",
+    "facts": [
+      "Sheol appears in the Christian Bible, in the Old Testament.",
+      "Christians do not recognize Sheol as part of their afterlife."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0154",
+    "question": "Would an anxious person benefit from receiving courage from the Wizard of Oz?",
+    "answer": "no",
+    "facts": [
+      "An anxious person may benefit from medication or therapy.",
+      "The Wizard of Oz cannot give courage to anyone."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0155",
+    "question": "Is polyamory allowed in the Catholic Church?",
+    "answer": "no",
+    "facts": [
+      "A central tenet of the Catholic Church is a one-to-one match between man and woman.",
+      "The ten commandments claim that \"coveting your neighbors wife\" is a sin."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0156",
+    "question": "Does a Generation Y member satisfy NYPD police officer age requirement?",
+    "answer": "yes",
+    "facts": [
+      "The NYPD has a minimum age requirement of 21.",
+      "Members of Generation Y were born between 1980 and 1994."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0157",
+    "question": "Could the main character of \"Alice's Adventures in Wonderland\" join a Masonic Lodge?",
+    "answer": "no",
+    "facts": [
+      "The main character of \"Alice's Adventures in Wonderland\" is Alice, a young girl.",
+      "Masonic Lodge membership is restricted to men over the age of either 18 or 21, depending on jurisdiction."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0158",
+    "question": "Did King James I despise fairy beings?",
+    "answer": "yes",
+    "facts": [
+      "King James I wrote Daemonologie in which he stated that a fairy was a being that could act as a familiar.",
+      "A familiar was an animal or spirit that conspired with The Devil.",
+      "King James I presided over the execution of Agnes Sampson.",
+      "Agnes Sampson was accused of conspiring with familiars and was burned at the stake."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0159",
+    "question": "Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?",
+    "answer": "yes",
+    "facts": [
+      "Evander Holyfield won a bronze medal during the 1984 Summer Olympics.",
+      "The 1984 Olympics were held in Los Angeles, California.",
+      "California is in the United States, which is located entirely within the western hemisphere."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0160",
+    "question": "Did Harry Houdini's wife make psychics look foolish?",
+    "answer": "yes",
+    "facts": [
+      "Psychics are people that claim to have special powers to talk to the dead.",
+      "Harry Houdini gave his wife a code word to ask psychics to repeat after his death.",
+      "The wife of Harry Houdini, Wilhelmina Beatrice \"Bess\" Rahner, asked several psychics for the code word and none knew it."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0161",
+    "question": "Does handedness determine how you use American Sign Language?",
+    "answer": "yes",
+    "facts": [
+      "Your dominant hand typically performs the moving part of a sign in ASL.",
+      "Your dominant hand determines the hand you use to finger spell in ASL."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0162",
+    "question": "Do onions have a form that resembles the inside of a tree?",
+    "answer": "yes",
+    "facts": [
+      "When bisected, an onion has rings that extend from the core to the outside.",
+      "Trees are formed of a series of rings that extend from the inside to the outside"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0163",
+    "question": "Are moose used for work near the kingdom of Arendelle?",
+    "answer": "yes",
+    "facts": [
+      "The opening scene of Disney's Frozen shows a group of ice breakers.",
+      "They have moose that carry the heavy ice blocks.",
+      "One of them, Kristoff, becomes separated with his moose Sven.",
+      "When Queen Elsa flees Arendelle and Princess Anna gives chase, she quickly encounters Kristoff."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0164",
+    "question": "Is eleventh grade required to get a driver's licence?",
+    "answer": "no",
+    "facts": [
+      "Eleventh grade is an educational year in high school.",
+      "Many high schools offer driver's education classes.",
+      "Drivers education classes can be taken outside by other organizationsof high school.",
+      "One must pass a driving test to obtain a drivers license."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0165",
+    "question": "Do some home remedies result in your skin color turning blue?",
+    "answer": "yes",
+    "facts": [
+      "Colloidal silver is a popular alternative treatment/home remedy that is used by some people.",
+      "Ingestion of colloidal silver in high amounts can tint the skin blue."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0166",
+    "question": "Was ethanol beneficial to Jack Kerouac's health?",
+    "answer": "no",
+    "facts": [
+      "In 1969, at age 47, Kerouac died from an abdominal hemorrhage caused by a lifetime of heavy drinking of alcohol.",
+      "Ethanol is the main ingredient in alcoholic beverages."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0167",
+    "question": "Did Doctor Strange creators also make Batman?",
+    "answer": "no",
+    "facts": [
+      "Doctor Strange is a superhero created by Steve Ditko and Stan Lee.",
+      "Batman is a DC comics superhero.",
+      "Stan Lee worked for Marvel comics, the competitor of DC comics.",
+      "Steve Ditko worked for DC late in his career and worked on Blue Beetle, the Question, the Creeper, Shade the Changing Man, and Hawk and Dove."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0168",
+    "question": "Was Charlemagne's father instrumental in outcome of the Battle of Tours?",
+    "answer": "no",
+    "facts": [
+      "Charlemagne's father was Pepin the Short.",
+      "Pepin the Short's father was Charles Martel.",
+      "Charles Martel led an army against the Umayyads at the Battle of Tours.",
+      "Pepin the Short spent his early years being raised by monks."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0169",
+    "question": "Would Janet Jackson avoid a dish with ham?",
+    "answer": "yes",
+    "facts": [
+      "Janet Jackson follows an Islamic practice. ",
+      "Islamic culture avoids eating pork.",
+      "Ham is made from pork."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0170",
+    "question": "Can giant pandas sell out a Metallica show?",
+    "answer": "no",
+    "facts": [
+      "Metallica concerts are held in large arenas attended by tens of thousands of fans",
+      "The highest estimate for the giant panda population is around 3,000 animals"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0171",
+    "question": "Would multiple average rulers be necessary to measure the length of a giant armadillo?",
+    "answer": "yes",
+    "facts": [
+      "The average ruler is 12 inches or 30 centimeters in length.",
+      "The typical length of the giant armadillo is 75–100 cm (30–39 in), with the tail adding another 50 cm (20 in)."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0172",
+    "question": "Can you only see hippopotamus in Africa?",
+    "answer": "no",
+    "facts": [
+      "The United States has several zoos featuring hippopotamus.",
+      "In the UK, you can see hippopotamus at the Marwell Zoo."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0173",
+    "question": "Was Kane (wrestler) banned from WCW  headquarters city?",
+    "answer": "no",
+    "facts": [
+      "Kane (wrestler is a professional wrestler most known for his WWE tenure.",
+      "Kane wrestled one match in WCW as Bruiser Mastino.",
+      "WWE main rival WCW was headquartered in Atlanta, Georgia.",
+      "Kane competed in an eight-man tag match at Wrestlemania XXVII in the Georgia Dome.",
+      "The Georgia Dome was a stadium in Atlanta Georgia."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0174",
+    "question": "Was Rumi's work serialized in a magazine?",
+    "answer": "no",
+    "facts": [
+      "Rumi was a poet who wrote poetry",
+      "Magazines serialize long-form prose like novels"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0175",
+    "question": "Is Olympia, Washington part of \"Ish river country\"?",
+    "answer": "yes",
+    "facts": [
+      "Poet Robert Sund called the Puget Sound region \"Ish River country\".",
+      "Olympia is in the Puget Sound region."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0176",
+    "question": "Would someone with back pain enjoy picking strawberries?",
+    "answer": "no",
+    "facts": [
+      "Back pain may be worsened by repeated bending at the waist.",
+      "Strawberries grow very close to the ground."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0177",
+    "question": "Was the Euro used in Prussia?",
+    "answer": "no",
+    "facts": [
+      "Prussia was formally abolished in 1947.",
+      "The Euro was introduced in 1992."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0178",
+    "question": "Did Eiffel Tower contribute to a war victory?",
+    "answer": "yes",
+    "facts": [
+      "A radio transmitter located in the Eiffel Tower.",
+      "This transmitter jammed German radio communications.",
+      "This hindrance in German radio communications contributing to the Allied victory at the First Battle of the Marne."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0179",
+    "question": "Has the Indian Ocean garbage patch not completed two full rotations of debris since its discovery?",
+    "answer": "yes",
+    "facts": [
+      "The Indian Ocean garbage patch was discovered in 2010",
+      "The Indian Ocean garbage patch takes 6 years to complete a circulation "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0180",
+    "question": "Do some religions look forward to armageddon?",
+    "answer": "yes",
+    "facts": [
+      "Evangelicals cite that we are living in the beginning of Armageddon and that the rapture will happen soon as a good thing.",
+      "Jehova's Witnesses believe that destroying the present world system and Armageddon is imminent, and that the establishment of God's kingdom over the earth is the only solution for all problems faced by humanity"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0181",
+    "question": "Could a llama birth twice during War in Vietnam (1945-46)?",
+    "answer": "no",
+    "facts": [
+      "The War in Vietnam (1945-46) lasted around 6 months.",
+      "The gestation period for a llama is 11 months."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0182",
+    "question": "Is Rick and Morty considered an anime?",
+    "answer": "no",
+    "facts": [
+      "Anime is a genre of animation that is hand drawn and is of Japanese origin.",
+      "Rick and Morty is an American animated show."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0183",
+    "question": "Does The Hague border multiple bodies of water?",
+    "answer": "no",
+    "facts": [
+      "The Hague is in the Netherlands. ",
+      "The Hague is in the Western part of the Netherlands. ",
+      "The Netherlands borders the North Sea to its west. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0184",
+    "question": "Could a chipmunk fit 100 chocolate chips in his mouth?",
+    "answer": "no",
+    "facts": [
+      "A chipmunk can fit up to two tbsp of food in his mouth.",
+      "There are about 20-25 chocolate chips in a tbsp."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0185",
+    "question": "Would a pescatarian be unable to eat anchovy pizza?",
+    "answer": "no",
+    "facts": [
+      "Pescatarians do not eat red meat or chicken but do eat fish.",
+      "Pescatarians have no restrictions with eating cheese."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0186",
+    "question": "Would Sophist's have hypothetically made good lawyers?",
+    "answer": "yes",
+    "facts": [
+      "Sophist's were teachers in ancient Greece that used rhetoric.",
+      "Lawyers must persuade juries that their side of the case is correct.",
+      "Rhetoric is the ancient art of persuasion that was meant to sway audiences in specific situations."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0187",
+    "question": "Can fish get Tonsillitis?",
+    "answer": "no",
+    "facts": [
+      "Tonsils are a pair of soft tissue masses located at the rear of the throat",
+      "Tonsillitis is the inflammation of tonsils.",
+      "Fish do not have tonsils.",
+      "Tonsils are only found in mammals. "
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0188",
+    "question": "Will Queen Elizabeth be buried in the Pantheon?",
+    "answer": "no",
+    "facts": [
+      "Queen Elizabeth is the reigning monarch of the United Kingdom",
+      "The Pantheon is a resting place for notable French citizens"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0189",
+    "question": "Does coding rely on Boolean algebra characters?",
+    "answer": "yes",
+    "facts": [
+      "Boolean algebra uses the characters of 1 and 0 to represent true and false.",
+      "Binary code is an essential part of computer coding.",
+      "Binary code consists of the characters 0 and 1 which represents strings of value."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0190",
+    "question": "Was Gandalf present at the death of Eomer?",
+    "answer": "no",
+    "facts": [
+      "Eomer died in a skirmish with orcs outside Rohan at the beginning of Two Towers.",
+      "Gandalf had been killed by the Balrog at the end of Fellowship of the Ring.",
+      "Gandalf returns with improved powers later on in Two Towers."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0191",
+    "question": "Would Amy Winehouse's death have been prevented with Narcan?",
+    "answer": "no",
+    "facts": [
+      "Narcan is a medication that save the life of someone overdosing on opiates.",
+      "Amy Winehouse died from alcohol poisoning.",
+      "Narcan cannot work on alcohol overdoses."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0192",
+    "question": "Are those incapable of reproduction incapable of parenthood?",
+    "answer": "no",
+    "facts": [
+      "Surrogates are women who will carry a baby to term for a family seeking to adopt.",
+      "Many children are put into the adoption and foster system every year and are always available to adopt, independent of the parents reproductive status."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0193",
+    "question": "Is Mixed martial arts totally original from Roman Colosseum games?",
+    "answer": "no",
+    "facts": [
+      "Mixed Martial arts in the UFC takes place in an enclosed structure called The Octagon.",
+      "The Roman Colosseum games were fought in enclosed arenas where combatants would fight until the last man was standing.",
+      "Mixed martial arts contests are stopped when one of the combatants is incapacitated.",
+      "The Roman Colosseum was performed in front of crowds that numbered in the tens of thousands.",
+      "Over 56,000 people attended UFC 193."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0194",
+    "question": "Can Herpes simplex virus spread on Venus?",
+    "answer": "no",
+    "facts": [
+      "Herpes simplex virus is a disease that has the structure of a tiny protein cage.",
+      "Venus is the hottest planet and its temperature can reach 900°F.",
+      "Proteins lose their structure and break down at temperatures above 105.8°F."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0195",
+    "question": "Is Bern located east of Paris?",
+    "answer": "yes",
+    "facts": [
+      "Paris is located in France.",
+      "Bern is located in Switzerland.",
+      "Switzerland borders France to the east."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0196",
+    "question": "Would keelhauling be a fair punishment under the Eighth Amendment?",
+    "answer": "no",
+    "facts": [
+      "Keelhauling was a severe punishment whereby the condemned man was dragged beneath the ship’s keel on a rope.",
+      "Keelhauling is considered a form of torture.",
+      "Torture is considered cruel.",
+      "The Eighth Amendment forbids the use of \"cruel and unusual punishment\"."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0197",
+    "question": "Would Franz Ferdinand have survived with armadillo armor?",
+    "answer": "no",
+    "facts": [
+      "Franz Ferdinand was the Archduke of Austria that was assassinated in 1914.",
+      "Franz Ferdinand was assasinated with a FN Model 1910 pistol.",
+      "Armadillos have a hard outer shell made of bony plates called osteoderms.",
+      "The armadillos bony plates can withstand some force, but not a bullet."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0198",
+    "question": "Can you find a railroad engineer on TNT?",
+    "answer": "yes",
+    "facts": [
+      "TNT is a cable television network",
+      "Snowpiercer is a show airing on the TNT network",
+      "Snowpiercer involves people living on an active train in a postapocalyptic future",
+      "A railroad engineer is necessary to keep a train running"
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  },
+  {
+    "id": "strategyqa_0199",
+    "question": "Could Amazon afford The Mona Lisa?",
+    "answer": "yes",
+    "facts": [
+      "Amazon is worth over $1 trillion and had a revenue of $232.887 billion in 2018.",
+      "The Mona Lisa had an insurance valuation equivalent to $650 million as of 2018."
+    ],
+    "dataset": "strategyqa",
+    "domain": "commonsense"
+  }
+]

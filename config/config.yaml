@@ -1,0 +1,134 @@
+# CoT-HMM Configuration File
+# ============================
+
+# Project Settings
+project:
+  name: "CoT-HMM"
+  version: "0.1.0"
+  description: "Chain-of-Thought Plausibility Scorer using Hidden Markov Models"
+
+# Data Settings
+data:
+  # Raw datasets directory
+  raw_dir: "data/raw"
+  # CoT outputs directory
+  cot_dir: "data/cot_outputs"
+  # Tagged sequences directory
+  tagged_dir: "data/tagged"
+  
+  # Benchmark datasets
+  datasets:
+    - name: "gsm8k"
+      type: "math"
+      samples: 200
+      split: "test"
+    - name: "strategyqa"
+      type: "commonsense"
+      samples: 100
+      split: "train"
+    - name: "arc_challenge"
+      type: "logic"
+      samples: 100
+      split: "test"
+
+# Models for CoT Generation
+models:
+  # List of models to evaluate
+  targets:
+    - name: "deepseek-r1-distill"
+      type: "reasoning"
+      source: "huggingface"
+      model_id: "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    
+    - name: "phi-3.5-mini"
+      type: "reasoning"
+      source: "huggingface"
+      model_id: "microsoft/Phi-3.5-mini-instruct"
+    
+    - name: "qwen2.5-coder"
+      type: "general"
+      source: "huggingface"
+      model_id: "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+    
+    - name: "llama-3.2"
+      type: "general"
+      source: "huggingface"
+      model_id: "meta-llama/Llama-3.2-1B-Instruct"
+
+  # Generation settings
+  generation:
+    max_new_tokens: 512
+    temperature: 0.7
+    top_p: 0.9
+    do_sample: true
+
+# Tagging Configuration
+tagging:
+  # Available semantic tags
+  tags:
+    PR: "Problem Restatement"
+    DV: "Define Variable"
+    EQ: "Equation Setup"
+    CA: "Calculation"
+    IN: "Inference"
+    RF: "Recall Fact"
+    VE: "Verification"
+    CO: "Conclusion"
+  
+  # Tagging method: "rule_based" or "ml_based"
+  method: "rule_based"
+  
+  # Step segmentation
+  segmentation:
+    # Split by sentence, newline, or numbered steps
+    method: "sentence"
+    min_step_length: 5  # characters
+
+# HMM Configuration
+hmm:
+  # Number of hidden states (reasoning phases)
+  n_hidden_states: 6
+  
+  # Training parameters
+  training:
+    n_iterations: 100
+    convergence_threshold: 0.01
+    random_state: 42
+  
+  # Scoring thresholds
+  scoring:
+    low_likelihood_threshold: -20.0
+    high_entropy_threshold: 2.0
+  
+  # Model save path
+  model_path: "models/hmm_model.pkl"
+
+# Evaluation Settings
+evaluation:
+  # Metrics to compute
+  metrics:
+    - "log_likelihood"
+    - "transition_entropy"
+    - "anomaly_count"
+    - "path_length"
+  
+  # Correlation analysis
+  correlation:
+    # Correlate HMM scores with answer correctness
+    target: "answer_correct"
+    method: "pearson"  # or "spearman"
+  
+  # Visualization settings
+  visualization:
+    save_path: "experiments/results/figures"
+    format: "png"
+    dpi: 300
+
+# Experiment Tracking
+experiments:
+  output_dir: "experiments/results"
+  log_level: "INFO"
+  save_intermediate: true
+
+# Reproducibility
+seed: 42
