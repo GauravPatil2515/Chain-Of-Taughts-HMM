@@ -7,6 +7,7 @@ import json
 import logging
 import pandas as pd
 import numpy as np
+import argparse
 from pathlib import Path
 from src.hmm.trainer import train_and_save
 from src.hmm.scorer import HMMScorer
@@ -34,7 +35,7 @@ def evaluate_model(model_path, data_path, output_dir):
         
     return roc_auc_score(labels, scores)
 
-def run_ablations(tagged_data_path, output_dir):
+def run_ablations(tagged_data_path, output_dir, train=True):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     
@@ -45,20 +46,22 @@ def run_ablations(tagged_data_path, output_dir):
     for n in [3, 5, 7, 9, 12]:
         model_path = output_dir / f"hmm_states_{n}.pkl"
         try:
-            train_and_save(
-                input_path=tagged_data_path,
-                output_path=str(model_path),
-                n_components=n,
-                correct_only=True
-            )
-            auc = evaluate_model(model_path, tagged_data_path, output_dir)
-            results.append({"type": "states", "value": n, "auc": auc})
-            print(f"States={n} -> AUC={auc:.4f}")
+            if train:
+                train_and_save(
+                    input_path=tagged_data_path,
+                    output_path=str(model_path),
+                    n_components=n,
+                    correct_only=True
+                )
+            
+            if model_path.exists():
+                auc = evaluate_model(model_path, tagged_data_path, output_dir)
+                results.append({"type": "states", "value": n, "auc": auc})
+                print(f"States={n} -> AUC={auc:.4f}")
         except Exception as e:
             print(f"Failed states={n}: {e}")
 
     # 2. Vary Training Size
-    # Need to manually load and slice data for this
     print("\nRunning Training Size Ablation...")
     with open(tagged_data_path, "r", encoding="utf-8") as f:
         full_data = json.load(f)
@@ -68,37 +71,27 @@ def run_ablations(tagged_data_path, output_dir):
     subset_sizes = sorted(list(set([s for s in subset_sizes if s <= len(correct_data)])))
     
     for size in subset_sizes:
-        # Save temporary subset file
-        subset = correct_data[:size]
         subset_path = output_dir / f"temp_subset_{size}.json"
         
-        # We need to save the FULL dataset but mark only 'size' as correct? 
-        # No, trainer filters by correctness. 
-        # But we want to EVALUATE on full dataset.
-        # So we create a new file where only first 'size' correct samples are used for training
-        
-        # Actually easier to hacking trainer or just saving a file with only 'size' correct samples
-        # But trainer expects input file.
-        # Let's save a training file with only the subset of correct samples + ALL incorrect samples ??
-        # The trainer 'correct_only=True' option filters them. 
-        
-        with open(subset_path, "w", encoding="utf-8") as f:
-            json.dump(subset, f) # Trainer will read this
+        if train:
+            subset = correct_data[:size]
+            with open(subset_path, "w", encoding="utf-8") as f:
+                json.dump(subset, f)
         
         model_path = output_dir / f"hmm_size_{size}.pkl"
         try:
-            # Note: We must train on subset, but EVALUATE on full dataset
-            # trainer.py expects mixed data but filters if correct_only=True
-            # If we pass only correct data, it works too.
-            train_and_save(
-                input_path=str(subset_path),
-                output_path=str(model_path),
-                n_components=5, # Fix states
-                correct_only=True # subset only has correct ones anyway
-            )
-            auc = evaluate_model(model_path, tagged_data_path, output_dir)
-            results.append({"type": "size", "value": size, "auc": auc})
-            print(f"Size={size} -> AUC={auc:.4f}")
+            if train:
+                train_and_save(
+                    input_path=str(subset_path),
+                    output_path=str(model_path),
+                    n_components=5, 
+                    correct_only=True 
+                )
+            
+            if model_path.exists():
+                auc = evaluate_model(model_path, tagged_data_path, output_dir)
+                results.append({"type": "size", "value": size, "auc": auc})
+                print(f"Size={size} -> AUC={auc:.4f}")
         except Exception as e:
              print(f"Failed size={size}: {e}")
 
@@ -108,4 +101,8 @@ def run_ablations(tagged_data_path, output_dir):
     print("\nAblations Complete. Saved to ablation_results.csv")
 
 if __name__ == "__main__":
-    run_ablations("data/tagged/phase5_corrected.json", "experiments/results/ablations")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--evaluate-only", action="store_true", help="Skip training, just evaluate")
+    args = parser.parse_args()
+    
+    run_ablations("data/tagged/phase5_corrected.json", "experiments/results/ablations", train=not args.evaluate_only)

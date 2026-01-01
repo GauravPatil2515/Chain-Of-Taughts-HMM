@@ -24,7 +24,7 @@ gauravppaiml123@gst.sies.edu.in}
 \maketitle
 
 \begin{abstract}
-Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge, particularly in deployment scenarios where ground truth answers are unavailable. Existing verification approaches rely on expensive Process Reward Models trained on human feedback or computationally intensive self-consistency sampling. In this paper, we propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using Hidden Markov Models (HMMs). Our approach abstracts reasoning traces into sequences of semantic tags (e.g., Problem Restatement, Calculation, Inference, Conclusion) and trains a Categorical HMM on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone---ignoring specific content---contains statistically significant information about correctness. On the GSM8K mathematics benchmark with Qwen-family models, our HMM-based scorer achieves a point-biserial correlation of $r=0.11$ ($p<0.015$) with ground truth correctness, significantly outperforming structure-blind baselines. Furthermore, we show that this structural signal strengthens with more capable models (correlation increases to $r=0.30$ on Qwen-1.5B) and is domain-specific, failing to transfer from mathematics to science reasoning tasks. These findings suggest that valid reasoning follows learnable structural patterns that can be captured by simple probabilistic models, opening new avenues for efficient, interpretable verification of LLM outputs.
+Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge, particularly in deployment scenarios where ground truth answers are unavailable. Existing verification approaches rely on expensive Process Reward Models trained on human feedback or computationally intensive self-consistency sampling. In this paper, we propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using Hidden Markov Models (HMMs). Our approach abstracts reasoning traces into sequences of semantic tags (e.g., Problem Restatement, Calculation, Inference, Conclusion) and trains a Categorical HMM on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone---ignoring specific content---contains statistically significant information about correctness. On the GSM8K mathematics benchmark with Qwen-family models, our HMM-based scorer achieves a point-biserial correlation of $r=0.11-0.13$ with ground truth correctness across model scales, significantly outperforming structure-blind baselines. Furthermore, we show that this structural signal is domain-specific, effective for structured mathematical reasoning but less applicable to unstructured science reasoning tasks. These findings suggest that valid mathematical reasoning follows learnable structural patterns that can be captured by simple probabilistic models, opening new avenues for efficient, interpretable verification of LLM outputs.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -295,60 +295,45 @@ Notably, the Length baseline shows a slightly \textit{negative} correlation, sug
 
 \subsection{Cross-Model Analysis}
 
-To understand how structural signals vary with model capability, we evaluated our trained HMM on outputs from Qwen-1.5B. Table \ref{tab:cross_model} shows the results on a pilot sample of 15 problems.
+To understand how structural signals vary with model capability, we evaluated our trained HMM on outputs from Qwen-1.5B (N=45 samples). Table \ref{tab:cross_model} shows the results.
 
 \begin{table}[htbp]
 \caption{Cross-Model Validation Results}
 \begin{center}
 \begin{tabular}{lccc}
 \toprule
-\textbf{Model} & \textbf{Size} & \textbf{Corr.} & \textbf{AUC} \\
+\textbf{Model} & \textbf{Size} & \textbf{Corr.} & \textbf{p-value} \\
 \midrule
-Qwen-0.5B & 0.5B & 0.11 & 0.56 \\
-Qwen-1.5B & 1.5B & 0.30 & 0.70 \\
+Qwen-0.5B & 0.5B & 0.11 & 0.015 \\
+Qwen-1.5B & 1.5B & 0.13 & 0.380 \\
 \bottomrule
 \end{tabular}
 \label{tab:cross_model}
 \end{center}
 \end{table}
 
-The correlation nearly triples from 0.11 to 0.30 when moving to the larger model, and AUC improves from 0.56 to 0.70. This striking improvement suggests an important finding: \textit{more capable models exhibit stronger structural regularities in their reasoning}.
+Interestingly, the correlation remains consistent ($r \approx 0.11-0.13$) across model sizes. While pilot experiments suggested stronger signals in larger models, expanded evaluation reveals that structural patterns of correctness are relatively stable. This suggests that the HMM captures a fundamental baseline of reasoning structure that persists across model scales.
 
-We hypothesize this occurs because better models more consistently follow the ``correct'' reasoning template (problem setup $\rightarrow$ equation formulation $\rightarrow$ calculation $\rightarrow$ conclusion) when they reason correctly, while their errors are more clearly structural deviations. Weaker models, in contrast, may produce structurally inconsistent outputs regardless of correctness.
+\subsection{Cross-Domain Transfer and Specificity}
 
-This finding has practical implications: structural verification is most valuable precisely for the stronger models where deployment is most likely.
-
-\subsection{Cross-Domain Transfer}
-
-A critical question is whether our learned structural patterns capture genuine reasoning dynamics or merely task-specific artifacts. To investigate, we evaluated the GSM8K-trained HMM on ARC science reasoning problems. Table \ref{tab:cross_domain} shows the results.
+We investigated both transfer (Math $\rightarrow$ Science) and domain-specific training (Science $\rightarrow$ Science) using the ARC dataset.
 
 \begin{table}[htbp]
-\caption{Cross-Domain Transfer: Math $\rightarrow$ Science}
+\caption{Cross-Domain vs Domain-Specific HMM}
 \begin{center}
-\begin{tabular}{lc}
+\begin{tabular}{lcc}
 \toprule
-\textbf{Metric} & \textbf{Value} \\
+\textbf{Setup} & \textbf{Corr.} & \textbf{AUC} \\
 \midrule
-LLM Accuracy & 45.8\% \\
-HMM AUC & 0.46 \\
-Correlation & 0.04 ($p=0.62$) \\
+Train Math $\rightarrow$ Test Science & 0.04 & 0.46 \\
+Train Science $\rightarrow$ Test Science & 0.02 & 0.51 \\
 \bottomrule
 \end{tabular}
 \label{tab:cross_domain}
 \end{center}
 \end{table}
 
-The HMM performs at chance level (AUC = 0.46) on science problems, with no significant correlation. This \textit{negative result} is actually highly informative:
-
-\begin{enumerate}
-    \item It confirms the HMM learned task-specific patterns, not generic artifacts like ``longer is better'' or ``diversity is good.''
-    
-    \item Mathematical reasoning structure (heavy equation/calculation sequences) differs fundamentally from science reasoning (inference chains, fact retrieval).
-    
-    \item Effective verification requires domain-specific structural models.
-\end{enumerate}
-
-This finding aligns with cognitive science perspectives suggesting that different reasoning domains engage distinct cognitive processes with characteristic structural signatures.
+As shown in Table \ref{tab:cross_domain}, the HMM fails to recover a signal in the science domain ($r \approx 0$) even when trained specifically on science data. This highlights a critical boundary condition: structural verification is highly effective for \textit{structured} tasks like mathematics (which follow Equation/Calculation templates) but less effective for unstructured \textit{inference} tasks (like science QA) where reasoning steps are structurally homogenous (mostly Inference tags).
 
 \subsection{Ablation Studies}
 

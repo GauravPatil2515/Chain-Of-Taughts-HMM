@@ -18,7 +18,7 @@ def plot_score_distributions_comparison(
     figsize: tuple = (14, 10)
 ):
     """Plot score distributions for all methods, separated by correctness."""
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = json.load(f)
     
     df = pd.DataFrame(report["all_scores"])
@@ -74,7 +74,7 @@ def plot_correlation_comparison(
     figsize: tuple = (10, 6)
 ):
     """Bar plot comparing correlation coefficients."""
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = json.load(f)
     
     corr_df = pd.DataFrame(report["correlation_analysis"])
@@ -112,7 +112,7 @@ def plot_metrics_comparison(
     figsize: tuple = (12, 8)
 ):
     """Grouped bar plot for classification metrics."""
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = json.load(f)
     
     clf_df = pd.DataFrame(report["classification_metrics"])
@@ -153,7 +153,7 @@ def plot_method_correlation_heatmap(
     figsize: tuple = (10, 8)
 ):
     """Heatmap showing correlation between different scoring methods."""
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = json.load(f)
     
     rank_corr = pd.DataFrame(report["rank_correlation"])
@@ -195,7 +195,7 @@ def plot_score_scatter(
     figsize: tuple = (8, 8)
 ):
     """Scatter plot comparing two scoring methods."""
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = json.load(f)
     
     df = pd.DataFrame(report["all_scores"])
