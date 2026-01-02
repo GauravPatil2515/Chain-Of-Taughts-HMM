@@ -1,0 +1,879 @@
+[
+  {
+    "question": "Dummy question 0",
+    "cot_raw": "Let x be the number. We have 2x = 10. So x = 5. The total is 5.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "Let x be the number.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "We have 2x = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "So x = 5.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The total is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "CA",
+      "CA",
+      "IN"
+    ],
+    "num_steps": 4
+  },
+  {
+    "question": "Dummy question 1",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 2",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 3",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 4",
+    "cot_raw": "Let x be the number. We have 2x = 10. So x = 5. The total is 5.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "Let x be the number.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "We have 2x = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "So x = 5.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The total is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "CA",
+      "CA",
+      "IN"
+    ],
+    "num_steps": 4
+  },
+  {
+    "question": "Dummy question 5",
+    "cot_raw": "I think maybe it is 5. But wait, 5 is too small. Let me try 6.",
+    "answer_raw": "5",
+    "ground_truth": "5",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "I think maybe it is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "But wait, 5 is too small.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Let me try 6.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "IN",
+      "IN"
+    ],
+    "num_steps": 3
+  },
+  {
+    "question": "Dummy question 6",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 7",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 8",
+    "cot_raw": "Let x be the number. We have 2x = 10. So x = 5. The total is 5.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "Let x be the number.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "We have 2x = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "So x = 5.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The total is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "CA",
+      "CA",
+      "IN"
+    ],
+    "num_steps": 4
+  },
+  {
+    "question": "Dummy question 9",
+    "cot_raw": "Let x be the number. We have 2x = 10. So x = 5. The total is 5.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "Let x be the number.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "We have 2x = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "So x = 5.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The total is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "CA",
+      "CA",
+      "IN"
+    ],
+    "num_steps": 4
+  },
+  {
+    "question": "Dummy question 10",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 11",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 12",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 13",
+    "cot_raw": "I need to find the total sum. First, I have 5 apples. Then I add 3 apples. So, 5 + 3 = 8. The answer is 8.",
+    "answer_raw": "8",
+    "ground_truth": "8",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "I need to find the total sum.",
+        "tag": "PR",
+        "confidence": 0.7,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "First, I have 5 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Then I add 3 apples.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "So, 5 + 3 = 8.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The answer is 8.",
+        "tag": "CO",
+        "confidence": 0.6,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 14",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 15",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 16",
+    "cot_raw": "I think maybe it is 5. But wait, 5 is too small. Let me try 6.",
+    "answer_raw": "5",
+    "ground_truth": "5",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "I think maybe it is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "But wait, 5 is too small.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "Let me try 6.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "IN",
+      "IN"
+    ],
+    "num_steps": 3
+  },
+  {
+    "question": "Dummy question 17",
+    "cot_raw": "Let x be the number. We have 2x = 10. So x = 5. The total is 5.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "Let x be the number.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      },
+      {
+        "text": "We have 2x = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "So x = 5.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "The total is 5.",
+        "tag": "IN",
+        "confidence": 0.3,
+        "description": "Logical inference"
+      }
+    ],
+    "tag_sequence": [
+      "IN",
+      "CA",
+      "CA",
+      "IN"
+    ],
+    "num_steps": 4
+  },
+  {
+    "question": "Dummy question 18",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": false,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  },
+  {
+    "question": "Dummy question 19",
+    "cot_raw": "The problem asks for the velocity. We know v = d / t. Given d = 100, t = 10. Thus, 100 / 10 = 10. Final Answer: 10 m/s.",
+    "answer_raw": "10",
+    "ground_truth": "10",
+    "is_correct": true,
+    "steps": [
+      {
+        "text": "The problem asks for the velocity.",
+        "tag": "PR",
+        "confidence": 0.6,
+        "description": "Restating the problem"
+      },
+      {
+        "text": "We know v = d / t.",
+        "tag": "EQ",
+        "confidence": 0.6,
+        "description": "Setting up equation"
+      },
+      {
+        "text": "Given d = 100, t = 10.",
+        "tag": "CA",
+        "confidence": 0.6,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Thus, 100 / 10 = 10.",
+        "tag": "CA",
+        "confidence": 0.7,
+        "description": "Arithmetic computation"
+      },
+      {
+        "text": "Final Answer: 10 m/s.",
+        "tag": "CO",
+        "confidence": 0.7,
+        "description": "Final answer or conclusion"
+      }
+    ],
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "num_steps": 5
+  }
+]

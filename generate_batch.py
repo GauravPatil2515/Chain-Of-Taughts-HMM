@@ -112,9 +112,9 @@ def generate_batch(
     tokenizer = AutoTokenizer.from_pretrained(MODELS[model_name])
     model = AutoModelForCausalLM.from_pretrained(
         MODELS[model_name],
-        torch_dtype=torch.float32,
-        device_map="cpu",
-        trust_remote_code=True
+        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+        device_map="auto",
+        trust_remote_code=True,
     )
     
     generator = pipeline(
