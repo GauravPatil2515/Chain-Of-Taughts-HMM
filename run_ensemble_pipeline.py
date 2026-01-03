@@ -7,6 +7,7 @@ Pipeline to run Ensemble HMM experiment.
 """
 
 import os
+import json
 import argparse
 import sys
 from pathlib import Path
@@ -71,10 +72,32 @@ def run_pipeline(input_file, output_dir, model_name="ensemble"):
     scores = []
     labels = []
     
-    for seq, is_correct in zip(sequences, correctness):
-        res = ensemble.score(seq)
+    corrected_data = [] # We need to reload or keep valid objects mapped to sequences.
+    # Actually, load_tagged_data only returns lists. We need the original dicts to save results.
+    with open(corrected_file, "r", encoding="utf-8") as f:
+         corrected_data = json.load(f)
+
+    for i, item in enumerate(corrected_data):
+        # We assume order is preserved, which load_tagged_data does (it iterates sequentially).
+        # We need to filter exactly as load_tagged_data does to match indices?
+        # load_tagged_data filters len < 2.
+        tag_seq = item.get("tag_sequence", [])
+        if len(tag_seq) < 2:
+             item['hmm_score'] = {'ensemble_ll': float('-inf')}
+             scores.append(float('-inf'))
+             labels.append(1 if item.get('is_correct') else 0)
+             continue
+
+        res = ensemble.score(tag_seq)
+        item['hmm_score'] = res
         scores.append(res['ensemble_ll'])
-        labels.append(1 if is_correct else 0)
+        labels.append(1 if item.get('is_correct') else 0)
+
+    # Save final results
+    final_file = str(Path(output_dir) / f"{Path(input_file).stem}_final.json")
+    with open(final_file, "w", encoding="utf-8") as f:
+        json.dump(corrected_data, f, indent=2)
+    print(f"Saved scored results to {final_file}")
         
     # Calculate Correlation using provided baseline logic or simple scipy
     from scipy.stats import pointbiserialr
