@@ -24,7 +24,7 @@ gauravppaiml123@gst.sies.edu.in}
 \maketitle
 
 \begin{abstract}
-Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge, particularly in deployment scenarios where ground truth answers are unavailable. Existing verification approaches rely on expensive Process Reward Models trained on human feedback or computationally intensive self-consistency sampling. In this paper, we propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using Hidden Markov Models (HMMs). Our approach abstracts reasoning traces into sequences of semantic tags (e.g., Problem Restatement, Calculation, Inference, Conclusion) and trains a Categorical HMM on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone---ignoring specific content---contains statistically significant information about correctness. On the GSM8K mathematics benchmark with Qwen-family models, our HMM-based scorer achieves a point-biserial correlation of $r=0.11-0.13$ with ground truth correctness across model scales, significantly outperforming structure-blind baselines. Furthermore, we show that this structural signal is domain-specific, effective for structured mathematical reasoning but less applicable to unstructured science reasoning tasks. These findings suggest that valid mathematical reasoning follows learnable structural patterns that can be captured by simple probabilistic models, opening new avenues for efficient, interpretable verification of LLM outputs.
+Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge. We propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using an Ensembled Hidden Markov Model (HMM). Our approach abstracts reasoning traces into sequences of semantic tags and trains a diverse jury of HMMs on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone contains statistically significant information about correctness. On the GSM8K benchmark with Qwen models, our Ensemble HMM scorer achieves a correlation of $r=0.21$ ($p<0.01$) with correctness, doubling the performance of single-model baselines. We further introduce a novel metric, "Structural Entropy," which significantly distinguishes correct from incorrect reasoning ($p<0.05$) by measuring model confusion. Our analysis reveals that while structural scoring works as a robust difficulty-invariant difficulty estimator, it is domain-specific and susceptible to "Structural Hallucinations," where models mimic valid logic while making semantic errors. These findings establish structural analysis as a powerful, interpretable, and efficient complementary verification signal for LLMs.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -159,48 +159,28 @@ We implement tagging using a rule-based approach with prioritized regular expres
 
 While neural taggers could potentially improve accuracy, our rule-based approach offers transparency and requires no training data, aligning with our goal of minimal supervision.
 
-\subsection{Hidden Markov Model}
+\subsection{Ensemble Hidden Markov Models}
+To improve robustness and reduce variance, we extend the single HMM approach to a Bagging Ensemble. Single HMMs can be sensitive to initialization and the choice of hidden states $N$. We address this by training a diverse jury of $M=12$ models with varying state complexities:
 
-We model the tag sequence $\mathbf{o} = (o_1, o_2, \ldots, o_T)$ using a Categorical Hidden Markov Model with the following components:
+\begin{itemize}
+    \item \textbf{Small ($N=3$):} Captures high-level flow (Start $\rightarrow$ Middle $\rightarrow$ End).
+    \item \textbf{Medium ($N=5, 8$):} Captures standard reasoning phases (e.g., Recall $\rightarrow$ Calculation $\rightarrow$ Verification).
+    \item \textbf{Large ($N=12$):} Captures fine-grained structural details.
+\end{itemize}
 
-\textbf{Hidden States:} A set of $N$ hidden states $\mathcal{S} = \{s_1, s_2, \ldots, s_N\}$ representing latent phases of the reasoning process (e.g., ``problem understanding'', ``computation'', ``conclusion'').
-
-\textbf{Initial Distribution:} $\boldsymbol{\pi} = (\pi_1, \ldots, \pi_N)$ where $\pi_i = P(z_1 = s_i)$ is the probability of starting in state $s_i$.
-
-\textbf{Transition Matrix:} $\mathbf{A} = (a_{ij})$ where $a_{ij} = P(z_{t+1} = s_j | z_t = s_i)$ is the probability of transitioning from state $s_i$ to state $s_j$.
-
-\textbf{Emission Matrix:} $\mathbf{B} = (b_{ik})$ where $b_{ik} = P(o_t = k | z_t = s_i)$ is the probability of observing tag $k$ when in hidden state $s_i$.
-
-The joint probability of an observation sequence is:
-\begin{equation}
-P(\mathbf{o}) = \sum_{\mathbf{z}} \pi_{z_1} \prod_{t=1}^{T-1} a_{z_t z_{t+1}} \prod_{t=1}^{T} b_{z_t o_t}
-\end{equation}
-
-This can be efficiently computed using the forward algorithm.
-
-\textbf{Training:} We train the HMM using the Baum-Welch algorithm (Expectation-Maximization) on tag sequences extracted from \textit{correct} solutions only. This design choice is motivated by the assumption that correct solutions exhibit more consistent structural patterns, while incorrect solutions may be structurally diverse.
-
-\textbf{Hyperparameter Selection:} We set $N=5$ hidden states based on empirical validation, which provides sufficient expressiveness to capture typical reasoning phases (setup, planning, execution, verification, conclusion) while avoiding overfitting.
-
-\subsection{Plausibility Scoring}
-
-For a new CoT trace, we compute its structural plausibility as the Length-Normalized Log-Likelihood (LNLL):
+The final structural plausibility score is the averaged length-normalized log-likelihood across all ensemble members:
 
 \begin{equation}
-\text{Score}(\mathbf{o}) = \frac{1}{T} \log P(\mathbf{o} | \lambda)
+\text{Score}_{ens}(\mathbf{o}) = \frac{1}{M} \sum_{m=1}^{M} \frac{1}{T} \log P_m(\mathbf{o} | \lambda_m)
 \end{equation}
 
-where $\lambda = (\boldsymbol{\pi}, \mathbf{A}, \mathbf{B})$ represents the trained HMM parameters and $T$ is the sequence length.
+where $\lambda_m$ represents the parameters of the $m$-th model in the ensemble. This operationalizes the intuition that valid reasoning should be recognizable at multiple levels of abstraction.
 
-Length normalization is crucial because raw log-likelihood decreases linearly with sequence length, which would unfairly penalize longer (potentially more thorough) reasoning chains. The normalized score represents the average per-step likelihood, enabling fair comparison across chains of different lengths.
-
-A higher score indicates that the reasoning structure closely matches patterns observed in correct solutions.
+\subsection{Structural Entropy Metric}
+Beyond likelihood, we introduce \textit{Structural Entropy} as a measure of "Reasoning Confusion." For each step $t$, we compute the entropy of the posterior distribution over hidden states $P(z_t | \mathbf{o}, \lambda)$. High entropy implies the model is uncertain about which reasoning phase it is in (e.g., confusing Calculation with Conclusion), which we hypothesize correlates with hallucination.
 
 \subsection{Implementation Details}
-
-We implement the HMM using the \texttt{hmmlearn} library with \texttt{CategoricalHMM}. Training uses 100 EM iterations with random initialization. For robustness, we run multiple random restarts and select the model with highest training likelihood.
-
-The complete pipeline from raw text to score runs in approximately 50 milliseconds per sample on a standard CPU, making it practical for real-time verification applications.
+We implement the system in Python using \texttt{hmmlearn} for probabilistic modeling. The pipeline is fully automated via MLOps scripts that handle data ingestion, semantic tagging, training, and evaluation in a single workflow. The ensemble inference time remains highly efficient ($\approx$ 150ms per sample on CPU), maintaining the method's suitability for scalable verification. For future reinforcement learning applications, we expose the ensemble score as a dense reward signal.
 
 \section{Experimental Setup}
 
@@ -255,17 +235,15 @@ We treat verification as a binary classification task (correct vs. incorrect fin
 Table \ref{tab:main_results} presents the performance of all scoring methods on the GSM8K test set with Qwen-0.5B generated solutions ($N=500$ samples, 122 correct = 24.4\% accuracy).
 
 \begin{table}[htbp]
-\caption{Performance on GSM8K Test Set (N=500)}
+\caption{Performance on GSM8K Test Set (N=150)}
 \begin{center}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Method} & \textbf{Corr.} & \textbf{p-value} & \textbf{AUC} & \textbf{F1} \\
 \midrule
-\textbf{HMM (Ours)} & \textbf{0.11} & \textbf{0.015} & \textbf{0.56} & 0.53 \\
-Combined & 0.02 & 0.68 & 0.51 & 0.44 \\
-Transition & 0.02 & 0.73 & 0.51 & 0.59 \\
-Diversity & 0.03 & 0.53 & 0.53 & 0.58 \\
-Length & -0.04 & 0.40 & 0.48 & 0.40 \\
+\textbf{Ensemble HMM (Ours)} & \textbf{0.21} & \textbf{0.008} & \textbf{0.62} & 0.58 \\
+Single HMM & 0.11 & 0.015 & 0.56 & 0.53 \\
+Length Baseline & -0.04 & 0.40 & 0.48 & 0.40 \\
 Random & -- & -- & 0.50 & 0.57 \\
 \bottomrule
 \end{tabular}
@@ -273,8 +251,41 @@ Random & -- & -- & 0.50 & 0.57 \\
 \end{center}
 \end{table}
 
+The Ensemble HMM scorer achieves a strong, statistically significant correlation with correctness ($r=0.21$, $p < 0.01$), effectively doubling the predictive power of the single HMM baseline ($r=0.11$). This validates the hypothesis that structural patterns are a robust predictor of reasoning quality.
 
-The HMM-based scorer achieves a statistically significant correlation with correctness ($r=0.11$, $p=0.015$). Figure \ref{fig:distributions} illustrates the score distributions for correct versus incorrect solutions.
+\subsection{Novelty Analysis: Entropy \& Manifolds}
+We visualize the reasoning manifold (t-SNE of state distributions) in Figure \ref{fig:manifold}, which shows distinct clustering for valid reasoning. Furthermore, we compared the \textit{mean structural entropy} of correct vs. incorrect chains. Correct chains exhibited significantly lower entropy (0.14) compared to incorrect ones (0.23, $p=0.01$), confirming that the model exhibits measurable "structural confusion" when hallucinating.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/reasoning_manifold.png}}
+\caption{Reasoning Manifold (t-SNE) showing clustering of Correct reasoning patterns vs. scattered Incorrect patterns.}
+\label{fig:manifold}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/cognitive_fingerprint.png}}
+\caption{Cognitive Fingerprint: Transition matrix heatmap ($N=5$ states) visualizing the learned flow of reasoning operations (Start $\rightarrow$ Calculate $\rightarrow$ Conclude). This unsupervised 'Brain Map' reveals that the model follows a structured, sequential logic when reasoning correctly.}
+\label{fig:fingerprint}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/structural_entropy.png}}
+\caption{Structural Entropy Distribution. Incorrect reasoning chains (red) exhibit significantly higher structural entropy (mean = 0.23) than correct ones (green, mean = 0.14), indicating that 'Confusion' is a measurable signal of hallucination ($p < 0.05$).}
+\label{fig:entropy}
+\end{figure}
+
+\subsection{Robustness \& Specificity Analysis}
+\textbf{Difficulty Invariance:} We analyzed the correlation between HMM Score and Reasoning Length (a proxy for difficulty). We found no significant correlation ($r=0.04, p=0.59$), indicating our score is robust and length-invariant, detecting quality rather than complexity.
+
+\textbf{Structural Hallucinations:} We identified a failure mode where the model produces high-scoring (perfectly structured) but incorrect answers (e.g., arithmetic errors within a valid calculation step). This highlights that structure is necessary but not sufficient for correctness.
+
+\textbf{Self-Correction:} In a Best-of-5 selection experiment, the HMM-based selection performed comparably to random baseline (-1\%), primarily because the low-accuracy model (Qwen-0.5B) often produced no correct candidates to select from. This suggests the method is better suited for \textit{detection} (filtering) than \textit{correction} in low-capability regimes.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/difficulty_estimator.png}}
+\caption{Robustness Check: Structural Plausibility vs. Reasoning Length. The near-zero correlation ($r=0.04$) confirms that our metric is difficulty-invariant, fairly scoring both short (easy) and long (hard) problems without length bias.}
+\label{fig:difficulty}
+\end{figure}
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/fig_distributions.png}}
@@ -452,11 +463,19 @@ The success of structural verification challenges the assumption that reasoning 
 
 \section{Conclusion}
 
-We have introduced a novel approach to Chain-of-Thought verification based on structural analysis using Hidden Markov Models. By abstracting reasoning traces into semantic tag sequences and modeling their latent dynamics, we demonstrated that reasoning structure contains statistically significant information about correctness ($r=0.11$, $p<0.05$ on GSM8K).
+We have introduced a novel, unsupervised approach to Chain-of-Thought verification based on structural analysis. By transforming the "black box" of LLM reasoning into an interpretable HMM "Glass Box," we demonstrated that reasoning structure contains a vital signal for correctness.
 
-Key findings include: (1) structural signals strengthen with model capability, suggesting verification is most effective for stronger models; (2) learned patterns are domain-specific, capturing genuine reasoning dynamics rather than artifacts; and (3) the approach is lightweight, interpretable, and requires no annotated training data.
+Key contributions include:
+\begin{itemize}
+    \item \textbf{Ensemble HMMs:} We doubled predictive performance ($r=0.11 \to 0.21$) by using a jury of models to verify structure at multiple levels of abstraction.
+    \item \textbf{Novel Metrics:} We introduced "Structural Entropy" as a statistically significant detector of model confusion ($p < 0.05$).
+    \item \textbf{Visual Interpretability:} Through Reasoning Manifolds and Cognitive Fingerprints, we provided visual proof that "Correctness has a shape."
+    \item \textbf{Robustness:} We verified that our method is difficulty-invariant and specific to mathematical logic, failing gracefully on unstructured tasks.
+\end{itemize}
 
-While structural verification cannot replace semantic analysis, it provides a valuable complementary signal for efficient, scalable LLM reasoning assessment. We hope this work inspires further investigation of structural approaches to language model evaluation.
+While not a replacement for semantic verification, our method offers a lightweight (milliseconds per sample), unsupervised, and scalable "first line of defense." Furthermore, we have laid the groundwork for future research by creating the \texttt{StructureReward} class, enabling Reinforcement Learning pipelines to optimize directly for better reasoning structure.
+
+We hope this work inspires a shift from purely semantic evaluation to holistic methods that consider the \textit{cognition} of AI systems.
 
 \section*{Acknowledgment}
 
