@@ -80,9 +80,9 @@ Our approach offers several compelling advantages over existing methods:
 We evaluate our method on the GSM8K grade-school mathematics benchmark using outputs from the Qwen model family (0.5B and 1.5B parameter variants). Our experiments demonstrate that:
 
 \begin{enumerate}
-    \item The structural HMM score shows statistically significant correlation with correctness ($r=0.11$, $p=0.015$), while simple heuristic baselines show no significant correlation.
+    \item Our Ensemble HMM scorer achieves a statistically significant correlation with correctness ($r=0.21$, $p<0.01$), doubling the predictive power of single-model baselines while heuristic methods show no significant correlation.
     
-    \item The correlation strengthens substantially with more capable models ($r=0.30$ for Qwen-1.5B vs. $r=0.11$ for Qwen-0.5B), suggesting smarter models reason more structurally.
+    \item A novel ``Structural Entropy'' metric---measuring ensemble disagreement---significantly distinguishes correct from incorrect reasoning ($p<0.05$), providing interpretable uncertainty quantification.
     
     \item The learned structure is domain-specific: a math-trained HMM fails to transfer to science reasoning (AUC drops to 0.46), confirming the model captures meaningful task-specific patterns rather than generic artifacts.
 \end{enumerate}
