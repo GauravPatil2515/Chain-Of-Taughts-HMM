@@ -14,13 +14,26 @@
 
 \title{Unsupervised Plausibility Scoring of Chain-of-Thought Reasoning via Structural Hidden Markov Models}
 
-\author{\IEEEauthorblockN{Gaurav Patil\IEEEauthorrefmark{1}, Parth Parmar\IEEEauthorrefmark{2} and Suhail Shaikh\IEEEauthorrefmark{1}}
-\IEEEauthorblockA{\IEEEauthorrefmark{1}\textit{Dept. of Artificial Intelligence \& Machine Learning} \\
-\textit{SIES Graduate School of Technology}, Mumbai, India \\
-gauravppaiml123@gst.sies.edu.in, suhailmsaiml123@gst.sies.edu.in}
-\IEEEauthorblockA{\IEEEauthorrefmark{2}\textit{Dept. of Artificial Intelligence \& Machine Learning} \\
-\textit{ATLAS SkillTech University}, Mumbai, India \\
+\author{\IEEEauthorblockN{Gaurav Patil}
+\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
+\textit{\& Machine Learning} \\
+\textit{SIES Graduate School of Technology}\\
+Mumbai, India \\
+gauravppaiml123@gst.sies.edu.in}
+\and
+\IEEEauthorblockN{Parth Parmar}
+\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
+\textit{\& Machine Learning} \\
+\textit{ATLAS SkillTech University}\\
+Mumbai, India \\
 parth.parmar.btech2028@atlasskilltech.university}
+\and
+\IEEEauthorblockN{Suhail Shaikh}
+\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
+\textit{\& Machine Learning} \\
+\textit{SIES Graduate School of Technology}\\
+Mumbai, India \\
+suhailmsaiml123@gst.sies.edu.in}
 }
 
 \maketitle
@@ -112,6 +125,12 @@ Our work differs fundamentally by focusing on structural patterns rather than se
 Hidden Markov Models have a rich history in natural language processing, particularly for sequence labeling tasks such as part-of-speech tagging \cite{rabiner1989tutorial}, named entity recognition, and speech recognition. While largely superseded by neural approaches for these tasks, HMMs remain valuable for their interpretability, computational efficiency, and ability to learn from limited data.
 
 Recent work has explored combining HMMs with neural representations for structured prediction \cite{wiseman2018learning}. Our application represents a novel use case: modeling the latent structure of reasoning processes rather than linguistic structure.
+
+\subsection{Structural Analysis of CoT Reasoning}
+
+Recent work has begun modeling CoT reasoning dynamics through structural abstractions. Jiang et al.\ \cite{lcot2tree2025} introduce LCoT2Tree, which converts long reasoning chains into hierarchical tree representations to identify patterns like exploration, backtracking, and over-branching that predict success or failure. Concurrently, the EIRL framework \cite{eirl2026} uses Hidden Markov Models to jointly model explicit reasoning role transitions and implicit layer-wise computation allocation. While these methods focus on interpretability and intervention, our approach uniquely applies ensemble HMMs for \textit{plausibility scoring}, providing a lightweight verification signal.
+
+On the scoring side, PiCSAR \cite{picsar2025} leverages joint log-likelihood of reasoning chains and answers as a content-based confidence measure. In contrast, our method operates purely on structural tag sequences, ignoring token content, yet achieves significant correlation with correctness. This suggests that structure and content provide complementary verification signals.
 
 \subsection{Evaluating LLM Outputs}
 
