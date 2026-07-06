@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.tagging.rule_based_tagger import tag_cot_file as tag_file
 from src.hmm.ensemble import EnsembleHMM
@@ -38,10 +38,10 @@ def run_pipeline(input_file, output_dir, model_name="ensemble"):
         # Assuming verify_correctness logic is available or we use the existing script logic
         # For now, we reuse the existing script's main logic or call it via subprocess if import is hard
         # But let's try to import the function if possible. 
-        # Looking at file list, 'post_process_correctness.py' is in root.
+        # Looking at file list, 'post_process_correctness.py' is in scripts/analysis.
         # I imported process_file from it above (assuming I can modify it or it exists)
         # If not, I'll use os.system as a fallback
-        ret = os.system(f"python post_process_correctness.py --input {tagged_file} --output {corrected_file}")
+        ret = os.system(f"python scripts/analysis/post_process_correctness.py --input {tagged_file} --output {corrected_file}")
         if ret != 0:
             raise Exception("Correctness check failed")
     except Exception as e:

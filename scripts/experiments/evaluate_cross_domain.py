@@ -12,13 +12,11 @@ from pathlib import Path
 from scipy.stats import pointbiserialr
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.tagging.rule_based_tagger import tag_cot_file
 from src.hmm.ensemble import EnsembleHMM
-# Import correctness logic. Since it's a script in root, we might need to load it dynamically or just copy logic.
-# Easier to call it via subprocess if import is tricky, but let's try import first via sys.path
-import post_process_correctness as ppc
+from scripts.analysis import post_process_correctness as ppc
 
 def evaluate_cross_domain(input_file, model_dir, output_dir, dataset_name):
     print(f"🚀 Starting Cross-Domain Evaluation")

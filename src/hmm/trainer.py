@@ -207,3 +207,45 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+class EnsembleHMMTrainer:
+    """Trainer for HMM ensembles."""
+    
+    def __init__(
+        self,
+        n_components: int = 5,
+        n_ensemble: int = 10,
+        n_iter: int = 100,
+        random_state: int = 42
+    ):
+        self.n_components = n_components
+        self.n_ensemble = n_ensemble
+        self.n_iter = n_iter
+        self.random_state = random_state
+        self.ensemble = []
+        
+    def fit(self, sequences: List[List[str]]):
+        """Train n_ensemble models on sequences."""
+        self.ensemble = []
+        for i in range(self.n_ensemble):
+            seed = self.random_state + i if self.random_state is not None else None
+            model = train_hmm(
+                sequences,
+                n_components=self.n_components,
+                n_iter=self.n_iter,
+                random_state=seed
+            )
+            self.ensemble.append(model)
+            
+    def save(self, file_path: str):
+        """Save ensemble to file."""
+        import joblib
+        joblib.dump(self.ensemble, file_path)
+        
+    @classmethod
+    def load(cls, file_path: str) -> List:
+        """Load ensemble from file."""
+        import joblib
+        return joblib.load(file_path)
+

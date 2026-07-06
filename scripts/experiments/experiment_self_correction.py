@@ -14,11 +14,11 @@ import pandas as pd
 from pathlib import Path
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.tagging.rule_based_tagger import tag_cot_file
 from src.hmm.ensemble import EnsembleHMM
-import post_process_correctness as ppc
+from scripts.analysis import post_process_correctness as ppc
 
 # Re-use generate_batch logic directly or assume pre-generated data
 # For this script, we'll assume we pass in a file that has Multiple Samples per Question.
@@ -48,7 +48,7 @@ def run_self_correction(dataset_path, model_dir, output_dir, samples_per_questio
             temp_out = Path(output_dir) / f"temp_gen_{k}.json"
             print(f"  - Generating batch {k+1}/{samples_per_question} (Seed {seed})...")
             
-            cmd = f"python generate_batch.py --dataset {dataset_path} --dataset-name gsm8k --domain math --model qwen-0.5b --output {temp_out} --max-samples {num_questions} --seed {seed}"
+            cmd = f"python src/data_collection/generate_batch.py --dataset {dataset_path} --dataset-name gsm8k --domain math --model qwen-0.5b --output {temp_out} --max-samples {num_questions} --seed {seed}"
             ret = os.system(cmd)
             if ret != 0:
                 print("Generation failed.")

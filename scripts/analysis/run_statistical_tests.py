@@ -12,7 +12,7 @@ import sys
 import os
 
 # Add project root
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.evaluation.statistical_tests import (
     cohens_d, bootstrap_ci, paired_t_test,

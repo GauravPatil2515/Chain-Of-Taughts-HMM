@@ -13,7 +13,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from src.tagging.rule_based_tagger import tag_cot_file
-from src.data_collection.gsm8k_loader import load_gsm8k
 from src.hmm.trainer import EnsembleHMMTrainer
 from src.hmm.scorer import EnsembleScorer
 from src.evaluation.baseline_evaluation import evaluate_baselines, compare_methods

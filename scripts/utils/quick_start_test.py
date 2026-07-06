@@ -60,9 +60,9 @@ def main():
     """)
     
     # Check if in correct directory
-    if not os.path.exists("generate_batch.py"):
+    if not os.path.exists("run_experiments.py"):
         print("❌ Error: Please run from project root directory")
-        print("   Expected files: generate_batch.py, run_baseline_eval.py")
+        print("   Expected files: run_experiments.py, src/data_collection/generate_batch.py")
         return 1
     
     print("✅ Running from correct directory")
@@ -71,7 +71,7 @@ def main():
     test_output = "data/cot_outputs/test_quick_start.json"
     
     if not run_command([
-        sys.executable, "generate_batch.py",
+        sys.executable, "src/data_collection/generate_batch.py",
         "--dataset", "data/raw/gsm8k.json",
         "--dataset-name", "gsm8k",
         "--domain", "math",
@@ -88,7 +88,7 @@ def main():
     
     # Step 2: Check data quality
     if not run_command([
-        sys.executable, "scripts/check_data_quality.py",
+        sys.executable, "scripts/experiments/check_data_quality.py",
         test_output
     ], "Step 2: Data quality check"):
         print("⚠️ Warning: Quality check found issues (may be normal for small test)")
@@ -134,7 +134,7 @@ def main():
     # Step 6: Run baseline eval
     if os.path.exists(scored_output):
         run_command([
-            sys.executable, "run_baseline_eval.py",
+            sys.executable, "scripts/experiments/run_baseline_eval.py",
             "--data", scored_output,
             "--model", model_output,
             "--output", "experiments/results/test_baseline"

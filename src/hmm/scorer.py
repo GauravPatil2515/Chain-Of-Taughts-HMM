@@ -240,3 +240,56 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+class EnsembleScorer:
+    """Score sequences using an ensemble of HMM models."""
+    
+    def __init__(self, models: List):
+        self.models = models
+        self.n_models = len(models)
+        
+    def score(self, tag_sequence: List[str]) -> float:
+        """Compute the average log-likelihood of the sequence across all models."""
+        if len(tag_sequence) < 1:
+            return float('-inf')
+            
+        scores = []
+        for model in self.models:
+            try:
+                # Convert tag sequence to integers using the mapping
+                encoded = [TAG_TO_ID.get(tag, TAG_TO_ID["IN"]) for tag in tag_sequence]
+                X = np.array(encoded).reshape(-1, 1)
+                ll = model.score(X)
+                # length normalization
+                scores.append(ll / len(tag_sequence))
+            except Exception:
+                pass
+                
+        if not scores:
+            return float('-inf')
+            
+        return float(np.mean(scores))
+        
+    def score_batch(self, sequences: List[List[str]]) -> np.ndarray:
+        """Score a batch of sequences."""
+        return np.array([self.score(seq) for seq in sequences])
+        
+    def save(self, file_path: str):
+        """Save models to file."""
+        import joblib
+        joblib.dump(self.models, file_path)
+        
+    @classmethod
+    def load(cls, file_path: str) -> 'EnsembleScorer':
+        """Load models from file and return EnsembleScorer."""
+        import joblib
+        models = joblib.load(file_path)
+        return cls(models)
+
+
+def load_ensemble(file_path: str) -> List:
+    """Helper function to load ensemble models."""
+    import joblib
+    return joblib.load(file_path)
+

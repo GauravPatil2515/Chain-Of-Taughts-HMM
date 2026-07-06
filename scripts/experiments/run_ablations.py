@@ -5,10 +5,15 @@ Vary HMM components and training data size.
 
 import json
 import logging
+import sys
 import pandas as pd
 import numpy as np
 import argparse
 from pathlib import Path
+
+# Add project root to path
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
 from src.hmm.trainer import train_and_save
 from src.hmm.scorer import HMMScorer
 from sklearn.metrics import roc_auc_score

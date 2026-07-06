@@ -9,7 +9,7 @@ import argparse
 from pathlib import Path
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.evaluation.baseline_evaluation import generate_comparison_report, print_summary
 from src.evaluation.baseline_plots import generate_all_comparison_plots

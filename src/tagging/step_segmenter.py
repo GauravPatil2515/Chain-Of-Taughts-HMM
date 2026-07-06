@@ -53,7 +53,7 @@ def segment_cot(text: str, method: str = "auto") -> List[str]:
     elif method == "auto":
         # Auto-detect best method
         # Check for numbered patterns
-        if re.search(r'(?:^|\n)\s*\d+[.):]', text):
+        if re.search(r'(?:^|\n)\s*(?:\d+[.):]|Step\s+\d+[.:])', text, flags=re.IGNORECASE):
             steps = segment_by_numbered_steps(text)
             if len(steps) >= 2:
                 return steps
@@ -72,8 +72,8 @@ def segment_cot(text: str, method: str = "auto") -> List[str]:
 
 def clean_step(step: str) -> str:
     """Clean and normalize a step string."""
-    # Remove leading numbers/bullets
-    step = re.sub(r'^[\d\-\*•]+[.):\s]*', '', step)
+    # Remove leading Step numbers or numbers/bullets
+    step = re.sub(r'^(?:Step\s+\d+[:\.]\s*|[\d\-\*•]+[.):\s]*)', '', step, flags=re.IGNORECASE)
     # Remove extra whitespace
     step = ' '.join(step.split())
     return step.strip()

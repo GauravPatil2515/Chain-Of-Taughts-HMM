@@ -21,7 +21,7 @@ import os
 import sys
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.hmm.ensemble import EnsembleHMM, TAG_TO_ID
 from src.hmm.trainer import TAGS

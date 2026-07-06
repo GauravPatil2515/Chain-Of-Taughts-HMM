@@ -9,7 +9,7 @@ import logging
 from pathlib import Path
 
 # Add project root to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.tagging.rule_based_tagger import tag_cot_file
 from src.hmm.trainer import train_and_save

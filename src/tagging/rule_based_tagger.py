@@ -18,23 +18,22 @@ TAG_PATTERNS = {
     "CO": {  # Conclusion - highest priority
         "description": "Final answer or conclusion",
         "patterns": [
-            r"(?:the\s+)?(?:final\s+)?answer\s+is",
+            r"(?:the\s+)?(?:final\s+)?answer\s+is(?!\s+(?:correct|wrong|right|incorrect|true|false))",
             r"final\s+answer[:\s]",
-            r"therefore.*(?:is|=)\s*\d+",
+            r"therefore.*\b\d+\b",
             r"in\s+conclusion",
             r"the\s+result\s+is",
             r"so\s+the\s+(?:total|answer|result)",
             r"\\boxed",
             r"answer:\s*",
+            r"we\s+conclude\s+that",
+            r"conclude\s+that",
         ]
     },
     "VE": {  # Verification
         "description": "Checking or validating",
         "patterns": [
-            r"let'?s?\s+(?:verify|check|confirm)",
-            r"to\s+(?:verify|check|confirm)",
-            r"checking[:\s]",
-            r"verification[:\s]",
+            r"\b(?:verify|checking|check|confirm|double-check|verification)\b",
             r"this\s+(?:makes\s+sense|is\s+correct)",
             r"substituting\s+back",
         ]
@@ -47,18 +46,21 @@ TAG_PATTERNS = {
             r"\d+\s*[-−]\s*\d+\s*=\s*\d+",
             r"\d+\s*[÷/]\s*\d+\s*=\s*\d+",
             r"=\s*\d+(?:\.\d+)?(?:\s*(?:dollars?|kg|m|cm|km|hours?|minutes?))?",
-            r"calculate\s+",
-            r"computed\s+as",
+            r"\bcalculate\s+",
+            r"\bcomputed\s+as\b",
+            r"\b(?:calculate|compute|multiply|add|subtract|divide|times|plus|minus|sum|product|difference|total)\b",
         ]
     },
-    "DV": {  # Define Variable
-        "description": "Variable definition",
+    "DV": {  # Diversion
+        "description": "Off-topic content or irrelevant tangent",
         "patterns": [
-            r"let\s+\w+\s*=",
-            r"let'?s?\s+(?:call|say|denote|define)",
-            r"suppose\s+(?:that\s+)?",
-            r"assume\s+(?:that\s+)?",
-            r"we\s+(?:can\s+)?define",
+            r"\bby\s+the\s+way\b",
+            r"\breminds\s+me\b",
+            r"\boff[- ]topic\b",
+            r"\btangent\b",
+            r"\bi\s+like\b",
+            r"\bweather\b",
+            r"\bpizza\b",
         ]
     },
     "EQ": {  # Equation Setup
@@ -71,17 +73,23 @@ TAG_PATTERNS = {
             r"[a-z]\s*=\s*[a-z\d\s\+\-\*/]+",  # algebraic equation
             r"\\\[.*\\\]",   # LaTeX display math
             r"\$.*\$",       # LaTeX inline math
+            r"\bformula\b",
+            r"\bequation\b",
         ]
     },
-    "RF": {  # Recall Fact
-        "description": "Retrieving knowledge",
+    "RF": {  # Reflection
+        "description": "Self-correction or reflection",
         "patterns": [
-            r"we\s+know\s+that",
-            r"recall\s+that",
-            r"(?:it\s+is\s+)?known\s+that",
-            r"by\s+definition",
-            r"the\s+(?:formula|rule)\s+(?:for|is)",
-            r"according\s+to",
+            r"\bwait\b",
+            r"\brecheck\b",
+            r"\bmistake\b",
+            r"\berror\b",
+            r"\bcorrection\b",
+            r"\breconsider\b",
+            r"\bactually\b",
+            r"let\s+me\s+(?:double\s+)?check",
+            r"\bhold\s+on\b",
+            r"\boops\b",
         ]
     },
     "PR": {  # Problem Restatement
@@ -89,7 +97,7 @@ TAG_PATTERNS = {
         "patterns": [
             r"(?:we\s+)?need\s+to\s+(?:find|calculate|determine)",
             r"the\s+(?:question|problem)\s+(?:asks|states|says)",
-            r"(?:we\s+)?(?:are\s+)?given\s+(?:that)?",
+            r"\bgiven\b",
             r"understand(?:ing)?\s+the\s+problem",
             r"let'?s?\s+(?:first\s+)?(?:understand|read)",
             r"i\s+need\s+to\s+(?:find|solve|calculate)",
@@ -99,19 +107,19 @@ TAG_PATTERNS = {
     "IN": {  # Inference (default)
         "description": "Logical inference",
         "patterns": [
-            r"therefore",
-            r"thus",
-            r"hence",
-            r"so\s*,",
-            r"this\s+means",
-            r"it\s+follows\s+that",
-            r"which\s+(?:means|implies|gives)",
+            r"\btherefore\b",
+            r"\bthus\b",
+            r"\bhence\b",
+            r"\bso\s*,",
+            r"\bthis\s+means\b",
+            r"\bit\s+follows\s+that\b",
+            r"\bwhich\s+(?:means|implies|gives)",
         ]
     },
 }
 
 # Priority order for tagging
-TAG_PRIORITY = ["CO", "VE", "CA", "DV", "EQ", "RF", "PR", "IN"]
+TAG_PRIORITY = ["CO", "VE", "PR", "EQ", "CA", "DV", "RF", "IN"]
 
 
 def tag_step(step: str) -> Tuple[str, float]:
