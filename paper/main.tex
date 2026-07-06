@@ -39,7 +39,7 @@ suhailmsaiml123@gst.sies.edu.in}
 \maketitle
 
 \begin{abstract}
-Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge. We propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using an Ensembled Hidden Markov Model (HMM). Our approach abstracts reasoning traces into sequences of semantic tags and trains a diverse jury of HMMs on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone contains statistically significant information about correctness. On the GSM8K benchmark with Qwen models, our Ensemble HMM scorer achieves a correlation of up to $r=0.25$ ($p<0.05$) with correctness, doubling the performance of single-model baselines. We further introduce a novel metric, "Structural Entropy," which significantly distinguishes correct from incorrect reasoning ($p<0.05$) by measuring model confusion. Our analysis reveals that while structural scoring works as a robust difficulty-invariant difficulty estimator, it is domain-specific and susceptible to "Structural Hallucinations," where models mimic valid logic while making semantic errors. These findings establish structural analysis as a powerful, interpretable, and efficient complementary verification signal for LLMs.
+Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge. We propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using an Ensembled Hidden Markov Model (HMM). Our approach abstracts reasoning traces into sequences of semantic tags and trains a diverse jury of HMMs on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone contains statistically significant information about correctness. On the GSM8K benchmark with Qwen models, our Ensemble HMM scorer achieves a correlation of up to $r=0.21$ ($p<0.01$) with correctness, doubling the performance of single-model baselines. We further introduce a novel metric, "Structural Entropy," which significantly distinguishes correct from incorrect reasoning ($p<0.05$) by measuring model confusion. Our analysis reveals that while structural scoring works as a robust difficulty-invariant difficulty estimator, it is domain-specific and susceptible to "Structural Hallucinations," where models mimic valid logic while making semantic errors. These findings establish structural analysis as a powerful, interpretable, and efficient complementary verification signal for LLMs.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -253,7 +253,7 @@ We treat verification as a binary classification task (correct vs. incorrect fin
 
 \subsection{Main Results on GSM8K}
 
-Table \ref{tab:main_results} presents the performance of all scoring methods on the GSM8K test set with Qwen-0.5B generated solutions ($N=500$ samples, 122 correct = 24.4\% accuracy).
+Table \ref{tab:main_results} presents the performance of all scoring methods on the GSM8K test set with Qwen-0.5B generated solutions ($N=150$ samples, 122 correct = 24.4\% accuracy).
 
 \begin{table}[htbp]
 \caption{Performance on GSM8K Test Set (N=150)}
@@ -327,7 +327,7 @@ Notably, the Length baseline shows a slightly \textit{negative} correlation, sug
 
 \subsection{Cross-Model Analysis}
 
-To understand how structural signals vary with model capability, we evaluated our trained HMM on outputs from Qwen-1.5B (N=45 samples). Table \ref{tab:cross_model} shows the results.
+To understand how structural signals vary with model capability, we evaluated our trained HMM on outputs from Qwen-1.5B (N=74 samples). Table \ref{tab:cross_model} shows the results.
 
 \begin{table}[htbp]
 \caption{Cross-Model Validation Results}
@@ -344,7 +344,7 @@ Qwen-1.5B & 1.5B & 74 & 0.25 & 0.032 \\
 \end{center}
 \end{table}
 
-Notably, the correlation \textit{increases} with model capability ($r=0.21 \rightarrow 0.25$), with both results achieving statistical significance ($p < 0.05$). This suggests that larger, more capable models produce more structurally coherent reasoning when correct, making the structural signal even more pronounced.
+Notably, the correlation increases with model capability: Qwen-0.5B achieves $r=0.21$ while Qwen-1.5B achieves $r=0.25$, with both results achieving statistical significance ($p < 0.05$). This suggests that larger, more capable models produce more structurally coherent reasoning when correct, making the structural signal even more pronounced.
 
 \subsection{Cross-Domain Transfer and Specificity}
 

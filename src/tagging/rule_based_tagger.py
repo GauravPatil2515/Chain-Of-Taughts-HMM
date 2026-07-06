@@ -136,6 +136,16 @@ def tag_step(step: str) -> Tuple[str, float]:
     return "IN", 0.3
 
 
+def tag_steps(steps: List[str]) -> List[str]:
+    """
+    Tag a list of pre-segmented reasoning steps.
+    
+    Returns:
+        List of tags
+    """
+    return [tag_step(step)[0] for step in steps]
+
+
 def tag_cot(cot_text: str) -> List[Dict]:
     """
     Segment and tag a full CoT trace.

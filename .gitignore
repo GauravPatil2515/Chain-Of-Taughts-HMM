@@ -97,3 +97,6 @@ paper_submission.zip
 # Hugging Face cache
 .cache/
 huggingface/
+
+# Kilo planner
+.kilo/

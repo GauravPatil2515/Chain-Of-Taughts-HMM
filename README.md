@@ -20,8 +20,8 @@ This project demonstrates that **correct reasoning follows characteristic struct
 
 | Dataset | Model | Correlation | AUC | p-value |
 |---------|-------|-------------|-----|---------|
-| GSM8K | Qwen-0.5B | 0.11 | 0.56 | 0.015 |
-| GSM8K | Qwen-1.5B | 0.30 | 0.70 | <0.01 |
+| GSM8K | Qwen-0.5B | 0.21 | 0.62 | 0.008 |
+| GSM8K | Qwen-1.5B | 0.25 | 0.65 | 0.032 |
 | ARC (Transfer) | Qwen-0.5B | 0.04 | 0.46 | 0.62 |
 
 ## 📁 Project Structure
