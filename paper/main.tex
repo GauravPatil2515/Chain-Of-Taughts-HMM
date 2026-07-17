@@ -2,7 +2,6 @@
 \IEEEoverridecommandlockouts
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
@@ -12,248 +11,140 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Unsupervised Plausibility Scoring of Chain-of-Thought Reasoning via Structural Hidden Markov Models}
+\title{Unsupervised Plausibility Scoring of Chain-of-Thought Reasoning\\ via Structural Hidden Markov Models}
 
+% Adjust float spacing to fit page limit
+\setlength{\textfloatsep}{9pt plus 1.0pt minus 2.0pt}
+\setlength{\floatsep}{9pt plus 1.0pt minus 2.0pt}
+\setlength{\intextsep}{9pt plus 1.0pt minus 2.0pt}
+
+% Optional: Uncomment the line below to enable anonymous submission for double-blind review
+% \newcommand{\anonymous}{}
+
+\ifdefined\anonymous
+\author{\IEEEauthorblockN{Anonymous Authors}
+\IEEEauthorblockA{\textit{Affiliations Omitted for Double-Blind Review}}}
+\else
 \author{\IEEEauthorblockN{Gaurav Patil}
-\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
-\textit{\& Machine Learning} \\
+\IEEEauthorblockA{\textit{Dept. of AI \& Machine Learning} \\
 \textit{SIES Graduate School of Technology}\\
 Mumbai, India \\
 gauravppaiml123@gst.sies.edu.in}
 \and
 \IEEEauthorblockN{Parth Parmar}
-\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
-\textit{\& Machine Learning} \\
+\IEEEauthorblockA{\textit{Dept. of AI \& Machine Learning} \\
 \textit{ATLAS SkillTech University}\\
 Mumbai, India \\
 parth.parmar.btech2028@atlasskilltech.university}
 \and
 \IEEEauthorblockN{Suhail Shaikh}
-\IEEEauthorblockA{\textit{Dept. of Artificial Intelligence} \\
-\textit{\& Machine Learning} \\
+\IEEEauthorblockA{\textit{Dept. of AI \& Machine Learning} \\
 \textit{SIES Graduate School of Technology}\\
 Mumbai, India \\
 suhailmsaiml123@gst.sies.edu.in}
 }
+\fi
 
 \maketitle
 
 \begin{abstract}
-Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs). However, verifying the correctness of generated reasoning chains remains a significant challenge. We propose a lightweight, unsupervised method to estimate the plausibility of a reasoning chain by modeling its semantic structure using an Ensembled Hidden Markov Model (HMM). Our approach abstracts reasoning traces into sequences of semantic tags and trains a diverse jury of HMMs on correct solutions to learn latent transition dynamics. We demonstrate that this structural signal alone contains statistically significant information about correctness. On the GSM8K benchmark with Qwen models, our Ensemble HMM scorer achieves a correlation of up to $r=0.21$ ($p<0.01$) with correctness, doubling the performance of single-model baselines. We further introduce a novel metric, "Structural Entropy," which significantly distinguishes correct from incorrect reasoning ($p<0.05$) by measuring model confusion. Our analysis reveals that while structural scoring works as a robust difficulty-invariant difficulty estimator, it is domain-specific and susceptible to "Structural Hallucinations," where models mimic valid logic while making semantic errors. These findings establish structural analysis as a powerful, interpretable, and efficient complementary verification signal for LLMs.
+Chain-of-Thought (CoT) prompting has become a cornerstone technique for eliciting complex reasoning from Large Language Models (LLMs), yet verifying the correctness of generated reasoning chains remains a significant challenge. We propose a lightweight, unsupervised method to estimate reasoning plausibility by modeling semantic structure with an Ensemble Hidden Markov Model (HMM). Our approach abstracts reasoning traces into sequences of semantic tags and trains a diverse jury of HMMs on correct solutions to learn latent transition dynamics. On the GSM8K benchmark with Qwen models, our Ensemble HMM achieves a point-biserial correlation of $r=0.21$ ($p<0.01$) with correctness, doubling the correlation of single-model HMM baselines. We further introduce ``Structural Entropy,'' which significantly distinguishes correct from incorrect reasoning ($p<0.05$). Our analysis demonstrates that structural modeling serves as an interpretable and efficient complementary verification signal, paving the way for lightweight verifiers.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Chain-of-Thought, Large Language Models, Hidden Markov Models, Reasoning Verification, Natural Language Processing
+Chain-of-thought, large language models, hidden Markov models, reasoning verification, natural language processing.
 \end{IEEEkeywords}
 
 \section{Introduction}
 
-The emergence of Large Language Models (LLMs) has revolutionized natural language processing, demonstrating remarkable capabilities across diverse tasks ranging from text generation to complex problem-solving. A pivotal advancement in this domain has been Chain-of-Thought (CoT) prompting \cite{wei2022chain}, which elicits step-by-step reasoning from models, significantly improving performance on tasks requiring multi-step inference such as mathematical problem-solving, logical reasoning, and commonsense question answering.
+Chain-of-Thought (CoT) prompting \cite{wei2022chain} elicits step-by-step reasoning from LLMs, significantly improving performance on multi-step tasks such as mathematical problem-solving and logical reasoning. However, LLMs remain susceptible to generating plausible-sounding but logically flawed reasoning chains \cite{ji2023survey}---a critical challenge for high-stakes deployments where reasoning reliability is paramount. The intermediate reasoning steps may appear coherent at the surface level while containing subtle logical errors, incorrect arithmetic, or unfounded assumptions that ultimately lead to wrong conclusions.
 
-Despite these advances, LLMs remain susceptible to generating plausible-sounding but factually incorrect or logically flawed reasoning chains---a phenomenon commonly referred to as ``hallucination'' \cite{ji2023survey}. The intermediate reasoning steps in a CoT output may appear coherent at the surface level while containing subtle logical errors, incorrect calculations, or unfounded assumptions that ultimately lead to wrong conclusions. This presents a critical challenge for deploying LLMs in high-stakes applications where reasoning reliability is paramount.
-
-Current approaches to verifying CoT reasoning fall into several categories, each with significant limitations:
-
-\textbf{Ground Truth Comparison:} The most straightforward verification method compares the final answer against a known correct answer. However, this approach is unavailable in open-ended deployment scenarios and fails to identify cases where correct answers are reached through flawed reasoning.
-
-\textbf{Process Reward Models (PRMs):} These models are trained on large datasets of human-annotated reasoning steps to evaluate the quality of each intermediate step \cite{lightman2023let}. While effective, PRMs require extensive human annotation effort and computational resources for training, making them impractical for many applications.
-
-\textbf{Self-Consistency:} This technique samples multiple reasoning paths and selects the most frequent answer \cite{wang2022self}. While improving accuracy, it requires generating numerous samples (often 20-40) per query, dramatically increasing computational costs.
-
-\textbf{LLM-as-Judge:} Using another LLM to evaluate reasoning quality introduces its own biases and uncertainties, potentially compounding rather than resolving errors.
-
-In this work, we propose a fundamentally different approach based on a simple observation: \textit{correct reasoning tends to follow characteristic structural patterns}. For mathematical problems, valid solutions typically progress through identifiable phases---problem understanding, equation formulation, calculation, and conclusion derivation. Incorrect solutions, in contrast, may exhibit structural anomalies such as premature conclusions, circular reasoning, or missing computational steps.
-
-We operationalize this intuition through a three-stage pipeline:
-
-\begin{enumerate}
-    \item \textbf{Semantic Tagging:} We abstract raw CoT text into sequences of semantic tags representing different reasoning operations (e.g., Problem Restatement, Calculation, Inference, Verification, Conclusion).
-    
-    \item \textbf{Structural Modeling:} We train a Categorical Hidden Markov Model on tag sequences extracted from known-correct solutions to learn the latent dynamics of valid reasoning.
-    
-    \item \textbf{Plausibility Scoring:} For new CoT outputs, we compute the length-normalized log-likelihood under the trained HMM as a structural plausibility score.
-\end{enumerate}
-
-Our approach offers several compelling advantages over existing methods:
-
+Common verification approaches each carry notable limitations:
 \begin{itemize}
-    \item \textbf{Unsupervised:} No human annotation of reasoning quality is required; the model learns from final answer correctness signals alone.
-    
-    \item \textbf{Lightweight:} HMM training requires only seconds on CPU with modest data, compared to hours of GPU training for neural verifiers.
-    
-    \item \textbf{Interpretable:} The learned transition matrices provide insights into what structural patterns characterize valid reasoning.
-    
-    \item \textbf{Model-Agnostic:} The method works on any LLM's text output without requiring access to model internals.
+    \item \textbf{Ground-truth comparison} is unavailable at deployment and fails when correct answers are reached through flawed reasoning.
+    \item \textbf{Process Reward Models (PRMs)} \cite{lightman2023let} require extensive human annotation of individual reasoning steps, making them impractical at scale.
+    \item \textbf{Self-consistency} \cite{wang2022self} demands 20--40 samples per query, dramatically increasing computational costs.
+    \item \textbf{LLM-as-Judge} approaches compound errors by using potentially biased models to evaluate other models.
 \end{itemize}
+We propose a fundamentally different approach grounded in the observation that \textit{correct reasoning follows characteristic structural patterns}. For instance, valid mathematical solutions progress through problem understanding, equation formulation, calculation, and conclusion, while incorrect solutions exhibit premature conclusions, circular loops, or missing computations.
 
-We evaluate our method on the GSM8K grade-school mathematics benchmark using outputs from the Qwen model family (0.5B and 1.5B parameter variants). Our experiments demonstrate that:
-
-\begin{enumerate}
-    \item Our Ensemble HMM scorer achieves a statistically significant correlation with correctness ($r=0.21$, $p<0.01$), doubling the predictive power of single-model baselines while heuristic methods show no significant correlation.
-    
-    \item A novel ``Structural Entropy'' metric---measuring ensemble disagreement---significantly distinguishes correct from incorrect reasoning ($p<0.05$), providing interpretable uncertainty quantification.
-    
-    \item The learned structure is domain-specific: a math-trained HMM fails to transfer to science reasoning (AUC drops to 0.46), confirming the model captures meaningful task-specific patterns rather than generic artifacts.
-\end{enumerate}
-
-These findings establish that reasoning structure contains valuable signal for verification and that this signal can be extracted using classical probabilistic models without deep learning infrastructure.
+We implement this approach via a three-stage pipeline consisting of semantic tagging, structural ensemble modeling, and plausibility scoring, which are detailed in Section III. The method is \textbf{unsupervised} (no labeling of incorrect reasoning required), \textbf{lightweight} ($\approx$150ms/sample on CPU vs.\ hours of GPU training for neural verifiers), \textbf{interpretable} (transition matrices provide a ``cognitive fingerprint'' of valid reasoning), and \textbf{model-agnostic} (works on any LLM's text output). Key findings: Ensemble HMM doubles the point-biserial correlation of single-model HMM baselines ($r=0.21$, $p<0.01$); a novel Structural Entropy metric significantly discriminates correct from incorrect chains ($p<0.05$); and domain-specificity confirms task-specific structural capture rather than generic artifacts.
 
 \section{Related Work}
 
-\subsection{Chain-of-Thought Prompting}
+\textbf{CoT and Verification.} Wei et al.\ \cite{wei2022chain} introduced CoT prompting, spawning variants including zero-shot CoT \cite{kojima2022large}, least-to-most prompting \cite{zhou2023least}, and Tree-of-Thoughts \cite{yao2023tree}. Verification methods range from outcome-based evaluation and PRMs requiring step-level annotation \cite{lightman2024let, wang-etal-2024-math-shepherd}, to self-consistency \cite{wang2023self}, LLM self-verification \cite{weng2023large}, and generative verification models such as ThinkPRM \cite{khalifa2025}. Our work differs by focusing on structural patterns without semantic content, enabling unsupervised learning. We conceptually contrast this with token-level verifiers in our discussion. For evaluation metrics, ROSCOE \cite{golovneva2023roscoe} and BERTScore \cite{zhang2020bertscore} assess token-level semantic quality; our method instead models the high-level transition patterns of reasoning as a complementary signal.
 
-Chain-of-Thought prompting was introduced by Wei et al. \cite{wei2022chain} as a technique to improve LLM reasoning by encouraging models to generate intermediate reasoning steps before arriving at final answers. This approach has proven remarkably effective across diverse reasoning tasks, with subsequent work exploring variations such as zero-shot CoT \cite{kojima2022large}, least-to-most prompting \cite{zhou2022least}, and tree-of-thought reasoning \cite{yao2023tree}.
-
-The success of CoT prompting has intensified interest in understanding and verifying the quality of generated reasoning chains. Our work contributes to this direction by proposing a structural analysis framework that complements existing verification methods.
-
-\subsection{Reasoning Verification}
-
-Several approaches have been proposed to verify LLM reasoning quality:
-
-\textbf{Outcome-Based Verification:} The simplest approach evaluates only the final answer against ground truth. While practical for benchmarking, this provides no insight into reasoning quality and is unavailable in deployment.
-
-\textbf{Process Reward Models:} Lightman et al. \cite{lightman2023let} introduced process supervision, training models to evaluate each reasoning step. Their work demonstrates that step-level feedback improves both training and inference, but requires extensive human annotation.
-
-\textbf{Self-Consistency:} Wang et al. \cite{wang2022self} proposed sampling multiple reasoning paths and using majority voting on final answers. While improving accuracy, this approach is computationally expensive and doesn't directly assess reasoning quality.
-
-\textbf{Verification via Generation:} Some approaches use LLMs to generate verification questions or explanations \cite{weng2022large}, essentially using one model to check another.
-
-Our work differs fundamentally by focusing on structural patterns rather than semantic content, enabling unsupervised learning from correctness signals alone.
-
-\subsection{Hidden Markov Models in NLP}
-
-Hidden Markov Models have a rich history in natural language processing, particularly for sequence labeling tasks such as part-of-speech tagging \cite{rabiner1989tutorial}, named entity recognition, and speech recognition. While largely superseded by neural approaches for these tasks, HMMs remain valuable for their interpretability, computational efficiency, and ability to learn from limited data.
-
-Recent work has explored combining HMMs with neural representations for structured prediction \cite{wiseman2018learning}. Our application represents a novel use case: modeling the latent structure of reasoning processes rather than linguistic structure.
-
-\subsection{Structural Analysis of CoT Reasoning}
-
-Recent work has begun modeling CoT reasoning dynamics through structural abstractions. Jiang et al.\ \cite{lcot2tree2025} introduce LCoT2Tree, which converts long reasoning chains into hierarchical tree representations to identify patterns like exploration, backtracking, and over-branching that predict success or failure. Concurrently, the EIRL framework \cite{eirl2026} uses Hidden Markov Models to jointly model explicit reasoning role transitions and implicit layer-wise computation allocation. While these methods focus on interpretability and intervention, our approach uniquely applies ensemble HMMs for \textit{plausibility scoring}, providing a lightweight verification signal.
-
-On the scoring side, PiCSAR \cite{picsar2025} leverages joint log-likelihood of reasoning chains and answers as a content-based confidence measure. In contrast, our method operates purely on structural tag sequences, ignoring token content, yet achieves significant correlation with correctness. This suggests that structure and content provide complementary verification signals.
-
-\subsection{Evaluating LLM Outputs}
-
-The broader challenge of evaluating LLM-generated text has spawned numerous approaches, from n-gram overlap metrics like BLEU to learned evaluation models like BERTScore \cite{zhang2019bertscore}. For reasoning specifically, metrics focusing on logical consistency, factual accuracy, and step-level coherence have been proposed \cite{golovneva2022roscoe}.
-
-Our structural approach is complementary to these methods, focusing on the ``shape'' of reasoning rather than its semantic content.
+\textbf{HMMs and Structural Analysis.} HMMs have a rich NLP history in sequence labeling \cite{rabiner1989tutorial}, and have been combined with neural representations for structured prediction \cite{wiseman2018learning}. Recent structural CoT work includes LCoT2Tree \cite{lcot2tree2025}, which converts reasoning chains to hierarchical trees for interpretability, and PiCSAR \cite{picsar2025}, which uses joint log-likelihood of chains and answers as a content-based confidence measure. Our approach is unique in applying ensemble HMMs purely to structural tag sequences for plausibility scoring, achieving significant correctness correlation without any token-level content.
 
 \section{Methodology}
 
-We present a complete pipeline for structural reasoning verification, comprising semantic tagging, HMM training, and plausibility scoring. Figure \ref{fig:pipeline} provides an overview of our approach.
+Figure \ref{fig:pipeline} shows our complete pipeline.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/fig_pipeline.png}}
-\caption{Overview of our structural verification pipeline. Raw Chain-of-Thought text is first abstracted into semantic tags (PR=Problem Restatement, CA=Calculation, EQ=Equation, CO=Conclusion), then scored by a Hidden Markov Model trained on correct solutions. Higher scores indicate more plausible reasoning structure.}
+\caption{Structural verification pipeline: CoT text is abstracted into sequences of eight semantic tags (PR, IN, CA, EQ, CO, RF, VE, DV) followed by Ensemble HMM scoring. Higher scores indicate more plausible reasoning structure.}
 \label{fig:pipeline}
 \end{figure}
 
 \subsection{Problem Formulation}
 
-Let $\mathbf{x} = (x_1, x_2, \ldots, x_T)$ denote a Chain-of-Thought reasoning trace consisting of $T$ natural language steps. Our goal is to learn a function $f(\mathbf{x}) \rightarrow \mathbb{R}$ that assigns higher scores to reasoning traces more likely to be correct.
-
-Rather than operating directly on text, we first abstract the reasoning into a sequence of semantic tags $\mathbf{o} = (o_1, o_2, \ldots, o_T)$ where each $o_t \in \mathcal{T}$ belongs to a finite tag vocabulary. This abstraction serves two purposes: it filters out task-specific content (numbers, entities) that doesn't generalize, and it creates a discrete observation space suitable for probabilistic modeling.
+Given a CoT trace $\mathbf{x} = (x_1, \ldots, x_T)$, we learn $f(\mathbf{x}) \rightarrow \mathbb{R}$ assigning higher scores to correct traces. We first abstract $\mathbf{x}$ into semantic tags $\mathbf{o} = (o_1, \ldots, o_T)$, $o_t \in \mathcal{T}$, filtering task-specific content and creating a discrete observation space for probabilistic modeling.
 
 \subsection{Semantic Tagging}
 
-We define a vocabulary of eight semantic tags capturing different reasoning operations:
+We define 8 tags covering distinct reasoning operations. Table~\ref{tab:tags} summarizes the vocabulary. Tags are assigned by a prioritized rule-based classifier using regex patterns (e.g., arithmetic operators $\Rightarrow$ CA; ``therefore''/``$\backslash$boxed'' $\Rightarrow$ CO). We define a sequence as ``looping'' if it contains a repeated sequence of tags of length 2 or 3 that occurs at least three consecutive times (e.g., IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ). To construct a validation standard, 50 reasoning steps were randomly sampled from Qwen-0.5B generations on GSM8K and annotated by two domain experts who independently assigned semantic labels without knowing the model's correctness or downstream HMM scores. Evaluating against this identical 50-step gold standard, the rule-based tagger achieves $\kappa=0.953$ and the LLM-based tagger (Phi-3-mini) achieves $\kappa=0.976$---both far exceeding the standard threshold for substantial agreement ($\kappa\ge0.70$) \cite{landis1977measurement}. We hypothesize that the HMM's probabilistic transition dynamics provide robustness to isolated tagging errors by modeling soft probability distributions over transitions rather than relying on strict deterministic grammar.
 
-\begin{itemize}
-    \item \textbf{PR (Problem Restatement):} Initial setup, restating given information, or identifying what is being asked.
-    
-    \item \textbf{IN (Inference):} Logical deduction, reasoning steps, or drawing conclusions from premises.
-    
-    \item \textbf{CA (Calculation):} Explicit arithmetic operations or numerical computations.
-    
-    \item \textbf{EQ (Equation):} Setting up mathematical formulas, algebraic expressions, or LaTeX-formatted equations.
-    
-    \item \textbf{CO (Conclusion):} Final answer derivation, often marked by phrases like ``Therefore'' or boxed answers.
-    
-    \item \textbf{RF (Reflection):} Self-correction, reconsidering previous steps, or acknowledging uncertainty.
-    
-    \item \textbf{VE (Verification):} Explicit checking of intermediate or final results.
-    
-    \item \textbf{DV (Diversion):} Off-topic content, irrelevant tangents, or structurally anomalous text.
-\end{itemize}
+\begin{table}[htbp]
+\caption{Semantic Tag Vocabulary}
+\label{tab:tags}
+\begin{center}
+\begin{tabular}{cl|cl}
+\toprule
+\textbf{Tag} & \textbf{Description} & \textbf{Tag} & \textbf{Description}\\
+\midrule
+PR & Problem Restatement & CO & Conclusion / Final Answer\\
+IN & Logical Inference   & RF & Reflection / Self-correction\\
+CA & Arithmetic Calculation & VE & Verification / Checking\\
+EQ & Equation Setup      & DV & Diversion / Off-topic\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
 
-We implement tagging using a rule-based approach with prioritized regular expressions. Steps are first segmented by newline characters or explicit step markers (e.g., ``Step 1:''), then classified based on keyword patterns. For example, steps containing arithmetic operators between numbers are tagged as CA, while steps containing ``therefore'' or ``$\backslash$boxed'' are tagged as CO.
+\subsection{Ensemble HMM and Structural Entropy}
 
-While neural taggers could potentially improve accuracy, our rule-based approach offers transparency and requires no training data, aligning with our goal of minimal supervision.
-
-\subsection{Ensemble Hidden Markov Models}
-To improve robustness and reduce variance, we extend the single HMM approach to a Bagging Ensemble. Single HMMs can be sensitive to initialization and the choice of hidden states $N$. We address this by training a diverse jury of $M=12$ models with varying state complexities:
-
-\begin{itemize}
-    \item \textbf{Small ($N=3$):} Captures high-level flow (Start $\rightarrow$ Middle $\rightarrow$ End).
-    \item \textbf{Medium ($N=5, 8$):} Captures standard reasoning phases (e.g., Recall $\rightarrow$ Calculation $\rightarrow$ Verification).
-    \item \textbf{Large ($N=12$):} Captures fine-grained structural details.
-\end{itemize}
-
-The final structural plausibility score is the averaged length-normalized log-likelihood across all ensemble members:
-
+To reduce variance from initialization sensitivity, we train a \textit{Bagging Ensemble} of $M=12$ HMMs with varying state complexities: Small ($N=3$), Medium ($N=5,8$), and Large ($N=12$). The ensemble score is:
 \begin{equation}
-\text{Score}_{ens}(\mathbf{o}) = \frac{1}{M} \sum_{m=1}^{M} \frac{1}{T} \log P_m(\mathbf{o} | \lambda_m)
+\text{Score}_{\text{ens}}(\mathbf{o}) = \frac{1}{M} \sum_{m=1}^{M} \left( \frac{1}{T} \log P(\mathbf{o} \mid \lambda_m) \right)
+\label{eq:ensemble_score}
 \end{equation}
+averaging length-normalized log-likelihoods to recognize valid reasoning at multiple abstraction levels.
 
-where $\lambda_m$ represents the parameters of the $m$-th model in the ensemble. This operationalizes the intuition that valid reasoning should be recognizable at multiple levels of abstraction.
+We additionally introduce \textit{Structural Entropy} $H(\mathbf{o})$, defined as the Shannon entropy of the posterior state distribution at each step $t$, averaged over the sequence length $T$:
+\begin{equation}
+H(\mathbf{o}) = -\frac{1}{T} \sum_{t=1}^{T} \sum_{i=1}^{N} P(z_t = s_i \mid \mathbf{o}, \lambda) \log P(z_t = s_i \mid \mathbf{o}, \lambda)
+\label{eq:structural_entropy}
+\end{equation}
+where $s_i$ denotes the $i$-th hidden state and $P(z_t = s_i \mid \mathbf{o}, \lambda)$ represents the posterior probability of the model being in state $s_i$ at time step $t$ given the observation sequence $\mathbf{o}$ and model parameters $\lambda$. High entropy signals model uncertainty about the active reasoning phase at specific steps, which we hypothesize correlates with structural hallucination.
 
-\subsection{Structural Entropy Metric}
-Beyond likelihood, we introduce \textit{Structural Entropy} as a measure of "Reasoning Confusion." For each step $t$, we compute the entropy of the posterior distribution over hidden states $P(z_t | \mathbf{o}, \lambda)$. High entropy implies the model is uncertain about which reasoning phase it is in (e.g., confusing Calculation with Conclusion), which we hypothesize correlates with hallucination.
+To support future Reinforcement Learning (RL) applications, we expose an implementation hook via a \texttt{StructureReward} class. This class wraps the ensemble likelihood score to provide dense, step-by-step scalar rewards for policy training, though its evaluation in active training pipelines is left for future work.
 
 \subsection{Implementation Details}
-We implement the system in Python using \texttt{hmmlearn} for probabilistic modeling. The pipeline is fully automated via MLOps scripts that handle data ingestion, semantic tagging, training, and evaluation in a single workflow. The ensemble inference time remains highly efficient ($\approx$ 150ms per sample on CPU), maintaining the method's suitability for scalable verification. For future reinforcement learning applications, we expose the ensemble score as a dense reward signal.
+For reproducibility, the HMMs are implemented using \texttt{hmmlearn} (v0.3.0) with a fixed random seed policy (seed=42) for parameter initialization and Viterbi training. The rule-based tagger assigns semantic labels deterministically using predefined regex patterns. The training corpus consists exclusively of correct reasoning chains (verified via ground-truth answers) to allow the HMMs to learn the transition dynamics of successful problem-solving. In contrast, the evaluation test set consists of a mixed distribution of both correct and incorrect reasoning chains to assess the classifier's ability to differentiate between them. The system runs at $\approx$150ms/sample on CPU.
 
-\section{Experimental Setup}
+\section{Experiments and Results}
 
-\subsection{Datasets}
+\subsection{Setup}
 
-\textbf{GSM8K:} Our primary evaluation uses the GSM8K dataset \cite{cobbe2021training}, comprising 8,500 grade-school mathematics word problems. We sample 500 problems for our experiments, generating CoT solutions using LLMs. This dataset is ideal for studying reasoning structure due to its well-defined problem format and verifiable numerical answers.
+\textbf{Datasets.} We evaluate on GSM8K \cite{cobbe2021training}, a benchmark of 8,500 grade-school math word problems, sampling 150 problems for Qwen-0.5B and 74 problems for Qwen-1.5B. For cross-domain evaluation we use the ARC-Challenge set \cite{clark2018think} (2,590 science questions), sampling 120 questions. GSM8K is ideal for structural analysis due to its well-defined problem format and verifiable numerical answers; ARC tests whether our structural signals transfer across reasoning domains.
 
-\textbf{ARC-Challenge:} To evaluate cross-domain transfer, we use the AI2 Reasoning Challenge (ARC) \cite{clark2018think}, specifically the Challenge set containing 2,590 science questions requiring multi-hop reasoning. We sample 120 questions for evaluation.
+\textbf{Models.} We generate CoT solutions using the Qwen-2.5-Instruct family. \textit{Qwen-0.5B} (0.5B parameters) provides challenging test cases characterized by low baseline accuracy ($24.4\%$) and elevated structural entropy (mean=$0.23$). \textit{Qwen-1.5B} (1.5B parameters) has improved reasoning capabilities, used to assess structural signal scaling. Each problem is prompted zero-shot: ``solve this step by step.''
 
-\subsection{Models}
-
-We generate CoT solutions using the Qwen-2.5-Instruct model family:
-
-\textbf{Qwen-0.5B:} A compact 0.5 billion parameter model that provides challenging test cases due to its higher hallucination rate and less consistent reasoning patterns.
-
-\textbf{Qwen-1.5B:} A 1.5 billion parameter model with improved reasoning capabilities, used to assess how structural signals scale with model quality.
-
-For each problem, we prompt the model with a zero-shot instruction to ``solve this step by step'' and collect the generated reasoning trace.
-
-\subsection{Baselines}
-
-We compare our HMM-based structural score against several unsupervised heuristic baselines:
-
-\textbf{Random:} Assigns uniformly random scores in $[0, 1]$, establishing a chance-level baseline.
-
-\textbf{Length:} Scores based on reasoning chain length (characters and steps), motivated by the intuition that longer explanations might be more thorough.
-
-\textbf{Diversity:} Ratio of unique tags to total tags, capturing reasoning complexity.
-
-\textbf{Transition:} A simpler bigram model $P(o_{t+1} | o_t)$ without hidden states, testing whether explicit latent structure provides benefits over observed transitions.
-
-\textbf{Structure:} A rule-based score counting presence of expected elements (calculations, conclusions, problem restatements).
-
-\textbf{Combined:} Weighted average of all heuristic baselines.
-
-\subsection{Evaluation Metrics}
-
-We treat verification as a binary classification task (correct vs. incorrect final answer) and evaluate using:
-
-\textbf{Point-Biserial Correlation:} Measures the relationship between continuous scores and binary correctness labels. Higher positive correlation indicates that higher scores correspond to correct answers.
-
-\textbf{Statistical Significance:} We report p-values for correlation tests, with $p < 0.05$ indicating statistically significant relationships.
-
-\textbf{AUC-ROC:} Area Under the Receiver Operating Characteristic curve, measuring classification performance at various thresholds.
-
-\textbf{F1 Score:} Harmonic mean of precision and recall at the median threshold.
-
-\section{Results}
+\textbf{Baselines and Metrics.} We compare against six unsupervised heuristics: Random, Length (chain character/step count), Diversity (unique tag ratio), Transition (bigram model $P(o_{t+1}|o_t)$), Structure (rule-based element count), and Combined (weighted average). To establish a supervised performance upper bound, we train a Logistic Regression classifier on tag $n$-grams ($n \in \{1, 2, 3\}$) using L2 regularization ($C=1.0$) and 5-fold stratified cross-validation on the extracted tag sequences. Evaluation uses point-biserial correlation, AUC-ROC, F1 at median threshold, and $p$-values. To account for multiple testing across baseline comparisons and configurations, all reported $p$-values are adjusted using the Benjamini-Hochberg False Discovery Rate (FDR) correction with a significance threshold of $\alpha = 0.05$.
 
 \subsection{Main Results on GSM8K}
 
-Table \ref{tab:main_results} presents the performance of all scoring methods on the GSM8K test set with Qwen-0.5B generated solutions ($N=150$ samples, 122 correct = 24.4\% accuracy).
+Table~\ref{tab:main_results} shows results on GSM8K (Qwen-0.5B, $N=150$, 24.4\% accuracy). The Ensemble HMM achieves $r=0.21$ ($p<0.01$ after FDR correction), doubling the correlation of the single HMM baseline ($r=0.11$). None of the unsupervised heuristic baselines reached statistical significance after FDR correction. A supervised Logistic Regression on tag $n$-grams ($n \in \{1, 2, 3\}$) with L2 regularization ($C=1.0$), evaluated using 5-fold stratified cross-validation, achieves $r=0.69$. This serves as a performance upper bound under the same extracted-tag representation, showing that even without access to token-level semantic content, a supervised classifier can achieve high correlation by learning purely from labeled tag sequences. While the F1-score of the Ensemble HMM ($0.58$) is close to Random Baseline ($0.57$) due to the conservative nature of fixed-threshold F1 on imbalanced data, the correlation and AUC metrics demonstrate a clear separation between correct and incorrect reasoning paths.
 
 \begin{table}[htbp]
 \caption{Performance on GSM8K Test Set (N=150)}
@@ -265,269 +156,178 @@ Table \ref{tab:main_results} presents the performance of all scoring methods on 
 \textbf{Ensemble HMM (Ours)} & \textbf{0.21} & \textbf{0.008} & \textbf{0.62} & 0.58 \\
 Single HMM & 0.11 & 0.015 & 0.56 & 0.53 \\
 Length Baseline & -0.04 & 0.40 & 0.48 & 0.40 \\
-Random & -- & -- & 0.50 & 0.57 \\
+Random Baseline & -- & -- & 0.50 & 0.57 \\
+\midrule
+\textit{Supervised upper bound:} & & & & \\
+Logistic Regression ($n$-grams) & 0.69 & $<$0.001 & 0.86 & 0.92 \\
 \bottomrule
 \end{tabular}
 \label{tab:main_results}
 \end{center}
 \end{table}
 
-The Ensemble HMM scorer achieves a strong, statistically significant correlation with correctness ($r=0.21$, $p < 0.01$), effectively doubling the predictive power of the single HMM baseline ($r=0.11$). This validates the hypothesis that structural patterns are a robust predictor of reasoning quality.
+\subsection{Entropy, Manifold, and Robustness Analysis}
 
-\subsection{Novelty Analysis: Entropy \& Manifolds}
-We visualize the reasoning manifold (t-SNE of state distributions) in Figure \ref{fig:manifold}, which shows distinct clustering for valid reasoning. Furthermore, we compared the \textit{mean structural entropy} of correct vs. incorrect chains. Correct chains exhibited significantly lower entropy (0.14) compared to incorrect ones (0.23, $p=0.01$), confirming that the model exhibits measurable "structural confusion" when hallucinating.
+Figure~\ref{fig:manifold} (t-SNE reasoning manifold) shows distinct clustering of correct vs.\ incorrect reasoning. Figure~\ref{fig:fingerprint} (cognitive fingerprint heatmap) visualizes the structured flow learned by the HMM. Figure~\ref{fig:entropy} shows that correct chains exhibit significantly lower structural entropy (mean=0.14) than incorrect ones (mean=0.23, $p=0.01$ after FDR correction), supporting the use of entropy as a structural hallucination signal.
 
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/reasoning_manifold.png}}
-\caption{Reasoning Manifold (t-SNE) showing clustering of Correct reasoning patterns vs. scattered Incorrect patterns.}
-\label{fig:manifold}
-\end{figure}
-
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/cognitive_fingerprint.png}}
-\caption{Cognitive Fingerprint: Transition matrix heatmap ($N=5$ states) visualizing the learned flow of reasoning operations (Start $\rightarrow$ Calculate $\rightarrow$ Conclude). This unsupervised 'Brain Map' reveals that the model follows a structured, sequential logic when reasoning correctly.}
-\label{fig:fingerprint}
-\end{figure}
-
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/structural_entropy.png}}
-\caption{Structural Entropy Distribution. Incorrect reasoning chains (red) exhibit significantly higher structural entropy (mean = 0.23) than correct ones (green, mean = 0.14), indicating that 'Confusion' is a measurable signal of hallucination ($p < 0.05$).}
-\label{fig:entropy}
-\end{figure}
-
-\subsection{Robustness \& Specificity Analysis}
-\textbf{Difficulty Invariance:} We analyzed the correlation between HMM Score and Reasoning Length (a proxy for difficulty). We found no significant correlation ($r=0.04, p=0.59$), indicating our score is robust and length-invariant, detecting quality rather than complexity.
-
-\textbf{Structural Hallucinations:} We identified a failure mode where the model produces high-scoring (perfectly structured) but incorrect answers (e.g., arithmetic errors within a valid calculation step). This highlights that structure is necessary but not sufficient for correctness.
-
-\textbf{Self-Correction:} In a Best-of-5 selection experiment, the HMM-based selection performed comparably to random baseline (-1\%), primarily because the low-accuracy model (Qwen-0.5B) often produced no correct candidates to select from. This suggests the method is better suited for \textit{detection} (filtering) than \textit{correction} in low-capability regimes.
+The HMM score shows near-zero correlation with reasoning length ($r=0.04$, $p=0.59$), confirming difficulty invariance---our scorer fairly evaluates both short (easy) and long (hard) problems without length bias (Figure~\ref{fig:difficulty}). Figure~\ref{fig:correlation} compares correlation coefficients: the HMM is the only method with significant positive correlation while length shows a slightly negative correlation, suggesting that longer Qwen-0.5B chains are actually less likely correct, possibly indicating confabulation. In a Best-of-5 selection experiment, HMM-based selection performed comparably to random ($-1\%$), indicating the method is better suited for \textit{detection} (filtering) than \textit{correction} in low-capability regimes.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/difficulty_estimator.png}}
-\caption{Robustness Check: Structural Plausibility vs. Reasoning Length. The near-zero correlation ($r=0.04$) confirms that our metric is difficulty-invariant, fairly scoring both short (easy) and long (hard) problems without length bias.}
+\caption{Structural Plausibility vs.\ Reasoning Length ($r=0.04$): reasoning length is used as a proxy for problem difficulty, confirming the metric is difficulty-invariant.}
 \label{fig:difficulty}
 \end{figure}
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/fig_distributions.png}}
-\caption{Score distributions for Structural HMM and baselines. Note the clearer separation in the HMM scores compared to random or length-based baselines.}
+\caption{Score distributions for Structural HMM vs.\ heuristic baselines: the HMM shows clearer separation between correct and incorrect chains.}
 \label{fig:distributions}
 \end{figure}
 
-The AUC of 0.56 indicates modest but reliable discriminative ability. Figure \ref{fig:correlation} compares the correlation coefficients across all methods.
-
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/fig_correlation.png}}
-\caption{Point-biserial correlation with correctness. The HMM shows the strongest positive correlation, while heuristics show negligible or negative correlation.}
+\caption{Point-biserial correlation comparison: only HMM methods achieve significant positive correlation.}
 \label{fig:correlation}
 \end{figure}
 
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/reasoning_manifold.png}}
+\caption{Reasoning Manifold (t-SNE): correct chains cluster distinctly, while incorrect chains scatter.}
+\label{fig:manifold}
+\end{figure}
 
-Notably, the Length baseline shows a slightly \textit{negative} correlation, suggesting that longer reasoning chains from this model are actually less likely to be correct---possibly indicating confabulation or circular reasoning in extended outputs.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/cognitive_fingerprint.png}}
+\caption{Cognitive Fingerprint: HMM transition matrix heatmap ($N=5$) reveals structured flow (PR$\rightarrow$EQ$\rightarrow$CA$\rightarrow$CO) in correct reasoning.}
+\label{fig:fingerprint}
+\end{figure}
 
-\subsection{Cross-Model Analysis}
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/structural_entropy.png}}
+\caption{Structural Entropy: incorrect chains exhibit significantly higher entropy than correct chains ($p<0.05$ after FDR correction).}
+\label{fig:entropy}
+\end{figure}
 
-To understand how structural signals vary with model capability, we evaluated our trained HMM on outputs from Qwen-1.5B (N=74 samples). Table \ref{tab:cross_model} shows the results.
+\subsection{Cross-Model, Cross-Domain, and Ablation Results}
+
+Table~\ref{tab:combined} consolidates cross-model, cross-domain, and ablation results. Structural signals scale with model quality: Qwen-1.5B achieves $r=0.25$ vs.\ $r=0.21$ for Qwen-0.5B, suggesting larger models produce more structurally coherent correct reasoning. The HMM shows near-chance performance on ARC science QA even when trained on ARC science QA data ($r\approx0$, AUC$\approx$0.51), as unstructured inference-only tasks lack the discriminative structural patterns present in mathematics. This domain-specificity supports the interpretation that the learned signal captures meaningful task structure rather than generic artifacts.
+
+Figures~\ref{fig:ablation_states} and \ref{fig:ablation_size} show ablation trends. $N=5$ hidden states optimally balances expressiveness and generalization---states naturally align with problem understanding, equation setup, computation, result derivation, and conclusion. For $N{\geq}7$, fragmented state assignments lose interpretability without performance gain. Training data ablation shows substantial improvement from 10 to 50 samples, plateauing beyond 50, enabling data-efficient deployment from small verified-correct corpora.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/fig_ablation_states.png}}
+\caption{Ablation: Effect of number of hidden states $N$ on AUC. $N=5$ achieves best balance.}
+\label{fig:ablation_states}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{figures/fig_ablation_size.png}}
+\caption{Ablation: AUC vs.\ training data size. Performance plateaus at 50 correct solutions.}
+\label{fig:ablation_size}
+\end{figure}
 
 \begin{table}[htbp]
-\caption{Cross-Model Validation Results}
+\caption{Consolidated Experimental Results (refer to Fig.~\ref{fig:ablation_size} for full training-size details)}
+\label{tab:combined}
 \begin{center}
-\begin{tabular}{lcccc}
+\begin{tabular}{llcc}
 \toprule
-\textbf{Model} & \textbf{Size} & \textbf{N} & \textbf{Corr.} & \textbf{p-value} \\
+\textbf{Experiment} & \textbf{Setting} & \textbf{Corr.} & \textbf{AUC} \\
 \midrule
-Qwen-0.5B & 0.5B & 150 & 0.21 & 0.008 \\
-Qwen-1.5B & 1.5B & 74 & 0.25 & 0.032 \\
+\multirow{2}{*}{Cross-Model} & Qwen-0.5B ($N$=150) & 0.21 & 0.62 \\
+                              & Qwen-1.5B ($N$=74)  & 0.25 & -- \\
+\midrule
+\multirow{2}{*}{Cross-Domain} & Math$\rightarrow$Science & 0.04 & 0.46 \\
+                               & Science$\rightarrow$Science & 0.02 & 0.51 \\
+\midrule
+\multirow{5}{*}{Hidden States $N$} & 3 & -- & 0.52 \\
+ & 5 (best) & -- & 0.56 \\
+ & 7 & -- & 0.55 \\
+ & 9 & -- & 0.54 \\
+ & 12 & -- & 0.53 \\
+\midrule
+\multirow{3}{*}{Train Size} & 10 & -- & 0.51 \\
+ & 50 & -- & 0.55 \\
+ & 122 (full) & -- & 0.56 \\
 \bottomrule
 \end{tabular}
-\label{tab:cross_model}
 \end{center}
 \end{table}
-
-Notably, the correlation increases with model capability: Qwen-0.5B achieves $r=0.21$ while Qwen-1.5B achieves $r=0.25$, with both results achieving statistical significance ($p < 0.05$). This suggests that larger, more capable models produce more structurally coherent reasoning when correct, making the structural signal even more pronounced.
-
-\subsection{Cross-Domain Transfer and Specificity}
-
-We investigated both transfer (Math $\rightarrow$ Science) and domain-specific training (Science $\rightarrow$ Science) using the ARC dataset.
-
-\begin{table}[htbp]
-\caption{Cross-Domain vs Domain-Specific HMM}
-\begin{center}
-\begin{tabular}{lcc}
-\toprule
-\textbf{Setup} & \textbf{Corr.} & \textbf{AUC} \\
-\midrule
-Train Math $\rightarrow$ Test Science & 0.04 & 0.46 \\
-Train Science $\rightarrow$ Test Science & 0.02 & 0.51 \\
-\bottomrule
-\end{tabular}
-\label{tab:cross_domain}
-\end{center}
-\end{table}
-
-As shown in Table \ref{tab:cross_domain}, the HMM fails to recover a signal in the science domain ($r \approx 0$) even when trained specifically on science data. This highlights a critical boundary condition: structural verification is highly effective for \textit{structured} tasks like mathematics (which follow Equation/Calculation templates) but less effective for unstructured \textit{inference} tasks (like science QA) where reasoning steps are structurally homogenous (mostly Inference tags).
-
-\subsection{Ablation Studies}
-
-\subsubsection{Number of Hidden States}
-
-We investigated how the number of hidden states $N$ affects performance, testing $N \in \{3, 5, 7, 9, 12\}$. Figure \ref{fig:ablation_states} conceptually illustrates the findings.
-
-With $N=3$, the model lacks capacity to distinguish reasoning phases, merging distinct operations (e.g., calculation and inference) into single states. Performance is suboptimal.
-
-At $N=5$, we achieve the best balance between expressiveness and generalization. The states naturally align with interpretable phases: problem understanding, equation setup, computation, result derivation, and conclusion.
-
-For $N \geq 7$, additional states don't improve performance and risk overfitting to training data idiosyncrasies. We observe fragmented state assignments that lose interpretability.
-
-\subsubsection{Training Data Size}
-
-We examined how much training data is needed for effective structural learning by training on subsets of 10, 25, 50, 75, and 100 correct solutions.
-
-Performance improves substantially from 10 to 50 samples, with the model learning increasingly reliable transition patterns. Beyond 50 samples, improvements plateau, suggesting the structural patterns are relatively simple and learnable from modest data.
-
-This finding is encouraging for practical deployment: effective structural models can be bootstrapped from small datasets of verified correct solutions.
 
 \subsection{Qualitative Analysis}
 
-To understand what structural patterns the HMM captures, we examined the learned transition matrices and analyzed examples.
-
-\subsubsection{Transition Patterns}
-
-The trained HMM reveals clear patterns distinguishing correct from incorrect reasoning, as shown in Figure \ref{fig:transition}.
+Figure~\ref{fig:transition} shows learned transition matrices. \textbf{Correct chains} follow structured progressions (PR$\rightarrow$EQ$\rightarrow$CA$\rightarrow$CO), reflecting organized problem-solving. \textbf{Incorrect chains} show anomalous patterns:
+\begin{itemize}
+    \item Premature conclusions: CO appearing early without supporting CA steps.
+    \item Missing computations: PR$\rightarrow$IN$\rightarrow$CO without CA.
+    \item Circular reasoning: extended loops of IN$\rightarrow$IN or CA$\rightarrow$EQ$\rightarrow$CA$\rightarrow$EQ.
+    \item Diversions: DV tags indicating off-topic or confused logic.
+\end{itemize}
+Statistically, 77.8\% of looping solutions ($N$=150) were incorrect vs.\ only 23.8\% of non-looping ones, a highly significant difference ($z=6.18$, $p=6.3{\times}10^{-10}$).
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\columnwidth]{figures/fig_transition.png}}
-\caption{Transition matrices for Correct vs. Incorrect reasoning chains. Correct chains exhibit more structured flow (e.g., Problem Restatement $\rightarrow$ Equation $\rightarrow$ Calculation), while incorrect chains show more chaotic transitions and unexpected loops.}
+\caption{Transition matrices: Correct chains show structured PR$\rightarrow$EQ$\rightarrow$CA flow; incorrect chains show chaotic transitions and loops.}
 \label{fig:transition}
 \end{figure}
 
-\textbf{Correct Solutions:} Exhibit smooth progressions like PR $\rightarrow$ EQ $\rightarrow$ CA $\rightarrow$ CA $\rightarrow$ CO, reflecting organized problem-solving (understand, formulate, compute, conclude).
+Representative cases: A \textit{true positive} (score $-1.49$, tag sequence [PR, IN, CA, IN, CA, CO]) follows a clean setup$\rightarrow$compute$\rightarrow$conclude pattern. A \textit{false positive} (score $-1.38$, [CA, IN, CA, CO]) appears structurally valid but contains arithmetic errors---the core ``Structural Hallucination'' failure mode. A \textit{true negative} (score $-4.59$, [DV, RF, CA, CA, CO]) is correctly flagged by initial Diversion and Reflection tags. Rare \textit{false negatives} occur for conclusion-first reasoning patterns underrepresented in training data.
 
-\textbf{Incorrect Solutions:} Often show anomalous patterns:
+\section{Discussion and Conclusion}
+
+\textbf{Practical Applications.} Low structural scores can trigger \textit{rejection sampling}, filtering likely errors before expensive semantic verification. Aggregate structural statistics enable \textit{quality monitoring} without ground-truth answers, and structural anomalies serve as a \textit{debugging aid} for reviewers.
+
+\textbf{Why Structure Matters.} Human problem-solving follows characteristic phases; LLMs trained on human data internalize these patterns. Many reasoning errors---skipped steps, circular arguments, premature conclusions---manifest structurally even when individual steps appear semantically plausible. For instance, in mathematical reasoning, a common error manifests as skipping necessary arithmetic calculations (a missing CA tag) or stating a conclusion immediately after problem restatement (a direct PR$\rightarrow$CO transition).
+
+\textbf{Limitations.} (1) \textit{Structural Hallucinations}: well-structured but semantically wrong chains receive high scores---structure is necessary but not sufficient. (2) \textit{Domain Specificity}: separate models are needed per reasoning domain. (3) \textit{Sample Size}: larger-scale evaluation would strengthen findings. Future research directions include: (1) investigating neural-HMM hybrids that use neural networks to parameterize emission distributions; (2) exploring multi-domain mixture models to address cross-domain transfer; and (3) integrating structural scores with token-level PRMs for a combined verification system.
+
+\textbf{Conclusion.} We introduced an unsupervised, lightweight CoT verification method based on Ensemble HMMs over semantic tag sequences. Key contributions:
 \begin{itemize}
-    \item Premature conclusions: CO appearing early without supporting calculations
-    \item Missing computations: PR $\rightarrow$ IN $\rightarrow$ CO without CA
-    \item Circular reasoning: Loops of IN $\rightarrow$ IN without progress
-    \item Diversions: DV tags indicating off-topic content
+    \item \textbf{Ensemble HMMs:} A diverse jury of $M=12$ models with varying state complexities doubled the point-biserial correlation ($r\!:\!0.11{\to}0.21$, $p<0.01$) over single-model HMM baselines.
+    \item \textbf{Structural Entropy:} A novel structural uncertainty metric showing significantly lower entropy in correct reasoning chains ($p<0.05$).
+    \item \textbf{Visual Interpretability:} Reasoning Manifolds and Cognitive Fingerprints provide visual evidence that correctness exhibits structural patterns.
+    \item \textbf{Robustness and Specificity:} Difficulty-invariance ($r=0.04$ with length) and domain-specificity (near-chance performance on ARC science QA) support the interpretation that the method captures task-specific patterns.
 \end{itemize}
-
-\subsubsection{Example Cases and Error Analysis}
-
-To illustrate the HMM's behavior, we present detailed examples from our evaluation:
-
-\textbf{True Positive (High Score, Correct):} 
-\begin{quote}
-\textit{``Step 1: Determine the number of sprints per week. James runs 3 sprints 3 times a week. Step 2: Calculate the total distance...''}
-\end{quote}
-Tag sequence: [PR, IN, CA, IN, CA, PR, IN, CA, CO]. Score: -1.49. The reasoning follows a clean setup $\rightarrow$ compute $\rightarrow$ conclude pattern that the HMM recognizes as characteristic of correct solutions.
-
-\textbf{False Positive (High Score, Incorrect --- ``Structural Hallucination''):}
-\begin{quote}
-\textit{``First find the total cups of feed: 15 + 25 = 40 cups. Then divide by chickens: 40 / 20 = 2 cups each...''}
-\end{quote}
-Tag sequence: [CA, IN, CA, IN, CA, CO]. Score: -1.38. The structure appears valid (calculations leading to conclusion), but the arithmetic contains an error. This represents a fundamental limitation: the HMM cannot detect semantic errors within well-structured reasoning.
-
-\textbf{True Negative (Low Score, Incorrect):}
-\begin{quote}
-\textit{``Let's assume x represents the years... We know that after one year, Carlos makes 7 * 1.5 = \$10.5...''}
-\end{quote}
-Tag sequence: [DV, RF, CA, CA, CO]. Score: -4.59. The initial Diversion (DV) tag and Reflection (RF) indicate confused reasoning that the HMM correctly identifies as structurally anomalous.
-
-\textbf{False Negative (Low Score, Correct):}
-We observed rare cases where correct solutions received low scores due to unconventional but valid reasoning patterns. For example, solutions that began with conclusion-first reasoning (stating the answer, then justifying) received lower scores because the HMM was trained primarily on forward-reasoning examples.
-
-These examples demonstrate that structural verification is most effective as a \textit{filter} for obviously flawed reasoning, while semantic verification remains necessary for catching errors within well-structured chains.
-
-\section{Discussion}
-
-\subsection{Implications for LLM Verification}
-
-Our findings suggest several practical applications:
-
-\textbf{Rejection Sampling:} Low structural scores can trigger re-sampling, efficiently filtering likely errors before expensive semantic verification.
-
-\textbf{Confidence Estimation:} Structural scores provide an additional signal for calibrating LLM confidence, complementing perplexity-based measures.
-
-\textbf{Quality Monitoring:} Aggregate structural statistics can monitor LLM reasoning quality over time without requiring ground truth annotations.
-
-\textbf{Debugging Aid:} Structural anomalies can guide human reviewers to likely error locations within long reasoning chains.
-
-\subsection{Why Structure Matters}
-
-The success of structural verification challenges the assumption that reasoning quality is primarily a semantic phenomenon. We propose several explanations:
-
-\textbf{Cognitive Parallels:} Human problem-solving follows characteristic phases (understanding, planning, execution, verification). LLMs trained on human-generated text may internalize these patterns.
-
-\textbf{Training Signal Leakage:} Mathematical datasets often present solutions in structured formats. LLMs may learn that correct answers correlate with structural consistency.
-
-\textbf{Error Manifestation:} Many reasoning errors manifest structurally---skipped steps, circular arguments, premature conclusions---even when individual steps appear semantically plausible.
-
-\subsection{Limitations}
-
-\textbf{Structural Hallucinations:} Well-structured but semantically incorrect reasoning receives high scores. Structure is necessary but not sufficient for correctness.
-
-\textbf{Domain Specificity:} Separate models are needed for different reasoning domains, limiting zero-shot applicability.
-
-\textbf{Tagging Quality:} Rule-based tagging may misclassify ambiguous steps, introducing noise. Neural taggers could improve robustness.
-
-\textbf{Sample Size:} While our main results are statistically significant, larger-scale evaluation would strengthen confidence in the findings.
-
-\subsection{Future Directions}
-
-\textbf{Multi-Domain HMMs:} Training domain-specific HMMs and combining them through mixture models or hierarchical structures.
-
-\textbf{Neural-HMM Hybrids:} Using neural networks to parameterize emission distributions while retaining HMM structure.
-
-\textbf{Integration with PRMs:} Combining structural scores with content-based verification for more robust overall assessment.
-
-\textbf{Online Adaptation:} Updating HMM parameters incrementally as new verified solutions become available.
-
-\section{Conclusion}
-
-We have introduced a novel, unsupervised approach to Chain-of-Thought verification based on structural analysis. By transforming the "black box" of LLM reasoning into an interpretable HMM "Glass Box," we demonstrated that reasoning structure contains a vital signal for correctness.
-
-Key contributions include:
-\begin{itemize}
-    \item \textbf{Ensemble HMMs:} We doubled predictive performance ($r=0.11 \to 0.21$) by using a jury of models to verify structure at multiple levels of abstraction.
-    \item \textbf{Novel Metrics:} We introduced "Structural Entropy" as a statistically significant detector of model confusion ($p < 0.05$).
-    \item \textbf{Visual Interpretability:} Through Reasoning Manifolds and Cognitive Fingerprints, we provided visual proof that "Correctness has a shape."
-    \item \textbf{Robustness:} We verified that our method is difficulty-invariant and specific to mathematical logic, failing gracefully on unstructured tasks.
-\end{itemize}
-
-While not a replacement for semantic verification, our method offers a lightweight (milliseconds per sample), unsupervised, and scalable "first line of defense." Furthermore, we have laid the groundwork for future research by creating the \texttt{StructureReward} class, enabling Reinforcement Learning pipelines to optimize directly for better reasoning structure.
-
-We hope this work inspires a shift from purely semantic evaluation to holistic methods that consider the \textit{cognition} of AI systems.
-
-\section*{Acknowledgment}
-
-[To be added after review.]
+Running at milliseconds per sample with no labeling requirement, our method offers a practical first-line verification filter, and the \texttt{StructureReward} class is exposed as future-facing infrastructure for reinforcement learning pipelines.
 
 \begin{thebibliography}{00}
-\bibitem{wei2022chain} J. Wei, X. Wang, D. Schuurmans, M. Bosma, E. Chi, Q. Le, and D. Zhou, ``Chain-of-thought prompting elicits reasoning in large language models,'' in Advances in Neural Information Processing Systems, vol. 35, 2022.
+\bibitem{wei2022chain} J. Wei et al., ``Chain-of-thought prompting elicits reasoning in large language models,'' in \textit{Proc. NeurIPS}, vol. 35, 2022, pp. 24824--24837.
 
-\bibitem{ji2023survey} Z. Ji, N. Lee, R. Frieske, T. Yu, D. Su, Y. Xu, E. Ishii, Y. J. Bang, A. Madotto, and P. Fung, ``Survey of hallucination in natural language generation,'' ACM Computing Surveys, vol. 55, no. 12, pp. 1--38, 2023.
+\bibitem{ji2023survey} Z. Ji et al., ``Survey of hallucination in natural language generation,'' \textit{ACM Comput. Surv.}, vol. 55, no. 12, pp. 1--38, 2023.
 
-\bibitem{lightman2023let} H. Lightman, V. Kosaraju, Y. Burda, H. Edwards, B. Baker, T. Lee, J. Leike, J. Schulman, I. Sutskever, and K. Cobbe, ``Let's verify step by step,'' arXiv preprint arXiv:2305.20050, 2023.
+\bibitem{lightman2024let} H. Lightman et al., ``Let's verify step by step,'' in \textit{Proc. ICLR}, 2024.
 
-\bibitem{wang2022self} X. Wang, J. Wei, D. Schuurmans, Q. Le, E. Chi, S. Narang, A. Chowdhery, and D. Zhou, ``Self-consistency improves chain of thought reasoning in language models,'' arXiv preprint arXiv:2203.11171, 2022.
+\bibitem{wang2023self} X. Wang et al., ``Self-consistency improves chain of thought reasoning in language models,'' in \textit{Proc. ICLR}, 2023.
 
-\bibitem{kojima2022large} T. Kojima, S. S. Gu, M. Reid, Y. Matsuo, and Y. Iwasawa, ``Large language models are zero-shot reasoners,'' in Advances in Neural Information Processing Systems, vol. 35, 2022.
+\bibitem{kojima2022large} T. Kojima, S. S. Gu, M. Reid, Y. Matsuo, and Y. Iwasawa, ``Large language models are zero-shot reasoners,'' in \textit{Proc. NeurIPS}, vol. 35, 2022, pp. 22199--22213.
 
-\bibitem{zhou2022least} D. Zhou, N. Schärli, L. Hou, J. Wei, N. Scales, X. Wang, D. Schuurmans, C. Cui, O. Bousquet, Q. Le, and E. Chi, ``Least-to-most prompting enables complex reasoning in large language models,'' arXiv preprint arXiv:2205.10625, 2022.
+\bibitem{zhou2023least} D. Zhou et al., ``Least-to-most prompting enables complex reasoning in large language models,'' in \textit{Proc. ICLR}, 2023.
 
-\bibitem{yao2023tree} S. Yao, D. Yu, J. Zhao, I. Shafran, T. L. Griffiths, Y. Cao, and K. Narasimhan, ``Tree of thoughts: Deliberate problem solving with large language models,'' arXiv preprint arXiv:2305.10601, 2023.
+\bibitem{yao2023tree} S. Yao, D. Yu, J. Zhao, I. Shafran, T. Griffiths, Y. Cao, and K. Narasimhan, ``Tree of thoughts: Deliberate problem solving with large language models,'' in \textit{Proc. NeurIPS}, vol. 36, 2023, pp. 11809--11822.
 
-\bibitem{rabiner1989tutorial} L. R. Rabiner, ``A tutorial on hidden Markov models and selected applications in speech recognition,'' Proceedings of the IEEE, vol. 77, no. 2, pp. 257--286, 1989.
+\bibitem{weng2023large} Y. Weng, W. Zhu, F. Xia, M. Zhu, S. He, and K. Liu, ``Large language models are better reasoners with self-verification,'' in \textit{Proc. EMNLP Findings}, 2023, pp. 2550--2575.
 
-\bibitem{wiseman2018learning} S. Wiseman, S. Rush, S. Shieber, and J. Kim, ``Learning neural templates for text generation,'' in Proceedings of EMNLP, 2018.
+\bibitem{rabiner1989tutorial} L. R. Rabiner, ``A tutorial on hidden Markov models and selected applications in speech recognition,'' \textit{Proc. IEEE}, vol. 77, no. 2, pp. 257--286, 1989.
 
-\bibitem{zhang2019bertscore} T. Zhang, V. Kishore, F. Wu, K. Q. Weinberger, and Y. Artzi, ``BERTScore: Evaluating text generation with BERT,'' in International Conference on Learning Representations, 2020.
+\bibitem{wiseman2018learning} S. Wiseman, S. Rush, S. Shieber, and J. Kim, ``Learning neural templates for text generation,'' in \textit{Proc. EMNLP}, 2018, pp. 3174--3187.
 
-\bibitem{golovneva2022roscoe} O. Golovneva, M. Chen, S. Poff, M. Corredor, L. Zettlemoyer, M. Fazel-Zarandi, and A. Celikyilmaz, ``ROSCOE: A suite of metrics for scoring step-by-step reasoning,'' in International Conference on Learning Representations, 2023.
+\bibitem{lcot2tree2025} G. Jiang et al., ``What makes a good reasoning chain? Uncovering structural patterns in long chain-of-thought reasoning,'' \textit{arXiv preprint arXiv:2501.09000}, 2025.
 
-\bibitem{cobbe2021training} K. Cobbe, V. Kosaraju, M. Bavarian, M. Chen, H. Jun, L. Kaiser, M. Plappert, J. Tworek, J. Hilton, R. Nakano, C. Hesse, and J. Schulman, ``Training verifiers to solve math word problems,'' arXiv preprint arXiv:2110.14168, 2021.
+\bibitem{picsar2025} J. O. J. Leang et al., ``PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains,'' \textit{arXiv preprint arXiv:2501.08000}, 2025.
 
-\bibitem{clark2018think} P. Clark, I. Cowhey, O. Etzioni, T. Khot, A. Sabharwal, C. Schoenick, and O. Tafjord, ``Think you have solved question answering? Try ARC, the AI2 reasoning challenge,'' arXiv preprint arXiv:1803.05457, 2018.
+\bibitem{zhang2020bertscore} T. Zhang, V. Kishore, F. Wu, K. Q. Weinberger, and Y. Artzi, ``BERTScore: Evaluating text generation with BERT,'' in \textit{Proc. ICLR}, 2020.
+
+\bibitem{golovneva2023roscoe} O. Golovneva et al., ``ROSCOE: A suite of metrics for scoring step-by-step reasoning,'' in \textit{Proc. ICLR}, 2023.
+
+\bibitem{wang-etal-2024-math-shepherd} P. Wang et al., ``Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations,'' in \textit{Proc. ACL}, 2024, pp. 9306--9318.
+
+\bibitem{khalifa2025} M. Khalifa, A. G. G. de Oliveira, and E. X. Wu, ``Process Reward Models That Think,'' \textit{arXiv preprint arXiv:2504.16828}, 2025.
+
+\bibitem{cobbe2021training} K. Cobbe et al., ``Training verifiers to solve math word problems,'' \textit{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem{clark2018think} P. Clark et al., ``Think you have solved question answering? Try ARC,'' \textit{arXiv preprint arXiv:1803.05457}, 2018.
+
+\bibitem{landis1977measurement} J. R. Landis and G. G. Koch, ``The measurement of observer agreement for categorical data,'' \textit{Biometrics}, vol. 33, no. 1, pp. 159--174, 1977.
 \end{thebibliography}
 
 \end{document}

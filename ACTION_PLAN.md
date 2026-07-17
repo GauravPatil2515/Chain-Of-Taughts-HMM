@@ -1,4 +1,4 @@
-Based on the audit we just completed, here's your detailed, prioritized plan of action to take the "Unsupervised Plausibility Scoring of CoT via Structural HMM" paper from its current state to IEEE-submission-ready.
+ , Based on the audit we just completed, here's your detailed, prioritized plan of action to take the "Unsupervised Plausibility Scoring of CoT via Structural HMM" paper from its current state to IEEE-submission-ready.
 
 Phase 1: Fix the Paper (Days 1-3)
 Reconcile the three inconsistent PDF versions into one canonical draft before touching any new experiments.

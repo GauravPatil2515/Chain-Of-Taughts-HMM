@@ -60,12 +60,11 @@ pip install --upgrade pip
 # 3. Installing Dependencies
 echo -e "\n${BLUE}[3/5] Installing Dependencies...${NC}"
 echo "Installing core packages from requirements.txt..."
-# If on macOS, we install CPU-optimized PyTorch by default to save disk space and compile time
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    echo "Detected macOS environment. Optimizing package installation..."
-fi
-
-pip install -r requirements.txt
+# Install CPU-optimized PyTorch first to save disk space and prevent CUDA dependency downloads
+echo "Installing CPU-optimized PyTorch..."
+pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+echo "Installing other dependencies..."
+pip install --no-cache-dir -r requirements.txt
 if [ $? -ne 0 ]; then
     echo -e "${RED}Error: Package installation failed.${NC}"
     exit 1

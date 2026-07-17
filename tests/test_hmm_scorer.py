@@ -18,24 +18,25 @@ from hmm.scorer import EnsembleScorer, load_ensemble
 from hmm.trainer import EnsembleHMMTrainer
 
 
+@pytest.fixture
+def sample_tag_sequences():
+    """Sample tag sequences for testing."""
+    return [
+        ["PR", "IN", "CA", "CO"],
+        ["PR", "CA", "IN", "CA", "CO"],
+        ["IN", "IN", "CA", "VE", "CO"],
+    ]
+
+@pytest.fixture
+def mock_ensemble(sample_tag_sequences):
+    """Create a mock ensemble for testing."""
+    trainer = EnsembleHMMTrainer(n_components=3, n_ensemble=2, n_iter=10)
+    trainer.fit(sample_tag_sequences)
+    return trainer.ensemble
+
+
 class TestEnsembleScorer:
     """Tests for EnsembleScorer class."""
-
-    @pytest.fixture
-    def sample_tag_sequences(self):
-        """Sample tag sequences for testing."""
-        return [
-            ["PR", "IN", "CA", "CO"],
-            ["PR", "CA", "IN", "CA", "CO"],
-            ["IN", "IN", "CA", "VE", "CO"],
-        ]
-
-    @pytest.fixture
-    def mock_ensemble(self, sample_tag_sequences):
-        """Create a mock ensemble for testing."""
-        trainer = EnsembleHMMTrainer(n_components=3, n_ensemble=2, n_iter=10)
-        trainer.fit(sample_tag_sequences)
-        return trainer.ensemble
 
     def test_scorer_initialization(self, mock_ensemble):
         """Test scorer initializes correctly with ensemble."""

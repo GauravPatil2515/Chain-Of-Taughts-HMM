@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoT-HMM Architecture Diagrams</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #1a1a2e; color: #eee; padding: 20px; }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1, h2 { color: #00d9ff; }
+  .diagram-section { margin: 40px 0; background: #16213e; padding: 20px; border-radius: 10px; }
+  svg { width: 100%; height: auto; }
+  .box { fill: #0f3460; stroke: #00d9ff; stroke-width: 2; rx: 8; ry: 8; }
+  .box-alt { fill: #533460; stroke: #e94560; stroke-width: 2; rx: 8; ry: 8; }
+  .arrow { stroke: #00d9ff; stroke-width: 2; marker-end: url(#arrowhead); }
+  .arrow-alt { stroke: #e94560; stroke-width: 2; marker-end: url(#arrowhead-alt); }
+  .text { fill: #fff; font-size: 14px; dominant-baseline: middle; text-anchor: middle; }
+  .text-small { font-size: 12px; }
+  .tag-box { fill: #2d4059; stroke: #ffa500; stroke-width: 1.5; rx: 4; ry: 4; }
+  .hidden-state { fill: #3d5069; stroke: #4cc9f0; stroke-width: 1.5; rx: 4; ry: 4; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>CoT-HMM Architecture Diagrams</h1>
+
+<div class="diagram-section">
+<h2>1. Main Pipeline Flow</h2>
+<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00d9ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Process boxes -->
+  <rect x="50" y="50" width="180" height="80" class="box"/>
+  <text x="140" y="30" class="text">CoT Collection</text>
+  <text x="140" y="70" class="text text-small">- LLM inference</text>
+  <text x="140" y="85" class="text text-small">- Multi-model, Multi-domain</text>
+  
+  <rect x="280" y="50" width="180" height="80" class="box"/>
+  <text x="370" y="30" class="text">Step Tagging</text>
+  <text x="370" y="70" class="text text-small">- Segmentation</text>
+  <text x="370" y="85" class="text text-small">- Rule-based classification</text>
+  
+  <rect x="510" y="50" width="180" height="80" class="box"/>
+  <text x="600" y="30" class="text">HMM Training</text>
+  <text x="600" y="70" class="text text-small">- Fit on correct traces</text>
+  <text x="600" y="85" class="text text-small">- Learn A, B, π</text>
+  
+  <rect x="740" y="50" width="180" height="80" class="box"/>
+  <text x="830" y="30" class="text">Scoring &amp; Evaluation</text>
+  <text x="830" y="70" class="text text-small">- Log-likelihood</text>
+  <text x="830" y="85" class="text text-small">- Entropy, Anomalies</text>
+  
+  <!-- Arrows -->
+  <path d="M 230 90 L 280 90" class="arrow"/>
+  <path d="M 460 90 L 510 90" class="arrow"/>
+  <path d="M 690 90 L 740 90" class="arrow"/>
+  
+  <!-- Data labels -->
+  <text x="140" y="150" class="text">data/cot_outputs/</text>
+  <text x="370" y="150" class="text">data/tagged/</text>
+  <text x="600" y="150" class="text">models/*.pkl</text>
+  <text x="830" y="150" class="text">experiments/results/</text>
+</svg>
+</div>
+
+<div class="diagram-section">
+<h2>2. HMM Mathematical Model</h2>
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00d9ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Hidden states (top row) -->
+  <text x="100" y="20" class="text" fill="#4cc9f0">Hidden States (Latent)</text>
+  <rect x="30" y="30" width="120" height="40" class="hidden-state"/>
+  <text x="90" y="50" class="text text-small">State 1</text>
+  <rect x="170" y="30" width="120" height="40" class="hidden-state"/>
+  <text x="230" y="50" class="text text-small">State 2</text>
+  <rect x="310" y="30" width="120" height="40" class="hidden-state"/>
+  <text x="370" y="50" class="text text-small">State 3</text>
+  <rect x="450" y="30" width="120" height="40" class="hidden-state"/>
+  <text x="510" y="50" class="text text-small">State 4</text>
+  <rect x="590" y="30" width="120" height="40" class="hidden-state"/>
+  <text x="650" y="50" class="text text-small">State 5</text>
+  
+  <!-- Observations (tag sequence, middle) -->
+  <text x="100" y="110" class="text" fill="#ffa500">Observations (Tags)</text>
+  
+  <!-- Tag sequence boxes -->
+  <rect x="20" y="120" width="80" height="30" class="tag-box"/>
+  <text x="60" y="135" class="text text-small">PR</text>
+  <rect x="120" y="120" width="80" height="30" class="tag-box"/>
+  <text x="160" y="135" class="text text-small">EQ</text>
+  <rect x="220" y="120" width="80" height="30" class="tag-box"/>
+  <text x="260" y="135" class="text text-small">CA</text>
+  <rect x="320" y="120" width="80" height="30" class="tag-box"/>
+  <text x="360" y="135" class="text text-small">CA</text>
+  <rect x="420" y="120" width="80" height="30" class="tag-box"/>
+  <text x="460" y="135" class="text text-small">IN</text>
+  <rect x="520" y="120" width="80" height="30" class="tag-box"/>
+  <text x="560" y="135" class="text text-small">CO</text>
+  
+  <!-- Transition probabilities -->
+  <text x="100" y="180" class="text" fill="#e94560">Transition Matrix A</text>
+  <text x="50" y="200" class="text text-small">A = P(state_t+1 | state_t)</text>
+  <text x="50" y="220" class="text text-small">Example: Setup → Plan, Plan → Execute</text>
+  
+  <!-- Emission probabilities -->
+  <text x="300" y="180" class="text" fill="#e94560">Emission Matrix B</text>
+  <text x="250" y="200" class="text text-small">B = P(observation | state)</text>
+  <text x="250" y="220" class="text text-small">Example: "Execute" state emits CA, EQ</text>
+  
+  <!-- Initial distribution -->
+  <text x="550" y="180" class="text" fill="#e94560">Initial π</text>
+  <text x="500" y="200" class="text text-small">π = P(start in each state)</text>
+  <text x="500" y="220" class="text text-small">Typically starts at "Setup" state</text>
+  
+  <!-- Arrows showing transitions between hidden states -->
+  <path d="M 90 70 C 150 90 150 90 170 70" class="arrow" stroke-dasharray="5,3"/>
+  <path d="M 230 70 C 290 90 290 90 310 70" class="arrow" stroke-dasharray="5,3"/>
+  <path d="M 370 70 C 430 90 430 90 450 70" class="arrow" stroke-dasharray="5,3"/>
+  <path d="M 510 70 C 570 90 570 90 590 70" class="arrow" stroke-dasharray="5,3"/>
+</svg>
+</div>
+
+<div class="diagram-section">
+<h2>3. Scoring Formula</h2>
+<svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="500" y="40" class="text" font-size="20">HMM Scoring</text>
+  
+  <rect x="100" y="60" width="800" height="80" fill="#0f3460" stroke="#00d9ff" stroke-width="2" rx="8"/>
+  <text x="500" y="100" class="text" font-size="18">Score(O_test) = (1/T) × log P(O_test | λ)</text>
+  <text x="500" y="120" class="text text-small">where T = sequence length, λ = (A, B, π)</text>
+  
+  <text x="200" y="160" class="text text-small">Higher score = More plausible reasoning</text>
+  <text x="500" y="160" class="text text-small">Lower score = Anomalous/unusual pattern</text>
+  <text x="800" y="160" class="text text-small">Score range: [-5, 0]</text>
+</svg>
+</div>
+
+<div class="diagram-section">
+<h2>4. Neural-HMM Hybrid Architecture</h2>
+<svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00d9ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Step text input -->
+  <rect x="10" y="80" width="150" height="60" class="box-alt"/>
+  <text x="85" y="70" class="text" fill="#e94560" font-size="12">Input: Step Text</text>
+  <text x="85" y="100" class="text text-small">"5 + 3 = 8"</text>
+  <text x="85" y="115" class="text text-small">or "Therefore..."</text>
+  
+  <!-- Neural tagger -->
+  <rect x="200" y="80" width="200" height="60" fill="#533460" stroke="#e94560" stroke-width="2" rx="8"/>
+  <text x="300" y="70" class="text" fill="#e94560" font-size="12">NeuralTagger</text>
+  <text x="300" y="100" class="text text-small">DistilBERT-base</text>
+  <text x="300" y="115" class="text text-small">Fine-tuned classifier</text>
+  
+  <!-- Probabilities -->
+  <rect x="450" y="80" width="180" height="60" fill="#3d5069" stroke="#4cc9f0" stroke-width="2" rx="8"/>
+  <text x="540" y="70" class="text" fill="#4cc9f0" font-size="12">Softmax Probabilities</text>
+  <text x="540" y="100" class="text text-small">[0.1, 0.0, 0.8,</text>
+  <text x="540" y="115" class="text text-small"> 0.0, 0.0, 0.1]</text>
+  
+  <!-- HMM Ensemble -->
+  <rect x="700" y="80" width="180" height="60" class="box"/>
+  <text x="790" y="70" class="text" font-size="12">HMM Ensemble</text>
+  <text x="790" y="100" class="text text-small">12 models</text>
+  <text x="790" y="115" class="text text-small">(n_states: 3,5,8,12)</text>
+  
+  <!-- Output -->
+  <rect x="950" y="80" width="150" height="60" class="box-alt"/>
+  <text x="540" y="165" class="text" fill="#e94560" font-size="12">Output: Neural HMM Score</text>
+  <text x="170" y="170" class="text text-small">score = -0.8</text>
+  <text x="170" y="185" class="text text-small">(weighted by confidence)</text>
+  
+  <!-- Arrows -->
+  <path d="M 160 110 L 200 110" class="arrow-alt"/>
+  <path d="M 400 110 L 450 110" class="arrow-alt"/>
+  <path d="M 630 110 L 700 110" class="arrow"/>
+  <path d="M 880 110 L 950 110" class="arrow"/>
+</svg>
+</div>
+
+<div class="diagram-section">
+<h2>5. Rejection Sampling Pipeline</h2>
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00d9ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Input -->
+  <rect x="20" y="40" width="200" height="50" class="box-alt"/>
+  <text x="120" y="25" class="text" fill="#e94560" font-size="12">Problem + Query</text>
+  <text x="120" y="65" class="text text-small">GSM8K question</text>
+  
+  <!-- Generate candidates -->
+  <rect x="280" y="40" width="200" height="50" fill="#533460" stroke="#e94560" stroke-width="2"/>
+  <text x="380" y="25" class="text" fill="#e94560" font-size="12">Generate K=8 Candidates</text>
+  <text x="380" y="65" class="text text-small">LLM generates 8 CoTs</text>
+  
+  <!-- Score each -->
+  <rect x="540" y="40" width="180" height="50" class="box"/>
+  <text x="630" y="25" class="text" font-size="12">Score Each</text>
+  <text x="630" y="65" class="text text-small">HMM Ensemble</text>
+  
+  <!-- Select best -->
+  <rect x="780" y="40" width="180" height="50" fill="#2d5016" stroke="#4cc9f0" stroke-width="2"/>
+  <text x="870" y="25" class="text" fill="#4cc9f0" font-size="12">Select Highest</text>
+  <text x="870" y="65" class="text text-small">Structure score</text>
+  
+  <!-- Compare -->
+  <rect x="280" y="140" width="200" height="60" class="box-alt"/>
+  <text x="380" y="130" class="text" fill="#e94560" font-size="12">Greedy Accuracy</text>
+  <text x="380" y="155" class="text text-small">e.g., 45%</text>
+  
+  <rect x="540" y="140" width="180" height="60" fill="#2d5016" stroke="#4cc9f0"/>
+  <text x="630" y="130" class="text" fill="#4cc9f0" font-size="12">Selected Accuracy</text>
+  <text x="630" y="155" class="text text-small">e.g., 48% (+3%)</text>
+  
+  <rect x="780" y="140" width="180" height="60" class="box"/>
+  <text x="870" y="130" class="text" font-size="12">Oracle Accuracy</text>
+  <text x="870" y="155" class="text text-small">Upper bound</text>
+  
+  <!-- Arrows -->
+  <path d="M 220 65 L 280 65" class="arrow"/>
+  <path d="M 480 65 L 540 65" class="arrow"/>
+  <path d="M 720 65 L 780 65" class="arrow"/>
+</svg>
+</div>
+
+<div class="diagram-section">
+<h2>6. 12-Week Experiment Timeline</h2>
+<svg viewBox="0 0 1400 400" xmlns="http://www.w3.org/2000/svg">
+  <text x="700" y="30" class="text" font-size="20">Research Timeline (Week 1-12)</text>
+  
+  <!-- Week columns -->
+  <g font-family="system-ui" font-size="12">
+    <!-- Week 1-2 -->
+    <rect x="20" y="50" width="160" height="80" class="box"/>
+    <text x="100" y="60" class="text">Week 1-2: Data Scaling</text>
+    <text x="100" y="80" class="text text-small">• 500+ GSM8K samples</text>
+    <text x="100" y="95" class="text text-small">• 3+ model families</text>
+    
+    <rect x="20" y="150" width="160" height="80" class="box"/>
+    <text x="100" y="160" class="text">Week 3-4: Neural Baselines</text>
+    <text x="100" y="180" class="text text-small">• ROSCOE implementation</text>
+    <text x="100" y="195" class="text text-small">• PiCSAR implementation</text>
+    
+    <rect x="20" y="250" width="160" height="80" class="box"/>
+    <text x="100" y="260" class="text">Week 5-6: Stats Rigor</text>
+    <text x="100" y="280" class="text text-small">• Bootstrap CIs</text>
+    <text x="100" y="295" class="text text-small">• Effect sizes + FDR</text>
+    
+    <rect x="20" y="350" width="160" height="80" class="box"/>
+    <text x="100" y="360" class="text">Week 7-8: Neural-HMM</text>
+    <text x="100" y="380" class="text text-small">• DistilBERT tagger</text>
+    <text x="100" y="395" class="text text-small">• Hybrid scorer</text>
+    
+    <!-- Week 9-10 -->
+    <rect x="220" y="50" width="160" height="80" class="box"/>
+    <text x="300" y="60" class="text">Week 9-10: RL Validation</text>
+    <text x="300" y="80" class="text text-small">• Rejection sampling</text>
+    
+    <rect x="220" y="150" width="160" height="80" class="box"/>
+    <text x="300" y="160" class="text">Week 11: ARC Investigation</text>
+    <text x="300" y="180" class="text text-small">• Below-chance 0.46 AUC</text>
+    
+    <rect x="220" y="250" width="160" height="80" class="box"/>
+    <text x="300" y="260" class="text">Week 12: Submission</text>
+    <text x="300" y="280" class="text text-small">• Paper polish</text>
+    <text x="300" y="295" class="text text-small">• IEEE TNNLS ready</text>
+    
+    <!-- Dependencies arrows -->
+    <path d="M 100 130 L 100 150" class="arrow"/>
+    <path d="M 100 230 L 100 250" class="arrow"/>
+    <path d="M 100 330 L 100 350" class="arrow"/>
+  </g>
+</svg>
+</div>
+
+</div>
+</body>
+</html>
