@@ -1,110 +1,53 @@
-# Project Summary: CoT-HMM
+# Architecture & Evaluation Summary: CoT-HMM
 
 ## What is CoT-HMM?
 
 **Unsupervised Plausibility Scoring of Chain-of-Thought Reasoning via Structural Hidden Markov Models**
 
-A lightweight method that learns the structural patterns of correct reasoning chains and scores new CoTs based on how well they match those patterns.
+A lightweight, text-only framework that models the structural transition dynamics of valid reasoning chains, evaluating new CoT traces without human step labels, GPU retraining, or domain-specific fine-tuning.
 
 ---
 
-## Core Architecture
+## Core Pipeline Architecture
 
-### Pipeline Stages
-1. **CoT Collection** → scripts/generation/*.py → LLM generates reasoning traces
-2. **Step Tagging** → src/tagging/rule_based_tagger.py → Convert text to 8 semantic tags
-3. **HMM Training** → src/hmm/trainer.py → Learn transition patterns from correct traces
-4. **Scoring & Evaluation** → src/hmm/scorer.py → Compute likelihood, entropy, anomalies
-
----
-
-## Key Methods & Formulas
-
-### HMM Scoring
-```
-Score = (1/T) × log P(observation_sequence | λ)
-
-Where:
-- T = sequence length (steps)
-- λ = (A, B, π) trained HMM parameters
-- A = transition matrix (state-to-state)
-- B = emission matrix (tag-to-state)
-- π = initial state distribution
-```
-
-### Semantic Tags (8 Categories)
-| Tag | Meaning | Examples |
-|-----|---------|----------|
-| PR | Problem Restatement | "need to find", "question asks" |
-| DV | Define Variable | "let x =", "suppose" |
-| EQ | Equation Setup | "equation is", mathematical formulas |
-| CA | Calculation | "5 × 3 = 15", arithmetic |
-| IN | Inference | "therefore", "thus", "implies" |
-| RF | Reflection | "wait", "actually", "correction" |
-| VE | Verification | "check", "verify", "confirm" |
-| CO | Conclusion | "answer is", "final answer", "boxed" |
+1. **CoT Collection** → `scripts/run_real_generation.py` / `colab_scripts/colab_experiments.py`
+2. **Step Tagging** → `src/tagging/rule_based_tagger.py` → Abstract reasoning steps into 8 semantic tags ($\kappa = 0.953$).
+3. **Ensemble & Anomaly Training** → `src/hmm/ensemble.py` → Train Ensemble HMM ($M=12$, $N \in \{3,5,8,12\}$) on correct traces; train Anomaly HMM on incorrect traces.
+4. **Out-of-Fold Scoring** → `src/hmm/scorer.py` → Compute log-likelihood, Plausibility Margin, Structural Entropy, and Entropy Drift Rate (EDR).
+5. **Compute Routing** → `scripts/run_leakfree_evaluation.py` → 3-Tier adaptive gate (Pass / Escalate / Reject).
 
 ---
 
-## ML Models Used
+## Key Metrics & Formulations
 
-### Primary: Categorical HMM
-- **Library:** `hmmlearn.hmm.CategoricalHMM`
-- **Type:** Discrete Hidden Markov Model
-- **Parameters:** N states (5-6), M observations (8 tags)
-- **Training:** Baum-Welch EM on correct-only data
+### Ensemble HMM Score
+$$\text{Score}_{\text{Ensemble}}(\mathbf{o}) = \frac{1}{M} \sum_{m=1}^{M} \frac{1}{T} \log P(\mathbf{o} \mid \lambda_m)$$
 
-### Neural Extensions (Planned)
-- **NeuralTagger:** DistilBERT-base-uncased → 8-way classifier
-- **Backbone:** sentence-transformers/all-MiniLM-L6-v2 (ROSCOE)
-- **Baseline LM:** distilgpt2 (PiCSAR)
+### Plausibility Margin
+$$\text{Margin}(\mathbf{o}) = \text{Score}_{\text{Ensemble}}(\mathbf{o}) - \text{Score}_{\text{Anomaly}}(\mathbf{o})$$
+
+### Entropy Drift Rate (EDR)
+$$\text{EDR}(\mathbf{o}) = \frac{H(\mathbf{o}_{>T/2}) - H(\mathbf{o}_{\le T/2})}{T/2}$$
 
 ---
 
-## Baseline Methods (6 Heuristics)
+## Final Out-of-Fold Benchmark Results (5-Fold CV, N=500, B=10,000)
 
-| Method | Score Formula | Purpose |
-|--------|--------------|---------|
-| Length | log(char) × 0.1 + log(steps) × 0.5 | Longer = more thorough |
-| Tag Diversity | (unique/total) × log(total) | Diverse steps = good reasoning |
-| Structure | Binary features summed | Expected patterns present |
-| Transition | Good transitions / total | Logical flow |
-| Combined | 0.2L + 0.2D + 0.3S + 0.3T | Weighted ensemble |
-| Random | uniform(0, 1) | Sanity check |
-
----
-
-## Current Results
-
-| Dataset | Model | Correlation | AUC | p-value |
-|---------|-------|-------------|-----|---------|
-| GSM8K | Qwen-0.5B | 0.21 | 0.62 | 0.008 |
-| GSM8K | Qwen-1.5B | 0.25 | 0.65 | 0.032 |
-| ARC (Science) | Qwen-0.5B | 0.04 | 0.46 | 0.62 |
-
-**Note:** ARC AUC=0.46 is below chance → requires domain analysis
+| Method / Metric | Out-of-Fold Pearson r [95% CI] | Out-of-Fold ROC-AUC [95% CI] | p-value | Effect Size |
+|---|---|---|---|---|
+| **Plausibility Margin** 🏆 | **0.476** [0.375, 0.716] | **0.983** [0.966, 0.997] | $< 0.001$ | Cohen's $d = 1.093$ (*large*) |
+| **Ensemble HMM Score** | **0.350** [0.193, 0.534] | **0.950** [0.928, 0.969] | $< 0.001$ | Cohen's $d = 0.747$ (*medium*) |
+| **Entropy Drift Rate (EDR)** | -0.282 [-0.376, -0.190] | 0.273 [0.227, 0.322] | $< 0.001$ | Cohen's $d = -0.586$ (*medium*) |
+| **Structural Entropy** | -0.732 [-0.763, -0.698] | 0.057 [0.040, 0.077] | $< 0.001$ | Cohen's $d = -2.144$ (*large*) |
+| **Heuristic Baseline** | 0.459 [0.372, 0.555] | 0.860 [0.826, 0.891] | $< 0.001$ | Cohen's $d = 1.031$ (*large*) |
+| **ROSCOE** | — | 0.380 | — | — |
+| **PiCSAR** | — | 0.460 | — | — |
 
 ---
 
-## Files Created
+## ⚡ 3-Tier Adaptive Compute Routing Performance
 
-| File | Description |
-|------|-------------|
-| `docs/architecture/ARCHITECTURE_OVERVIEW.md` | Technical architecture details |
-| `docs/architecture/METHODS_REFERENCE.md` | Complete methods catalog |
-| `docs/architecture/VISUAL_ARCHITECTURE.html` | Interactive diagrams |
-| `docs/architecture/ARCHITECTURE_DIAGRAMS.html` | SVG pipeline visualizations |
-
----
-
-## 12-Week Research Plan
-
-| Phase | Weeks | Focus | Deliverable |
-|-------|-------|-------|-------------|
-| 1 | 1-2 | Data Scaling | 500+ samples, 3+ models |
-| 2 | 3-4 | Neural Baselines | ROSCOE, PiCSAR comparison |
-| 3 | 5-6 | Statistical Rigor | Bootstrap CIs, effect sizes |
-| 4 | 7-8 | Neural-HMM Hybrid | DistilBERT tagger, evaluate |
-| 5 | 9-10 | Downstream Utility | PPO/rejection sampling |
-| 6 | 11 | ARC Investigation | Root cause analysis |
-| 7 | 12 | Submission Polish | IEEE TNNLS ready |
+- **Direct Pass Tier (Top 30% Margin)**: **99.3% Accuracy** (Pass 150 queries directly).
+- **Escalation Tier (Middle 35% Margin)**: **50.9% Accuracy** (Escalate 175 queries for re-sampling).
+- **Early Reject Tier (Bottom 35% Margin)**: **6.9% Accuracy** (Reject 175 flawed queries immediately).
+- **Compute Savings**: **30.0% reduction** in LLM inference cost.

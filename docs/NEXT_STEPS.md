@@ -1,63 +1,57 @@
-# Phase 4 Status: Scaling Up (200 Samples)
+# CoT-HMM: Current Status & Future Roadmap
 
-**Status:**
-
-- 🔄 **Generation Started:** `run_real_generation.py` is generating 200 samples.
-- 🕒 **Estimated Time:** ~1.5 - 2 Hours.
-- 📂 **Output File:** `data/cot_outputs/real_incremental_200.json` (Watch this file grow).
+**Status:** ✅ **Phase 5 Complete — Benchmark, Evaluation & Paper Publication Ready**
 
 ---
 
-## 🛑 Action Item: Wait for Completion
+## 🏆 Current Achievements & Empirical Baseline
 
-Do not run the next commands until the generation script finishes or you see ~200 items in the output file.
+All core experimental phases are completed. Evaluation results have been validated using **Leak-Free Stratified 5-Fold Cross-Validation** on a balanced 500-sample dataset (`data/v2/gsm8k_500_proper.json`) with **10,000 percentile bootstrap iterations**.
 
----
+### Out-of-Fold Results Summary
 
-## 🚀 After Generation Completes
+| Metric / Method | Out-of-Fold ROC-AUC [95% CI] | Out-of-Fold Pearson r [95% CI] | p-value | Effect Size |
+|---|---|---|---|---|
+| **Plausibility Margin** ($\text{Score}_{\text{correct}} - \text{Score}_{\text{anomaly}}$) | **0.983** [0.966, 0.997] | **0.476** [0.375, 0.716] | $<0.001$ | Cohen's $d = 1.093$ (*large*) |
+| **Ensemble HMM Score** ($M=12$) | **0.950** [0.928, 0.969] | **0.350** [0.193, 0.534] | $<0.001$ | Cohen's $d = 0.747$ (*medium*) |
+| **Entropy Drift Rate (EDR)** | 0.273 [0.227, 0.322] | **-0.282** [-0.376, -0.190] | $<0.001$ | Cohen's $d = -0.586$ (*medium*) |
+| **Structural Entropy** | 0.057 [0.040, 0.077] | **-0.732** [-0.763, -0.698] | $<0.001$ | Cohen's $d = -2.144$ (*large*) |
+| **Heuristic Baseline** | 0.860 [0.826, 0.891] | 0.459 [0.372, 0.555] | $<0.001$ | Cohen's $d = 1.031$ (*large*) |
+| **ROSCOE Neural Baseline** | 0.380 | — | — | — |
+| **PiCSAR Baseline** | 0.460 | — | — | — |
 
-Run these 4 commands in order to analyze the new large dataset.
-
-### 1. Tag the Data
-
-```bash
-python -m src.tagging.rule_based_tagger \
-    --input data/cot_outputs/real_test_200.json \
-    --output data/tagged/phase4_tagged.json
-```
-
-### 2. Verify Correctness & Extract Answers
-
-```bash
-python post_process_correctness.py \
-    --input data/tagged/phase4_tagged.json \
-    --output data/tagged/phase4_tagged_corrected.json
-```
-
-### 3. Train HMM (Scale Up)
-
-We increase hidden states to 5 since we have more data.
-
-```bash
-python src/hmm/trainer.py \
-    --input data/tagged/phase4_tagged_corrected.json \
-    --output models/phase4_hmm.pkl \
-    --n-components 5
-```
-
-### 4. Evaluate
-
-```bash
-python run_baseline_eval.py \
-    --data data/tagged/phase4_tagged_corrected.json \
-    --model models/phase4_hmm.pkl \
-    --output experiments/results/phase4_baseline
-```
+### ⚡ 3-Tier Adaptive Compute Routing Gate
+- **Pass Tier (Top 30% Confidence):** 150 samples passed directly without re-sampling. **Accuracy = 99.3%**.
+- **Re-sampling / Escalation Tier (Middle 35%):** 175 samples escalated for self-consistency / LLM-as-Judge re-sampling. **Accuracy = 50.9%**.
+- **Reject Tier (Bottom 35%):** 175 samples rejected immediately. **Accuracy = 6.9%** (93.1% are actual incorrect chains).
+- **Total Compute Savings:** **30.0%** reduction in inference latency and token overhead.
 
 ---
 
-## 🏆 Success Criteria for Phase 4
+## 🛠️ Verification & Pipeline Commands
 
-- **Correlation > 0.3**: Stronger signal than Phase 3 (0.16).
-- **Smooth Transition Matrix**: Visualizing the HMM should show clear "reasoning paths".
-- **Statistical Significance**: With ~200 samples, the p-values in `baseline_comparison.json` should be much lower (significant).
+To run unit tests or re-execute the complete leak-free evaluation benchmark, run:
+
+```bash
+# 1. Run complete unit test suite (30 tests)
+pytest tests/
+
+# 2. Run leak-free 5-fold cross-validation benchmark
+PYTHONPATH=. python3 scripts/run_leakfree_evaluation.py
+```
+
+Outputs will be saved to:
+- Cross-validated dataset: `data/v2/gsm8k_500_proper_cv_scored.json`
+- Metrics JSON: `experiments/results/evaluation_results_leak_free.json`
+- Benchmark Report: `experiments/results/leak_free_report.md`
+
+---
+
+## 🚀 Future Roadmap & Open Directions
+
+1. **Multi-Domain Benchmark Expansion**:
+   - Extend zero-shot structural evaluation from GSM8K to ARC-Challenge, StrategyQA, and SVAMP datasets.
+2. **Real-time Token-Level HMM Decoding**:
+   - Integrate HMM state transition emission priors into LLM generation decoding loops (e.g., vLLM / HuggingFace logits processor) for online early stopping.
+3. **Multi-Modal CoT Structural Verification**:
+   - Explore structural HMM state modeling on vision-language CoT traces (e.g., LLaVA, Qwen-2-VL).

@@ -1,155 +1,81 @@
 # Project Structure Guide
 
-Recommended organization for CoT-HMM project (IEEE submission ready).
-
-## IDEAL FOLDER STRUCTURE
+CoT-HMM repository layout and module organization (IEEE submission ready).
 
 ```
-chain-of-thought-hmm/
-├── README.md                           # Main project guide
-├── pyproject.toml                      # Python project config
-├── requirements.txt                    # Dependencies
+Chain-Of-Taughts-HMM/
+├── README.md                           # Main project documentation & quickstart
+├── ACTION_PLAN.md                      # Milestone action plan & history
+├── pyproject.toml                      # Python build configuration
+├── requirements.txt                    # Project dependencies
 │
-├── src/
+├── src/                                # Core Python package
 │   ├── __init__.py
-│   ├── data_collection/
-│   │   ├── __init__.py
-│   │   ├── gsm8k_loader.py             # GSM8K dataset utilities
-│   │   ├── generate_cot.py             # LLM CoT generation
-│   │   └── generate_multidataset.py      # Multi-dataset support
-│   │
 │   ├── tagging/
 │   │   ├── __init__.py
-│   │   ├── rule_based_tagger.py        # Current rule-based tagger
-│   │   └── step_segmenter.py           # Step segmentation logic
+│   │   ├── rule_based_tagger.py        # Rule-based 8-tag semantic tagger (κ=0.953)
+│   │   └── step_segmenter.py           # CoT trace sentence/step segmentation
 │   │
 │   ├── hmm/
 │   │   ├── __init__.py
-│   │   ├── trainer.py                  # HMM training
-│   │   ├── scorer.py                   # HMM scoring
-│   │   └── ensemble.py                   # HMM ensemble utilities
-│   │
-│   ├── neural_hmm/
-│   │   ├── __init__.py
-│   │   └── neural_hmm_hybrid.py        # Neural tagger + hybrid scorer
+│   │   ├── trainer.py                  # CategoricalHMM training logic
+│   │   ├── scorer.py                   # Log-likelihood & entropy scoring
+│   │   └── ensemble.py                 # EnsembleHMM (M=12) & AnomalyHMM models
 │   │
 │   ├── baselines/
 │   │   ├── __init__.py
-│   │   ├── baselines.py                # Heuristic scorers
-│   │   └── baseline_evaluation.py        # Comparison framework
+│   │   ├── baselines.py                # Heuristic scorers (Length, Diversity, Structure, Repetition)
+│   │   └── baseline_evaluation.py      # Baseline benchmark comparison engine
 │   │
 │   ├── experiments_v2/
 │   │   ├── __init__.py
-│   │   ├── roscoe_baseline.py          # ROSCOE implementation
-│   │   ├── picsar_baseline.py          # PiCSAR implementation
-│   │   ├── bootstrap_ci.py             # Bootstrap confidence intervals
-│   │   ├── effect_size.py              # Effect size calculations
-│   │   └── data_schema.py              # ScoredTrace dataclass
-│   │
-│   ├── rejection_sampling/
-│   │   ├── __init__.py
-│   │   └── rejection_sampling.py       # PPO/RL validation
+│   │   ├── roscoe_baseline.py          # ROSCOE neural embedding baseline
+│   │   ├── picsar_baseline.py          # PiCSAR content-based confidence baseline
+│   │   ├── bootstrap_ci.py             # 10,000 percentile bootstrap CIs
+│   │   ├── effect_size.py              # Cohen's d & Cliff's delta effect sizes
+│   │   └── data_schema.py              # ScoredTrace dataclass & JSON schema
 │   │
 │   └── analysis/
 │       ├── __init__.py
-│       ├── qualitative.py              # Case studies, examples
-│       └── visualize.py                  # Plotting utilities
+│       ├── qualitative.py              # Case studies & cognitive fingerprinting
+│       └── visualize.py                # Transition heatmaps & ROC curve plots
+│
+├── scripts/                            # Execution & benchmark scripts
+│   ├── run_leakfree_evaluation.py      # Master 5-fold cross-validation & evaluation script
+│   ├── run_all_phases.py               # Master end-to-end pipeline runner
+│   ├── run_real_generation.py          # Local LLM reasoning trace generator
+│   └── colab_scripts/                  # GPU-accelerated Colab/Kaggle experiment runners
+│       ├── colab_experiments.py
+│       └── setup_env.sh
 │
 ├── data/
-│   ├── v2/                            # Current scaled dataset
-│   │   ├── README.md                   # Dataset documentation
-│   │   ├── gsm8k_500_traces.json       # Phase 1 output
-│   │   ├── full_1000_traces.json       # Phase 2 output
-│   │   └── scored/                     # Scored traces
-│   │
-│   ├── raw/                           # Raw dataset files
-│   │   ├── gsm8k.json
-│   │   └── arc_challenge.json
-│   │
-│   ├── cot_outputs/
-│   │   └── real_*.json                # Generated CoT outputs
-│   │
-│   └── tagged/
-│       └── phase*_tagged*.json          # Tagged traces
-│
-├── models/
-│   ├── README.md                      # Model documentation
-│   ├── hmm_model.pkl                  # Single HMM model
-│   ├── ensemble.pkl                   # Ensemble of 12 HMMs
-│   ├── neural_tagger_v1.pt            # Fine-tuned DistilBERT
-│   └── .gitkeep
+│   └── v2/                            # Verified benchmark datasets
+│       ├── gsm8k_500_proper.json       # Clean 500-sample balanced dataset (250 correct, 250 incorrect)
+│       └── gsm8k_500_proper_cv_scored.json # Out-of-fold cross-validated scored dataset
 │
 ├── experiments/
-│   └── results/
-│       ├── v2/                       # Results by phase
-│       │   ├── baseline_comparison.json
-│       │   ├── bootstrap_cis.json
-│       │   ├── effect_sizes.json
-│       │   ├── roscoe_scores.json
-│       │   ├── picsar_scores.json
-│       │   ├── neural_hmm_scores.json
-│       │   └── rejection_sampling.json
-│       │
-│       ├── baseline/                   # Demo results
-│       │   ├── BASELINE_RESULTS.md
-│       │   └── figures/
-│       │
-│       └── phase5_analysis/
-│           ├── CASE_STUDIES_REPORT.md
-│           └── SIGNIFICANCE_REPORT.md
+│   └── results/                       # Empirical benchmark results
+│       ├── evaluation_results_leak_free.json # Full benchmark metrics & CIs
+│       ├── leak_free_report.md         # Markdown benchmark summary report
+│       └── leak_free_report.txt        # Text benchmark summary report
 │
-├── paper/
-│   ├── main.tex                       # Main LaTeX manuscript
-│   ├── references.bib                 # Bibliography
-│   ├── figures/
-│   │   ├── cognitive_fingerprint.png
-│   │   ├── transition_matrix.png
-│   │   └── comparison_table.png
-│   └── supplementary/                 # Code zip for review
+├── paper/                             # IEEE conference manuscript
+│   ├── main.tex                        # Updated LaTeX manuscript
+│   └── figures/                        # Generated vector & PNG paper figures
 │
-├── scripts/
-│   ├── run_all_phases.py              # Master runner script
-│   │
-│   ├── collection/
-│   │   └── collect_traces.py          # Data collection pipeline
-│   │
-│   ├── evaluation/
-│   │   └── run_baseline_eval.py       # Baseline evaluation
-│   │
-│   ├── analysis/
-│   │   ├── arc_domain_analysis.py     # Domain investigation
-│   │   └── run_statistical_tests.py   # Statistical tests
-│   │
-│   └── utils/
-│       └── quick_start_test.py        # Validation script
+├── tests/                             # Unit test suite (30 tests)
+│   ├── test_tagger.py                  # Semantic tagger unit tests
+│   ├── test_hmm_scorer.py              # HMM & Ensemble unit tests
+│   ├── test_baselines.py               # Heuristic baseline unit tests
+│   └── test_integration.py             # End-to-end integration tests
 │
-├── tests/
-│   ├── __init__.py
-│   ├── conftest.py
-│   ├── test_tagger.py
-│   ├── test_hmm_scorer.py
-│   ├── test_baselines.py
-│   └── test_integration.py
-│
-├── docs/
-│   ├── architecture/
-│   │   ├── ARCHITECTURE_OVERVIEW.md
-│   │   ├── METHODS_REFERENCE.md
-│   │   ├── VISUAL_ARCHITECTURE.html
-│   │   └── ARCHITECTURE_DIAGRAMS.html
-│   ├── API.md
-│   └── METHODOLOGY.md
-│
-└── logs/
-    └── generation_*.log
+└── docs/                              # Project documentation
+    ├── NEXT_STEPS.md                   # Current status & roadmap
+    ├── RESEARCH_PLAN.md                # Research questions & empirical answers
+    ├── METHODOLOGY.md                  # Complete mathematical & pipeline methodology
+    ├── API.md                          # API reference guide
+    └── architecture/                   # Architectural blueprints & diagrams
+        ├── ARCHITECTURE_OVERVIEW.md
+        ├── METHODS_REFERENCE.md
+        └── SUMMARY.md
 ```
-
-## FOLDER REORGANIZATION TASKS
-
-- [ ] Move `src/hmm/ensemble.py` to `src/hmm/ensemble.py` (already there)
-- [ ] Consolidate root-level scripts into `scripts/` subdirectories
-- [ ] Rename `data/cot_outputs` → `data/v2/` for consistency
-- [ ] Create `models/README.md` with model documentation
-- [ ] Create `data/v2/README.md` with dataset schema
-- [ ] Move `src/experiments_v2/` to `src/experiments/` or keep as is
-- [ ] Clean up `.gitkeep` files or replace with placeholder data files

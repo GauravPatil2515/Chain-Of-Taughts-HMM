@@ -52,7 +52,8 @@ def train_hmm(
     sequences: List[List[str]],
     n_components: int = 6,
     n_iter: int = 100,
-    random_state: int = 42
+    random_state: int = 42,
+    verbose: bool = False
 ) -> hmm.CategoricalHMM:
     """
     Train HMM on tag sequences.
@@ -62,6 +63,7 @@ def train_hmm(
         n_components: Number of hidden states
         n_iter: Max training iterations
         random_state: Random seed
+        verbose: Whether to print EM training progress
     
     Returns:
         Trained HMM model
@@ -75,7 +77,7 @@ def train_hmm(
         n_components=n_components,
         n_iter=n_iter,
         random_state=random_state,
-        verbose=True,
+        verbose=verbose,
         n_features=n_symbols  # Number of possible emission symbols
     )
     
