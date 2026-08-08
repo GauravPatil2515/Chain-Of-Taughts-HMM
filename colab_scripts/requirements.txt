@@ -1,0 +1,8 @@
+# Fast lightweight dependencies for Colab/Kaggle (PyTorch is pre-installed)
+hmmlearn>=0.2.8
+sentence-transformers>=2.2.2
+accelerate>=0.26.0
+bitsandbytes>=0.41.0
+datasets>=2.14.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
