@@ -7,11 +7,15 @@ import os
 import sys
 import json
 import argparse
-from pathlib import Path
-from datetime import datetime
-
+import joblib
 import numpy as np
-from scipy import stats
+from pathlib import Path
+from datetime import timezone, datetime
+import scipy.stats as stats
+from sklearn.metrics import roc_auc_score
+
+# Ensure the parent directory is in sys.path so 'colab_scripts' module can be found
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 try:
     import torch
@@ -225,7 +229,10 @@ def compute_entropy_drift(tag_seq, model):
     
     for i in range(1, len(tag_seq)):
         prev_id = TAG_TO_ID.get(tag_seq[i-1], 0)
-        probs = np.clip(transmat[prev_id], 1e-10, 1.0)
+        probs = transmat[prev_id]
+        if np.isnan(probs).any() or np.sum(probs) == 0:
+            probs = np.ones_like(probs) / len(probs)
+        probs = np.clip(probs, 1e-10, 1.0)
         entropy = -np.sum(probs * np.log(probs))
         entropies.append(entropy)
     
@@ -338,8 +345,10 @@ def run_full_experiment(
                 else:
                     edr_incorrect.append(edr)
     
-    print(f"  Correct EDR mean: {np.mean(edr_correct):.4f}")
-    print(f"  Incorrect EDR mean: {np.mean(edr_incorrect):.4f}")
+    edr_correct_val = float(np.mean(edr_correct)) if len(edr_correct) > 0 else 0.0
+    edr_incorrect_val = float(np.mean(edr_incorrect)) if len(edr_incorrect) > 0 else 0.0
+    print(f"  Correct EDR mean: {edr_correct_val:.4f}")
+    print(f"  Incorrect EDR mean: {edr_incorrect_val:.4f}")
     
     # 6. Generate report
     print(f"\n[6/6] Generating report...")
@@ -351,8 +360,8 @@ def run_full_experiment(
         'bootstrap_ci': bootstrap_results,
         'routing': routing_results,
         'edr': {
-            'correct_mean': float(np.mean(edr_correct)) if len(edr_correct) > 0 else 0.0,
-            'incorrect_mean': float(np.mean(edr_incorrect)) if len(edr_incorrect) > 0 else 0.0,
+            'correct_mean': edr_correct_val,
+            'incorrect_mean': edr_incorrect_val,
         }
     }
     
