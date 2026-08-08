@@ -205,8 +205,9 @@ def evaluate_statistical_performance(scored_data: List[Dict[str, Any]]) -> Dict[
     results = {}
     
     for metric_name, scores in metrics_to_eval.items():
-        # Handle nan / inf
-        valid_mask = np.isfinite(scores)
+        # Handle nan / inf by replacing with min/max finite bounds to keep them in rank metrics (like AUC)
+        scores = np.nan_to_num(scores, nan=0.0, posinf=1e6, neginf=-1e6)
+        valid_mask = np.isfinite(scores) # Should be all True now
         v_scores = scores[valid_mask]
         v_labels = labels[valid_mask]
         
@@ -335,14 +336,14 @@ def generate_leak_free_report(
 
 
 def main():
-    dataset_path = "data/v2/gsm8k_500_proper.json"
+    dataset_path = "data/v2/gsm8k_organic_balanced.json"
     output_dir = Path("experiments/results")
     
     # 1. Run leak-free cross-validation
     scored_data, cv_info = run_leakfree_cross_validation(dataset_path, n_splits=5, random_state=42)
     
     # 2. Save out-of-fold scored dataset
-    cv_dataset_path = Path("data/v2/gsm8k_500_proper_cv_scored.json")
+    cv_dataset_path = Path("data/v2/gsm8k_organic_balanced_cv_scored.json")
     cv_dataset_path.parent.mkdir(parents=True, exist_ok=True)
     with open(cv_dataset_path, "w", encoding="utf-8") as f:
         json.dump(scored_data, f, indent=2)

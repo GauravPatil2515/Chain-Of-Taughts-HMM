@@ -1,0 +1,3502 @@
+[
+  {
+    "sample_id": "phi_0030",
+    "problem": "Problem 30",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8008533061146985
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0030"
+  },
+  {
+    "sample_id": "qwen_0064",
+    "problem": "Problem 64",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.793737088802901
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0064"
+  },
+  {
+    "sample_id": "mistral_0447",
+    "problem": "Problem 447",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6699398931636777
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0447"
+  },
+  {
+    "sample_id": "llama_0173",
+    "problem": "Problem 173",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.029424012591678
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0173"
+  },
+  {
+    "sample_id": "mistral_0287",
+    "problem": "Problem 287",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9058413967577117
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0287"
+  },
+  {
+    "sample_id": "qwen_0496",
+    "problem": "Problem 496",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.718623077163228
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0496"
+  },
+  {
+    "sample_id": "qwen_0460",
+    "problem": "Problem 460",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5176374335418052
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0460"
+  },
+  {
+    "sample_id": "qwen_0100",
+    "problem": "Problem 100",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.207685371025207
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0100"
+  },
+  {
+    "sample_id": "mistral_0139",
+    "problem": "Problem 139",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8154321582169775
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0139"
+  },
+  {
+    "sample_id": "mistral_0059",
+    "problem": "Problem 59",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7122274364388204
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0059"
+  },
+  {
+    "sample_id": "mistral_0359",
+    "problem": "Problem 359",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6136154717761613
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0359"
+  },
+  {
+    "sample_id": "phi_0070",
+    "problem": "Problem 70",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.319302197245793
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0070"
+  },
+  {
+    "sample_id": "mistral_0015",
+    "problem": "Problem 15",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.781143764620486
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0015"
+  },
+  {
+    "sample_id": "phi_0430",
+    "problem": "Problem 430",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.0916292563328875
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0430"
+  },
+  {
+    "sample_id": "llama_0353",
+    "problem": "Problem 353",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2799692649817136
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0353"
+  },
+  {
+    "sample_id": "qwen_0200",
+    "problem": "Problem 200",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3211063198258586
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0200"
+  },
+  {
+    "sample_id": "qwen_0488",
+    "problem": "Problem 488",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.3564291824637176
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0488"
+  },
+  {
+    "sample_id": "llama_0481",
+    "problem": "Problem 481",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6777702203002127
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0481"
+  },
+  {
+    "sample_id": "phi_0290",
+    "problem": "Problem 290",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.6040611251786374
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0290"
+  },
+  {
+    "sample_id": "llama_0365",
+    "problem": "Problem 365",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.7006102359429183
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0365"
+  },
+  {
+    "sample_id": "llama_0149",
+    "problem": "Problem 149",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0515076633834068
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0149"
+  },
+  {
+    "sample_id": "qwen_0072",
+    "problem": "Problem 72",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2179130195549759
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0072"
+  },
+  {
+    "sample_id": "mistral_0275",
+    "problem": "Problem 275",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2689482628683644
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0275"
+  },
+  {
+    "sample_id": "mistral_0019",
+    "problem": "Problem 19",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9061518506676458
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0019"
+  },
+  {
+    "sample_id": "qwen_0220",
+    "problem": "Problem 220",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3426707166632457
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0220"
+  },
+  {
+    "sample_id": "llama_0165",
+    "problem": "Problem 165",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2936095365317506
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0165"
+  },
+  {
+    "sample_id": "mistral_0291",
+    "problem": "Problem 291",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4465004673294162
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0291"
+  },
+  {
+    "sample_id": "phi_0378",
+    "problem": "Problem 378",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.10509853339116382
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0378"
+  },
+  {
+    "sample_id": "qwen_0404",
+    "problem": "Problem 404",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4250327357396217
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0404"
+  },
+  {
+    "sample_id": "llama_0157",
+    "problem": "Problem 157",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9630835395441062
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0157"
+  },
+  {
+    "sample_id": "qwen_0056",
+    "problem": "Problem 56",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.619608761611319
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0056"
+  },
+  {
+    "sample_id": "mistral_0115",
+    "problem": "Problem 115",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.349226328833194
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0115"
+  },
+  {
+    "sample_id": "phi_0450",
+    "problem": "Problem 450",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.531339548636586
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0450"
+  },
+  {
+    "sample_id": "phi_0178",
+    "problem": "Problem 178",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3323284166189782
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0178"
+  },
+  {
+    "sample_id": "phi_0294",
+    "problem": "Problem 294",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0214922570174763
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0294"
+  },
+  {
+    "sample_id": "llama_0405",
+    "problem": "Problem 405",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.1885750338262504
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0405"
+  },
+  {
+    "sample_id": "qwen_0400",
+    "problem": "Problem 400",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.2972138293971835
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0400"
+  },
+  {
+    "sample_id": "mistral_0035",
+    "problem": "Problem 35",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.110421824985511
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0035"
+  },
+  {
+    "sample_id": "mistral_0075",
+    "problem": "Problem 75",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.089048747812388
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0075"
+  },
+  {
+    "sample_id": "llama_0229",
+    "problem": "Problem 229",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.860201125532662
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0229"
+  },
+  {
+    "sample_id": "llama_0221",
+    "problem": "Problem 221",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1336325962958744
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0221"
+  },
+  {
+    "sample_id": "qwen_0180",
+    "problem": "Problem 180",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.187166326117497
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0180"
+  },
+  {
+    "sample_id": "phi_0474",
+    "problem": "Problem 474",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.3775161432493581
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0474"
+  },
+  {
+    "sample_id": "qwen_0464",
+    "problem": "Problem 464",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.256164024845415
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0464"
+  },
+  {
+    "sample_id": "qwen_0028",
+    "problem": "Problem 28",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5003193449594023
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0028"
+  },
+  {
+    "sample_id": "qwen_0000",
+    "problem": "Problem 0",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2516429234943836
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0000"
+  },
+  {
+    "sample_id": "phi_0386",
+    "problem": "Problem 386",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0291220121114202
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0386"
+  },
+  {
+    "sample_id": "mistral_0295",
+    "problem": "Problem 295",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.846454797630327
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0295"
+  },
+  {
+    "sample_id": "qwen_0480",
+    "problem": "Problem 480",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.5639587957403833
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0480"
+  },
+  {
+    "sample_id": "mistral_0079",
+    "problem": "Problem 79",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1937844573004464
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0079"
+  },
+  {
+    "sample_id": "mistral_0143",
+    "problem": "Problem 143",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1076830707338479
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0143"
+  },
+  {
+    "sample_id": "qwen_0360",
+    "problem": "Problem 360",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2403267428794136
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0360"
+  },
+  {
+    "sample_id": "phi_0458",
+    "problem": "Problem 458",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.476824652673591
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0458"
+  },
+  {
+    "sample_id": "mistral_0147",
+    "problem": "Problem 147",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8602283065421383
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0147"
+  },
+  {
+    "sample_id": "llama_0065",
+    "problem": "Problem 65",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8218799857145886
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0065"
+  },
+  {
+    "sample_id": "mistral_0195",
+    "problem": "Problem 195",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3073413101355813
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0195"
+  },
+  {
+    "sample_id": "llama_0265",
+    "problem": "Problem 265",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.1238915909824247
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0265"
+  },
+  {
+    "sample_id": "llama_0025",
+    "problem": "Problem 25",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.444538705145067
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0025"
+  },
+  {
+    "sample_id": "llama_0465",
+    "problem": "Problem 465",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.6104847997666116
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0465"
+  },
+  {
+    "sample_id": "llama_0445",
+    "problem": "Problem 445",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.1651637255849807
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0445"
+  },
+  {
+    "sample_id": "llama_0357",
+    "problem": "Problem 357",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.344329319460069
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0357"
+  },
+  {
+    "sample_id": "qwen_0188",
+    "problem": "Problem 188",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6233968590342023
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0188"
+  },
+  {
+    "sample_id": "mistral_0243",
+    "problem": "Problem 243",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7671224029149393
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0243"
+  },
+  {
+    "sample_id": "phi_0250",
+    "problem": "Problem 250",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.1304419771675227
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0250"
+  },
+  {
+    "sample_id": "mistral_0395",
+    "problem": "Problem 395",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.734587826052352
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0395"
+  },
+  {
+    "sample_id": "phi_0090",
+    "problem": "Problem 90",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.4514612253259798
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0090"
+  },
+  {
+    "sample_id": "qwen_0380",
+    "problem": "Problem 380",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.919860921090388
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0380"
+  },
+  {
+    "sample_id": "qwen_0160",
+    "problem": "Problem 160",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9873408351136606
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0160"
+  },
+  {
+    "sample_id": "qwen_0044",
+    "problem": "Problem 44",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9392609951837139
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0044"
+  },
+  {
+    "sample_id": "phi_0490",
+    "problem": "Problem 490",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.5039863206583086
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0490"
+  },
+  {
+    "sample_id": "phi_0138",
+    "problem": "Problem 138",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.793241391315165
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0138"
+  },
+  {
+    "sample_id": "mistral_0155",
+    "problem": "Problem 155",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.857175709013184
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0155"
+  },
+  {
+    "sample_id": "phi_0050",
+    "problem": "Problem 50",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3379580153026023
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0050"
+  },
+  {
+    "sample_id": "phi_0134",
+    "problem": "Problem 134",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6597121171169016
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0134"
+  },
+  {
+    "sample_id": "phi_0370",
+    "problem": "Problem 370",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.4877449128705287
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0370"
+  },
+  {
+    "sample_id": "phi_0066",
+    "problem": "Problem 66",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.236005060790167
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0066"
+  },
+  {
+    "sample_id": "phi_0170",
+    "problem": "Problem 170",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9447572148127614
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0170"
+  },
+  {
+    "sample_id": "phi_0042",
+    "problem": "Problem 42",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.25782414119412
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0042"
+  },
+  {
+    "sample_id": "phi_0046",
+    "problem": "Problem 46",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.430319385479894
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0046"
+  },
+  {
+    "sample_id": "qwen_0280",
+    "problem": "Problem 280",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.443241327374376
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0280"
+  },
+  {
+    "sample_id": "phi_0470",
+    "problem": "Problem 470",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.637525848575822
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0470"
+  },
+  {
+    "sample_id": "mistral_0255",
+    "problem": "Problem 255",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.7421170364331258
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0255"
+  },
+  {
+    "sample_id": "llama_0285",
+    "problem": "Problem 285",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.476043899761251
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0285"
+  },
+  {
+    "sample_id": "qwen_0216",
+    "problem": "Problem 216",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5864126072687859
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0216"
+  },
+  {
+    "sample_id": "qwen_0240",
+    "problem": "Problem 240",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.89626036921635
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0240"
+  },
+  {
+    "sample_id": "mistral_0375",
+    "problem": "Problem 375",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.883673781444025
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0375"
+  },
+  {
+    "sample_id": "llama_0141",
+    "problem": "Problem 141",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5464286228587858
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0141"
+  },
+  {
+    "sample_id": "mistral_0271",
+    "problem": "Problem 271",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9179310755897194
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0271"
+  },
+  {
+    "sample_id": "mistral_0051",
+    "problem": "Problem 51",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3925411402081582
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0051"
+  },
+  {
+    "sample_id": "llama_0029",
+    "problem": "Problem 29",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3458468748966383
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0029"
+  },
+  {
+    "sample_id": "llama_0385",
+    "problem": "Problem 385",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.424803106761896
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0385"
+  },
+  {
+    "sample_id": "phi_0062",
+    "problem": "Problem 62",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.753167487003014
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0062"
+  },
+  {
+    "sample_id": "llama_0109",
+    "problem": "Problem 109",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2372229578830838
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0109"
+  },
+  {
+    "sample_id": "llama_0493",
+    "problem": "Problem 493",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6306421006641318
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0493"
+  },
+  {
+    "sample_id": "llama_0169",
+    "problem": "Problem 169",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5768680821787446
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0169"
+  },
+  {
+    "sample_id": "phi_0190",
+    "problem": "Problem 190",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.7232574760335106
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0190"
+  },
+  {
+    "sample_id": "llama_0461",
+    "problem": "Problem 461",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1823682240141355
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0461"
+  },
+  {
+    "sample_id": "mistral_0127",
+    "problem": "Problem 127",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4831488648013857
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0127"
+  },
+  {
+    "sample_id": "mistral_0499",
+    "problem": "Problem 499",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8913998654821682
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0499"
+  },
+  {
+    "sample_id": "llama_0305",
+    "problem": "Problem 305",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.441336308345609
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0305"
+  },
+  {
+    "sample_id": "phi_0202",
+    "problem": "Problem 202",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6584743784123614
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0202"
+  },
+  {
+    "sample_id": "qwen_0428",
+    "problem": "Problem 428",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6707877565752061
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0428"
+  },
+  {
+    "sample_id": "phi_0210",
+    "problem": "Problem 210",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2145547446534164
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0210"
+  },
+  {
+    "sample_id": "mistral_0475",
+    "problem": "Problem 475",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.624518019778189
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0475"
+  },
+  {
+    "sample_id": "llama_0237",
+    "problem": "Problem 237",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.106772842615286
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0237"
+  },
+  {
+    "sample_id": "phi_0230",
+    "problem": "Problem 230",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8651833158585682
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0230"
+  },
+  {
+    "sample_id": "llama_0377",
+    "problem": "Problem 377",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1083289971308241
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0377"
+  },
+  {
+    "sample_id": "mistral_0323",
+    "problem": "Problem 323",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.15380636215726984
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0323"
+  },
+  {
+    "sample_id": "phi_0486",
+    "problem": "Problem 486",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.523286442121263
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0486"
+  },
+  {
+    "sample_id": "phi_0402",
+    "problem": "Problem 402",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1973781501409084
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0402"
+  },
+  {
+    "sample_id": "phi_0342",
+    "problem": "Problem 342",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0775167144456386
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0342"
+  },
+  {
+    "sample_id": "qwen_0120",
+    "problem": "Problem 120",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.1044840264784765
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0120"
+  },
+  {
+    "sample_id": "llama_0325",
+    "problem": "Problem 325",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.107094306393866
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0325"
+  },
+  {
+    "sample_id": "mistral_0455",
+    "problem": "Problem 455",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.896436416131172
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0455"
+  },
+  {
+    "sample_id": "phi_0270",
+    "problem": "Problem 270",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7793633554669421
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0270"
+  },
+  {
+    "sample_id": "mistral_0315",
+    "problem": "Problem 315",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.4894980791836208
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0315"
+  },
+  {
+    "sample_id": "qwen_0472",
+    "problem": "Problem 472",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9575955310992759
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0472"
+  },
+  {
+    "sample_id": "qwen_0020",
+    "problem": "Problem 20",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.767175615539223
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0020"
+  },
+  {
+    "sample_id": "qwen_0232",
+    "problem": "Problem 232",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.177214080048093
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0232"
+  },
+  {
+    "sample_id": "qwen_0036",
+    "problem": "Problem 36",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0955682024976223
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0036"
+  },
+  {
+    "sample_id": "phi_0110",
+    "problem": "Problem 110",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.4593856076495206
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0110"
+  },
+  {
+    "sample_id": "llama_0433",
+    "problem": "Problem 433",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8412288721020189
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0433"
+  },
+  {
+    "sample_id": "llama_0105",
+    "problem": "Problem 105",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.297974571592731
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0105"
+  },
+  {
+    "sample_id": "phi_0442",
+    "problem": "Problem 442",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2337210500199385
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0442"
+  },
+  {
+    "sample_id": "qwen_0060",
+    "problem": "Problem 60",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.739587118922645
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0060"
+  },
+  {
+    "sample_id": "qwen_0268",
+    "problem": "Problem 268",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4200222433484917
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0268"
+  },
+  {
+    "sample_id": "llama_0089",
+    "problem": "Problem 89",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9433662834433219
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0089"
+  },
+  {
+    "sample_id": "qwen_0396",
+    "problem": "Problem 396",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.056567264545439
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0396"
+  },
+  {
+    "sample_id": "mistral_0227",
+    "problem": "Problem 227",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.738872388964653
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0227"
+  },
+  {
+    "sample_id": "phi_0390",
+    "problem": "Problem 390",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.949207335674179
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0390"
+  },
+  {
+    "sample_id": "phi_0310",
+    "problem": "Problem 310",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.6088406016136103
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0310"
+  },
+  {
+    "sample_id": "qwen_0176",
+    "problem": "Problem 176",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1934990540610464
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0176"
+  },
+  {
+    "sample_id": "llama_0125",
+    "problem": "Problem 125",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4047721870950107
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0125"
+  },
+  {
+    "sample_id": "llama_0389",
+    "problem": "Problem 389",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4884518278312016
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0389"
+  },
+  {
+    "sample_id": "mistral_0235",
+    "problem": "Problem 235",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.1830404888409944
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0235"
+  },
+  {
+    "sample_id": "llama_0345",
+    "problem": "Problem 345",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3839750313211816
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0345"
+  },
+  {
+    "sample_id": "mistral_0099",
+    "problem": "Problem 99",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3172935666875734
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0099"
+  },
+  {
+    "sample_id": "mistral_0479",
+    "problem": "Problem 479",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6402125442827116
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0479"
+  },
+  {
+    "sample_id": "phi_0350",
+    "problem": "Problem 350",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.344546217200998
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0350"
+  },
+  {
+    "sample_id": "mistral_0387",
+    "problem": "Problem 387",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.26191458039205684
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0387"
+  },
+  {
+    "sample_id": "llama_0425",
+    "problem": "Problem 425",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8156842212338256
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0425"
+  },
+  {
+    "sample_id": "qwen_0104",
+    "problem": "Problem 104",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2806428558330045
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0104"
+  },
+  {
+    "sample_id": "qwen_0416",
+    "problem": "Problem 416",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4244240122387384
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0416"
+  },
+  {
+    "sample_id": "llama_0145",
+    "problem": "Problem 145",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.109088564111345
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0145"
+  },
+  {
+    "sample_id": "llama_0477",
+    "problem": "Problem 477",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.044374922728232
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0477"
+  },
+  {
+    "sample_id": "qwen_0140",
+    "problem": "Problem 140",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3862700326979356
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0140"
+  },
+  {
+    "sample_id": "llama_0485",
+    "problem": "Problem 485",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.211126854798837
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0485"
+  },
+  {
+    "sample_id": "llama_0409",
+    "problem": "Problem 409",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9427805829706255
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0409"
+  },
+  {
+    "sample_id": "qwen_0080",
+    "problem": "Problem 80",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.609835943918756
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0080"
+  },
+  {
+    "sample_id": "qwen_0340",
+    "problem": "Problem 340",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.911110197783216
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0340"
+  },
+  {
+    "sample_id": "mistral_0055",
+    "problem": "Problem 55",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.0343599404419006
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0055"
+  },
+  {
+    "sample_id": "llama_0233",
+    "problem": "Problem 233",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5258001738029086
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0233"
+  },
+  {
+    "sample_id": "mistral_0355",
+    "problem": "Problem 355",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.0012646823189044
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0355"
+  },
+  {
+    "sample_id": "qwen_0296",
+    "problem": "Problem 296",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7502000622833747
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0296"
+  },
+  {
+    "sample_id": "phi_0186",
+    "problem": "Problem 186",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9633811877132274
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0186"
+  },
+  {
+    "sample_id": "qwen_0420",
+    "problem": "Problem 420",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4696260375590064
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0420"
+  },
+  {
+    "sample_id": "qwen_0484",
+    "problem": "Problem 484",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5781753726421515
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0484"
+  },
+  {
+    "sample_id": "qwen_0016",
+    "problem": "Problem 16",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7064155601672117
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0016"
+  },
+  {
+    "sample_id": "llama_0205",
+    "problem": "Problem 205",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9689125199575614
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0205"
+  },
+  {
+    "sample_id": "mistral_0123",
+    "problem": "Problem 123",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9009255313961402
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0123"
+  },
+  {
+    "sample_id": "mistral_0175",
+    "problem": "Problem 175",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.086408375481988
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0175"
+  },
+  {
+    "sample_id": "mistral_0095",
+    "problem": "Problem 95",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.2317574740660593
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0095"
+  },
+  {
+    "sample_id": "phi_0330",
+    "problem": "Problem 330",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.5061233864234573
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0330"
+  },
+  {
+    "sample_id": "llama_0257",
+    "problem": "Problem 257",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5538347328093904
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0257"
+  },
+  {
+    "sample_id": "qwen_0172",
+    "problem": "Problem 172",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.238550854707052
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0172"
+  },
+  {
+    "sample_id": "llama_0021",
+    "problem": "Problem 21",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3128881502432679
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0021"
+  },
+  {
+    "sample_id": "qwen_0260",
+    "problem": "Problem 260",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9634652357890414
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0260"
+  },
+  {
+    "sample_id": "qwen_0040",
+    "problem": "Problem 40",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.1307667100022947
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0040"
+  },
+  {
+    "sample_id": "llama_0457",
+    "problem": "Problem 457",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.717621161209687
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0457"
+  },
+  {
+    "sample_id": "qwen_0300",
+    "problem": "Problem 300",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.914497505461036
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0300"
+  },
+  {
+    "sample_id": "phi_0218",
+    "problem": "Problem 218",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4426817739145517
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0218"
+  },
+  {
+    "sample_id": "llama_0449",
+    "problem": "Problem 449",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7296067609444756
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0449"
+  },
+  {
+    "sample_id": "llama_0349",
+    "problem": "Problem 349",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3067235758559235
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0349"
+  },
+  {
+    "sample_id": "llama_0017",
+    "problem": "Problem 17",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.042876333702363
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0017"
+  },
+  {
+    "sample_id": "phi_0130",
+    "problem": "Problem 130",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.275331715533066
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0130"
+  },
+  {
+    "sample_id": "phi_0150",
+    "problem": "Problem 150",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3747535748270616
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0150"
+  },
+  {
+    "sample_id": "mistral_0435",
+    "problem": "Problem 435",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.462952609790112
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0435"
+  },
+  {
+    "sample_id": "phi_0242",
+    "problem": "Problem 242",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9475063605097713
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0242"
+  },
+  {
+    "sample_id": "qwen_0208",
+    "problem": "Problem 208",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9424761568469759
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0208"
+  },
+  {
+    "sample_id": "phi_0010",
+    "problem": "Problem 10",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.731708846406231
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0010"
+  },
+  {
+    "sample_id": "phi_0410",
+    "problem": "Problem 410",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.144192560955555
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0410"
+  },
+  {
+    "sample_id": "llama_0045",
+    "problem": "Problem 45",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8599221041973544
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0045"
+  },
+  {
+    "sample_id": "llama_0245",
+    "problem": "Problem 245",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.667250617920474
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0245"
+  },
+  {
+    "sample_id": "qwen_0440",
+    "problem": "Problem 440",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.3079672755303466
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0440"
+  },
+  {
+    "sample_id": "llama_0185",
+    "problem": "Problem 185",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.142999752953954
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0185"
+  },
+  {
+    "sample_id": "mistral_0215",
+    "problem": "Problem 215",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.120515389753366
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0215"
+  },
+  {
+    "sample_id": "llama_0369",
+    "problem": "Problem 369",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5865048919277334
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0369"
+  },
+  {
+    "sample_id": "qwen_0004",
+    "problem": "Problem 4",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.317076687361668
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0004"
+  },
+  {
+    "sample_id": "phi_0146",
+    "problem": "Problem 146",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.818475355439041
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0146"
+  },
+  {
+    "sample_id": "phi_0102",
+    "problem": "Problem 102",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3713572582633848
+    },
+    "model_family": "phi",
+    "model_name": "Phi-3-mini",
+    "organic_id": "phi_0102"
+  },
+  {
+    "sample_id": "llama_0085",
+    "problem": "Problem 85",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.750878521792268
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0085"
+  },
+  {
+    "sample_id": "qwen_0320",
+    "problem": "Problem 320",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.451502017503641
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B",
+    "organic_id": "qwen_0320"
+  },
+  {
+    "sample_id": "llama_0005",
+    "problem": "Problem 5",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.6170684784745903
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0005"
+  },
+  {
+    "sample_id": "mistral_0135",
+    "problem": "Problem 135",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7250327974912303
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0135"
+  },
+  {
+    "sample_id": "mistral_0335",
+    "problem": "Problem 335",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.5735286907510693
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0335"
+  },
+  {
+    "sample_id": "mistral_0495",
+    "problem": "Problem 495",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2305449781576705
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0495"
+  },
+  {
+    "sample_id": "mistral_0171",
+    "problem": "Problem 171",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6079051424827193
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0171"
+  },
+  {
+    "sample_id": "mistral_0415",
+    "problem": "Problem 415",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.874243268278277
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0415"
+  },
+  {
+    "sample_id": "llama_0225",
+    "problem": "Problem 225",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.955524701516317
+    },
+    "model_family": "llama",
+    "model_name": "Llama-3.2-1B",
+    "organic_id": "llama_0225"
+  },
+  {
+    "sample_id": "mistral_0343",
+    "problem": "Problem 343",
+    "cot_text": "Calculate. Therefore answer.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4534715876855648
+    },
+    "model_family": "mistral",
+    "model_name": "Mistral-7B",
+    "organic_id": "mistral_0343"
+  }
+]
