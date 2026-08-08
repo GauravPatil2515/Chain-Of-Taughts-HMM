@@ -198,22 +198,26 @@ def analyze_trajectory_by_correctness(
             incorrect_edrs.append(edr)
             incorrect_entropies.append(np.mean(entropy_trajectory))
     
-    correct_edrs_arr = np.array(correct_edrs) if correct_edrs else np.array([0])
-    incorrect_edrs_arr = np.array(incorrect_edrs) if incorrect_edrs else np.array([0])
+    correct_edrs_arr = np.array(correct_edrs) if len(correct_edrs) > 0 else np.array([0.0])
+    incorrect_edrs_arr = np.array(incorrect_edrs) if len(incorrect_edrs) > 0 else np.array([0.0])
     
     all_edrs = np.concatenate([correct_edrs_arr, incorrect_edrs_arr])
-    all_labels = np.array([1]*len(correct_edrs) + [0]*len(incorrect_edrs))
+    all_labels = np.array([1]*len(correct_edrs_arr) + [0]*len(incorrect_edrs_arr))
     
-    r_pearson, p_pearson = pearsonr(all_edrs, all_labels.astype(float))
-    r_spearman, p_spearman = spearmanr(all_edrs, all_labels.astype(float))
+    if len(np.unique(all_labels)) > 1 and len(all_edrs) > 2:
+        r_pearson, p_pearson = pearsonr(all_edrs, all_labels.astype(float))
+        r_spearman, p_spearman = spearmanr(all_edrs, all_labels.astype(float))
+    else:
+        r_pearson, p_pearson = 0.0, 1.0
+        r_spearman, p_spearman = 0.0, 1.0
     
     results = {
         'n_correct': len(correct_edrs),
         'n_incorrect': len(incorrect_edrs),
-        'correct_mean_edr': float(np.mean(correct_edrs)) if correct_edrs else 0.0,
-        'incorrect_mean_edr': float(np.mean(incorrect_edrs)) if incorrect_edrs else 0.0,
-        'correct_mean_entropy': float(np.mean(correct_entropies)) if correct_entropies else 0.0,
-        'incorrect_mean_entropy': float(np.mean(incorrect_entropies)) if incorrect_entropies else 0.0,
+        'correct_mean_edr': float(np.mean(correct_edrs)) if len(correct_edrs) > 0 else 0.0,
+        'incorrect_mean_edr': float(np.mean(incorrect_edrs)) if len(incorrect_edrs) > 0 else 0.0,
+        'correct_mean_entropy': float(np.mean(correct_entropies)) if len(correct_entropies) > 0 else 0.0,
+        'incorrect_mean_entropy': float(np.mean(incorrect_entropies)) if len(incorrect_entropies) > 0 else 0.0,
         'edr_correlation': {
             'pearson_r': float(r_pearson),
             'p_value': float(p_pearson),

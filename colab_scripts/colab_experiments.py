@@ -306,14 +306,15 @@ def run_full_experiment(
     # 6. Generate report
     print(f"\n[6/6] Generating report...")
     
+    from datetime import timezone
     report = {
-        'timestamp': datetime.utcnow().isoformat(),
+        'timestamp': datetime.now(timezone.utc).isoformat(),
         'n_samples': len(data),
         'bootstrap_ci': bootstrap_results,
         'routing': routing_results,
         'edr': {
-            'correct_mean': float(np.mean(edr_correct)) if edr_correct else 0.0,
-            'incorrect_mean': float(np.mean(edr_incorrect)) if edr_incorrect else 0.0,
+            'correct_mean': float(np.mean(edr_correct)) if len(edr_correct) > 0 else 0.0,
+            'incorrect_mean': float(np.mean(edr_incorrect)) if len(edr_incorrect) > 0 else 0.0,
         }
     }
     
