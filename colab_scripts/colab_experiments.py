@@ -239,7 +239,9 @@ def run_full_experiment(
     n_samples=150,
     n_ensemble=12,
     n_bootstrap=10000,
-    output_dir=None
+    output_dir=None,
+    generate=False,
+    model_name='qwen_0.5B'
 ):
     """Run complete experiment pipeline."""
     
@@ -251,19 +253,55 @@ def run_full_experiment(
     print(f"\n{'='*60}")
     print(f"CoT-HMM Experiment Pipeline")
     print(f"Samples: {n_samples}, Ensemble: {n_ensemble}, Bootstrap: {n_bootstrap}")
+    print(f"Generate Live: {generate}, Model: {model_name}")
     print(f"{'='*60}")
     
     # 1. Create/load data
-    print(f"\n[1/6] Loading dataset...")
-    dataset_path = WORKSPACE / 'data' / 'gsm8k_test.json'
-    if dataset_path.exists():
-        with open(dataset_path) as f:
-            data = json.load(f)
+    print(f"\n[1/6] Loading/Generating dataset...")
+    if generate:
+        print(f"  Generating live CoT traces using {model_name} on GPU...")
+        try:
+            from colab_scripts.data_generation import DataGenerator, extract_answer
+            from colab_scripts.tagging import SemanticTagger
+            
+            device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            generator = DataGenerator(model_name=model_name, device=device)
+            tagger = SemanticTagger()
+            
+            sample_questions = [
+                f"Janet’s ducks lay {i+3} eggs per day. She eats 2 for breakfast and bakes with {i+1}. How many remain?"
+                for i in range(n_samples)
+            ]
+            
+            data = []
+            for idx, q in enumerate(sample_questions):
+                cot = generator.generate(q)
+                pred_ans, is_corr = extract_answer(cot)
+                tags = tagger.tag_sequence(cot)
+                data.append({
+                    'sample_id': f'gen_{idx:04d}',
+                    'problem': q,
+                    'cot_text': cot,
+                    'tag_sequence': tags,
+                    'is_correct': bool(is_corr),
+                    'model_family': model_name,
+                    'model_name': model_name
+                })
+            generator.unload()
+            print(f"  Live generation completed ✓")
+        except Exception as e:
+            print(f"  Warning: Live generation failed ({e}). Falling back to dataset...")
+            data = create_sample_dataset(n_samples)
     else:
-        data = create_sample_dataset(n_samples)
-        dataset_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(dataset_path, 'w') as f:
-            json.dump(data, f, indent=2)
+        dataset_path = WORKSPACE / 'data' / 'gsm8k_test.json'
+        if dataset_path.exists():
+            with open(dataset_path) as f:
+                data = json.load(f)
+        else:
+            data = create_sample_dataset(n_samples)
+            dataset_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(dataset_path, 'w') as f:
+                json.dump(data, f, indent=2)
     
     print(f"  Loaded {len(data)} traces")
     print(f"  Correct: {sum(1 for d in data if d['is_correct'])}")
@@ -376,6 +414,8 @@ if __name__ == "__main__":
     parser.add_argument('--n-ensemble', type=int, default=12)
     parser.add_argument('--n-bootstrap', type=int, default=10000)
     parser.add_argument('--output-dir', type=str, default=None)
+    parser.add_argument('--generate', action='store_true', help='Generate live CoT text from LLM on GPU')
+    parser.add_argument('--model', type=str, default='qwen_0.5B', help='Model name for generation (qwen_0.5B, qwen_1.5B, phi_3)')
     
     args = parser.parse_args()
     
@@ -385,7 +425,9 @@ if __name__ == "__main__":
         n_samples=args.n_samples,
         n_ensemble=args.n_ensemble,
         n_bootstrap=args.n_bootstrap,
-        output_dir=output_dir
+        output_dir=output_dir,
+        generate=args.generate,
+        model_name=args.model
     )
     
     print(f"\n✓ Results saved to {output_dir}")
