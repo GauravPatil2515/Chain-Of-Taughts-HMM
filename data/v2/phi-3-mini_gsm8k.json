@@ -1,0 +1,1702 @@
+[
+  {
+    "sample_id": "phi-3-mini_0000",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8211063198258586
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0001",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3317646420895297
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0002",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.175084627047417
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0003",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.183859384389529
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0004",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9133008103871272
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0005",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.468912519957561
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0006",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3454894198374021
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0007",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3458642147263373
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0008",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3454856941081856
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0009",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.34418055280358373
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0010",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.7145547446534164
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0011",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1593303079458204
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0012",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2137994709520394
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0013",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3045826246082606
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0014",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5945807733921036
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0015",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.620515389753366
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0016",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7318475643612716
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0017",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5710455820220026
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0018",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.645609064348731
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0019",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4754377581841032
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0020",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8426707166632457
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0021",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0601795577775244
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0022",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.294121942887646
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0023",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9838147613568955
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0024",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6415795597368301
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0025",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.455524701516317
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0026",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4807159942713612
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0027",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8233234333787918
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0028",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7145911127779905
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0029",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2961206753195973
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0030",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.365183315858569
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0031",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4350624231254074
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0032",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4863284480288559
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0033",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6954801042817451
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0034",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8568167732024023
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0035",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6830404888409944
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0036",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.107542775997282
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0037",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4440637055691716
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0038",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6985359394305164
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0039",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2442699995611328
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0040",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.396260369216351
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0041",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5344209324400697
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0042",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.348503816305863
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0043",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2402734417489636
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0044",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.860088922116733
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0045",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.167250617920474
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0046",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6424835933482869
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0047",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6959987697721135
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0048",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9703637279156709
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0049",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3785054867117132
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0050",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.630441977167522
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0051",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2246414158835672
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0052",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8633531408962101
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0053",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.190260421834656
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0054",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.955810989786204
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0055",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.242117036433125
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0056",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1199266552440132
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0057",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7123008396856343
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0058",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3668541715561315
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0059",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.267609783971199
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0060",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.463465235789042
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0061",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.51785760681854
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0062",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.4723802020207217
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0063",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.807316292400287
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0064",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5757704454179482
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0065",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.623891590982424
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0066",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0102766088205095
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0067",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9290424133881898
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0068",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.632013346009095
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0069",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4607778268141727
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0070",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.279363355466942
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0071",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9307586453538317
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0072",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1510508743535122
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0073",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4969300816941238
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0074",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7944525953143853
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0075",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.768948262868365
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0076",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.440282091327959
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0077",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6800650631476384
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0078",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4790593745029943
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0079",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6155940790585281
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0080",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.943241327374376
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0081",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.301360797643686
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0082",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0241949551563945
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0083",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8713446496480546
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0084",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.86008998760312
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0085",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.976043899761251
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0086",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5455355285106749
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0087",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.323504838054627
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0088",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4157024396794902
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0089",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6868098559461782
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0090",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.104061125178638
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0091",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.64790028039765
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0092",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6768094270832634
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0093",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2451193708936925
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0094",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3928953542104858
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0095",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.346454797630327
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0096",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2301200373700247
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0097",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4078101437370172
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0098",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.256141364348312
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  },
+  {
+    "sample_id": "phi-3-mini_0099",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3111113474229164
+    },
+    "model_family": "phi",
+    "model_name": "phi-3-mini"
+  }
+]

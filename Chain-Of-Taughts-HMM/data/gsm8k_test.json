@@ -1,0 +1,1682 @@
+[
+  {
+    "sample_id": "gsm_0000",
+    "problem": "What is 0 + 0? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.4880421135025275
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0001",
+    "problem": "What is 1 + 2? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9023952648497138
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0002",
+    "problem": "What is 2 + 4? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1894755130401096
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0003",
+    "problem": "What is 3 + 6? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7706398389662248
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0004",
+    "problem": "What is 4 + 8? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5677097136013998
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0005",
+    "problem": "What is 5 + 10? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.253670005394799
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0006",
+    "problem": "What is 6 + 12? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7302187576553647
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0007",
+    "problem": "What is 7 + 14? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7035744395611194
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0008",
+    "problem": "What is 8 + 16? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.000972655147472
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0009",
+    "problem": "What is 9 + 18? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6125245318071417
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0010",
+    "problem": "What is 10 + 20? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.0683017744590138
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0011",
+    "problem": "What is 11 + 22? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1687456229101663
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0012",
+    "problem": "What is 12 + 24? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1934019529650886
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0013",
+    "problem": "What is 13 + 26? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8766135995831503
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0014",
+    "problem": "What is 14 + 28? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.909055782012876
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0015",
+    "problem": "What is 15 + 30? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2141498078321464
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0016",
+    "problem": "What is 16 + 32? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4670645533954021
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0017",
+    "problem": "What is 17 + 34? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1846438889369844
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0018",
+    "problem": "What is 18 + 36? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8421740021080193
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0019",
+    "problem": "What is 19 + 38? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6054715081004216
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0020",
+    "problem": "What is 20 + 40? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.543894821918557
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0021",
+    "problem": "What is 21 + 42? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.31921400137834444
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0022",
+    "problem": "What is 22 + 44? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.181067216610911
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0023",
+    "problem": "What is 23 + 46? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2917684461326122
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0024",
+    "problem": "What is 24 + 48? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5984554751133466
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0025",
+    "problem": "What is 25 + 50? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.181312806484839
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0026",
+    "problem": "What is 26 + 52? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0657489562257885
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0027",
+    "problem": "What is 27 + 54? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.110728944263537
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0028",
+    "problem": "What is 28 + 56? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.33995741388971
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0029",
+    "problem": "What is 29 + 58? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8684446580302252
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0030",
+    "problem": "What is 30 + 60? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.1393807239818763
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0031",
+    "problem": "What is 31 + 62? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": 0.011408046090796597
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0032",
+    "problem": "What is 32 + 64? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2229087525820004
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0033",
+    "problem": "What is 33 + 66? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2254420010570943
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0034",
+    "problem": "What is 34 + 68? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8737835048571612
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0035",
+    "problem": "What is 35 + 70? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.063856116220485
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0036",
+    "problem": "What is 36 + 72? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.198474768515367
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0037",
+    "problem": "What is 37 + 74? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3142229959593619
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0038",
+    "problem": "What is 38 + 76? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7474474629426526
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0039",
+    "problem": "What is 39 + 78? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.117926490710655
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0040",
+    "problem": "What is 40 + 80? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9919259452256437
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0041",
+    "problem": "What is 41 + 82? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6214597372384267
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0042",
+    "problem": "What is 42 + 84? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9495767070624448
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0043",
+    "problem": "What is 43 + 86? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7170702874592514
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0044",
+    "problem": "What is 44 + 88? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3340270243436032
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0045",
+    "problem": "What is 45 + 90? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8075223427904685
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0046",
+    "problem": "What is 46 + 92? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.176593315731499
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0047",
+    "problem": "What is 47 + 94? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.017909783414419
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0048",
+    "problem": "What is 48 + 96? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7678815061160131
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0049",
+    "problem": "What is 49 + 98? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5339859304150492
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0050",
+    "problem": "What is 50 + 100? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7412051784614018
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0051",
+    "problem": "What is 51 + 102? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4316115527622355
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0052",
+    "problem": "What is 52 + 104? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9075356038628846
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0053",
+    "problem": "What is 53 + 106? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9479452123301912
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0054",
+    "problem": "What is 54 + 108? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0329990143753864
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0055",
+    "problem": "What is 55 + 110? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.814068666697083
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0056",
+    "problem": "What is 56 + 112? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0069846384060392
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0057",
+    "problem": "What is 57 + 114? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6360313513728808
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0058",
+    "problem": "What is 58 + 116? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2508316581363585
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0059",
+    "problem": "What is 59 + 118? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.53860206370404
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0060",
+    "problem": "What is 60 + 120? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.982518229252554
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0061",
+    "problem": "What is 61 + 122? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.060475859569097
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0062",
+    "problem": "What is 62 + 124? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5912567813215899
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0063",
+    "problem": "What is 63 + 126? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2349307278134647
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0064",
+    "problem": "What is 64 + 128? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4809487003665553
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0065",
+    "problem": "What is 65 + 130? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2620531295912114
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0066",
+    "problem": "What is 66 + 132? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1199832623890063
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0067",
+    "problem": "What is 67 + 134? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6789682489969533
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0068",
+    "problem": "What is 68 + 136? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2735440143122074
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0069",
+    "problem": "What is 69 + 138? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9242084588914679
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0070",
+    "problem": "What is 70 + 140? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.140133190070923
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0071",
+    "problem": "What is 71 + 142? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.61623383771515
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0072",
+    "problem": "What is 72 + 144? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.142083156693845
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0073",
+    "problem": "What is 73 + 146? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1985632670477686
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0074",
+    "problem": "What is 74 + 148? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4069905470689845
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0075",
+    "problem": "What is 75 + 150? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.6376660686058613
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0076",
+    "problem": "What is 76 + 152? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2928847246266024
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0077",
+    "problem": "What is 77 + 154? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.753548473819831
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0078",
+    "problem": "What is 78 + 156? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8191311430838069
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0079",
+    "problem": "What is 79 + 158? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0509696733307028
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0080",
+    "problem": "What is 80 + 160? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.0272670614306842
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0081",
+    "problem": "What is 81 + 162? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7688476302284257
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0082",
+    "problem": "What is 82 + 164? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1871009143043592
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0083",
+    "problem": "What is 83 + 166? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6498852731461493
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0084",
+    "problem": "What is 84 + 168? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9279975695226674
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0085",
+    "problem": "What is 85 + 170? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.5991223592055763
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0086",
+    "problem": "What is 86 + 172? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.577577665372518
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0087",
+    "problem": "What is 87 + 174? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1032908619487203
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0088",
+    "problem": "What is 88 + 176? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8122484546384865
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0089",
+    "problem": "What is 89 + 178? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8044025326215289
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0090",
+    "problem": "What is 90 + 180? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.7088636446420584
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0091",
+    "problem": "What is 91 + 182? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8571943699357873
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0092",
+    "problem": "What is 92 + 184? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2402764628857528
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0093",
+    "problem": "What is 93 + 186? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.3279165462977154
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0094",
+    "problem": "What is 94 + 188? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.3885127943166573
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0095",
+    "problem": "What is 95 + 190? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8950333250801417
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0096",
+    "problem": "What is 96 + 192? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6445954989731477
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0097",
+    "problem": "What is 97 + 194? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8538445853804386
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0098",
+    "problem": "What is 98 + 196? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.051718267467459
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  },
+  {
+    "sample_id": "gsm_0099",
+    "problem": "What is 99 + 198? Solve:",
+    "cot_text": "Calculate the sum. Therefore the answer is.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.116370933096122
+    },
+    "model_family": "qwen",
+    "model_name": "Qwen-0.5B"
+  }
+]

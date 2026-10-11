@@ -185,7 +185,7 @@ def tag_cot_file(input_path: str, output_path: str) -> Dict:
     tag_counts = {tag: 0 for tag in TAG_PRIORITY}
     
     for item in tqdm(data, desc="Tagging CoTs"):
-        cot_text = item.get("cot_raw", "")
+        cot_text = item.get("cot_text", item.get("cot_raw", ""))
         tagged_steps = tag_cot(cot_text)
         
         # Count tags

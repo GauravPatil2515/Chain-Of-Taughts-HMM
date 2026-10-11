@@ -1,0 +1,1702 @@
+[
+  {
+    "sample_id": "llama-3.2-1b_0000",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.707685371025207
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0001",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6261935968296077
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0002",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.602814354958031
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0003",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7406831807664855
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0004",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5483857134998027
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0005",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.797974571592731
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0006",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.934144229636841
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0007",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4476266561504483
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0008",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4227348827831707
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0009",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5223337747298502
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0010",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.959385607649521
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0011",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.507954162634765
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0012",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.481930937017692
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0013",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7610273662544141
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0014",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5577082894343368
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0015",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.849226328833194
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0016",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.510413530911573
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0017",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8506034112858596
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0018",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.157153155645494
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0019",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2744200901939677
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0020",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6044840264784765
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0021",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7728162364384217
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0022",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0791617067191703
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0023",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9205553188376843
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0024",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3239428718599189
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0025",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.904772187095011
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0026",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7971608975392064
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0027",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6698893188808315
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0028",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4701045904737076
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0029",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6510426962348597
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0030",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.775331715533066
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0031",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4794311075581918
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0032",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8186911141178315
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0033",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3579222708094456
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0034",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.775827270270141
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0035",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.22503279749123
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0036",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.734975987700871
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0037",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5966184548617026
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0038",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2559448347890991
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0039",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8692592949301865
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0040",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.886270032697935
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0041",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1078571737152716
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0042",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9822449703683682
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0043",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4446098424403087
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0044",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.422035161725473
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0045",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.609088564111345
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0046",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8710852132634246
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0047",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8961369839252828
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0048",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3434175303149307
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0049",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.410904598030044
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0050",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8747535748270616
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0051",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3960655371509072
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0052",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7040074164735473
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0053",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4303238908516989
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0054",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4120782580103957
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0055",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.357175709013184
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0056",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.940267646656573
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0057",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3578501237264637
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0058",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8573910491607946
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0059",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.303033917409851
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0060",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4873408351136606
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0061",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2638746188772645
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0062",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1524213262977787
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0063",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.746204695505513
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0064",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2109871612267034
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0065",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.793609536531751
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0066",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.253381952001653
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0067",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9309621052038158
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0068",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5736164348008612
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0069",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7261208493072469
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0070",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.444757214812761
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0071",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7447430854896315
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0072",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5231305128242312
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0073",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3976544075550068
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0074",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4169927602009942
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0075",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.586408375481988
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0076",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.496099432436628
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0077",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.063939776852805
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0078",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5793970499713867
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0079",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6839492500231144
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0080",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.687166326117497
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0081",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7571472669248847
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0082",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8212677494183338
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0083",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3552582754270444
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0084",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5670388355977554
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0085",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.642999752953954
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0086",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3580287126279367
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0087",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5218486737970618
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0088",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7540381154205216
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0089",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9544541674057594
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0090",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.223257476033511
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0091",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2430803617029582
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0092",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4357718767609389
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0093",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8737216336135964
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0094",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4480457222446455
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0095",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8073413101355817
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0096",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7651572308603398
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0097",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4538824682163416
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0098",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4825373844662
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  },
+  {
+    "sample_id": "llama-3.2-1b_0099",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.842891089349187
+    },
+    "model_family": "llama",
+    "model_name": "llama-3.2-1b"
+  }
+]

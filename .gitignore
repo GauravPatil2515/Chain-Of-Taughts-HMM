@@ -100,3 +100,14 @@ huggingface/
 
 # Kilo planner
 .kilo/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texput.log

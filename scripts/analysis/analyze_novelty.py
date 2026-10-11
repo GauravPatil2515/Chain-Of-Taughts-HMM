@@ -58,16 +58,19 @@ def analyze_novelty(input_file, model_dir, output_dir):
     plt.xlabel("To State (Next Step)", fontsize=11)
     plt.ylabel("From State (Current Step)", fontsize=11)
     
-    # Try to map states to dominant tags if possible (Heuristic)
-    # We check Emission Matrix to label axes
+    # Try to map states to dominant tags with disambiguation
     emission_mat = model.emissionprob_
     state_labels = []
     for i in range(n_states):
-        top_tag_idx = np.argmax(emission_mat[i])
-        prob = emission_mat[i, top_tag_idx]
-        tag = ID_TO_TAG.get(top_tag_idx, "UNK")
-        state_labels.append(f"S{i} ({tag})")
-        
+        sorted_indices = np.argsort(emission_mat[i])[::-1]
+        top_tag = ID_TO_TAG.get(sorted_indices[0], "UNK")
+        second_tag = ID_TO_TAG.get(sorted_indices[1], "UNK")
+        p1 = emission_mat[i, sorted_indices[0]]
+        if p1 >= 0.75:
+            state_labels.append(f"S{i} ({top_tag})")
+        else:
+            state_labels.append(f"S{i} ({top_tag}/{second_tag})")
+    
     plt.xticks(np.arange(n_states) + 0.5, state_labels, rotation=45)
     plt.yticks(np.arange(n_states) + 0.5, state_labels, rotation=0)
     

@@ -1,0 +1,23 @@
+{
+  "experiment": "spatial_defect_drift",
+  "config": {
+    "mode": "tar",
+    "model_type": "deep_spatial",
+    "seed": 123,
+    "distance": 3,
+    "rounds": 3,
+    "shots": 50000,
+    "epochs": 20,
+    "p_left_A": 0.01,
+    "p_right_A": 0.001,
+    "p_left_B": 0.001,
+    "p_right_B": 0.01,
+    "split_direction": "x"
+  },
+  "results": {
+    "ler_A_after_training_on_A": 0.0069,
+    "ler_A_after_training_on_B": 0.0084,
+    "ler_B_after_training_on_B": 0.0081,
+    "forgetting_A": 0.0014999999999999996
+  }
+}

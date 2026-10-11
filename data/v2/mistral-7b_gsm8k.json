@@ -1,0 +1,1702 @@
+[
+  {
+    "sample_id": "mistral-7b_0000",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4144975054610365
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0001",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.668054312059091
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0002",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2758119184630214
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0003",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3168889203699605
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0004",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5062704781892444
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0005",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.941336308345609
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0006",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1167005312634726
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0007",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.677471416650749
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0008",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3358707856489886
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0009",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5606577957301682
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0010",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.10884060161361
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0011",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.170366944403843
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0012",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.252375095303591
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0013",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2559471091998085
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0014",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1083563578537012
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0015",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9894980791836203
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0016",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2954141086115107
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0017",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5930800269780367
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0018",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4027500942534674
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0019",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5390429163103054
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0020",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.951502017503641
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0021",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.321452892368926
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0022",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7454662049700418
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0023",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.872283817294362
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0024",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8018052144499106
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0025",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.607094306393866
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0026",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1525667379499795
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0027",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2625011918111193
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0028",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3127640548843535
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0029",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.311496347220716
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0030",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.006123386423457
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0031",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7691763114457495
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0032",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4772586325418822
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0033",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7031485134536335
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0034",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2074640799746748
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0035",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.073528690751069
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0036",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7476491590377534
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0037",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.596415752495898
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0038",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3761205637173126
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0039",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6691173658411924
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0040",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4111101977832154
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0041",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4268938365524264
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0042",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.426510028667383
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0043",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.652082952611339
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0044",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6413114916854967
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0045",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.883975031321182
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0046",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9344253024491973
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0047",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9222391323129666
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0048",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7155332663757308
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0049",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5640341455135542
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0050",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.844546217200998
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0051",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0573931349151344
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0052",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2427021130393943
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0053",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5479815589890282
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0054",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5057048623708067
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0055",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.501264682318904
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0056",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.505553940797717
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0057",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5865975916760415
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0058",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4031844318985731
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0059",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.748169283065697
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0060",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.740326742879414
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0061",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0401783260992268
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0062",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5326280445370573
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0063",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3794864833703175
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0064",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2929568024866662
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0065",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.200610235942918
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0066",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.432772255456875
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0067",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4962222797654616
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0068",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4706971704353504
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0069",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.73190293515664
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0070",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9877449128705287
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0071",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3506005126263652
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0072",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0646569176614875
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0073",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2122187521744379
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0074",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8540452627465331
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0075",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.383673781444025
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0076",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2383038089837966
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0077",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4449973982784945
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0078",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8430591200346983
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0079",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7424894856065454
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0080",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.419860921090388
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0081",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6798177936332066
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0082",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.137168717292942
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0083",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6577265065042284
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0084",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7277397984661094
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0085",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.924803106761896
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0086",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.397473207266852
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0087",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9371487482352342
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0088",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2148728485441849
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0089",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.673071096698721
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0090",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.449207335674179
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0091",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3524242485480482
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0092",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8960699621061927
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0093",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9505623702436939
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0094",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.146167963783614
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0095",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.234587826052352
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0096",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0139403587272633
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0097",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0938382877503763
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0098",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5343619535757853
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  },
+  {
+    "sample_id": "mistral-7b_0099",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1286551064079615
+    },
+    "model_family": "mistral",
+    "model_name": "mistral-7b"
+  }
+]

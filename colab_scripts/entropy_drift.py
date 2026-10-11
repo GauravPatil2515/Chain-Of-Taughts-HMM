@@ -3,6 +3,7 @@ Entropy Drift Rate (EDR) Online Monitoring
 Streaming entropy analysis for overthinking detection
 """
 
+import json
 import numpy as np
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
@@ -10,6 +11,7 @@ from scipy.stats import pearsonr, spearmanr
 
 from colab_scripts.config import ExperimentConfig
 from colab_scripts.tagging import SemanticTagger
+from hmmlearn import hmm
 
 
 def compute_pointwise_entropy(

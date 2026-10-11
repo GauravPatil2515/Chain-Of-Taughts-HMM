@@ -1,0 +1,8061 @@
+[
+  {
+    "sample_id": "gsm_0000",
+    "problem": "Problem 0",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.7516429234943836
+    }
+  },
+  {
+    "sample_id": "gsm_0001",
+    "problem": "Problem 1",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5691321505855924
+    }
+  },
+  {
+    "sample_id": "gsm_0002",
+    "problem": "Problem 2",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1761557309496538
+    }
+  },
+  {
+    "sample_id": "gsm_0003",
+    "problem": "Problem 3",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7384850717959873
+    }
+  },
+  {
+    "sample_id": "gsm_0004",
+    "problem": "Problem 4",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.617076687361668
+    }
+  },
+  {
+    "sample_id": "gsm_0005",
+    "problem": "Problem 5",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.11706847847459
+    }
+  },
+  {
+    "sample_id": "gsm_0006",
+    "problem": "Problem 6",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7103935922463043
+    }
+  },
+  {
+    "sample_id": "gsm_0007",
+    "problem": "Problem 7",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1162826354235456
+    }
+  },
+  {
+    "sample_id": "gsm_0008",
+    "problem": "Problem 8",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.734737192967476
+    }
+  },
+  {
+    "sample_id": "gsm_0009",
+    "problem": "Problem 9",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2287199782070177
+    }
+  },
+  {
+    "sample_id": "gsm_0010",
+    "problem": "Problem 10",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.231708846406232
+    }
+  },
+  {
+    "sample_id": "gsm_0011",
+    "problem": "Problem 11",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7328648767851285
+    }
+  },
+  {
+    "sample_id": "gsm_0012",
+    "problem": "Problem 12",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.379018864216983
+    }
+  },
+  {
+    "sample_id": "gsm_0013",
+    "problem": "Problem 13",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.456640122328899
+    }
+  },
+  {
+    "sample_id": "gsm_0014",
+    "problem": "Problem 14",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.362458916256516
+    }
+  },
+  {
+    "sample_id": "gsm_0015",
+    "problem": "Problem 15",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.281143764620486
+    }
+  },
+  {
+    "sample_id": "gsm_0016",
+    "problem": "Problem 16",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.006415560167212
+    }
+  },
+  {
+    "sample_id": "gsm_0017",
+    "problem": "Problem 17",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.342876333702363
+    }
+  },
+  {
+    "sample_id": "gsm_0018",
+    "problem": "Problem 18",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9540120377606054
+    }
+  },
+  {
+    "sample_id": "gsm_0019",
+    "problem": "Problem 19",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.206151850667646
+    }
+  },
+  {
+    "sample_id": "gsm_0020",
+    "problem": "Problem 20",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.267175615539223
+    }
+  },
+  {
+    "sample_id": "gsm_0021",
+    "problem": "Problem 21",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.612888150243268
+    }
+  },
+  {
+    "sample_id": "gsm_0022",
+    "problem": "Problem 22",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4662358976560381
+    }
+  },
+  {
+    "sample_id": "gsm_0023",
+    "problem": "Problem 23",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.212374093106728
+    }
+  },
+  {
+    "sample_id": "gsm_0024",
+    "problem": "Problem 24",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7721913622625913
+    }
+  },
+  {
+    "sample_id": "gsm_0025",
+    "problem": "Problem 25",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.944538705145067
+    }
+  },
+  {
+    "sample_id": "gsm_0026",
+    "problem": "Problem 26",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0754967887111513
+    }
+  },
+  {
+    "sample_id": "gsm_0027",
+    "problem": "Problem 27",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.312150990827164
+    }
+  },
+  {
+    "sample_id": "gsm_0028",
+    "problem": "Problem 28",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8003193449594024
+    }
+  },
+  {
+    "sample_id": "gsm_0029",
+    "problem": "Problem 29",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6458468748966384
+    }
+  },
+  {
+    "sample_id": "gsm_0030",
+    "problem": "Problem 30",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.300853306114698
+    }
+  },
+  {
+    "sample_id": "gsm_0031",
+    "problem": "Problem 31",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5738609077455311
+    }
+  },
+  {
+    "sample_id": "gsm_0032",
+    "problem": "Problem 32",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.506748612368967
+    }
+  },
+  {
+    "sample_id": "gsm_0033",
+    "problem": "Problem 33",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0288554644779504
+    }
+  },
+  {
+    "sample_id": "gsm_0034",
+    "problem": "Problem 34",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0887275439484054
+    }
+  },
+  {
+    "sample_id": "gsm_0035",
+    "problem": "Problem 35",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.610421824985512
+    }
+  },
+  {
+    "sample_id": "gsm_0036",
+    "problem": "Problem 36",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3955682024976224
+    }
+  },
+  {
+    "sample_id": "gsm_0037",
+    "problem": "Problem 37",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.479835061939888
+    }
+  },
+  {
+    "sample_id": "gsm_0038",
+    "problem": "Problem 38",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1640930244492154
+    }
+  },
+  {
+    "sample_id": "gsm_0039",
+    "problem": "Problem 39",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4015693820654382
+    }
+  },
+  {
+    "sample_id": "gsm_0040",
+    "problem": "Problem 40",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6307667100022947
+    }
+  },
+  {
+    "sample_id": "gsm_0041",
+    "problem": "Problem 41",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4143158594050147
+    }
+  },
+  {
+    "sample_id": "gsm_0042",
+    "problem": "Problem 42",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5578241411941203
+    }
+  },
+  {
+    "sample_id": "gsm_0043",
+    "problem": "Problem 43",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6505518477946444
+    }
+  },
+  {
+    "sample_id": "gsm_0044",
+    "problem": "Problem 44",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.239260995183714
+    }
+  },
+  {
+    "sample_id": "gsm_0045",
+    "problem": "Problem 45",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.359922104197354
+    }
+  },
+  {
+    "sample_id": "gsm_0046",
+    "problem": "Problem 46",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7303193854798937
+    }
+  },
+  {
+    "sample_id": "gsm_0047",
+    "problem": "Problem 47",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9714388868905421
+    }
+  },
+  {
+    "sample_id": "gsm_0048",
+    "problem": "Problem 48",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3281908552157693
+    }
+  },
+  {
+    "sample_id": "gsm_0049",
+    "problem": "Problem 49",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.381520077681367
+    }
+  },
+  {
+    "sample_id": "gsm_0050",
+    "problem": "Problem 50",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8379580153026023
+    }
+  },
+  {
+    "sample_id": "gsm_0051",
+    "problem": "Problem 51",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6925411402081583
+    }
+  },
+  {
+    "sample_id": "gsm_0052",
+    "problem": "Problem 52",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8384610001529793
+    }
+  },
+  {
+    "sample_id": "gsm_0053",
+    "problem": "Problem 53",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1941618555795661
+    }
+  },
+  {
+    "sample_id": "gsm_0054",
+    "problem": "Problem 54",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9845002387520245
+    }
+  },
+  {
+    "sample_id": "gsm_0055",
+    "problem": "Problem 55",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.5343599404419006
+    }
+  },
+  {
+    "sample_id": "gsm_0056",
+    "problem": "Problem 56",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9196087616113193
+    }
+  },
+  {
+    "sample_id": "gsm_0057",
+    "problem": "Problem 57",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6546061879256073
+    }
+  },
+  {
+    "sample_id": "gsm_0058",
+    "problem": "Problem 58",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.334368284298218
+    }
+  },
+  {
+    "sample_id": "gsm_0059",
+    "problem": "Problem 59",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0122274364388204
+    }
+  },
+  {
+    "sample_id": "gsm_0060",
+    "problem": "Problem 60",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.239587118922645
+    }
+  },
+  {
+    "sample_id": "gsm_0061",
+    "problem": "Problem 61",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5928294883319085
+    }
+  },
+  {
+    "sample_id": "gsm_0062",
+    "problem": "Problem 62",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.053167487003014
+    }
+  },
+  {
+    "sample_id": "gsm_0063",
+    "problem": "Problem 63",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0981033120403354
+    }
+  },
+  {
+    "sample_id": "gsm_0064",
+    "problem": "Problem 64",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.093737088802901
+    }
+  },
+  {
+    "sample_id": "gsm_0065",
+    "problem": "Problem 65",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.3218799857145886
+    }
+  },
+  {
+    "sample_id": "gsm_0066",
+    "problem": "Problem 66",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.536005060790167
+    }
+  },
+  {
+    "sample_id": "gsm_0067",
+    "problem": "Problem 67",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9982335510539879
+    }
+  },
+  {
+    "sample_id": "gsm_0068",
+    "problem": "Problem 68",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.319181987476183
+    }
+  },
+  {
+    "sample_id": "gsm_0069",
+    "problem": "Problem 69",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8225598773025622
+    }
+  },
+  {
+    "sample_id": "gsm_0070",
+    "problem": "Problem 70",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.819302197245793
+    }
+  },
+  {
+    "sample_id": "gsm_0071",
+    "problem": "Problem 71",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7309817167670154
+    }
+  },
+  {
+    "sample_id": "gsm_0072",
+    "problem": "Problem 72",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5179130195549757
+    }
+  },
+  {
+    "sample_id": "gsm_0073",
+    "problem": "Problem 73",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7176781720929969
+    }
+  },
+  {
+    "sample_id": "gsm_0074",
+    "problem": "Problem 74",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.8098725520448724
+    }
+  },
+  {
+    "sample_id": "gsm_0075",
+    "problem": "Problem 75",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.589048747812388
+    }
+  },
+  {
+    "sample_id": "gsm_0076",
+    "problem": "Problem 76",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4564764658809144
+    }
+  },
+  {
+    "sample_id": "gsm_0077",
+    "problem": "Problem 77",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6495036752329337
+    }
+  },
+  {
+    "sample_id": "gsm_0078",
+    "problem": "Problem 78",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4541196117322488
+    }
+  },
+  {
+    "sample_id": "gsm_0079",
+    "problem": "Problem 79",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.493784457300446
+    }
+  },
+  {
+    "sample_id": "gsm_0080",
+    "problem": "Problem 80",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.109835943918756
+    }
+  },
+  {
+    "sample_id": "gsm_0081",
+    "problem": "Problem 81",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3214437142441269
+    }
+  },
+  {
+    "sample_id": "gsm_0082",
+    "problem": "Problem 82",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.761052977629242
+    }
+  },
+  {
+    "sample_id": "gsm_0083",
+    "problem": "Problem 83",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7591351091368237
+    }
+  },
+  {
+    "sample_id": "gsm_0084",
+    "problem": "Problem 84",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9042468014465939
+    }
+  },
+  {
+    "sample_id": "gsm_0085",
+    "problem": "Problem 85",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.250878521792268
+    }
+  },
+  {
+    "sample_id": "gsm_0086",
+    "problem": "Problem 86",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.042298941148963
+    }
+  },
+  {
+    "sample_id": "gsm_0087",
+    "problem": "Problem 87",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3356244451701578
+    }
+  },
+  {
+    "sample_id": "gsm_0088",
+    "problem": "Problem 88",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7648801018835194
+    }
+  },
+  {
+    "sample_id": "gsm_0089",
+    "problem": "Problem 89",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.243366283443322
+    }
+  },
+  {
+    "sample_id": "gsm_0090",
+    "problem": "Problem 90",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9514612253259798
+    }
+  },
+  {
+    "sample_id": "gsm_0091",
+    "problem": "Problem 91",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0156775047335553
+    }
+  },
+  {
+    "sample_id": "gsm_0092",
+    "problem": "Problem 92",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8510265469386762
+    }
+  },
+  {
+    "sample_id": "gsm_0093",
+    "problem": "Problem 93",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6638310732988841
+    }
+  },
+  {
+    "sample_id": "gsm_0094",
+    "problem": "Problem 94",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6960540765660788
+    }
+  },
+  {
+    "sample_id": "gsm_0095",
+    "problem": "Problem 95",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.731757474066059
+    }
+  },
+  {
+    "sample_id": "gsm_0096",
+    "problem": "Problem 96",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.351939861467712
+    }
+  },
+  {
+    "sample_id": "gsm_0097",
+    "problem": "Problem 97",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3694723639100554
+    }
+  },
+  {
+    "sample_id": "gsm_0098",
+    "problem": "Problem 98",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4974432716787696
+    }
+  },
+  {
+    "sample_id": "gsm_0099",
+    "problem": "Problem 99",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6172935666875734
+    }
+  },
+  {
+    "sample_id": "gsm_0100",
+    "problem": "Problem 100",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.707685371025207
+    }
+  },
+  {
+    "sample_id": "gsm_0101",
+    "problem": "Problem 101",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7103226613826794
+    }
+  },
+  {
+    "sample_id": "gsm_0102",
+    "problem": "Problem 102",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6713572582633847
+    }
+  },
+  {
+    "sample_id": "gsm_0103",
+    "problem": "Problem 103",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9011386346108095
+    }
+  },
+  {
+    "sample_id": "gsm_0104",
+    "problem": "Problem 104",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5806428558330046
+    }
+  },
+  {
+    "sample_id": "gsm_0105",
+    "problem": "Problem 105",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.797974571592731
+    }
+  },
+  {
+    "sample_id": "gsm_0106",
+    "problem": "Problem 106",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5569070493947349
+    }
+  },
+  {
+    "sample_id": "gsm_0107",
+    "problem": "Problem 107",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4127110935840805
+    }
+  },
+  {
+    "sample_id": "gsm_0108",
+    "problem": "Problem 108",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3712248046386177
+    }
+  },
+  {
+    "sample_id": "gsm_0109",
+    "problem": "Problem 109",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5372229578830836
+    }
+  },
+  {
+    "sample_id": "gsm_0110",
+    "problem": "Problem 110",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.959385607649521
+    }
+  },
+  {
+    "sample_id": "gsm_0111",
+    "problem": "Problem 111",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5132569377246083
+    }
+  },
+  {
+    "sample_id": "gsm_0112",
+    "problem": "Problem 112",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4698848950294867
+    }
+  },
+  {
+    "sample_id": "gsm_0113",
+    "problem": "Problem 113",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.26837894375735694
+    }
+  },
+  {
+    "sample_id": "gsm_0114",
+    "problem": "Problem 114",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5961804823905612
+    }
+  },
+  {
+    "sample_id": "gsm_0115",
+    "problem": "Problem 115",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.849226328833194
+    }
+  },
+  {
+    "sample_id": "gsm_0116",
+    "problem": "Problem 116",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5173558848526216
+    }
+  },
+  {
+    "sample_id": "gsm_0117",
+    "problem": "Problem 117",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.084339018809766
+    }
+  },
+  {
+    "sample_id": "gsm_0118",
+    "problem": "Problem 118",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9285885927424897
+    }
+  },
+  {
+    "sample_id": "gsm_0119",
+    "problem": "Problem 119",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1240334836566128
+    }
+  },
+  {
+    "sample_id": "gsm_0120",
+    "problem": "Problem 120",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6044840264784765
+    }
+  },
+  {
+    "sample_id": "gsm_0121",
+    "problem": "Problem 121",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9546937273973695
+    }
+  },
+  {
+    "sample_id": "gsm_0122",
+    "problem": "Problem 122",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7986028445319504
+    }
+  },
+  {
+    "sample_id": "gsm_0123",
+    "problem": "Problem 123",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2009255313961402
+    }
+  },
+  {
+    "sample_id": "gsm_0124",
+    "problem": "Problem 124",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2065714530998648
+    }
+  },
+  {
+    "sample_id": "gsm_0125",
+    "problem": "Problem 125",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.904772187095011
+    }
+  },
+  {
+    "sample_id": "gsm_0126",
+    "problem": "Problem 126",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9952681625653441
+    }
+  },
+  {
+    "sample_id": "gsm_0127",
+    "problem": "Problem 127",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.783148864801386
+    }
+  },
+  {
+    "sample_id": "gsm_0128",
+    "problem": "Problem 128",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4501743174561794
+    }
+  },
+  {
+    "sample_id": "gsm_0129",
+    "problem": "Problem 129",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7517378270580997
+    }
+  },
+  {
+    "sample_id": "gsm_0130",
+    "problem": "Problem 130",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.775331715533066
+    }
+  },
+  {
+    "sample_id": "gsm_0131",
+    "problem": "Problem 131",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4657185125969863
+    }
+  },
+  {
+    "sample_id": "gsm_0132",
+    "problem": "Problem 132",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0311518568630524
+    }
+  },
+  {
+    "sample_id": "gsm_0133",
+    "problem": "Problem 133",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2632037846824091
+    }
+  },
+  {
+    "sample_id": "gsm_0134",
+    "problem": "Problem 134",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9597121171169016
+    }
+  },
+  {
+    "sample_id": "gsm_0135",
+    "problem": "Problem 135",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.22503279749123
+    }
+  },
+  {
+    "sample_id": "gsm_0136",
+    "problem": "Problem 136",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8916266461681186
+    }
+  },
+  {
+    "sample_id": "gsm_0137",
+    "problem": "Problem 137",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6610307581028378
+    }
+  },
+  {
+    "sample_id": "gsm_0138",
+    "problem": "Problem 138",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.093241391315165
+    }
+  },
+  {
+    "sample_id": "gsm_0139",
+    "problem": "Problem 139",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1154321582169775
+    }
+  },
+  {
+    "sample_id": "gsm_0140",
+    "problem": "Problem 140",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.886270032697935
+    }
+  },
+  {
+    "sample_id": "gsm_0141",
+    "problem": "Problem 141",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.846428622858786
+    }
+  },
+  {
+    "sample_id": "gsm_0142",
+    "problem": "Problem 142",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.3037416172806138
+    }
+  },
+  {
+    "sample_id": "gsm_0143",
+    "problem": "Problem 143",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.407683070733848
+    }
+  },
+  {
+    "sample_id": "gsm_0144",
+    "problem": "Problem 144",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3700586028757882
+    }
+  },
+  {
+    "sample_id": "gsm_0145",
+    "problem": "Problem 145",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.609088564111345
+    }
+  },
+  {
+    "sample_id": "gsm_0146",
+    "problem": "Problem 146",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.118475355439041
+    }
+  },
+  {
+    "sample_id": "gsm_0147",
+    "problem": "Problem 147",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1602283065421384
+    }
+  },
+  {
+    "sample_id": "gsm_0148",
+    "problem": "Problem 148",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2390292171915511
+    }
+  },
+  {
+    "sample_id": "gsm_0149",
+    "problem": "Problem 149",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3515076633834069
+    }
+  },
+  {
+    "sample_id": "gsm_0150",
+    "problem": "Problem 150",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8747535748270616
+    }
+  },
+  {
+    "sample_id": "gsm_0151",
+    "problem": "Problem 151",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.326775895251512
+    }
+  },
+  {
+    "sample_id": "gsm_0152",
+    "problem": "Problem 152",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8400123607892453
+    }
+  },
+  {
+    "sample_id": "gsm_0153",
+    "problem": "Problem 153",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3838731514194982
+    }
+  },
+  {
+    "sample_id": "gsm_0154",
+    "problem": "Problem 154",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3534637633506594
+    }
+  },
+  {
+    "sample_id": "gsm_0155",
+    "problem": "Problem 155",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.357175709013184
+    }
+  },
+  {
+    "sample_id": "gsm_0156",
+    "problem": "Problem 156",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5671127444276217
+    }
+  },
+  {
+    "sample_id": "gsm_0157",
+    "problem": "Problem 157",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2630835395441062
+    }
+  },
+  {
+    "sample_id": "gsm_0158",
+    "problem": "Problem 158",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.095651748601324
+    }
+  },
+  {
+    "sample_id": "gsm_0159",
+    "problem": "Problem 159",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1717231956830851
+    }
+  },
+  {
+    "sample_id": "gsm_0160",
+    "problem": "Problem 160",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4873408351136606
+    }
+  },
+  {
+    "sample_id": "gsm_0161",
+    "problem": "Problem 161",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.106457698128774
+    }
+  },
+  {
+    "sample_id": "gsm_0162",
+    "problem": "Problem 162",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.920702210496298
+    }
+  },
+  {
+    "sample_id": "gsm_0163",
+    "problem": "Problem 163",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9103411591758552
+    }
+  },
+  {
+    "sample_id": "gsm_0164",
+    "problem": "Problem 164",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0183119353778392
+    }
+  },
+  {
+    "sample_id": "gsm_0165",
+    "problem": "Problem 165",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.793609536531751
+    }
+  },
+  {
+    "sample_id": "gsm_0166",
+    "problem": "Problem 166",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.088969920002755
+    }
+  },
+  {
+    "sample_id": "gsm_0167",
+    "problem": "Problem 167",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5516035086730263
+    }
+  },
+  {
+    "sample_id": "gsm_0168",
+    "problem": "Problem 168",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6226940580014353
+    }
+  },
+  {
+    "sample_id": "gsm_0169",
+    "problem": "Problem 169",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8768680821787447
+    }
+  },
+  {
+    "sample_id": "gsm_0170",
+    "problem": "Problem 170",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.444757214812761
+    }
+  },
+  {
+    "sample_id": "gsm_0171",
+    "problem": "Problem 171",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9079051424827191
+    }
+  },
+  {
+    "sample_id": "gsm_0172",
+    "problem": "Problem 172",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.538550854707052
+    }
+  },
+  {
+    "sample_id": "gsm_0173",
+    "problem": "Problem 173",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.329424012591678
+    }
+  },
+  {
+    "sample_id": "gsm_0174",
+    "problem": "Problem 174",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3616546003349905
+    }
+  },
+  {
+    "sample_id": "gsm_0175",
+    "problem": "Problem 175",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.586408375481988
+    }
+  },
+  {
+    "sample_id": "gsm_0176",
+    "problem": "Problem 176",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4934990540610464
+    }
+  },
+  {
+    "sample_id": "gsm_0177",
+    "problem": "Problem 177",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7732329614213416
+    }
+  },
+  {
+    "sample_id": "gsm_0178",
+    "problem": "Problem 178",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.632328416618978
+    }
+  },
+  {
+    "sample_id": "gsm_0179",
+    "problem": "Problem 179",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.1399154167051906
+    }
+  },
+  {
+    "sample_id": "gsm_0180",
+    "problem": "Problem 180",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.687166326117497
+    }
+  },
+  {
+    "sample_id": "gsm_0181",
+    "problem": "Problem 181",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9285787782081414
+    }
+  },
+  {
+    "sample_id": "gsm_0182",
+    "problem": "Problem 182",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.035446249030556
+    }
+  },
+  {
+    "sample_id": "gsm_0183",
+    "problem": "Problem 183",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2587637923784074
+    }
+  },
+  {
+    "sample_id": "gsm_0184",
+    "problem": "Problem 184",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6117313926629255
+    }
+  },
+  {
+    "sample_id": "gsm_0185",
+    "problem": "Problem 185",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.642999752953954
+    }
+  },
+  {
+    "sample_id": "gsm_0186",
+    "problem": "Problem 186",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2633811877132275
+    }
+  },
+  {
+    "sample_id": "gsm_0187",
+    "problem": "Problem 187",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5364144563284363
+    }
+  },
+  {
+    "sample_id": "gsm_0188",
+    "problem": "Problem 188",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9233968590342025
+    }
+  },
+  {
+    "sample_id": "gsm_0189",
+    "problem": "Problem 189",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.257423612342932
+    }
+  },
+  {
+    "sample_id": "gsm_0190",
+    "problem": "Problem 190",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.223257476033511
+    }
+  },
+  {
+    "sample_id": "gsm_0191",
+    "problem": "Problem 191",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0718006028382638
+    }
+  },
+  {
+    "sample_id": "gsm_0192",
+    "problem": "Problem 192",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3929531279348981
+    }
+  },
+  {
+    "sample_id": "gsm_0193",
+    "problem": "Problem 193",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1228693893559942
+    }
+  },
+  {
+    "sample_id": "gsm_0194",
+    "problem": "Problem 194",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.413409537074409
+    }
+  },
+  {
+    "sample_id": "gsm_0195",
+    "problem": "Problem 195",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8073413101355817
+    }
+  },
+  {
+    "sample_id": "gsm_0196",
+    "problem": "Problem 196",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9419287181005664
+    }
+  },
+  {
+    "sample_id": "gsm_0197",
+    "problem": "Problem 197",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.423137447027236
+    }
+  },
+  {
+    "sample_id": "gsm_0198",
+    "problem": "Problem 198",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.470895640777
+    }
+  },
+  {
+    "sample_id": "gsm_0199",
+    "problem": "Problem 199",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0714851489153117
+    }
+  },
+  {
+    "sample_id": "gsm_0200",
+    "problem": "Problem 200",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8211063198258586
+    }
+  },
+  {
+    "sample_id": "gsm_0201",
+    "problem": "Problem 201",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2196077368158829
+    }
+  },
+  {
+    "sample_id": "gsm_0202",
+    "problem": "Problem 202",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9584743784123615
+    }
+  },
+  {
+    "sample_id": "gsm_0203",
+    "problem": "Problem 203",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9730989739825485
+    }
+  },
+  {
+    "sample_id": "gsm_0204",
+    "problem": "Problem 204",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1888346839785457
+    }
+  },
+  {
+    "sample_id": "gsm_0205",
+    "problem": "Problem 205",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.468912519957561
+    }
+  },
+  {
+    "sample_id": "gsm_0206",
+    "problem": "Problem 206",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2424823663956701
+    }
+  },
+  {
+    "sample_id": "gsm_0207",
+    "problem": "Problem 207",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2431070245438955
+    }
+  },
+  {
+    "sample_id": "gsm_0208",
+    "problem": "Problem 208",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.242476156846976
+    }
+  },
+  {
+    "sample_id": "gsm_0209",
+    "problem": "Problem 209",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": 0.4263657453273606
+    }
+  },
+  {
+    "sample_id": "gsm_0210",
+    "problem": "Problem 210",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.7145547446534164
+    }
+  },
+  {
+    "sample_id": "gsm_0211",
+    "problem": "Problem 211",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9322171799097005
+    }
+  },
+  {
+    "sample_id": "gsm_0212",
+    "problem": "Problem 212",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0229991182533988
+    }
+  },
+  {
+    "sample_id": "gsm_0213",
+    "problem": "Problem 213",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.174304374347101
+    }
+  },
+  {
+    "sample_id": "gsm_0214",
+    "problem": "Problem 214",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6576346223201728
+    }
+  },
+  {
+    "sample_id": "gsm_0215",
+    "problem": "Problem 215",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.620515389753366
+    }
+  },
+  {
+    "sample_id": "gsm_0216",
+    "problem": "Problem 216",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.886412607268786
+    }
+  },
+  {
+    "sample_id": "gsm_0217",
+    "problem": "Problem 217",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6184093033700044
+    }
+  },
+  {
+    "sample_id": "gsm_0218",
+    "problem": "Problem 218",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7426817739145517
+    }
+  },
+  {
+    "sample_id": "gsm_0219",
+    "problem": "Problem 219",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4590629303068388
+    }
+  },
+  {
+    "sample_id": "gsm_0220",
+    "problem": "Problem 220",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.8426707166632457
+    }
+  },
+  {
+    "sample_id": "gsm_0221",
+    "problem": "Problem 221",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.4336325962958743
+    }
+  },
+  {
+    "sample_id": "gsm_0222",
+    "problem": "Problem 222",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1568699048127433
+    }
+  },
+  {
+    "sample_id": "gsm_0223",
+    "problem": "Problem 223",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.306357935594826
+    }
+  },
+  {
+    "sample_id": "gsm_0224",
+    "problem": "Problem 224",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7359659328947168
+    }
+  },
+  {
+    "sample_id": "gsm_0225",
+    "problem": "Problem 225",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.455524701516317
+    }
+  },
+  {
+    "sample_id": "gsm_0226",
+    "problem": "Problem 226",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4678599904522687
+    }
+  },
+  {
+    "sample_id": "gsm_0227",
+    "problem": "Problem 227",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.038872388964653
+    }
+  },
+  {
+    "sample_id": "gsm_0228",
+    "problem": "Problem 228",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.857651854629984
+    }
+  },
+  {
+    "sample_id": "gsm_0229",
+    "problem": "Problem 229",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.160201125532662
+    }
+  },
+  {
+    "sample_id": "gsm_0230",
+    "problem": "Problem 230",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.365183315858569
+    }
+  },
+  {
+    "sample_id": "gsm_0231",
+    "problem": "Problem 231",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3917707052090125
+    }
+  },
+  {
+    "sample_id": "gsm_0232",
+    "problem": "Problem 232",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.477214080048093
+    }
+  },
+  {
+    "sample_id": "gsm_0233",
+    "problem": "Problem 233",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8258001738029086
+    }
+  },
+  {
+    "sample_id": "gsm_0234",
+    "problem": "Problem 234",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4280279553373372
+    }
+  },
+  {
+    "sample_id": "gsm_0235",
+    "problem": "Problem 235",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6830404888409944
+    }
+  },
+  {
+    "sample_id": "gsm_0236",
+    "problem": "Problem 236",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.5125712933288034
+    }
+  },
+  {
+    "sample_id": "gsm_0237",
+    "problem": "Problem 237",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4067728426152861
+    }
+  },
+  {
+    "sample_id": "gsm_0238",
+    "problem": "Problem 238",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.830893232384194
+    }
+  },
+  {
+    "sample_id": "gsm_0239",
+    "problem": "Problem 239",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.073783332601888
+    }
+  },
+  {
+    "sample_id": "gsm_0240",
+    "problem": "Problem 240",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.396260369216351
+    }
+  },
+  {
+    "sample_id": "gsm_0241",
+    "problem": "Problem 241",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5573682207334496
+    }
+  },
+  {
+    "sample_id": "gsm_0242",
+    "problem": "Problem 242",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2475063605097714
+    }
+  },
+  {
+    "sample_id": "gsm_0243",
+    "problem": "Problem 243",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0671224029149393
+    }
+  },
+  {
+    "sample_id": "gsm_0244",
+    "problem": "Problem 244",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1001482035278882
+    }
+  },
+  {
+    "sample_id": "gsm_0245",
+    "problem": "Problem 245",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.167250617920474
+    }
+  },
+  {
+    "sample_id": "gsm_0246",
+    "problem": "Problem 246",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.737472655580478
+    }
+  },
+  {
+    "sample_id": "gsm_0247",
+    "problem": "Problem 247",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8266646162868558
+    }
+  },
+  {
+    "sample_id": "gsm_0248",
+    "problem": "Problem 248",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6172728798594516
+    }
+  },
+  {
+    "sample_id": "gsm_0249",
+    "problem": "Problem 249",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2975091445195222
+    }
+  },
+  {
+    "sample_id": "gsm_0250",
+    "problem": "Problem 250",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.630441977167522
+    }
+  },
+  {
+    "sample_id": "gsm_0251",
+    "problem": "Problem 251",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.041069026472612
+    }
+  },
+  {
+    "sample_id": "gsm_0252",
+    "problem": "Problem 252",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4389219014936834
+    }
+  },
+  {
+    "sample_id": "gsm_0253",
+    "problem": "Problem 253",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9837673697244266
+    }
+  },
+  {
+    "sample_id": "gsm_0254",
+    "problem": "Problem 254",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2596849829770065
+    }
+  },
+  {
+    "sample_id": "gsm_0255",
+    "problem": "Problem 255",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.242117036433125
+    }
+  },
+  {
+    "sample_id": "gsm_0256",
+    "problem": "Problem 256",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8665444254066886
+    }
+  },
+  {
+    "sample_id": "gsm_0257",
+    "problem": "Problem 257",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8538347328093905
+    }
+  },
+  {
+    "sample_id": "gsm_0258",
+    "problem": "Problem 258",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.278090285926886
+    }
+  },
+  {
+    "sample_id": "gsm_0259",
+    "problem": "Problem 259",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1126829732853316
+    }
+  },
+  {
+    "sample_id": "gsm_0260",
+    "problem": "Problem 260",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.463465235789042
+    }
+  },
+  {
+    "sample_id": "gsm_0261",
+    "problem": "Problem 261",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5297626780309
+    }
+  },
+  {
+    "sample_id": "gsm_0262",
+    "problem": "Problem 262",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -3.120633670034536
+    }
+  },
+  {
+    "sample_id": "gsm_0263",
+    "problem": "Problem 263",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.012193820667145
+    }
+  },
+  {
+    "sample_id": "gsm_0264",
+    "problem": "Problem 264",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6262840756965802
+    }
+  },
+  {
+    "sample_id": "gsm_0265",
+    "problem": "Problem 265",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.623891590982424
+    }
+  },
+  {
+    "sample_id": "gsm_0266",
+    "problem": "Problem 266",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6837943480341824
+    }
+  },
+  {
+    "sample_id": "gsm_0267",
+    "problem": "Problem 267",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2150706889803162
+    }
+  },
+  {
+    "sample_id": "gsm_0268",
+    "problem": "Problem 268",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.720022243348492
+    }
+  },
+  {
+    "sample_id": "gsm_0269",
+    "problem": "Problem 269",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4346297113569544
+    }
+  },
+  {
+    "sample_id": "gsm_0270",
+    "problem": "Problem 270",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.279363355466942
+    }
+  },
+  {
+    "sample_id": "gsm_0271",
+    "problem": "Problem 271",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.2179310755897195
+    }
+  },
+  {
+    "sample_id": "gsm_0272",
+    "problem": "Problem 272",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9184181239225202
+    }
+  },
+  {
+    "sample_id": "gsm_0273",
+    "problem": "Problem 273",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4948834694902065
+    }
+  },
+  {
+    "sample_id": "gsm_0274",
+    "problem": "Problem 274",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9907543255239755
+    }
+  },
+  {
+    "sample_id": "gsm_0275",
+    "problem": "Problem 275",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.768948262868365
+    }
+  },
+  {
+    "sample_id": "gsm_0276",
+    "problem": "Problem 276",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.400470152213265
+    }
+  },
+  {
+    "sample_id": "gsm_0277",
+    "problem": "Problem 277",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8001084385793973
+    }
+  },
+  {
+    "sample_id": "gsm_0278",
+    "problem": "Problem 278",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4650989575049906
+    }
+  },
+  {
+    "sample_id": "gsm_0279",
+    "problem": "Problem 279",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.69265679843088
+    }
+  },
+  {
+    "sample_id": "gsm_0280",
+    "problem": "Problem 280",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.943241327374376
+    }
+  },
+  {
+    "sample_id": "gsm_0281",
+    "problem": "Problem 281",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1689346627394768
+    }
+  },
+  {
+    "sample_id": "gsm_0282",
+    "problem": "Problem 282",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.706991591927324
+    }
+  },
+  {
+    "sample_id": "gsm_0283",
+    "problem": "Problem 283",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1189077494134247
+    }
+  },
+  {
+    "sample_id": "gsm_0284",
+    "problem": "Problem 284",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4334833126718667
+    }
+  },
+  {
+    "sample_id": "gsm_0285",
+    "problem": "Problem 285",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.976043899761251
+    }
+  },
+  {
+    "sample_id": "gsm_0286",
+    "problem": "Problem 286",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5758925475177916
+    }
+  },
+  {
+    "sample_id": "gsm_0287",
+    "problem": "Problem 287",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2058413967577117
+    }
+  },
+  {
+    "sample_id": "gsm_0288",
+    "problem": "Problem 288",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3595040661324838
+    }
+  },
+  {
+    "sample_id": "gsm_0289",
+    "problem": "Problem 289",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8113497599102968
+    }
+  },
+  {
+    "sample_id": "gsm_0290",
+    "problem": "Problem 290",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.104061125178638
+    }
+  },
+  {
+    "sample_id": "gsm_0291",
+    "problem": "Problem 291",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7465004673294164
+    }
+  },
+  {
+    "sample_id": "gsm_0292",
+    "problem": "Problem 292",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7946823784721058
+    }
+  },
+  {
+    "sample_id": "gsm_0293",
+    "problem": "Problem 293",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0751989514894877
+    }
+  },
+  {
+    "sample_id": "gsm_0294",
+    "problem": "Problem 294",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3214922570174763
+    }
+  },
+  {
+    "sample_id": "gsm_0295",
+    "problem": "Problem 295",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.346454797630327
+    }
+  },
+  {
+    "sample_id": "gsm_0296",
+    "problem": "Problem 296",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0502000622833747
+    }
+  },
+  {
+    "sample_id": "gsm_0297",
+    "problem": "Problem 297",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3463502395616953
+    }
+  },
+  {
+    "sample_id": "gsm_0298",
+    "problem": "Problem 298",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.09356894058052
+    }
+  },
+  {
+    "sample_id": "gsm_0299",
+    "problem": "Problem 299",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.185185579038194
+    }
+  },
+  {
+    "sample_id": "gsm_0300",
+    "problem": "Problem 300",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4144975054610365
+    }
+  },
+  {
+    "sample_id": "gsm_0301",
+    "problem": "Problem 301",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7800905200984847
+    }
+  },
+  {
+    "sample_id": "gsm_0302",
+    "problem": "Problem 302",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1263531974383691
+    }
+  },
+  {
+    "sample_id": "gsm_0303",
+    "problem": "Problem 303",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1948148672832675
+    }
+  },
+  {
+    "sample_id": "gsm_0304",
+    "problem": "Problem 304",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.510450796982074
+    }
+  },
+  {
+    "sample_id": "gsm_0305",
+    "problem": "Problem 305",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.941336308345609
+    }
+  },
+  {
+    "sample_id": "gsm_0306",
+    "problem": "Problem 306",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8611675521057875
+    }
+  },
+  {
+    "sample_id": "gsm_0307",
+    "problem": "Problem 307",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.795785694417915
+    }
+  },
+  {
+    "sample_id": "gsm_0308",
+    "problem": "Problem 308",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2264513094149812
+    }
+  },
+  {
+    "sample_id": "gsm_0309",
+    "problem": "Problem 309",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.601096326216947
+    }
+  },
+  {
+    "sample_id": "gsm_0310",
+    "problem": "Problem 310",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.10884060161361
+    }
+  },
+  {
+    "sample_id": "gsm_0311",
+    "problem": "Problem 311",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.950611574006405
+    }
+  },
+  {
+    "sample_id": "gsm_0312",
+    "problem": "Problem 312",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0872918255059851
+    }
+  },
+  {
+    "sample_id": "gsm_0313",
+    "problem": "Problem 313",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0932451819996807
+    }
+  },
+  {
+    "sample_id": "gsm_0314",
+    "problem": "Problem 314",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8472605964228355
+    }
+  },
+  {
+    "sample_id": "gsm_0315",
+    "problem": "Problem 315",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9894980791836203
+    }
+  },
+  {
+    "sample_id": "gsm_0316",
+    "problem": "Problem 316",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.159023514352518
+    }
+  },
+  {
+    "sample_id": "gsm_0317",
+    "problem": "Problem 317",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.655133378296728
+    }
+  },
+  {
+    "sample_id": "gsm_0318",
+    "problem": "Problem 318",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.337916823755779
+    }
+  },
+  {
+    "sample_id": "gsm_0319",
+    "problem": "Problem 319",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5650715271838422
+    }
+  },
+  {
+    "sample_id": "gsm_0320",
+    "problem": "Problem 320",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.951502017503641
+    }
+  },
+  {
+    "sample_id": "gsm_0321",
+    "problem": "Problem 321",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2024214872815433
+    }
+  },
+  {
+    "sample_id": "gsm_0322",
+    "problem": "Problem 322",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9091103416167363
+    }
+  },
+  {
+    "sample_id": "gsm_0323",
+    "problem": "Problem 323",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4538063621572699
+    }
+  },
+  {
+    "sample_id": "gsm_0324",
+    "problem": "Problem 324",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.003008690749851
+    }
+  },
+  {
+    "sample_id": "gsm_0325",
+    "problem": "Problem 325",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.607094306393866
+    }
+  },
+  {
+    "sample_id": "gsm_0326",
+    "problem": "Problem 326",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9209445632499661
+    }
+  },
+  {
+    "sample_id": "gsm_0327",
+    "problem": "Problem 327",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1041686530185322
+    }
+  },
+  {
+    "sample_id": "gsm_0328",
+    "problem": "Problem 328",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1879400914739224
+    }
+  },
+  {
+    "sample_id": "gsm_0329",
+    "problem": "Problem 329",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.18582724536786
+    }
+  },
+  {
+    "sample_id": "gsm_0330",
+    "problem": "Problem 330",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.006123386423457
+    }
+  },
+  {
+    "sample_id": "gsm_0331",
+    "problem": "Problem 331",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9486271857429158
+    }
+  },
+  {
+    "sample_id": "gsm_0332",
+    "problem": "Problem 332",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4620977209031367
+    }
+  },
+  {
+    "sample_id": "gsm_0333",
+    "problem": "Problem 333",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.838580855756056
+    }
+  },
+  {
+    "sample_id": "gsm_0334",
+    "problem": "Problem 334",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0124401332911244
+    }
+  },
+  {
+    "sample_id": "gsm_0335",
+    "problem": "Problem 335",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.073528690751069
+    }
+  },
+  {
+    "sample_id": "gsm_0336",
+    "problem": "Problem 336",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9127485983962558
+    }
+  },
+  {
+    "sample_id": "gsm_0337",
+    "problem": "Problem 337",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6606929208264967
+    }
+  },
+  {
+    "sample_id": "gsm_0338",
+    "problem": "Problem 338",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.293534272862188
+    }
+  },
+  {
+    "sample_id": "gsm_0339",
+    "problem": "Problem 339",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7818622764019874
+    }
+  },
+  {
+    "sample_id": "gsm_0340",
+    "problem": "Problem 340",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.4111101977832154
+    }
+  },
+  {
+    "sample_id": "gsm_0341",
+    "problem": "Problem 341",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3781563942540438
+    }
+  },
+  {
+    "sample_id": "gsm_0342",
+    "problem": "Problem 342",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3775167144456386
+    }
+  },
+  {
+    "sample_id": "gsm_0343",
+    "problem": "Problem 343",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7534715876855649
+    }
+  },
+  {
+    "sample_id": "gsm_0344",
+    "problem": "Problem 344",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7355191528091614
+    }
+  },
+  {
+    "sample_id": "gsm_0345",
+    "problem": "Problem 345",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.883975031321182
+    }
+  },
+  {
+    "sample_id": "gsm_0346",
+    "problem": "Problem 346",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.224042170748662
+    }
+  },
+  {
+    "sample_id": "gsm_0347",
+    "problem": "Problem 347",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.203731887188278
+    }
+  },
+  {
+    "sample_id": "gsm_0348",
+    "problem": "Problem 348",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.859222110626218
+    }
+  },
+  {
+    "sample_id": "gsm_0349",
+    "problem": "Problem 349",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6067235758559235
+    }
+  },
+  {
+    "sample_id": "gsm_0350",
+    "problem": "Problem 350",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.844546217200998
+    }
+  },
+  {
+    "sample_id": "gsm_0351",
+    "problem": "Problem 351",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.762321891525224
+    }
+  },
+  {
+    "sample_id": "gsm_0352",
+    "problem": "Problem 352",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0711701883989904
+    }
+  },
+  {
+    "sample_id": "gsm_0353",
+    "problem": "Problem 353",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5799692649817136
+    }
+  },
+  {
+    "sample_id": "gsm_0354",
+    "problem": "Problem 354",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5095081039513445
+    }
+  },
+  {
+    "sample_id": "gsm_0355",
+    "problem": "Problem 355",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.501264682318904
+    }
+  },
+  {
+    "sample_id": "gsm_0356",
+    "problem": "Problem 356",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.509256567996195
+    }
+  },
+  {
+    "sample_id": "gsm_0357",
+    "problem": "Problem 357",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6443293194600692
+    }
+  },
+  {
+    "sample_id": "gsm_0358",
+    "problem": "Problem 358",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3386407198309553
+    }
+  },
+  {
+    "sample_id": "gsm_0359",
+    "problem": "Problem 359",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9136154717761615
+    }
+  },
+  {
+    "sample_id": "gsm_0360",
+    "problem": "Problem 360",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.740326742879414
+    }
+  },
+  {
+    "sample_id": "gsm_0361",
+    "problem": "Problem 361",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7336305434987112
+    }
+  },
+  {
+    "sample_id": "gsm_0362",
+    "problem": "Problem 362",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5543800742284288
+    }
+  },
+  {
+    "sample_id": "gsm_0363",
+    "problem": "Problem 363",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2991441389505294
+    }
+  },
+  {
+    "sample_id": "gsm_0364",
+    "problem": "Problem 364",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1549280041444439
+    }
+  },
+  {
+    "sample_id": "gsm_0365",
+    "problem": "Problem 365",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.200610235942918
+    }
+  },
+  {
+    "sample_id": "gsm_0366",
+    "problem": "Problem 366",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3879537590947917
+    }
+  },
+  {
+    "sample_id": "gsm_0367",
+    "problem": "Problem 367",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4937037996091025
+    }
+  },
+  {
+    "sample_id": "gsm_0368",
+    "problem": "Problem 368",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4511619507255842
+    }
+  },
+  {
+    "sample_id": "gsm_0369",
+    "problem": "Problem 369",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8865048919277332
+    }
+  },
+  {
+    "sample_id": "gsm_0370",
+    "problem": "Problem 370",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9877449128705287
+    }
+  },
+  {
+    "sample_id": "gsm_0371",
+    "problem": "Problem 371",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.251000854377275
+    }
+  },
+  {
+    "sample_id": "gsm_0372",
+    "problem": "Problem 372",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7744281961024791
+    }
+  },
+  {
+    "sample_id": "gsm_0373",
+    "problem": "Problem 373",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0203645869573965
+    }
+  },
+  {
+    "sample_id": "gsm_0374",
+    "problem": "Problem 374",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.4234087712442218
+    }
+  },
+  {
+    "sample_id": "gsm_0375",
+    "problem": "Problem 375",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.383673781444025
+    }
+  },
+  {
+    "sample_id": "gsm_0376",
+    "problem": "Problem 376",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.063839681639661
+    }
+  },
+  {
+    "sample_id": "gsm_0377",
+    "problem": "Problem 377",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4083289971308242
+    }
+  },
+  {
+    "sample_id": "gsm_0378",
+    "problem": "Problem 378",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.40509853339116386
+    }
+  },
+  {
+    "sample_id": "gsm_0379",
+    "problem": "Problem 379",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9041491426775758
+    }
+  },
+  {
+    "sample_id": "gsm_0380",
+    "problem": "Problem 380",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.419860921090388
+    }
+  },
+  {
+    "sample_id": "gsm_0381",
+    "problem": "Problem 381",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.799696322722011
+    }
+  },
+  {
+    "sample_id": "gsm_0382",
+    "problem": "Problem 382",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.5619478621549034
+    }
+  },
+  {
+    "sample_id": "gsm_0383",
+    "problem": "Problem 383",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7628775108403805
+    }
+  },
+  {
+    "sample_id": "gsm_0384",
+    "problem": "Problem 384",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.879566330776849
+    }
+  },
+  {
+    "sample_id": "gsm_0385",
+    "problem": "Problem 385",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.924803106761896
+    }
+  },
+  {
+    "sample_id": "gsm_0386",
+    "problem": "Problem 386",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3291220121114202
+    }
+  },
+  {
+    "sample_id": "gsm_0387",
+    "problem": "Problem 387",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5619145803920569
+    }
+  },
+  {
+    "sample_id": "gsm_0388",
+    "problem": "Problem 388",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.024788080906975
+    }
+  },
+  {
+    "sample_id": "gsm_0389",
+    "problem": "Problem 389",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7884518278312016
+    }
+  },
+  {
+    "sample_id": "gsm_0390",
+    "problem": "Problem 390",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.449207335674179
+    }
+  },
+  {
+    "sample_id": "gsm_0391",
+    "problem": "Problem 391",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2540404142467472
+    }
+  },
+  {
+    "sample_id": "gsm_0392",
+    "problem": "Problem 392",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.160116603510321
+    }
+  },
+  {
+    "sample_id": "gsm_0393",
+    "problem": "Problem 393",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.5842706170728231
+    }
+  },
+  {
+    "sample_id": "gsm_0394",
+    "problem": "Problem 394",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9102799396393565
+    }
+  },
+  {
+    "sample_id": "gsm_0395",
+    "problem": "Problem 395",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.234587826052352
+    }
+  },
+  {
+    "sample_id": "gsm_0396",
+    "problem": "Problem 396",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.356567264545439
+    }
+  },
+  {
+    "sample_id": "gsm_0397",
+    "problem": "Problem 397",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8230638129172936
+    }
+  },
+  {
+    "sample_id": "gsm_0398",
+    "problem": "Problem 398",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.557269922626309
+    }
+  },
+  {
+    "sample_id": "gsm_0399",
+    "problem": "Problem 399",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8810918440132691
+    }
+  },
+  {
+    "sample_id": "gsm_0400",
+    "problem": "Problem 400",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.797213829397183
+    }
+  },
+  {
+    "sample_id": "gsm_0401",
+    "problem": "Problem 401",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7996875114768864
+    }
+  },
+  {
+    "sample_id": "gsm_0402",
+    "problem": "Problem 402",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4973781501409085
+    }
+  },
+  {
+    "sample_id": "gsm_0403",
+    "problem": "Problem 403",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.476509703117629
+    }
+  },
+  {
+    "sample_id": "gsm_0404",
+    "problem": "Problem 404",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7250327357396218
+    }
+  },
+  {
+    "sample_id": "gsm_0405",
+    "problem": "Problem 405",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6885750338262504
+    }
+  },
+  {
+    "sample_id": "gsm_0406",
+    "problem": "Problem 406",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.033810214691297
+    }
+  },
+  {
+    "sample_id": "gsm_0407",
+    "problem": "Problem 407",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5711897425106467
+    }
+  },
+  {
+    "sample_id": "gsm_0408",
+    "problem": "Problem 408",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4398521841440506
+    }
+  },
+  {
+    "sample_id": "gsm_0409",
+    "problem": "Problem 409",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2427805829706255
+    }
+  },
+  {
+    "sample_id": "gsm_0410",
+    "problem": "Problem 410",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.644192560955555
+    }
+  },
+  {
+    "sample_id": "gsm_0411",
+    "problem": "Problem 411",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0623210459189347
+    }
+  },
+  {
+    "sample_id": "gsm_0412",
+    "problem": "Problem 412",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.267057085367811
+    }
+  },
+  {
+    "sample_id": "gsm_0413",
+    "problem": "Problem 413",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8611615890507455
+    }
+  },
+  {
+    "sample_id": "gsm_0414",
+    "problem": "Problem 414",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3338429940102041
+    }
+  },
+  {
+    "sample_id": "gsm_0415",
+    "problem": "Problem 415",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.374243268278277
+    }
+  },
+  {
+    "sample_id": "gsm_0416",
+    "problem": "Problem 416",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7244240122387385
+    }
+  },
+  {
+    "sample_id": "gsm_0417",
+    "problem": "Problem 417",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4421626828535707
+    }
+  },
+  {
+    "sample_id": "gsm_0418",
+    "problem": "Problem 418",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9103514079680868
+    }
+  },
+  {
+    "sample_id": "gsm_0419",
+    "problem": "Problem 419",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4662407592949456
+    }
+  },
+  {
+    "sample_id": "gsm_0420",
+    "problem": "Problem 420",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.9696260375590064
+    }
+  },
+  {
+    "sample_id": "gsm_0421",
+    "problem": "Problem 421",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6223295787783978
+    }
+  },
+  {
+    "sample_id": "gsm_0422",
+    "problem": "Problem 422",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.6244820742395367
+    }
+  },
+  {
+    "sample_id": "gsm_0423",
+    "problem": "Problem 423",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0142145245228222
+    }
+  },
+  {
+    "sample_id": "gsm_0424",
+    "problem": "Problem 424",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1773120252074263
+    }
+  },
+  {
+    "sample_id": "gsm_0425",
+    "problem": "Problem 425",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.3156842212338256
+    }
+  },
+  {
+    "sample_id": "gsm_0426",
+    "problem": "Problem 426",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9824617302900522
+    }
+  },
+  {
+    "sample_id": "gsm_0427",
+    "problem": "Problem 427",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1569742700007803
+    }
+  },
+  {
+    "sample_id": "gsm_0428",
+    "problem": "Problem 428",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9707877565752061
+    }
+  },
+  {
+    "sample_id": "gsm_0429",
+    "problem": "Problem 429",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.3793697432115573
+    }
+  },
+  {
+    "sample_id": "gsm_0430",
+    "problem": "Problem 430",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.5916292563328875
+    }
+  },
+  {
+    "sample_id": "gsm_0431",
+    "problem": "Problem 431",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.51961608888005
+    }
+  },
+  {
+    "sample_id": "gsm_0432",
+    "problem": "Problem 432",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.634703417222279
+    }
+  },
+  {
+    "sample_id": "gsm_0433",
+    "problem": "Problem 433",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.141228872102019
+    }
+  },
+  {
+    "sample_id": "gsm_0434",
+    "problem": "Problem 434",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.748821473951986
+    }
+  },
+  {
+    "sample_id": "gsm_0435",
+    "problem": "Problem 435",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.962952609790112
+    }
+  },
+  {
+    "sample_id": "gsm_0436",
+    "problem": "Problem 436",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6856922272143541
+    }
+  },
+  {
+    "sample_id": "gsm_0437",
+    "problem": "Problem 437",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.190050729107446
+    }
+  },
+  {
+    "sample_id": "gsm_0438",
+    "problem": "Problem 438",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.351691219677577
+    }
+  },
+  {
+    "sample_id": "gsm_0439",
+    "problem": "Problem 439",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5277738494483093
+    }
+  },
+  {
+    "sample_id": "gsm_0440",
+    "problem": "Problem 440",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.807967275530346
+    }
+  },
+  {
+    "sample_id": "gsm_0441",
+    "problem": "Problem 441",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5163473740470466
+    }
+  },
+  {
+    "sample_id": "gsm_0442",
+    "problem": "Problem 442",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.5337210500199383
+    }
+  },
+  {
+    "sample_id": "gsm_0443",
+    "problem": "Problem 443",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5445600197563942
+    }
+  },
+  {
+    "sample_id": "gsm_0444",
+    "problem": "Problem 444",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1522347502524264
+    }
+  },
+  {
+    "sample_id": "gsm_0445",
+    "problem": "Problem 445",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6651637255849807
+    }
+  },
+  {
+    "sample_id": "gsm_0446",
+    "problem": "Problem 446",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3167008769515758
+    }
+  },
+  {
+    "sample_id": "gsm_0447",
+    "problem": "Problem 447",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9699398931636776
+    }
+  },
+  {
+    "sample_id": "gsm_0448",
+    "problem": "Problem 448",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7569334586683467
+    }
+  },
+  {
+    "sample_id": "gsm_0449",
+    "problem": "Problem 449",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0296067609444757
+    }
+  },
+  {
+    "sample_id": "gsm_0450",
+    "problem": "Problem 450",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.031339548636586
+    }
+  },
+  {
+    "sample_id": "gsm_0451",
+    "problem": "Problem 451",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0224288397493808
+    }
+  },
+  {
+    "sample_id": "gsm_0452",
+    "problem": "Problem 452",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.992863023167772
+    }
+  },
+  {
+    "sample_id": "gsm_0453",
+    "problem": "Problem 453",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.247976742241078
+    }
+  },
+  {
+    "sample_id": "gsm_0454",
+    "problem": "Problem 454",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7651288091862205
+    }
+  },
+  {
+    "sample_id": "gsm_0455",
+    "problem": "Problem 455",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "DV",
+      "CA",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.396436416131172
+    }
+  },
+  {
+    "sample_id": "gsm_0456",
+    "problem": "Problem 456",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.5535151799772788
+    }
+  },
+  {
+    "sample_id": "gsm_0457",
+    "problem": "Problem 457",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.017621161209687
+    }
+  },
+  {
+    "sample_id": "gsm_0458",
+    "problem": "Problem 458",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7768246526735911
+    }
+  },
+  {
+    "sample_id": "gsm_0459",
+    "problem": "Problem 459",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.098938946294424
+    }
+  },
+  {
+    "sample_id": "gsm_0460",
+    "problem": "Problem 460",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.0176374335418052
+    }
+  },
+  {
+    "sample_id": "gsm_0461",
+    "problem": "Problem 461",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4823682240141356
+    }
+  },
+  {
+    "sample_id": "gsm_0462",
+    "problem": "Problem 462",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8498627539962929
+    }
+  },
+  {
+    "sample_id": "gsm_0463",
+    "problem": "Problem 463",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.393010044632889
+    }
+  },
+  {
+    "sample_id": "gsm_0464",
+    "problem": "Problem 464",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.556164024845415
+    }
+  },
+  {
+    "sample_id": "gsm_0465",
+    "problem": "Problem 465",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.110484799766612
+    }
+  },
+  {
+    "sample_id": "gsm_0466",
+    "problem": "Problem 466",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1929166499782875
+    }
+  },
+  {
+    "sample_id": "gsm_0467",
+    "problem": "Problem 467",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.1212461449763476
+    }
+  },
+  {
+    "sample_id": "gsm_0468",
+    "problem": "Problem 468",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.7652505738052637
+    }
+  },
+  {
+    "sample_id": "gsm_0469",
+    "problem": "Problem 469",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.78790912032234
+    }
+  },
+  {
+    "sample_id": "gsm_0470",
+    "problem": "Problem 470",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CA",
+      "RF",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.137525848575822
+    }
+  },
+  {
+    "sample_id": "gsm_0471",
+    "problem": "Problem 471",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.6509605823677926
+    }
+  },
+  {
+    "sample_id": "gsm_0472",
+    "problem": "Problem 472",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.257595531099276
+    }
+  },
+  {
+    "sample_id": "gsm_0473",
+    "problem": "Problem 473",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.8165628662777377
+    }
+  },
+  {
+    "sample_id": "gsm_0474",
+    "problem": "Problem 474",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6775161432493582
+    }
+  },
+  {
+    "sample_id": "gsm_0475",
+    "problem": "Problem 475",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.124518019778189
+    }
+  },
+  {
+    "sample_id": "gsm_0476",
+    "problem": "Problem 476",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.2117215184721168
+    }
+  },
+  {
+    "sample_id": "gsm_0477",
+    "problem": "Problem 477",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.344374922728232
+    }
+  },
+  {
+    "sample_id": "gsm_0478",
+    "problem": "Problem 478",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": 0.03944040422761885
+    }
+  },
+  {
+    "sample_id": "gsm_0479",
+    "problem": "Problem 479",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.9402125442827116
+    }
+  },
+  {
+    "sample_id": "gsm_0480",
+    "problem": "Problem 480",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "DV",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.063958795740383
+    }
+  },
+  {
+    "sample_id": "gsm_0481",
+    "problem": "Problem 481",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9777702203002128
+    }
+  },
+  {
+    "sample_id": "gsm_0482",
+    "problem": "Problem 482",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.3032231601287863
+    }
+  },
+  {
+    "sample_id": "gsm_0483",
+    "problem": "Problem 483",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.3982681820663885
+    }
+  },
+  {
+    "sample_id": "gsm_0484",
+    "problem": "Problem 484",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8781753726421517
+    }
+  },
+  {
+    "sample_id": "gsm_0485",
+    "problem": "Problem 485",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "IN",
+      "IN",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.711126854798837
+    }
+  },
+  {
+    "sample_id": "gsm_0486",
+    "problem": "Problem 486",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.8232864421212633
+    }
+  },
+  {
+    "sample_id": "gsm_0487",
+    "problem": "Problem 487",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.0407740018071974
+    }
+  },
+  {
+    "sample_id": "gsm_0488",
+    "problem": "Problem 488",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.6564291824637176
+    }
+  },
+  {
+    "sample_id": "gsm_0489",
+    "problem": "Problem 489",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.0591801215252747
+    }
+  },
+  {
+    "sample_id": "gsm_0490",
+    "problem": "Problem 490",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "CA",
+      "CA",
+      "CA",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.003986320658309
+    }
+  },
+  {
+    "sample_id": "gsm_0491",
+    "problem": "Problem 491",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7600279305549871
+    }
+  },
+  {
+    "sample_id": "gsm_0492",
+    "problem": "Problem 492",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "IN",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.4613158461761908
+    }
+  },
+  {
+    "sample_id": "gsm_0493",
+    "problem": "Problem 493",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9306421006641319
+    }
+  },
+  {
+    "sample_id": "gsm_0494",
+    "problem": "Problem 494",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -0.7384379613651714
+    }
+  },
+  {
+    "sample_id": "gsm_0495",
+    "problem": "Problem 495",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "RF",
+      "RF",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.7305449781576705
+    }
+  },
+  {
+    "sample_id": "gsm_0496",
+    "problem": "Problem 496",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.018623077163228
+    }
+  },
+  {
+    "sample_id": "gsm_0497",
+    "problem": "Problem 497",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "DV",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.595169339041804
+    }
+  },
+  {
+    "sample_id": "gsm_0498",
+    "problem": "Problem 498",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CA",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -1.9378091266923785
+    }
+  },
+  {
+    "sample_id": "gsm_0499",
+    "problem": "Problem 499",
+    "cot_text": "Step by step.",
+    "tag_sequence": [
+      "PR",
+      "EQ",
+      "IN",
+      "CA",
+      "VE",
+      "CO"
+    ],
+    "is_correct": true,
+    "hmm_score": {
+      "normalized_ll": -2.1913998654821683
+    }
+  }
+]

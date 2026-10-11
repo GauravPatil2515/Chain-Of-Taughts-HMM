@@ -1,0 +1,19 @@
+{
+  "distance": 3,
+  "rounds": 3,
+  "error_rate": 0.005,
+  "mwpm": {
+    "accuracy": 0.9826,
+    "balanced_accuracy": 0.9486435439560439,
+    "sensitivity": 0.9057692307692308,
+    "specificity": 0.9915178571428571,
+    "num_samples": 5000
+  },
+  "bp_osd": {
+    "accuracy": 0.9145,
+    "balanced_accuracy": 0.9196675721289909,
+    "sensitivity": 0.9262672811059908,
+    "specificity": 0.9130678631519911,
+    "num_samples": 2000
+  }
+}

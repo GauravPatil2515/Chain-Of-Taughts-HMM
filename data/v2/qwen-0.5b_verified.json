@@ -1,0 +1,1902 @@
+[
+  {
+    "sample_id": "qwen-0.5b_0000",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.7516429234943836
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0001",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5414792903513554
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0002",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3056934385697923
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0003",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.0430910430775924
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0004",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5702460124170008
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0005",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.11706847847459
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0006",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.0262361553477826
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0007",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2697695812541274
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0008",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6408423157804857
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0009",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3372319869242106
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0010",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.231708846406232
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0011",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.639718926071077
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0012",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4274113185301898
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0013",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.073984073397339
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0014",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.01747534975391
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0015",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.281143764620486
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0016",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8038493361003272
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0017",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.405725800221418
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0018",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7724072226563632
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0019",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.9236911104005874
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0020",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.267175615539223
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0021",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5677328901459606
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0022",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4797415385936228
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0023",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.927424455864037
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0024",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6633148173575547
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0025",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.944538705145067
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0026",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8452980732266908
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0027",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3872905944962983
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0028",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6801916069756415
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0029",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.587508124937983
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0030",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.300853306114698
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0031",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -0.9443165446473187
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0032",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5040491674213803
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0033",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.81731327868677
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0034",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2532365263690433
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0035",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.610421824985512
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0036",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4373409214985733
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0037",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.087901037163933
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0038",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8984558146695292
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0039",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.440941629239263
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0040",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.6307667100022947
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0041",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4485895156430089
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0042",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.534694484716472
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0043",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5903311086767866
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0044",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.9435565971102282
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0045",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.359922104197354
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0046",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6381916312879363
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0047",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.1828633321343254
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0048",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3969145131294616
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0049",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.02891204660882
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0050",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.8379580153026023
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0051",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.615524684124895
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0052",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7030766000917876
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0053",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3164971133477397
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0054",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.1907001432512148
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0055",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.5343599404419006
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0056",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7517652569667916
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0057",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5927637127553644
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0058",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4006209705789308
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0059",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2073364618632922
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0060",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.239587118922645
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0061",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.555697692999145
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0062",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8319004922018085
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0063",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.8588619872242012
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0064",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2562422532817406
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0065",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.3218799857145886
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0066",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5216030364741002
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0067",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.1989401306323928
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0068",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3915091924857097
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0069",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6935359263815373
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0070",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.819302197245793
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0071",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.0385890300602092
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0072",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5107478117329856
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0073",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.0306069032557983
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0074",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.2859235312269233
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0075",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.589048747812388
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0076",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4738858795285485
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0077",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5897022051397602
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0078",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4724717670393492
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0079",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -2.0962706743802677
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0080",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.109835943918756
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0081",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3928662285464761
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0082",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.0566317865775452
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0083",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6554810654820942
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0084",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7425480808679563
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0085",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.250878521792268
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0086",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2253793646893778
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0087",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4013746671020946
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0088",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6589280611301116
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0089",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.3460197700659933
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0090",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -3.9514612253259798
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0091",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.2094065028401333
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0092",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.7106159281632056
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0093",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.5982986439793305
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0094",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.6176324459396474
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0095",
+    "problem": "If John has 5 apples and gives 2 away, how many does he have?",
+    "cot_text": "If John has 5 apples and gives 2 away, how many does he have?\nJohn starts with 5 apples.\nHe gives away 2 apples.\nWait, that's wrong.\nThe answer is 7.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "RF",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -4.731757474066059
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0096",
+    "problem": "A store sells 3 boxes of cookies for $12. How much for 1 box?",
+    "cot_text": "A store sells 3 boxes of cookies for $12. How much for 1 box?\nEach box costs the same.\n3 boxes cost $12.\n$12 / 3 = $4.\nThe answer is $4.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4111639168806271
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0097",
+    "problem": "Sarah reads 20 pages per day. How many in 5 days?",
+    "cot_text": "Sarah reads 20 pages per day. How many in 5 days?\nSarah reads 20 pages each day.\nOver 5 days, 20 * 5.\n20 * 5 = 100 pages.\nThe answer is 100.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4216834183460332
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0098",
+    "problem": "A car travels 60 km/h for 2 hours. Distance?",
+    "cot_text": "A car travels 60 km/h for 2 hours. Distance?\nSpeed is 60 km/h.\nTime is 2 hours.\nDistance = 60 * 2 = 120 km.\nThe answer is 120.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.4984659630072616
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  },
+  {
+    "sample_id": "qwen-0.5b_0099",
+    "problem": "Tom buys 4 notebooks at $3 each. Total cost?",
+    "cot_text": "Tom buys 4 notebooks at $3 each. Total cost?\nEach notebook costs $3.\n4 notebooks total 4 * $3.\n4 * $3 = $12.\nThe answer is $12.",
+    "tag_sequence": [
+      "PR",
+      "CA",
+      "IN",
+      "CO"
+    ],
+    "is_correct": false,
+    "hmm_score": {
+      "normalized_ll": -1.570376140012544
+    },
+    "model_family": "qwen",
+    "model_name": "qwen-0.5b",
+    "gold_answer": null,
+    "predicted_answer": null
+  }
+]

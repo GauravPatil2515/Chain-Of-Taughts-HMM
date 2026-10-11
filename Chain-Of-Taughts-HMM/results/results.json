@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-08-08T10:37:34.719863",
+  "n_samples": 100,
+  "bootstrap_ci": {
+    "r": 0.759846441477909,
+    "r_ci": [
+      0.6515450341022356,
+      0.8328202697277908
+    ],
+    "auc": 0.981875,
+    "auc_ci": [
+      0.9565938765305854,
+      0.9981931833988795
+    ],
+    "n": 100
+  },
+  "routing": {
+    "n_problems": 100,
+    "threshold_high": -0.7104016800874344,
+    "threshold_low": -3.0326700787873833,
+    "pass_rate": 0.36,
+    "reject_rate": 0.0,
+    "escalate_rate": 0.64,
+    "avg_compute_saved": 0.44800000000000034
+  },
+  "edr": {
+    "correct_mean": 0.0,
+    "incorrect_mean": 0.0
+  }
+}

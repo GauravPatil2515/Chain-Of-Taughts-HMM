@@ -1,0 +1,60 @@
+{
+  "architecture": "deep_spatial",
+  "distance": 5,
+  "rounds": 3,
+  "num_shots": 200,
+  "seeds": [
+    42
+  ],
+  "test_balanced_acc_mean": 0.5,
+  "test_balanced_acc_std": 0.0,
+  "retention_balanced_acc_mean": 0.0,
+  "retention_balanced_acc_std": 0.0,
+  "ler_mean": 0.85,
+  "ler_std": 0.0,
+  "forgetting_mean": 0.0,
+  "forgetting_std": 0.0,
+  "individual_results": [
+    {
+      "architecture": "deep_spatial",
+      "spatial_layers": 6,
+      "hidden_dim": 64,
+      "num_heads": 4,
+      "seed": 42,
+      "train_p": 0.001,
+      "val_p": 0.005,
+      "test_balanced_acc": 0.5,
+      "retention_balanced_acc": 0.0,
+      "forgetting": 0.0,
+      "ler": 0.85,
+      "best_val_bal": 0.5,
+      "history": {
+        "train_loss": [
+          5.7302453994750975
+        ],
+        "train_acc": [
+          0.11875
+        ],
+        "val_loss": [
+          2.189808654785156
+        ],
+        "val_acc": [
+          0.15
+        ],
+        "val_bal": [
+          0.5
+        ],
+        "retention_bal": [
+          0.0
+        ],
+        "lr": [
+          1e-06
+        ],
+        "epoch_time": [
+          1.3619792461395264
+        ]
+      }
+    }
+  ],
+  "timestamp": "2026-08-06T11:41:04.730655"
+}

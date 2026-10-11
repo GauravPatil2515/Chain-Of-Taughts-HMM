@@ -1,0 +1,51 @@
+{
+  "dataset": "gsm8k_qwen_300_real_traces",
+  "generation_model": "Qwen2.5-0.5B-Instruct",
+  "n_real_correct_traces": 39,
+  "n_real_incorrect_traces": 261,
+  "n_bootstrap": 10000,
+  "experiment": "controlled_structural_error_injection",
+  "injection_results": {
+    "remove_computation": {
+      "auc": 0.6583834441039891,
+      "auc_ci_lower": 0.5305705054708941,
+      "auc_ci_upper": 0.7784526544282642,
+      "cohens_d": 0.6945084552811472,
+      "cohens_d_label": "medium",
+      "detection_rate_pct": 64.1025641025641,
+      "n_correct": 39,
+      "n_corrupted": 39
+    },
+    "premature_conclusion": {
+      "auc": 0.9901236097891957,
+      "auc_ci_lower": 0.9657216310387041,
+      "auc_ci_upper": 1.0,
+      "cohens_d": 4.166111912103042,
+      "cohens_d_label": "large",
+      "detection_rate_pct": 100.0,
+      "n_correct": 39,
+      "n_corrupted": 39
+    },
+    "circular_loop": {
+      "auc": 0.7610567150788528,
+      "auc_ci_lower": 0.6448386591478696,
+      "auc_ci_upper": 0.8664473684210526,
+      "cohens_d": 0.8957402353944144,
+      "cohens_d_label": "large",
+      "detection_rate_pct": 84.61538461538461,
+      "n_correct": 39,
+      "n_corrupted": 39
+    },
+    "semantic_only": {
+      "auc": 0.5009722806481004,
+      "auc_ci_lower": 0.3720916845165239,
+      "auc_ci_upper": 0.6343628183929074,
+      "cohens_d": 0.0,
+      "cohens_d_label": "negligible",
+      "detection_rate_pct": 48.717948717948715,
+      "n_correct": 39,
+      "n_corrupted": 39
+    }
+  },
+  "paper_claim": "CoT-HMM reliably detects structural failures (premature conclusion AUC=0.990, circular loop AUC=0.760, missing computation AUC=0.658) while semantic-only errors (same structure, wrong arithmetic) remain undetected (AUC=0.500), confirming that structural and semantic verification are complementary signals."
+}

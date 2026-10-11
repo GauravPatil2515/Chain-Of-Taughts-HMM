@@ -1,0 +1,13 @@
+{
+  "experiment": "inductive_zero_shot_transfer",
+  "train_distance": 3,
+  "test_distance": 5,
+  "test_error_rate": 0.005,
+  "shots": 10000,
+  "seed": 42,
+  "zero_shot_ler": 0.7751,
+  "scratch_ler": 0.2249,
+  "zero_shot_ratio": 3.44642063139173,
+  "effectiveness": 0,
+  "notes": "Zero-shot LER: 0.775100, Scratch LER: 0.224900"
+}

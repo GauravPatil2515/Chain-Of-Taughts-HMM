@@ -1,0 +1,63 @@
+{
+  "dataset": "data/v2/test_sample.json",
+  "score_field": "hmm_score.normalized_ll",
+  "n_samples": 100,
+  "n_correct": 80,
+  "n_incorrect": 20,
+  "auc": {
+    "metric_name": "AUC",
+    "point_estimate": 0.834375,
+    "lower": 0.729903389262454,
+    "upper": 0.9166833333333333,
+    "ci_level": 0.95,
+    "n_bootstrap": 1000,
+    "p_value": 0.0,
+    "statistic_method": "percentile"
+  },
+  "pearson_r": {
+    "metric_name": "Pearson r",
+    "point_estimate": 0.4675880596375709,
+    "lower": 0.30571685591293274,
+    "upper": 0.6148181862446117,
+    "ci_level": 0.95,
+    "n_bootstrap": 1000,
+    "p_value": 0.0,
+    "statistic_method": "bias-corrected percentile"
+  },
+  "mean_diff": {
+    "metric_name": "Mean Diff (correct - incorrect)",
+    "point_estimate": 1.3293584375176255,
+    "lower": 0.8836961130614345,
+    "upper": 1.7982943353852068,
+    "ci_level": 0.95,
+    "n_bootstrap": 1000,
+    "p_value": 9.348651355658969e-07,
+    "statistic_method": "percentile"
+  },
+  "cohens_d": {
+    "metric_name": "Cohen's d",
+    "point_estimate": 1.3091532274911484,
+    "lower": 0.867882249253231,
+    "upper": 1.8400604228691761,
+    "ci_level": 0.95,
+    "n_bootstrap": 1000,
+    "p_value": null,
+    "statistic_method": "percentile"
+  },
+  "balanced_accuracy": {
+    "metric_name": "Balanced Accuracy",
+    "point_estimate": 0.51875,
+    "lower": 0.5,
+    "upper": 0.542181531002057,
+    "ci_level": 0.95,
+    "n_bootstrap": 1000,
+    "p_value": null,
+    "statistic_method": "percentile"
+  },
+  "paper_text": {
+    "auc_line": "AUC: 0.8344 [95% CI: 0.7299, 0.9167]",
+    "r_line": "Pearson r: 0.4676 [95% CI: 0.3057, 0.6148]",
+    "diff_line": "Mean Diff (correct - incorrect): 1.3294 [95% CI: 0.8837, 1.7983]"
+  },
+  "timestamp": "1786185379.00811"
+}
