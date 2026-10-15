@@ -1,0 +1,65 @@
+================================================================================
+                    PAPER SUBMISSION METADATA & FORM DETAILS
+================================================================================
+
+TITLE:
+CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning via Hidden Markov Models
+
+SHORT TITLE / RUNNING TITLE:
+CoT-HMM: Structural Plausibility Scoring via HMMs
+
+TOPICS / TRACKS / SUBJECT AREAS:
+- Natural Language Processing (NLP)
+- Large Language Models (LLM) & Reasoning
+- Neuro-Symbolic Artificial Intelligence
+- Probabilistic Graphical Models & Sequential Analysis
+- Structural Verification & Anomaly Detection
+
+--------------------------------------------------------------------------------
+ABSTRACT (Word count: ~180 words, 1260 chars):
+--------------------------------------------------------------------------------
+Chain-of-Thought (CoT) prompting elicits step-by-step reasoning from large language models (LLMs), yet verifying whether generated reasoning is structurally sound remains challenging. We propose CoT-HMM, an unsupervised, one-class structural plausibility filter that abstracts reasoning traces into sequences of eight semantic tags and trains a multi-resolution Ensemble of Hidden Markov Models (M=12) on correctness-verified positive traces—requiring no human step-level annotations of incorrect reasoning—to model latent structural transition dynamics. Operating at ~150 ms per sample on standard CPU, CoT-HMM targets a distinct niche from heavy neural process reward models: structural anomaly detection rather than fine-grained token-level verification. Through controlled structural error injection on real LLM-generated traces (Qwen2.5-0.5B on GSM8K, N=39 verified correct traces, B=10,000 percentile bootstrap resamples), we demonstrate that CoT-HMM reliably detects structural failures: premature conclusions (AUC = 0.990 [95% CI: 0.966, 1.000]), circular reasoning loops (AUC = 0.761 [95% CI: 0.645, 0.866]), and missing computation steps (AUC = 0.658 [95% CI: 0.531, 0.778]). Critically, a semantic-only corruption condition yields an AUC of 0.501, confirming that the method isolates structural rather than semantic plausibility—providing a complementary, highly efficient first-stage screening filter for composite verification pipelines.
+
+--------------------------------------------------------------------------------
+KEYWORDS:
+--------------------------------------------------------------------------------
+Chain-of-thought, Large language models, Hidden Markov models, Reasoning verification, Natural language processing, Neuro-symbolic AI
+
+--------------------------------------------------------------------------------
+AUTHORS & AFFILIATIONS (In Order):
+--------------------------------------------------------------------------------
+Author 1 (First & Corresponding Author):
+- Full Name: Gaurav Patil
+- Email: gauravppaiml123@gst.sies.edu.in
+- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
+- Role: Primary Researcher & Methodology Design
+
+Author 2:
+- Full Name: Chirayu Marathe
+- Email: chirayusmce123@gst.sies.edu.in
+- Affiliation: Department of Computer Engineering, SIES Graduate School of Technology, Mumbai, India
+- Role: Experimental Pipeline & Baseline Benchmarks
+
+Author 3:
+- Full Name: Parth Parmar
+- Email: parth.parmar.btech2028@atlasskilltech.university
+- Affiliation: Department of AI & Machine Learning, ATLAS SkillTech University, Mumbai, India
+- Role: Data Curation & Statistical Validation
+
+Author 4:
+- Full Name: Suhail Shaikh
+- Email: suhailmsaiml123@gst.sies.edu.in
+- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
+- Role: Cross-Architecture Evaluation & Visualization
+
+Author 5 (Faculty Mentor / Supervisor):
+- Full Name: Prof. Bhagyalakshmi V
+- Email: lakshmianand04@gmail.com
+- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
+- Role: Supervision & Research Guidance
+
+--------------------------------------------------------------------------------
+GITHUB REPOSITORY:
+--------------------------------------------------------------------------------
+https://github.com/GauravPatil2515/Chain-Of-Taughts-HMM.git
+================================================================================
