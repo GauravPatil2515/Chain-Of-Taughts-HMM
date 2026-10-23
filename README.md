@@ -3,7 +3,11 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![IEEE Paper](https://img.shields.io/badge/Paper-IEEE--LaTeX-blueviolet.svg)](paper/main.tex)
+[![Status: Accepted](https://img.shields.io/badge/Status-Accepted%20at%20IEEE%20IDCIoT%202027-success.svg)](camera_ready/IDCIoT_154_CameraReady.pdf)
 [![Tests](https://img.shields.io/badge/Unit%20Tests-30%20Passing-brightgreen.svg)](tests/)
+
+> 🎉 **Accepted at IEEE IDCIoT 2027**: *5th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT 2027), IEEE Conference Record #71706*.  
+> **Camera-Ready Submission Package**: [`camera_ready/`](camera_ready/) | [Submission Instructions](camera_ready/SUBMISSION_INSTRUCTIONS.md)
 
 An unsupervised, lightweight framework for scoring the plausibility of Chain-of-Thought (CoT) reasoning in Large Language Models (LLMs) using **Ensemble Hidden Markov Models**.
 
@@ -73,6 +77,11 @@ Generated report files:
 
 ---
 
-## 📄 Manuscript
+## 📄 Camera-Ready Deliverables (IDCIoT-154)
 
-The LaTeX manuscript for paper submission is located at [`paper/main.tex`](paper/main.tex).
+- **Camera-Ready Manuscript (PDF):** [`camera_ready/IDCIoT_154_CameraReady.pdf`](camera_ready/IDCIoT_154_CameraReady.pdf)
+- **Response to Reviewers (PDF):** [`camera_ready/IDCIoT_154_Response_to_Reviewers.pdf`](camera_ready/IDCIoT_154_Response_to_Reviewers.pdf)
+- **Response to Reviewers (Markdown):** [`camera_ready/RESPONSE_TO_REVIEWERS.md`](camera_ready/RESPONSE_TO_REVIEWERS.md)
+- **LaTeX Source Package (ZIP):** [`camera_ready/IDCIoT_154_Source.zip`](camera_ready/IDCIoT_154_Source.zip)
+- **Master Submission Package (ZIP):** [`camera_ready/IDCIoT_154_CameraReady_Package.zip`](camera_ready/IDCIoT_154_CameraReady_Package.zip)
+- **Submission Instructions & Checklist:** [`camera_ready/SUBMISSION_INSTRUCTIONS.md`](camera_ready/SUBMISSION_INSTRUCTIONS.md)
