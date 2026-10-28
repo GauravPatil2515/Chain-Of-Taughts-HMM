@@ -15,8 +15,8 @@ All files are pre-compiled, formatted, and verified:
 
 1. **`IDCIoT_154_CameraReady.pdf`**  
    * The final camera-ready manuscript formatted according to IEEE conference standards.  
-   * **Exact length:** 5 pages (strictly fits IEEE 2-column layout with zero dangling overflow).  
-   * **Revisions integrated:** Standalone Conclusion section, tagger error analysis, scope distinction (structural vs. arithmetic errors), and routing accuracy formula.
+   * **Exact length:** 6 pages (standard IEEE full-length conference manuscript with balanced columns).  
+   * **Revisions integrated:** Complete methodology formulations, standalone Conclusion section, tagger error analysis, scope distinction (structural vs. arithmetic errors), and routing accuracy formula.
 
 2. **`IDCIoT_154_Response_to_Reviewers.pdf`** (and `RESPONSE_TO_REVIEWERS.md`)  
    * Comprehensive point-by-point rebuttal addressing all remarks from Reviewer 1 (R1.1–R1.7) and Reviewer 2 (R2.1–R2.5) with direct line-number mappings.
