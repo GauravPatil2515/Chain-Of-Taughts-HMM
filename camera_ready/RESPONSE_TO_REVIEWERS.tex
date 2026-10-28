@@ -39,9 +39,9 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 
 \noindent\textbf{Remark R1.1:} \textit{Evaluates only 39 correct traces from Qwen2.5-0.5B; sensitive sample size.}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} In Section IV-A (\textit{Setup: Baselines and Metrics}), we have explicitly clarified that the $N=39$ verified-correct traces from Qwen2.5-0.5B served strictly as a focused, high-precision seed pilot corpus for controlled structural error injection.
-    \item To guard against small-sample variance, non-parametric percentile bootstrap resampling ($B=10{,}000$ iterations) was used to compute robust 95\% confidence intervals across all reported metrics (Table II).
-    \item Furthermore, in Section IV-C and Table IV (\textit{Zero-Shot Cross-Architecture Transfer}), we demonstrate that the transition grammar learned from this seed corpus transfers zero-shot to substantially larger model families without retraining: Llama-3.2-1B ($r=0.946$), Phi-3-mini ($r=0.941$), and Mistral-7B ($r=0.970$) (all $p < 0.001$), confirming generalizability across model scales.
+    \item \textbf{Response:} In Section IV-A (\textit{Setup: Baselines and Metrics}), we have explicitly clarified that the $N=39$ answer-verified correct traces from Qwen2.5-0.5B (and their 4 derived corruption variants, $N=195$ total variants) serve as a focused pilot perturbation benchmark. We explicitly acknowledge that variants derived from the same source problem share underlying problem complexity.
+    \item To account for sampling variance, non-parametric percentile bootstrap resampling ($B=10{,}000$ iterations) was used to compute robust 95\% confidence intervals across all reported metrics (Table II).
+    \item Furthermore, in Section IV-C and Table IV (\textit{Zero-Shot Cross-Architecture Transfer}), we evaluate cross-model transfer on three distinct architectures without retraining: Llama-3.2-1B ($r=0.946$), Phi-3-mini ($r=0.941$), and Mistral-7B ($r=0.970$) (all $p < 0.001$), supporting the consistency of structural transition regularities.
 \end{itemize}
 
 \vspace{6pt}
@@ -55,16 +55,17 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 \noindent\textbf{Remark R1.3:} \textit{Regex-based semantic tagger ambiguity \& error propagation.}
 \begin{itemize}[leftmargin=18pt]
     \item \textbf{Response:} In Section III-B, we report that our rule-based tagger achieved Cohen's $\kappa=0.953$ agreement against a 50-step expert gold standard (comparable to Phi-3-mini's $\kappa=0.976$).
-    \item We have added a dedicated paragraph (\textit{Tagger Error Analysis}) in Section III-B detailing failure modes: multi-clause sentences with overlapping discourse markers (e.g., ``Hence $x=2$'') and colloquial discourse markers. Because the Ensemble HMM models continuous emission distributions across $M=12$ models, isolated tagging fluctuations are softly absorbed across the full sequence. In Section VI, fine-tuning a lightweight DeBERTa-v3 sentence classifier is proposed as a direct future extension.
+    \item We expanded the dedicated paragraph (\textit{Tagger Error Analysis}) in Section III-B detailing failure modes: arithmetic notation in problem restatements, connective adverbs (``thus'', ``hence'') in intermediate calculations, and intermediate values resembling conclusions. Because the Ensemble HMM models continuous emission distributions across $M=12$ models, isolated tagging fluctuations are softly absorbed across the full sequence. In Section VI, fine-tuning a lightweight DeBERTa-v3 sentence classifier is proposed as a direct future extension.
 \end{itemize}
 
 \vspace{6pt}
 \noindent\textbf{Remark R1.4:} \textit{Table II AUC: 0.658 for missing computation \& 0.761 for circular reasoning vs. high for premature conclusions.}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} In Section IV-B, we added an explanatory paragraph (\textit{Asymmetric Detection Mechanism}):
+    \item \textbf{Response:} In Section IV-B, we added an explanatory paragraph (\textit{Asymmetric Detection Dynamics}) candidly assessing these boundaries:
     \begin{itemize}
-        \item \textit{Premature Conclusions (AUC = 0.990):} Directly jumping from problem restatement to conclusion ($\text{PR}\to\text{CO}$) represents a severe terminal transition violation ($P(\text{CO}\mid\text{PR}) < 10^{-4}$ in the learned matrix), triggering a catastrophic log-likelihood penalty ($d=4.166$).
-        \item \textit{Missing Computation (AUC = 0.658):} Omitting arithmetic calculation tags ($\text{CA}$) leaves residual sequences of logical deductions ($\text{PR}\to\text{IN}\to\text{IN}\to\text{CO}$) that locally resemble valid qualitative reasoning, softening the likelihood drop. We note that token-length weighting and entropy thresholds provide immediate avenues to boost missing-step sensitivity.
+        \item \textit{Premature Conclusions (AUC = 0.990, 95\% CI [0.966, 1.000]):} Directly jumping from problem restatement to conclusion ($\text{PR}\to\text{CO}$) represents a severe terminal transition violation ($P(\text{CO}\mid\text{PR}) < 10^{-4}$ in the learned matrix), triggering a catastrophic log-likelihood penalty ($d=4.166$).
+        \item \textit{Circular Reasoning (AUC = 0.761, 95\% CI [0.645, 0.866]):} Moderate discrimination ($d=0.896$); repeated loops trigger cumulative transition penalties, though legitimate multi-step deductions occasionally overlap.
+        \item \textit{Missing Computation (AUC = 0.658, 95\% CI [0.531, 0.778]):} Omitting arithmetic calculation tags ($\text{CA}$) leaves residual sequences of logical deductions ($\text{PR}\to\text{IN}\to\text{IN}\to\text{CO}$) that locally resemble valid qualitative reasoning. We candidly note that the lower bound approaches chance ($0.50$). Token-length weighting and entropy thresholds provide immediate avenues to boost missing-step sensitivity.
     \end{itemize}
 \end{itemize}
 
@@ -83,7 +84,12 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 \vspace{6pt}
 \noindent\textbf{Remark R1.7:} \textit{Proofread for grammar/spelling/typos.}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} A thorough editorial pass was performed across all sections, refining notation, equations, and caption clarity.
+    \item \textbf{Response:} A thorough editorial pass was performed across all sections:
+    \begin{itemize}
+        \item Corrected Section III-D: Replaced the misnomer ``Viterbi training'' with ``Expectation-Maximization (Baum-Welch) training'', clarifying that Viterbi decoding is used to compute optimal hidden state paths.
+        \item Clarified training data as ``answer-verified'' (matching benchmark ground truth).
+        \item Refined equation notation, float spacing, and caption clarity.
+    \end{itemize}
 \end{itemize}
 
 \newpage
@@ -91,24 +97,24 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 
 \noindent\textbf{Remark R2.1:} \textit{How does CoT-HMM handle arithmetic errors?}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} In Section V, we added a dedicated subsection titled \textbf{Structural vs.\ Arithmetic Correctness}. CoT-HMM evaluates reasoning grammar, not numerical arithmetic. An equation such as $12 \times 4 = 52$ possesses valid reasoning syntax ($\text{EQ}\to\text{CA}\to\text{IN}$); hence, CoT-HMM appropriately scores it as structurally plausible.
+    \item \textbf{Response:} In Section V, we added a dedicated subsection titled \textbf{Arithmetic Correctness \& Scope}. CoT-HMM evaluates reasoning grammar, not numerical arithmetic. An equation such as $12 \times 4 = 52$ possesses valid reasoning syntax ($\text{EQ}\to\text{CA}\to\text{IN}$); hence, CoT-HMM appropriately scores it as structurally plausible.
     \item This is empirically demonstrated in Table II, where our semantic-only corruption condition (pristine structure, incorrect arithmetic) yielded AUC = $0.501$ (random guessing). Detecting numerical errors belongs to downstream deterministic tools (e.g., Python REPL / calculators). CoT-HMM acts as a fast ($\approx$150ms), zero-GPU filter that eliminates structurally broken chains before invoking heavier tools.
 \end{itemize}
 
 \vspace{6pt}
 \noindent\textbf{Remark R2.2:} \textit{Missing-computation detection AUC remains insufficient (0.658).}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} We concur with the reviewer. As explained in Remark R1.4, omitting calculation steps preserves valid qualitative deduction sub-chains. In Section IV-B and Section VI, we explicitly discuss this trade-off and outline mitigations via token-length weighted transition matrices and posterior Structural Entropy thresholds.
+    \item \textbf{Response:} We concur with the reviewer and candidly acknowledge this limitation. As explained in Remark R1.4, omitting calculation steps preserves valid qualitative deduction sub-chains ($\text{PR}\to\text{IN}\to\text{CO}$), resulting in AUC = $0.658$ [0.531, 0.778]. In Section IV-B and Section VI, we explicitly discuss this boundary and outline mitigations via token-length weighted transition matrices and posterior Structural Entropy thresholds.
 \end{itemize}
 
 \vspace{6pt}
 \noindent\textbf{Remark R2.3:} \textit{How was the 99.3\% routing accuracy calculated?}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} In Section IV-D, we have included the explicit mathematical formula:
+    \item \textbf{Response:} In Section IV-D, we have clarified that the 99.3\% metric represents conditional precision within the high-confidence pass tier, formulated as:
     \begin{equation}
-    \text{Acc}_{\text{pass}} = \frac{|\mathcal{T}_{\text{pass}} \cap \mathcal{C}_{\text{correct}}|}{|\mathcal{T}_{\text{pass}}|} = \frac{TP}{TP + FP} = 99.3\%
+    \text{Prec}_{\text{pass}} = \frac{|\mathcal{T}_{\text{pass}} \cap \mathcal{C}_{\text{correct}}|}{|\mathcal{T}_{\text{pass}}|} = \frac{TP}{TP + FP} = 99.3\%
     \end{equation}
-    where $\mathcal{T}_{\text{pass}}$ contains traces with plausibility margin exceeding the decision threshold $\tau_{\text{high}}$ (calibrated via Youden's $J$ on validation data), and $\mathcal{C}_{\text{correct}}$ denotes ground-truth correct chains. Traces in this top 35\% tier bypass secondary verification with 99.3\% accuracy.
+    where $\mathcal{T}_{\text{pass}}$ contains traces with plausibility margin exceeding the decision threshold $\tau_{\text{high}}$ (calibrated via Youden's $J$ on validation data), and $\mathcal{C}_{\text{correct}}$ denotes ground-truth correct chains. Traces in this top 35\% tier bypass secondary verification with 99.3\% precision. Empirical token savings (42\%--47\%) are evaluated relative to invoking secondary verifiers across all candidate traces.
 \end{itemize}
 
 \vspace{6pt}
@@ -120,7 +126,7 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 \vspace{6pt}
 \noindent\textbf{Remark R2.5:} \textit{Semantic error detection limitations require discussion.}
 \begin{itemize}[leftmargin=18pt]
-    \item \textbf{Response:} In Section V (\textit{Discussion}), under \textbf{Structural vs.\ Arithmetic Correctness} and \textbf{Limitations}, we expand on the complementary division of labor: CoT-HMM rapidly detects macroscopic structural breakdowns (loops, premature stops, disordered logic), while specialized semantic verifiers (e.g., PRMs, Python REPL) verify numerical and factual correctness, reducing total token overhead by 42\%--47\%.
+    \item \textbf{Response:} In Section V (\textit{Discussion}), under \textbf{Arithmetic Correctness \& Scope} and \textbf{Limitations}, we expand on the complementary division of labor: CoT-HMM rapidly detects macroscopic structural breakdowns (loops, premature stops, disordered logic), while specialized semantic verifiers (e.g., PRMs, Python REPL) verify numerical and factual correctness, reducing total token overhead by 42\%--47\%.
 \end{itemize}
 
 \vspace{12pt}
@@ -128,17 +134,18 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 \textbf{Summary of Manuscript Modifications (IEEE IDCIoT-154)}
 \vspace{4pt}
 
-\begin{tabular}{lp{10cm}}
+\begin{tabular}{lp{10.5cm}}
 \toprule
 \textbf{Section} & \textbf{Revisions Incorporated} \\
 \midrule
-Section III-B & Added tagger error analysis, regex failure modes, and neural tagger roadmap. \\
-Section IV-A & Clarified $N=39$ pilot corpus, $B=10{,}000$ bootstrap CIs, and multi-model transfer. \\
-Section IV-B & Justified synthetic perturbation; detailed asymmetric AUC mechanism; cross-referenced Table II vs.\ Table III. \\
-Section IV-D & Added Eq.~(3) for 99.3\% pass-tier compute routing accuracy. \\
-Section V & Dedicated Discussion section with \textit{Structural vs.\ Arithmetic Correctness}. \\
-Section VI & Created standalone \textit{Conclusion and Future Work} section. \\
-Throughout & Thorough proofreading and verified exact 5-page IEEEtran layout compliance. \\
+Section III-B & Added tagger priority order, error analysis, and context-dependent boundary cases. \\
+Section III-D & Corrected ``Viterbi training'' to Expectation-Maximization (Baum-Welch) training. \\
+Section IV-A & Clarified $N=39$ pilot corpus, $N=195$ variants, bootstrap CIs, and multi-model transfer. \\
+Section IV-B & Candid assessment of AUCs (0.990, 0.761, 0.658, 0.501); Table II vs.\ Table III distinction. \\
+Section IV-D & Added Eq.~(3) defining 99.3\% pass-tier routing precision and empirical token savings. \\
+Section V & Dedicated Discussion section analyzing structural vs.\ arithmetic correctness and scope. \\
+Section VI & Standalone \textit{Conclusion and Future Work} section outlining concrete research directions. \\
+Throughout & Complete proofreading, float tuning, and verified exact 5-page IEEEtran compliance. \\
 \bottomrule
 \end{tabular}
 \end{center}

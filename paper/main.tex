@@ -14,9 +14,11 @@
 \title{CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning\\ via Hidden Markov Models}
 
 % Adjust float spacing to fit page limit
-\setlength{\textfloatsep}{9pt plus 1.0pt minus 2.0pt}
-\setlength{\floatsep}{9pt plus 1.0pt minus 2.0pt}
-\setlength{\intextsep}{9pt plus 1.0pt minus 2.0pt}
+\setlength{\textfloatsep}{7pt plus 1.0pt minus 1.5pt}
+\setlength{\floatsep}{7pt plus 1.0pt minus 1.5pt}
+\setlength{\intextsep}{7pt plus 1.0pt minus 1.5pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{2pt}
 
 % Optional: Uncomment the line below to enable anonymous submission for double-blind review
 % \newcommand{\anonymous}{}
@@ -93,7 +95,7 @@ Our work targets the ``near-zero-resource'' and ``structural signal'' niche of t
 Figure \ref{fig:pipeline} shows our complete pipeline.
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/fig_pipeline.png}}
+\centerline{\includegraphics[width=0.85\columnwidth]{figures/fig_pipeline.png}}
 \caption{Structural verification pipeline: CoT text is abstracted into sequences of eight semantic tags (PR, IN, CA, EQ, CO, RF, VE, DV) followed by Ensemble HMM scoring. Higher scores indicate more plausible reasoning structure.}
 \label{fig:pipeline}
 \end{figure}
@@ -104,9 +106,9 @@ Given a CoT trace $\mathbf{x} = (x_1, \ldots, x_T)$, we learn $f(\mathbf{x}) \ri
 
 \subsection{Semantic Tagging}
 
-We define 8 tags covering distinct reasoning operations. Table~\ref{tab:tags} summarizes the vocabulary and corresponding lexical cues. Tags are assigned by a prioritized rule-based classifier using regex patterns (e.g., arithmetic operators $\Rightarrow$ CA; ``therefore''/``$\backslash$boxed'' $\Rightarrow$ CO). We define a sequence as ``looping'' if it contains a repeated sequence of tags of length 2 or 3 that occurs at least three consecutive times (e.g., IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ). To construct a validation standard, 50 reasoning steps were randomly sampled from Qwen-0.5B generations on GSM8K and annotated by two domain experts who independently assigned semantic labels without knowing the model's correctness or downstream HMM scores. Evaluating against this identical 50-step gold standard, the rule-based tagger achieves $\kappa=0.953$ and the LLM-based tagger (Phi-3-mini) achieves $\kappa=0.976$---both far exceeding the standard threshold for substantial agreement ($\kappa\ge0.70$) \cite{landis1977measurement}. 
+We define 8 tags covering distinct reasoning operations. Table~\ref{tab:tags} summarizes the vocabulary and lexical cues. Tags are assigned via prioritized regex pattern matching in strict precedence order ($\text{CO} \to \text{VE} \to \text{CA} \to \text{DV} \to \text{EQ} \to \text{RF} \to \text{PR} \to \text{IN}$). We define a sequence as ``looping'' if it contains a repeated sequence of tags of length 2 or 3 that occurs at least three consecutive times (e.g., IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ$\rightarrow$IN$\rightarrow$EQ). To construct a validation standard, 50 reasoning steps were randomly sampled from Qwen-0.5B generations on GSM8K and annotated by two domain experts who independently assigned semantic labels without knowing downstream correctness or HMM scores. Evaluating against this identical 50-step gold standard, the rule-based tagger achieves $\kappa=0.953$ and an LLM-based tagger (Phi-3-mini) achieves $\kappa=0.976$---both exceeding the threshold for substantial agreement ($\kappa\ge0.70$) \cite{landis1977measurement}.
 
-\textit{Tagger Error Analysis.} Failure modes of regex matching primarily involve multi-clause steps with overlapping discourse markers (e.g., ``Hence $x=2$'' contains deduction and equality) and conversational markers (e.g., colloquial ``Hence''). While keyword ambiguity introduces minor local noise, the continuous transition distributions of the Ensemble HMM absorb isolated tagging fluctuations. For open-domain deployment, fine-tuning a lightweight sentence classifier (e.g., DeBERTa-v3-small) serves as a direct drop-in extension.
+\textit{Tagger Error Analysis.} Context-dependent classification errors occur in boundary cases: (1) arithmetic notation in problem restatements triggering spurious CA tags; (2) connective adverbs (``thus'', ``hence'') in intermediate calculations misattributed to IN; and (3) intermediate derived values resembling final answers triggering premature CO tags. While aggregate agreement is high ($\kappa=0.953$), individual category reliability varies. Crucially, the continuous emission distributions of the Ensemble HMM softly absorb isolated tagging misclassifications. For open-domain deployment, a fine-tuned lightweight neural classifier (e.g., DeBERTa-v3-small) represents a direct drop-in upgrade.
 
 \begin{table}[htbp]
 \caption{Semantic Tag Vocabulary and Lexical / Pattern Cues}
@@ -148,7 +150,7 @@ H(\mathbf{o}) = -\frac{1}{T} \sum_{t=1}^{T} \sum_{i=1}^{N} P(z_t = s_i \mid \mat
 where $s_i$ denotes the $i$-th hidden state and $P(z_t = s_i \mid \mathbf{o}, \lambda)$ represents the posterior probability of the model being in state $s_i$ at time step $t$ given the observation sequence $\mathbf{o}$ and model parameters $\lambda$. High entropy signals model uncertainty about the active reasoning phase at specific steps, which we hypothesize correlates with structural hallucination. Future work may explore exposing the ensemble score as a dense reward signal (via a \texttt{StructureReward} wrapper) for RL policy optimization.
 
 \subsection{Implementation Details}
-For reproducibility, the HMMs are implemented using \texttt{hmmlearn} (v0.3.0) with a fixed random seed policy (seed=42) for parameter initialization and Viterbi training. The rule-based tagger assigns semantic labels deterministically using predefined regex patterns. The training corpus consists exclusively of correct reasoning chains (verified via ground-truth answers) to allow the HMMs to learn the transition dynamics of successful problem-solving. In contrast, the evaluation test set consists of a mixed distribution of both correct and incorrect reasoning chains to assess the classifier's ability to differentiate between them. All experiments executed on an Intel Core i7-10700K CPU @ 3.80GHz (32GB RAM, Linux OS, Python 3.10, \texttt{hmmlearn} v0.3.0). Processing 300 traces yielded a mean execution time of $148 \pm 12$\,ms per trace.
+For reproducibility, the HMMs are implemented using \texttt{hmmlearn} (v0.3.0) with a fixed random seed policy (seed=42) for parameter initialization and Expectation-Maximization (Baum-Welch) training, with Viterbi decoding used to infer optimal hidden state paths during posterior analysis. The rule-based tagger assigns semantic labels deterministically using predefined regex patterns. The one-class training corpus consists exclusively of answer-verified positive reasoning chains (final answer matching benchmark ground truth) to learn the transition dynamics of successful problem-solving. In contrast, the evaluation test set consists of a mixed distribution of both correct and incorrect reasoning chains to assess the classifier's ability to differentiate between them. All experiments executed on an Intel Core i7-10700K CPU @ 3.80GHz (32GB RAM, Linux OS, Python 3.10, \texttt{hmmlearn} v0.3.0). Processing 300 traces yielded a mean execution time of $148 \pm 12$\,ms per trace.
 
 \section{Experiments and Results}
 
@@ -156,7 +158,7 @@ For reproducibility, the HMMs are implemented using \texttt{hmmlearn} (v0.3.0) w
 
 \textbf{Datasets \& Models.} We evaluate on reasoning traces generated for the GSM8K benchmark \cite{cobbe2021training}. We generate 300 real CoT solutions using the Qwen-2.5-0.5B-Instruct model prompted zero-shot. This small-scale model provides challenging test cases characterized by low baseline mathematical accuracy ($13.0\%$), allowing us to isolate structural from semantic reasoning failures.
 
-\textbf{Baselines and Metrics.} We extract the 39 mathematically verified-correct traces as a focused pilot seed corpus. Controlled synthetic perturbation allows us to isolate causal structural failure modes without confounding lexical and arithmetic noise, an established methodology in reasoning benchmarks \cite{golovneva2023roscoe}. To mitigate small-sample variance, non-parametric percentile bootstrap resampling ($B=10{,}000$ iterations) is employed to construct robust 95\% confidence intervals; as shown in Section IV-C, the learned structural grammar generalizes zero-shot across larger architectures (Llama-3.2, Phi-3, Mistral-7B).
+\textbf{Baselines and Metrics.} We extract the 39 answer-verified correct traces as an exploratory pilot benchmark. Four controlled perturbations are derived per source trace ($N=195$ total evaluated variants). While synthetic perturbations isolate causal structural failure modes without lexical confounding \cite{golovneva2023roscoe}, variants derived from the same source problem share underlying problem complexity. To evaluate uncertainty, non-parametric percentile bootstrap resampling ($B=10{,}000$ iterations) is employed to construct 95\% confidence intervals. As shown in Section IV-C, the learned structural grammar transfers zero-shot across larger architectures (Llama-3.2, Phi-3, Mistral-7B).
 
 To contextualize CoT-HMM's performance, we compare against five baseline heuristics: (1) \textbf{Length}: normalized trace step count $T$; (2) \textbf{Transition Score}: mean empirical bigram tag transition likelihood; (3) \textbf{Structural Diversity}: Shannon entropy over observed tag transitions; (4) \textbf{Tag Frequency}: normalized frequency score of standard problem-solving tags (PR, CA, EQ); and (5) \textbf{Combined Heuristic}: an unweighted normalized combination of length, transition, and diversity scores. Ground truth labels are used strictly for offline evaluation and correlation benchmarking, never during online scoring.
 
@@ -170,9 +172,9 @@ To rigorously evaluate the HMM's ability to act as a structural filter, we imple
     \item \textbf{Semantic-Only (Control):} Retaining the exact correct tag structure but marking the trace as incorrect to simulate an arithmetic error with perfect logical structure.
 \end{itemize}
 
-As shown in Table~\ref{tab:main_results} (which isolates per-category controlled error injection, in contrast to the composite benchmark evaluation in Table~\ref{tab:baselines}), the Ensemble HMM successfully identifies structural breakdowns while intentionally ignoring pure semantic errors. The semantic-only control condition yields an AUC of $0.501$, confirming that the HMM isolates structural rather than semantic plausibility. Conversely, structural corruptions are detected with moderate to near-perfect reliability, achieving an AUC of $0.990$ (Cohen's $d = 4.166$) for premature conclusions and $0.761$ ($d = 0.896$) for circular reasoning loops.
+As shown in Table~\ref{tab:main_results} (which isolates per-category controlled error injection, in contrast to the composite benchmark evaluation in Table~\ref{tab:baselines}), the Ensemble HMM successfully identifies structural breakdowns while intentionally ignoring pure semantic errors. The semantic-only control condition yields an AUC of $0.501$ [$95\%$ CI: $0.372, 0.634$], confirming that the HMM isolates structural rather than semantic plausibility. Conversely, structural corruptions are detected with varying reliability: premature conclusions achieve near-perfect separation (AUC $0.990$ [$95\%$ CI: $0.966, 1.000$], Cohen's $d = 4.166$), while circular reasoning loops achieve moderate discrimination (AUC $0.761$ [$95\%$ CI: $0.645, 0.866$], $d = 0.896$).
 
-\textit{Asymmetric Detection Mechanism.} Detection performance varies across failure modes due to transition dynamics: premature conclusions (AUC$=0.990$) induce an abrupt terminal transition violation ($P(\text{CO}\mid\text{PR}) < 10^{-4}$), causing an immediate precipitous drop in sequence log-likelihood. In contrast, Missing Computation yields an AUC of $0.658$ ($d=0.695$) because omitting arithmetic steps (CA) leaves residual sub-chains of logical inferences (PR$\rightarrow$IN$\rightarrow$IN$\rightarrow$CO) that still partially satisfy valid qualitative reasoning flow, preserving moderate local transition likelihood. Sensitivity to missing computations can be enhanced in future iterations via token-length weighting and entropy thresholds. Crucially, synthetic loop detection directly mirrors natural reasoning failures: in uncorrupted model generations, 77.8\% of looping chains were mathematically incorrect vs.\ 23.8\% of non-looping ones ($z=6.18$, $p=6.3\times 10^{-10}$).
+\textit{Asymmetric Detection Dynamics.} Missing Computation yields an AUC of $0.658$ [$95\%$ CI: $0.531, 0.778$] ($d=0.695$), where the lower bound approaches chance ($0.50$): omitting CA steps leaves residual inference sub-chains (PR$\rightarrow$IN$\rightarrow$IN$\rightarrow$CO) that preserve moderate transition likelihood. In contrast, premature conclusions (AUC$=0.990$) trigger an abrupt terminal transition violation ($P(\text{CO}\mid\text{PR}) < 10^{-4}$), causing an immediate precipitous drop in sequence log-likelihood. Missing computation sensitivity can be improved via token-length weighting and entropy thresholds. Crucially, synthetic loop detection mirrors natural reasoning failures: in uncorrupted model outputs, 77.8\% of looping chains were mathematically incorrect vs.\ 23.8\% of non-looping ones ($z=6.18$, $p=6.3\times 10^{-10}$).
 
 \begin{table}[htbp]
 \caption{Controlled Error Injection Results ($B=10,000$ bootstraps). Detection Rate (\%) is evaluated at the median score threshold of clean traces.}
@@ -242,49 +244,50 @@ Mistral-7B-Instruct-v0.3 & 0.992 & 0.970 & $< 0.001$ \\
 Figure~\ref{fig:manifold} presents a t-SNE projection of the posterior state representations across evaluated chains, confirming that correct reasoning chains cluster into a tight, distinct structural manifold. Figure~\ref{fig:transition} contrasts learned transition matrices between valid chains and defective outputs. Correct solutions proceed predictably (PR$\rightarrow$EQ$\rightarrow$CA$\rightarrow$CO), whereas structurally defective outputs exhibit chaotic jumps and recursive loops. Quantitatively, 77.8\% of looping chains ($N=150$) were mathematically incorrect vs.\ 23.8\% of non-looping ones ($z=6.18$, $p=6.3\times 10^{-10}$).
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/reasoning_manifold.png}}
+\centerline{\includegraphics[width=0.72\columnwidth]{figures/reasoning_manifold.png}}
 \caption{Reasoning Manifold (t-SNE projection): mathematically valid reasoning chains cluster into a cohesive, low-variance structural manifold.}
 \label{fig:manifold}
 \end{figure}
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/fig_transition.png}}
+\centerline{\includegraphics[width=0.72\columnwidth]{figures/fig_transition.png}}
 \caption{Transition dynamics: Correct chains (left) show the learned PR$\rightarrow$EQ$\rightarrow$CA$\rightarrow$CO grammar; incorrect chains (right) exhibit chaotic transitions and circular loops.}
 \label{fig:transition}
 \end{figure}
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/structural_entropy.png}}
+\centerline{\includegraphics[width=0.68\columnwidth]{figures/structural_entropy.png}}
 \caption{Structural Entropy distributions: anomalous reasoning traces exhibit significantly higher mean entropy ($0.2342$) than valid chains ($0.1442$) ($p=0.0109$ after FDR correction).}
 \label{fig:entropy}
 \end{figure}
 
 Figure~\ref{fig:entropy} illustrates that defective traces display significantly elevated posterior state entropy ($0.2342$ vs.\ $0.1442$, $p=0.0109$). We exploit this separation to construct a \textit{3-Tier Adaptive Compute Routing Gate}:
 \begin{enumerate}
-    \item \textbf{High-Confidence Pass Tier (Top 35\%):} Samples exhibiting high plausibility margin and low entropy pass directly without secondary verification. Pass-tier routing accuracy is computed as:
+    \setlength{\itemsep}{1pt}
+    \item \textbf{High-Confidence Pass Tier (Top 35\%):} Traces exhibiting high plausibility margin and low entropy pass directly without secondary verification. Conditional precision within the pass tier is:
     \begin{equation}
-    \text{Acc}_{\text{pass}} = \frac{|\mathcal{T}_{\text{pass}} \cap \mathcal{C}_{\text{correct}}|}{|\mathcal{T}_{\text{pass}}|} = \frac{TP}{TP + FP} = 99.3\%
+    \text{Prec}_{\text{pass}} = \frac{|\mathcal{T}_{\text{pass}} \cap \mathcal{C}_{\text{correct}}|}{|\mathcal{T}_{\text{pass}}|} = \frac{TP}{TP + FP} = 99.3\%
     \label{eq:routing_acc}
     \end{equation}
-    evaluated at optimal threshold $\tau_{\text{high}}$ calibrated via Youden's $J$.
-    \item \textbf{Escalation / Re-sampling Tier (Middle 35\%):} Ambiguous traces undergo self-consistency re-sampling or neural verifier scoring (accuracy: 50.9\%).
-    \item \textbf{Early Reject Tier (Bottom 30\%):} Severely disordered traces (looping, premature conclusions) are rejected immediately prior to token decoding (actual error rate: 93.1\%).
+    evaluated at optimal threshold $\tau_{\text{high}}$ calibrated via Youden's $J$ index.
+    \item \textbf{Escalation / Re-sampling Tier (Middle 35\%):} Structurally ambiguous traces undergo secondary verification (conditional accuracy: 50.9\%).
+    \item \textbf{Early Reject Tier (Bottom 30\%):} Severely disordered traces (looping, premature conclusions) are rejected early prior to token decoding (error rate: 93.1\%).
 \end{enumerate}
-This triage filter reduces downstream LLM inference token overhead by \textbf{42.0\%--47.0\%}, delivering substantial efficiency gains in speculative decoding workflows.
+Empirically, this triage routing yields a \textbf{42.0\%--47.0\%} reduction in downstream LLM inference token overhead relative to verifying all generated chains.
 
 \section{Discussion}
 
-\textbf{Practical Applications.} Operating in $\approx$150\,ms on CPU without step annotations, CoT-HMM serves as a lightweight first-stage gate in multi-stage verification pipelines. By filtering structural failures before invoking expensive neural verifiers, overall system latency is reduced by up to 45\%.
+\textit{Interpretation of Structural Plausibility.} Results demonstrate that CoT-HMM distinguishes characteristic structural deviations from patterns learned on answer-correct traces. In controlled error injection, premature conclusions achieve an ROC-AUC of 0.990, while circular reasoning and missing computation achieve 0.761 and 0.658, respectively. Structural scoring effectiveness thus depends on corruption type: abrupt breaks to a conclusion are readily detected, whereas step omissions leaving superficially coherent inferences are harder to isolate.
 
-\textbf{Structural vs.\ Arithmetic Correctness.} CoT-HMM evaluates reasoning grammar, not numerical calculation. A derivation with an arithmetic mistake such as $12 \times 4 = 52$ follows valid reasoning syntax ($\text{EQ} \rightarrow \text{CA} \rightarrow \text{IN}$); thus, CoT-HMM appropriately assigns it high structural plausibility. Verifying arithmetic belongs to deterministic symbolic execution (e.g., Python REPL / calculator tools). CoT-HMM functions as a fast zero-GPU filter that prunes structurally incoherent paths before invoking costly neural verifiers.
+\textit{Arithmetic Correctness \& Scope.} CoT-HMM evaluates structural progression rather than numerical validity. The semantic-only control achieves an ROC-AUC of 0.501, confirming zero discrimination when an arithmetic error preserves syntax ($12 \times 4 = 52$ retains valid $\text{EQ} \to \text{CA} \to \text{IN}$). Thus, CoT-HMM is a lightweight screening component, not a standalone verifier; pairing with deterministic arithmetic checkers or neural verifiers is essential. Furthermore, the evaluation uses a focused pilot collection; derived variants share problem complexity, so performance on synthetic corruptions does not guarantee identical behavior on organic failures. Larger human-annotated evaluations are needed to confirm broader generalization.
 
-\textbf{Limitations.} CoT-HMM verifies expressed reasoning structure rather than latent model faithfulness~\cite{lanham2023measuring}. Furthermore, as established by our semantic control condition (AUC=$0.501$), structural filtering is insensitive to pure arithmetic errors. It is designed as a complementary pre-filter rather than a standalone evaluator.
+\textit{Deployment Implications.} Operating in $\approx$150\,ms on CPU without step annotations, CoT-HMM provides a fast first-stage triage gate, though practical routing benefits depend on held-out calibration and downstream verification costs.
 
 \section{Conclusion and Future Work}
 
-We presented CoT-HMM, an unsupervised, lightweight framework for verifying Chain-of-Thought structural plausibility using multi-resolution Ensemble HMMs. Across synthetic and organic benchmarks, CoT-HMM reliably detects structural anomalies, generalizes zero-shot across model families, and achieves over 42\% compute savings via adaptive inference routing.
+We presented CoT-HMM, an unsupervised framework for evaluating Chain-of-Thought structural plausibility using multi-resolution Ensemble HMMs trained on answer-correct traces without step-level annotations. Under controlled error injection, it achieved an ROC-AUC of 0.990 for premature conclusions, 0.761 for circular reasoning, and 0.658 for missing computation. The semantic-only control achieved an ROC-AUC of 0.501, delineating the method's boundary as a structural anomaly detector rather than an arithmetic verifier.
 
-In future work, we plan to: (1) replace rule-based regex parsing with fine-tuned lightweight neural sentence classifiers (e.g., DeBERTa-v3) for nuanced discourse disambiguation; (2) extend structural modeling to multi-domain reasoning benchmarks (e.g., ARC-Challenge, StrategyQA); and (3) expose the structural log-likelihood as a dense reward signal in reinforcement learning loops (PPO/GRPO) for structural policy steering.
+Future work will prioritize: (1) fine-tuned neural sentence classifiers (e.g., DeBERTa-v3) to resolve context-dependent regex ambiguities; (2) hybrid verification coupling structural HMM scores with deterministic arithmetic checking; and (3) validation on larger multi-domain reasoning benchmarks (ARC-Challenge, StrategyQA).
 
 \section*{Reproducibility Statement}
 The complete CoT-HMM implementation, including the semantic tagger, ensemble training routines, and evaluation datasets, are made publicly available to ensure full reproducibility.
@@ -292,41 +295,27 @@ The complete CoT-HMM implementation, including the semantic tagger, ensemble tra
 \section*{Acknowledgments}
 This research was supported by the Department of AI \& Machine Learning at SIES Graduate School of Technology.
 
+\footnotesize
 \begin{thebibliography}{00}
+\setlength{\itemsep}{0.5pt plus 0.5pt minus 0.5pt}
+\setlength{\parskip}{0pt}
 \bibitem{wei2022chain} J. Wei et al., ``Chain-of-thought prompting elicits reasoning in large language models,'' in \textit{Proc. NeurIPS}, vol. 35, 2022, pp. 24824--24837.
-
 \bibitem{ji2023survey} Z. Ji et al., ``Survey of hallucination in natural language generation,'' \textit{ACM Comput. Surv.}, vol. 55, no. 12, pp. 1--38, 2023.
-
 \bibitem{lightman2024let} H. Lightman et al., ``Let's verify step by step,'' in \textit{Proc. ICLR}, 2024.
-
 \bibitem{wang2023self} X. Wang et al., ``Self-consistency improves chain of thought reasoning in language models,'' in \textit{Proc. ICLR}, 2023.
-
 \bibitem{kojima2022large} T. Kojima, S. S. Gu, M. Reid, Y. Matsuo, and Y. Iwasawa, ``Large language models are zero-shot reasoners,'' in \textit{Proc. NeurIPS}, vol. 35, 2022, pp. 22199--22213.
-
 \bibitem{zhou2023least} D. Zhou et al., ``Least-to-most prompting enables complex reasoning in large language models,'' in \textit{Proc. ICLR}, 2023.
-
 \bibitem{yao2023tree} S. Yao, D. Yu, J. Zhao, I. Shafran, T. Griffiths, Y. Cao, and K. Narasimhan, ``Tree of thoughts: Deliberate problem solving with large language models,'' in \textit{Proc. NeurIPS}, vol. 36, 2023, pp. 11809--11822.
-
 \bibitem{rabiner1989tutorial} L. R. Rabiner, ``A tutorial on hidden Markov models and selected applications in speech recognition,'' \textit{Proc. IEEE}, vol. 77, no. 2, pp. 257--286, 1989.
-
 \bibitem{wiseman2018learning} S. Wiseman, S. Rush, S. Shieber, and J. Kim, ``Learning neural templates for text generation,'' in \textit{Proc. EMNLP}, 2018, pp. 3174--3187.
-
 \bibitem{lcot2tree2025} G. Jiang et al., ``What makes a good reasoning chain? Uncovering structural patterns in long chain-of-thought reasoning,'' \textit{arXiv preprint arXiv:2505.22148}, 2025.
-
 \bibitem{picsar2025} J. O. J. Leang et al., ``PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains,'' in \textit{Findings of ACL}, 2026.
-
 \bibitem{zhang2020bertscore} T. Zhang, V. Kishore, F. Wu, K. Q. Weinberger, and Y. Artzi, ``BERTScore: Evaluating text generation with BERT,'' in \textit{Proc. ICLR}, 2020.
-
 \bibitem{golovneva2023roscoe} O. Golovneva et al., ``ROSCOE: A suite of metrics for scoring step-by-step reasoning,'' in \textit{Proc. ICLR}, 2023.
-
 \bibitem{wang-etal-2024-math-shepherd} P. Wang et al., ``Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations,'' in \textit{Proc. ACL}, 2024, pp. 9306--9318.
-
 \bibitem{khalifa2025} M. Khalifa, A. G. G. de Oliveira, and E. X. Wu, ``Process Reward Models That Think,'' \textit{arXiv preprint arXiv:2504.16828}, 2025.
-
 \bibitem{cobbe2021training} K. Cobbe et al., ``Training verifiers to solve math word problems,'' \textit{arXiv preprint arXiv:2110.14168}, 2021.
-
 \bibitem{landis1977measurement} J. R. Landis and G. G. Koch, ``The measurement of observer agreement for categorical data,'' \textit{Biometrics}, vol. 33, no. 1, pp. 159--174, 1977.
-
 \bibitem{lanham2023measuring} T. Lanham et al., ``Measuring Faithfulness in Chain-of-Thought Reasoning,'' \textit{arXiv preprint arXiv:2307.13702}, 2023.
 \end{thebibliography}
 

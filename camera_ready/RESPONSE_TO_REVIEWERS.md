@@ -18,9 +18,9 @@ We sincerely thank the Technical Program Committee and both anonymous reviewers 
 
 **Author Response:**  
 We thank the reviewer for highlighting the importance of statistical power and sample size.
-1. **Clarification on Pilot Design:** In Section IV-A (*Setup: Baselines and Metrics*), we have explicitly clarified that the $N=39$ verified-correct traces from Qwen2.5-0.5B served strictly as a focused, high-precision seed pilot corpus for the initial controlled structural perturbation benchmark.
-2. **Mitigating Sample Variance via Bootstrap:** To ensure statistical robustness against small-sample variance, we employed non-parametric percentile bootstrap resampling with $B=10{,}000$ iterations to compute all 95% confidence intervals reported in Table II (e.g., AUC = $0.990$ [95% CI: $0.966, 1.000$]).
-3. **Cross-Architecture Generalization:** Furthermore, we direct the reviewer to Section IV-C and Table IV (*Zero-Shot Cross-Architecture Structural Transfer Benchmark*), which demonstrates that the transition grammar learned from this pilot corpus transfers zero-shot to substantially larger model families without retraining: **Llama-3.2-1B** ($r=0.946, p<0.001$), **Phi-3-mini-4k** ($r=0.941, p<0.001$), and **Mistral-7B** ($r=0.970, p<0.001$). This confirms that the learned reasoning dynamics capture universal mathematical grammar rather than model-specific artifacts.
+1. **Clarification on Pilot Design:** In Section IV-A (*Setup: Baselines and Metrics*), we have explicitly clarified that the $N=39$ answer-verified correct traces from Qwen2.5-0.5B (and their 4 derived corruption variants, $N=195$ total variants) serve as a focused pilot perturbation benchmark. We explicitly acknowledge that variants derived from the same source problem share underlying problem complexity.
+2. **Mitigating Sample Variance via Bootstrap:** To evaluate sampling uncertainty, we employed non-parametric percentile bootstrap resampling with $B=10{,}000$ iterations to compute all 95% confidence intervals reported in Table II (e.g., premature conclusion AUC = $0.990$ [95% CI: $0.966, 1.000$]).
+3. **Cross-Architecture Generalization:** Furthermore, we direct the reviewer to Section IV-C and Table IV (*Zero-Shot Cross-Architecture Structural Transfer Benchmark*), which demonstrates that the transition grammar learned from this pilot corpus transfers zero-shot to substantially larger model families without retraining: **Llama-3.2-1B** ($r=0.946, p<0.001$), **Phi-3-mini-4k** ($r=0.941, p<0.001$), and **Mistral-7B** ($r=0.970, p<0.001$), confirming structural regularities across diverse model families.
 
 ---
 
@@ -52,10 +52,10 @@ We completely agree with the reviewer that rule-based pattern matching has inher
 > *"Table II AUC: 0.658 for missing computation & 0.761 for circular reasoning vs. high for premature conclusions."*
 
 **Author Response:**  
-This is a keen observation. In Section IV-B, we have added a dedicated paragraph titled *\textit{Asymmetric Detection Mechanism}* providing the underlying probabilistic explanation:
-1. **Premature Conclusions (AUC = 0.990):** Skipping from problem restatement directly to a final answer ($\text{PR} \rightarrow \text{CO}$) represents a catastrophic terminal transition violation. In the trained transition matrix, $P(\text{CO} \mid \text{PR}) < 10^{-4}$. This creates an immediate, extreme penalty in normalized log-likelihood, leading to near-perfect separation ($d=4.166$).
-2. **Missing Computation (AUC = 0.658):** Omitting arithmetic calculation tags ($\text{CA}$) leaves residual chains of logical deductions ($\text{PR} \rightarrow \text{IN} \rightarrow \text{IN} \rightarrow \text{CO}$). Because valid qualitative problem-solving often strings consecutive inferences together, these sub-chains retain moderate local transition likelihood, resulting in softer log-likelihood drops.
-3. **Proposed Mitigations:** We have highlighted that token-length weighted transition matrices and Structural Entropy thresholds can further enhance sensitivity to omitted derivation steps.
+This is a keen observation. In Section IV-B, we added a dedicated paragraph titled *\textit{Asymmetric Detection Dynamics}* candidly analyzing these boundaries:
+1. **Premature Conclusions (AUC = 0.990 [95% CI: 0.966, 1.000]):** Skipping from problem restatement directly to a final answer ($\text{PR} \rightarrow \text{CO}$) represents a catastrophic terminal transition violation ($P(\text{CO} \mid \text{PR}) < 10^{-4}$ in the learned matrix), triggering an immediate, extreme penalty in normalized log-likelihood ($d=4.166$).
+2. **Circular Reasoning (AUC = 0.761 [95% CI: 0.645, 0.866]):** Repeated loops trigger cumulative transition penalties ($d=0.896$), though legitimate multi-step deductions occasionally overlap.
+3. **Missing Computation (AUC = 0.658 [95% CI: 0.531, 0.778]):** Omitting arithmetic calculation tags ($\text{CA}$) leaves residual chains of logical deductions ($\text{PR} \rightarrow \text{IN} \rightarrow \text{IN} \rightarrow \text{CO}$) that locally resemble qualitative explanations, preserving partial transition likelihood. We candidly note that the lower bound approaches chance ($0.50$), and outline token-length weighting and entropy thresholds as future mitigations.
 
 ---
 
@@ -74,7 +74,7 @@ Clear explanatory phrasing has been added to Section IV-B to cross-reference the
 > *"Conclusion should be a separate section after Results."*
 
 **Author Response:**  
-We have restructured the manuscript accordingly. Section V is now dedicated exclusively to **Discussion**, and Section VI is now a standalone section titled **Conclusion and Future Work** summarizing our findings and outlining three concrete future directions (neural DeBERTa tagging, multi-domain transfer, and reinforcement learning reward integration).
+We have restructured the manuscript accordingly. Section V is now dedicated exclusively to **Discussion**, and Section VI is now a standalone section titled **Conclusion and Future Work** summarizing our findings and outlining three concrete future directions (neural DeBERTa tagging, hybrid arithmetic verification, and multi-domain transfer).
 
 ---
 
@@ -82,7 +82,10 @@ We have restructured the manuscript accordingly. Section V is now dedicated excl
 > *"Proofread for grammar/spelling/typos."*
 
 **Author Response:**  
-A thorough editorial review of the entire manuscript was performed. All phrasing, mathematical notations, and figure captions were scrutinized and polished for maximum clarity and technical precision.
+A thorough editorial review of the entire manuscript was performed:
+1. **Algorithmic Correction:** Corrected Section III-D from the misnomer "Viterbi training" to "Expectation-Maximization (Baum-Welch) training", clarifying that Viterbi decoding is used exclusively for inferring optimal state sequences.
+2. **Terminology Precision:** Explicitly classified training chains as "answer-verified" (matching benchmark ground truth).
+3. **Typography & Layout:** Refined float spacing, equation formatting, and verified exact 5-page IEEEtran conference compliance.
 
 ---
 
