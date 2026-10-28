@@ -36,27 +36,27 @@ Author 1 (First & Corresponding Author):
 
 Author 2:
 - Full Name: Chirayu Marathe
-- Email: chirayusmce123@gst.sies.edu.in
+- Email: chirayusmarathe@gmail.com
 - Affiliation: Department of Computer Engineering, SIES Graduate School of Technology, Mumbai, India
 - Role: Experimental Pipeline & Baseline Benchmarks
 
-Author 3:
-- Full Name: Parth Parmar
-- Email: parth.parmar.btech2028@atlasskilltech.university
-- Affiliation: Department of AI & Machine Learning, ATLAS SkillTech University, Mumbai, India
-- Role: Data Curation & Statistical Validation
-
-Author 4:
-- Full Name: Suhail Shaikh
-- Email: suhailmsaiml123@gst.sies.edu.in
-- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
-- Role: Cross-Architecture Evaluation & Visualization
-
-Author 5 (Faculty Mentor / Supervisor):
+Author 3 (Faculty Mentor / Supervisor):
 - Full Name: Prof. Bhagyalakshmi V
 - Email: lakshmianand04@gmail.com
 - Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
 - Role: Supervision & Research Guidance
+
+Author 4:
+- Full Name: Parth Parmar
+- Email: parthparmar4105@gmail.com
+- Affiliation: Department of AI & Machine Learning, ATLAS SkillTech University, Mumbai, India
+- Role: Data Curation & Statistical Validation
+
+Author 5:
+- Full Name: Suhail Shaikh
+- Email: suhailshaikh7505@gmail.com
+- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
+- Role: Cross-Architecture Evaluation & Visualization
 
 --------------------------------------------------------------------------------
 GITHUB REPOSITORY:
