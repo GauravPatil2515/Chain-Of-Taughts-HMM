@@ -2,7 +2,7 @@
 
 **Paper ID:** IDCIoT-154  
 **Title:** CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning via Hidden Markov Models  
-**Authors:** Gaurav Patil, Chirayu Marathe, Bhagyalakshmi V, Parth Parmar, Suhail Shaikh  
+**Authors:** Gaurav Patil, Suhail Shaikh, Bhagyalakshmi V, Parth Parmar, Chirayu Marathe  
 **Conference:** 5th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT 2027)  
 **IEEE Conference ID:** #71706  
 **Final Deadline:** **03 November 2026**  
@@ -35,7 +35,7 @@ All files are pre-compiled, formatted, and verified:
 3. Fill in:
    * **Paper Title:** `CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning via Hidden Markov Models`
    * **Paper ID:** `IDCIoT-154`
-   * **Authors:** Gaurav Patil, Chirayu Marathe, Bhagyalakshmi V, Parth Parmar, Suhail Shaikh
+   * **Authors:** Gaurav Patil, Suhail Shaikh, Bhagyalakshmi V, Parth Parmar, Chirayu Marathe
 4. Sign electronically and download the signed copyright PDF (name it `IDCIoT_154_Copyright.pdf`).
 
 ---
@@ -62,7 +62,7 @@ Please find attached the camera-ready submission package for our accepted paper:
 
 - Paper ID: IDCIoT-154
 - Paper Title: CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning via Hidden Markov Models
-- Authors: Gaurav Patil, Chirayu Marathe, Bhagyalakshmi V, Parth Parmar, Suhail Shaikh
+- Authors: Gaurav Patil, Suhail Shaikh, Bhagyalakshmi V, Parth Parmar, Chirayu Marathe
 - Conference: 5th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT 2027)
 
 Attached Documents:

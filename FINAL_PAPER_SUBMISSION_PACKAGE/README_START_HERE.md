@@ -58,7 +58,7 @@ FINAL_PAPER_SUBMISSION_PACKAGE/
    - Title: `CoT-HMM: Structural Plausibility Scoring of Chain-of-Thought Reasoning via Hidden Markov Models`
    - Abstract (copy from `SUBMISSION_METADATA.txt`)
    - Keywords (copy from `SUBMISSION_METADATA.txt`)
-   - Add all 5 Authors in order (Gaurav Patil, Chirayu Marathe, Prof. Bhagyalakshmi V, Parth Parmar, Suhail Shaikh).
+   - Add all 5 Authors in order (Gaurav Patil, Suhail Shaikh, Prof. Bhagyalakshmi V, Parth Parmar, Chirayu Marathe).
 3. **Attach PDF**:
    - For Springer: Attach `01_Springer_ANTIC_Submission/CoT_HMM_Springer_ANTIC_9Pages.pdf`
    - For IEEE: Attach `02_IEEE_Conference_Submission/CoT_HMM_IEEE_Conference_5Pages.pdf`

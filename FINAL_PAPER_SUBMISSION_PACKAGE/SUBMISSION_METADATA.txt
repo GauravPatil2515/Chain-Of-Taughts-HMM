@@ -35,10 +35,10 @@ Author 1 (First & Corresponding Author):
 - Role: Primary Researcher & Methodology Design
 
 Author 2:
-- Full Name: Chirayu Marathe
-- Email: chirayusmarathe@gmail.com
-- Affiliation: Department of Computer Engineering, SIES Graduate School of Technology, Mumbai, India
-- Role: Experimental Pipeline & Baseline Benchmarks
+- Full Name: Suhail Shaikh
+- Email: suhailshaikh7505@gmail.com
+- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
+- Role: Cross-Architecture Evaluation & Visualization
 
 Author 3 (Faculty Mentor / Supervisor):
 - Full Name: Prof. Bhagyalakshmi V
@@ -53,10 +53,10 @@ Author 4:
 - Role: Data Curation & Statistical Validation
 
 Author 5:
-- Full Name: Suhail Shaikh
-- Email: suhailshaikh7505@gmail.com
-- Affiliation: Department of AI & Machine Learning, SIES Graduate School of Technology, Mumbai, India
-- Role: Cross-Architecture Evaluation & Visualization
+- Full Name: Chirayu Marathe
+- Email: chirayusmarathe@gmail.com
+- Affiliation: Department of Computer Engineering, SIES Graduate School of Technology, Mumbai, India
+- Role: Experimental Pipeline & Baseline Benchmarks
 
 --------------------------------------------------------------------------------
 GITHUB REPOSITORY:
